@@ -32,16 +32,11 @@
 \usepackage{url}
 \usepackage[numbers, square, comma, sort&compress]{natbib}
 \usepackage{multirow}
-% insert here the call for the packages your document requires
-%\usepackage{latexsym}
-% etc.
-%
-% please place your own definitions here and don't use \def but
-% \newcommand{}{}
-%
-% Insert the name of "your journal" with
+\usepackage{array}
+
+\usepackage[draft]{fixme}
+
 \journalname{Int J Soc Robot}
-%
 
 \newcommand{\eg}{{\textit{e.g.~}}}
 \newcommand{\etal}{{\textit{et al.~}}}
@@ -611,12 +606,75 @@ Given our first hypothesis from above, this might not hold over all contexts; mo
 
 	Smart innovative devices, such as personal domestic robots, might demand from a human user spontaneous usage of an unfamiliar system. Such situations will require that a user should be able to build up a mental model quickly, which particularly holds for novice users \cite{schmitz_concepts_2011}.
 
-	Eddy \textit{et aél.} points out that familiarity increases the tendency to anthropomorphize \cite{eddy_attribution_1993}.
+	Eddy \textit{et al.} points out that familiarity increases the tendency to anthropomorphize \cite{eddy_attribution_1993}.
 
 	"As shown in several psychological experiments [13,24] and pointed out by Watt [25], familiarity may also ease social acceptance and even tend to increase people's tendency to anthropomorphize [16]." \cite{duffy_anthropomorphism_2003}
 
 \subsection{Personal characteristic effects in anthropomorphizing}
 \label{sec:8.3}
+
+\subsection{Role of disruptive behaviors}
+\label{sec:disruptive}
+
+Common observation of naive people (children or adults) interacting with robots
+shows that unexpected behaviors of the robot has a notable impact on
+interaction.
+
+During a normal interaction with the robot, the user iteratively refine its own
+model of the behavior of the robot. As explained in previous sections, as the
+user improves its model of the robot actions, it also improves its ability to predict
+the actions and thus, the user tends to anthropomorphize less.
+
+We emit the hypothesis that an unexpected robot behavior leads the user to
+suddently restate its behavioral model of the robot and will temporarly lead to
+an increase of the level of anthropomorphism (see the spikes on
+Figure~\ref{fig:dynamics}).
+
+\begin{figure}
+\begin{center}
+    \begin{tabular}{ | >{\centering\arraybackslash}m{1.5cm} | >{\centering\arraybackslash}m{2cm} | >{\centering\arraybackslash}m{2cm} |}
+    \hline
+     & Unplanned by the robot & Planned by the robot \\ \hline
+    Perceived as non-intentional & case I  & case IIIa  \\ \hline
+    Perceived as intentional &  case IIIb & case II  \\ \hline
+    \end{tabular}
+\end{center}
+\caption{
+    Behaviors of the robot that are unexpected by the user may be intentional
+    (the robot has planned the behavior) or not (typically, a failure:
+    misdetection, bug,...). Independently of that, the behavior may be
+    \emph{perceived} by the user as intentional or not.}
+\label{fig:perceptionUnexpectedBehavior}
+\end{figure}
+
+When talking about \emph{unexpected robot behaviors}, several distinct cases
+must be considered, summarized in Table~\ref{fig:perceptionUnexpectedBehavior}.
+
+If the unexpected behavior is not planned, and perceived as such by the human
+(case I), the human can interpret that the robot is faillible. If the robot
+explicitly states its failure (for instance, by saying ``I'm lost!''), the
+behavior is then called \emph{transparent} \fixme{cite here, Julia?}, and the
+user may besides hypothesize that the robot has \emph{introspective}
+capabilities, which in turn may leads to higher anthropomorphism level.  On the
+contrary, if the robot shows no sign of recognizing its own failure, the user
+may ascribe a lower level of anthropomorphism to the robot.
+
+In case II, the robot voluntary executes a behavior that is unexpected by the
+human, and the human perceives it rightfully as an \emph{intentional} behavior.
+For instance, the human asks the robot to go somewhere, and the robot refuses,
+saying ``I do not want to go there''. In that case, we expect to see an
+increase of anthropomorphism attribution due to the human ascribing
+intentionality to the robot.
+
+Case IIIa and IIIb correspond to misinterpretations of the robot behavior. Case
+IIIb may actually lead to increased level of anthropomorphism since the human
+will (wrongfully) attribute intentionality to the robot, while case IIIa is
+expected to lead to a lower anthropomorphism level.  However, in those two
+cases, the next occurrence of an expected behavior, if correctly interpreted
+(case I or II), is likely to lead to stronger effects due to a larger delta
+between expectations and actual observed behavior.
+
+%% experience -> unexpected behaviour should not impact the interaction child-robot BEFORE the theory of mind is established!
 
 
 
