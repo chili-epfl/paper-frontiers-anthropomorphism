@@ -483,7 +483,7 @@ anthropomorphism increases due to the \emph{novelty effect}, and then decreases
 to reach a \emph{stabilized level of anthropomorphism} (SLA).
 During the interaction, unpredicted behaviors of the robot (\emph{disruptive
 behaviors}) locally increase the level of anthropomorphism.}
-\label{fig|dynamics}
+\label{fig:dynamics}
 \end{figure*}
 
 
@@ -529,6 +529,57 @@ We propose to go beyond the traditional perception of anthropomorphism in roboti
 
 \section{Discussion}
 \label{sec:8}
+
+\subsection{Anthropomorphism and Cognitive Models}
+\label{sec:cognitivemodel}
+
+\begin{figure}[htb]
+\centering
+%\resizebox{\linewidth}{!}{
+\begin{tikzpicture}[scale=0.8, transform shape]
+\baselineskip=8pt
+
+% horizontal axis
+\draw[->] (0,0) -- (10,0) node[anchor=north] {$t$};
+% labels
+\draw   (2,0) node[anchor=north] {Phase I}
+        (5,0) node[anchor=north] {Phase II}
+        (8,0) node[anchor=north] {Phase III};
+
+\draw[dotted] (3.5, -0.5) -- (3.5,6);
+\draw[dotted] (6.5, -0.5) -- (6.5,6);
+
+% vertical axis
+\draw[-|] (0,0) -- (0,6) node[anchor=east] {};
+% Us
+\draw[thick] (0,0) -- (1,2) -- (3,2) -- (4,4) -- (6,4) -- (7,6) -- (10,6);
+
+\draw (2.2,2) node[align=center] {\scriptsize{sub-cognitive}\\\scriptsize{anthropomorphism}}; %label
+\draw (5,3.85) node[align=center] {\scriptsize{projection of existing}\\\scriptsize{mental models}\\\scriptsize{\it (familiarity)}}; %label
+\draw (8.5,5.85) node[align=center] {\scriptsize{adapted mental model} \\ $\to$ \scriptsize{adapted interaction}\\\scriptsize{\it (antropomorphic or not)}}; %label
+
+\draw (2.2,1) node[align=left] {\tiny{\it observation (shape, motion, sound)}}; %label
+\draw (5.2,3) node[align=left] {\tiny \it observation (interactive behaviour) \\ \tiny \it or short interaction}; %label
+\draw (7.8,5) node[align=left] {\tiny \it contextualized interaction}; %label
+
+\end{tikzpicture}
+%}
+\caption{The three cognitive phases of anthropomorphism: Phase I is the instinctive,
+sub-cognitive identification of living peers. {\it Empathy} [TO DISCUSS] is characteristic
+of this stage. After longer observation or short, uncontextualized interaction
+(typically, a lab environment), the user enters Phase II: the user projects a
+mental model he/she is already familiar with onto the robot. This leads to
+expectation regarding the cognitive abilities of the robot. After longer {\it
+contextualized} interaction (typically, at home), the user enters Phase III of
+anthropomorphism: the user recomposes an accurate mental model of the robot,
+based on experience. This leads to adapted interaction modalities, that may
+still be anthropomorphic, or not.}
+\label{fig:cognitivemodel}
+\end{figure}
+
+Figure~\ref{fig:cognitivemodel} offers a cognitive perspective on the dynamics
+of anthropomorphism presented in the previous section.
+
 
 
 \subsection{Effect of Context of Use and Purpose of the Robot}
