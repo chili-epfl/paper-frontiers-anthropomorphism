@@ -118,11 +118,11 @@
 
 
 \section{Anthropomorphic Design and Anthropomorphism}
-\label{intro}
+\label{sec:intro}
 
 	 Since the very beginning of robotics, there has been a trend of making robots human-like. Personal robots are designed with more or less human-like shapes or characteristics, and are able to use and react to human social behavior, such as facial expressions or nonverbal gestures. We call this design approach \textbf{anthropomorphic design}, which hereafter refers to human-like \hl{(life-like?)} characteristics in a robot (realized in its shape, behavior, interaction, etc.). Even though this design principle is not exclusive for robots, the topic has received remarkable attention in the domain of (social) robotics. On one hand, human-like design of robots seems to be beneficial from a technical viewpoint: for finding efficient solutions in the technical and mechanical development of a robot (e.g. bio-inspired robots) in order to optimally fit the robot into our to humans adapted physical space. On the other hand, human-like characteristics in a robot also concern the social space, the acceptance of a robot, as well as how people perceive it, form expectations toward it, and in turn treat it. A robot that looks and acts like a human raises different expectations than a functionally designed robot \hl{[REF]}. The anthropomorphic design of robots is thus a crucial aspect for the study of acceptance of robots in daily life and in the domain of social robotics in general. 
 	
-	Why does anthropomorphic design seem to be so popular in HRI? Amongst others, a human-like shape and human-social characteristics of a robot aim to enable effective and natural interaction between humans and robots. As robots are generally something unfamiliar and new to humans, the underlying argumentation is that when a robot has a human-like shape and displays human social cues, it is easier for people to interact with it. A robot's anthropomorphic design suggests to the human user to understand and treat it to some extend similar to a human, thus in a social manner. This behavior has been extensively studied in HCI and is explained by the \emph{Media Equation Theory}, which states that people's interactions with computers, television, and new media are fundamentally social and natural, just like interactions in real life \cite{reeves_media_1996}. Since robots are physically embodied agents, it is consequently very likely that people respond socially to them. The anthropomorphic design in a robot further encourages a person to ascribe / attribute human characteristics to it (e.g. intention, emotions, personality). To this end, anthropomorphic design of robots aims to make the system understandable, thus predictable, and acceptable. The conclusion builds on the assumption that humans prefer to interact with machines (and robots) in the same way they interact with humans \cite{fong_survey_2003} because they are familiar to these kind of interactions. The implicit social mechanism which is exploited, is called \textbf{anthropomorphism}. It describes the phenomenon of a person ascribing human-like characteristics (e.g. beliefs, intentions, personality) to a non-human artifact, such as a robot. Anthropomorphism also concerns a person's reasoning about a non-human agent as if that agent were human-like (\textit{i.e.} a cognitive process without the action of making a verbal statement with attribution, for instance). In robotics, this social phenomenon is enhanced by using anthropomorphic forms in the design of robots, thus these two aspects are closely related to each other. 
+     Why does anthropomorphic design seem to be so popular in HRI? Amongst others, a human-like shape and human-social characteristics of a robot aim to enable effective and natural interaction between humans and robots. As robots are generally something unfamiliar and new to humans, the underlying argumentation is that when a robot has a human-like shape and displays human social cues, it is easier for people to interact with it. A robot's anthropomorphic design suggests to the human user to understand and treat it to some extend similar to a human, thus in a social manner. This behavior has been extensively studied in HCI and is explained by the \emph{Media Equation Theory}, which states that people's interactions with computers, television, and new media are fundamentally social and natural, just like interactions in real life \cite{reeves_media_1996}. Since robots are physically embodied agents, it is consequently very likely that people respond socially to them. The anthropomorphic design in a robot further encourages a person to ascribe / attribute human characteristics to it (e.g. intention, emotions, personality). To this end, anthropomorphic design of robots aims to make the system understandable, thus predictable, and acceptable. The conclusion builds on the assumption that humans prefer to interact with machines (and robots) in the same way they interact with humans \cite{fong_survey_2003} because they are familiar to these kind of interactions. \hl{The implicit social mechanism which is exploited, is called \textbf{anthropomorphism}}\fxfatal{Discuss also \emph{anthropomorphic effects} as the observable part of anthropomorphism}. It describes the phenomenon of a person ascribing human-like characteristics (e.g. beliefs, intentions, personality) to a non-human artifact, such as a robot. Anthropomorphism also concerns a person's reasoning about a non-human agent as if that agent were human-like (\textit{i.e.} a cognitive process without the action of making a verbal statement with attribution, for instance). In robotics, this social phenomenon is enhanced by using anthropomorphic forms in the design of robots, thus these two aspects are closely related to each other. 
 	
 	As in the near future it is likely that a growing number of social robots will be deployed in everyday environments, the analysis and understanding of anthropomorphism and related social dynamics in HRI becomes increasingly important.
 	
@@ -430,7 +430,7 @@ We believe that the prevalent mostly observed anthropomorphic stances in short-t
 
 % vertical axis
 \draw[->] (0,0) -- (0,6) node[anchor=east] {};
-\draw(-0.8,3) node[rotate=90,anchor=south] {\scriptsize Normalized level of anthropomorphism};
+\draw(-0.8,3) node[rotate=90,anchor=south] {\scriptsize Normalized level of anthropomorphic effects};
 
 \draw (-0.05, 3) -- (0.05, 3) node[anchor=east] {\scriptsize $\text{ICA}_{\mathcal B}$};
 \draw (-0.05, 4.1) -- (0.05, 4.1) node[anchor=east] {\scriptsize $\text{ICA}_{\mathcal A}$};
@@ -500,11 +500,63 @@ behaviors}) locally increase the level of anthropomorphism.}
 \label{fig:dynamics}
 \end{figure*}
 
-We propose to go beyond the traditional perception of anthropomorphism in robotics as a static feature that once observed during a short-term interaction reflects a sustaining social effect. So far, the HRI community has not investigated how anthropomorphism in human-robot interactions evolves over time (during the process of adopting a robot, for instance). However, based on an extensive literature review and our own work, we believe that the social phenomenon will not always be the same but evolve over time, with growing interaction and experience with the robot. We would like to present an extension to the understanding of anthropomorphism in HRI which takes time / interaction / experience / familiarization into account. Consequently, we suggest to understand anthropomorphism in HRI as a dynamic process, which is likely to change over time and with growing user experience with the robot (which we assume comes along with a familiarization and better understanding of the robot). This viewpoint also considers the so called \textit{novelty effect} which has been observed during long-term studies with innovative technologies and robots. In the following, we present our understanding of the dynamics of anthropomorphism and try to model this process as a function of time and growing experience (see Figure \ref{fig:dynamics}).
- 
+So far, the HRI community has not much investigated how anthropomorphism in
+human-robot interactions evolves over time (during the process of
+\emph{adopting} a robot, for instance): we propose to go beyond the traditional
+perception of anthropomorphism in robotics as a static feature that once
+observed during a short-term interaction reflects a sustaining social effect.
+Based on an extensive literature review and our own work \fxfatal{Summarize
+these findings in a specific section!}, we believe that the social phenomenon
+is not always be the same but evolve over time, along with growing interaction
+and experience with the robot.
 
-\subsection{The Initial Capital of Anthropomorphism}
-\label{sec:7.1}
+
+The model of anthropomorphism we propose (Figure~\ref{fig:dynamics}) represents
+how the level of anthropomorphic effects (\ie observable manifestations of
+anthropomorphism, as defined at section~\ref{sec:intro}) evolves over a
+long-term human-robot interaction. By long-term interaction, we mean direct
+(non-mediated), repeated interaction with the same robot, over (at least) several
+days. The nature of the interaction (goal-directed, entertainment,...) may vary.
+
+The model takes into account the duration of the interaction, the nature of the
+interaction, as well as acquired experience and familiarization mechanisms: We
+also propose to formally introduce a so-called \emph{novelty effect} that
+models the first phase of human-robot interaction, and during which specific
+anthropomorphic effect are observed.
+
+\subsection{Three phases}
+\label{sec:phases}
+
+We distinguish three main phases that describe the evolution of the
+anthorpomorphic effects in a long-term human-robot interaction. They are
+depicted in different shades on Figure~\ref{fig:dynamics}.
+
+First, the \emph{initialization} phase. During this short phase (from a couple
+of seconds to a couple of hours), we observe an increased level of
+antrophomorphism, from an \emph{initial capital of anthropomorphism}
+(detailled in the next section) and a peak of antropomorphic manifestations
+that correspond to the maximum of the \emph{novelty effect}.
+Section~\ref{sec:initialization} details this first phase.
+
+The second phase, \emph{familiarization}, lasts longer (up to several days) and
+models the process of the human getting acquainted to the robot: by observation
+and interaction, the human builds a model of the robot's behaviour that allows
+him/her to predict the robot's actions. We observe a decrease of
+anthropomorphic effects during this phase, that we explain by the acquired
+ability to predict the behaviour of the robot: the initial apparent behavioural
+complexity vanishes, and the robot is considered more and more as a machine.
+Section~\ref{sec:familiarization} discusses the second phase.
+
+The last phase is the \emph{stabilization} phase. The level of anthrpomorphic
+effects tends to stabilize over a longer time, to reach a \emph{stabilized
+level of anthropomorphism} (SLA). The SLA may be null (no anthropomorphic
+effects observed anymore), but it may also remain at an higher level.  This
+third phase, as well as the \emph{stabilized level of anthropomorphism}, are
+discussed in section~\ref{sec:stabilization} below.
+
+
+\subsection{Initial Capital of Anthropomorphism}
+\label{sec:ica}
 
 	Initially, there is a given potential that a robot will be anthropomorphized. Our proposed function to model the dynamics of anthropomorphism starts with this what we call \textit{initial capital of anthropomorphism} (ICA) at time point $t_{0}$, which describes the first (real or imagined) contact to the robot (see Figure \ref{fig:dynamics}). Time point $t_{0}$ can temporally be before the first real physical interaction with the robot, for instance, when a person learns about the existence of vacuum-cleaning robots and imagines using one (\textit{e.g.} when one watches an advertisement of the robot, or observes one at a trade show). In this stage of "pre-interaction", people form initial expectations toward the robot and imagine how they will use / interact with it. Time point $t_{0}$ can be understood as duration of interaction = 0 and user experience = 0. How can we hypothetically quantify the ICA on a normalized scale of anthropomorphism? For this, we suggest, what we call the \textit{"Three P's"}. These are three main factors that \textit{a priori} determine the potential to anthropomorphize a robot:
 	
@@ -526,18 +578,20 @@ We propose to go beyond the traditional perception of anthropomorphism in roboti
 	For \textbf{purpose}, we propose that the real or imagined context in which a robot is used, impacts how far the robot will be attributed human-social characteristics. We	draw on findings such as presented in Joosse \textit{et al.}. The authors showed that when the same robot (NAO) is used in a different task context (cleaning task \textit{vs.} tour guide), this influences the perception of the "personality" of the robot. In general, we think that a robot which is (imagined to be) used in a social, entertaining or playful context leads to a higher ICA than a robot which is used for a serious task (security, rescue, etc.). This idea receives support from \hl{XX (Kiesler / Goetz?)} work that revealed that people prefer a serious robot for serious tasks and a less serious robot for more playful tasks \hl{REF}. Also, we suggest that the environmental context in which people experience and interact with the robot impacts the ICA. When several people who might be friends interact simultaneously with the robot this might lead to an increased ICA \hl{study: people are more emotional when watching TV in company than when watching TV on their own}.
 
 \subsection{Anthropomorphism during Initialization Phase}
-\label{sec:7.2}
+\label{sec:initialization}
 
-(\textit{INITIALIZATION})
-
+\paragraph{The Novelty Effect}
+\label{sec:noveltyeffect}
 
 \subsection{Anthropomorphism during Familiarization Phase}
-\label{sec:7.3}
+\label{sec:familiarization}
 
+\paragraph{Disruptive Behaviours}
 
 \subsection{Anthropomorphism during Stabilization Phase}
-\label{sec:7.4}
+\label{sec:stabilization}
 
+\paragraph{Stabilized Level of Anthropomorphism (SLA)}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
