@@ -1,26 +1,7 @@
-%%%%%%%%%%%%%%%%%%%%%%% file template.tex %%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% This is a general template file for the LaTeX package SVJour3
-% for Springer journals.          Springer Heidelberg 2010/09/16
-%
-% Copy it to a new file with a new name and use it as the basis
-% for your article. Delete % signs as needed.
-%
-% This template includes a few options for different layouts and
-% content for various journals. Please consult a previous issue of
-% your journal as needed.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\RequirePackage{fix-cm}
-%
-%\documentclass{svjour3}                     % onecolumn (standard format)
-%\documentclass[smallcondensed]{svjour3}     % onecolumn (ditto)
-%\documentclass[smallextended]{svjour3}       % onecolumn (second format)
-\documentclass[twocolumn]{svjour3}          % twocolumn
-%
-\smartqed  % flush right qed marks, e.g. at end of proof
-%
+\documentclass[lettersize, apacite, twoside, HRI]{apa_HRI}
+\usepackage{times} % Required package for HRI journal format
 
+% UTF8 support
 \usepackage[utf8x]{inputenc}
 \usepackage[T1]{fontenc}
 
@@ -41,8 +22,8 @@
 \usepackage{textcomp}
 
 \usepackage[draft]{fixme}
-
-\journalname{Int J Soc Robot}
+\rightheader{Journal of Human-Robot Interaction}
+\leftheader{Fink et al.}
 
 \newcommand{\eg}{{\textit{e.g.~}}}
 \newcommand{\etal}{{\textit{et al.~}}}
@@ -50,64 +31,23 @@
 
 \hyphenation{com-mon-ly}
 
-\begin{document}
 
 \title{On the Dynamics of Anthropomorphism in Robotics
-\thanks{This research was supported by the Swiss National Science Foundation through the National Centre of Competence in Research Robotics.}
-}
-\subtitle{}
-
-%\titlerunning{Short form of title}        % if too long for running head
-
-\author{Julia Fink         \and
-        S\'{e}verin Lemaignan     \and
-        Pierre Dillenbourg  %etc.
 }
 
-%\authorrunning{Short form of author list} % if too long for running head
-
-\institute{J. Fink \and S. Lemaignan \and P. Dillenbourg \at
-              Computer-Human Interaction in Learning and Instruction (CHILI) \\
-              Ecole Polytechnique F\'{e}d\'{e}rale de Lausanne (EPFL) \\
-              Rolex Learning Center, Station 20 \\
-              CH-1015 Lausanne \\
-              Switzerland \\
-              Tel.: +41-21-693-2274\\
-              Fax: +41-21-693-6070\\
-              \email{julia.fink@epfl.ch}           %  \\
-%             \emph{Present address:} of F. Author  %  if needed
-           \and
-           S. Lemaignan \at
-              \email{severin.lemaignan@epfl.ch}
-		   \and
-           P. Dillenbourg \at
-              \email{pierre.dillenbourg@epfl.ch}
+\author{Julia Fink, Séverin Lemaignan, Pierre Dillenbourg}
+\affiliation{ Computer-Human Interaction in Learning and Instruction (CHILI) \\
+              Ecole Polytechnique Fédérale de Lausanne (EPFL) \\
+              CH-1015 Lausanne, Switzerland
 }
-
-\date{Received: date / Accepted: date}
-% The correct dates will be entered by the editor
+\abstract{While anthropomorphism in robotics is a commonly discussed trait of human-robot interaction (HRI), it is paradoxically an overlooked research topic. This article attempts first at providing a comprehensive synthesis of the social phenomenon of \textit{attributing human characteristics to robots}. It draws on social sciences and psychology, as well as on a critical survey of existing literature in the HRI community, to ground the concept of \textit{anthropomorphism}. We further present different kinds of \textit{anthropomorphic design} of robots and outline their role in social robotics. We then propose to go beyond the traditional perception of anthropomorphism as a static feature. We suggest to understand anthropomorphism as a dynamic, context-dependent process. This also provides an account of the so-called \textit{novelty effect}. To this end, we introduce an initial function of anthropomorphism that models the phenomenon along three interaction phases. Our function is supported by results of a long-term study that we conducted in a real human environment.}
 
 
+
+\keywords{Anthropomorphism, Design, Human-Robot Interaction, Social Issues in Robotics, Acceptance of Robots}
+
+\begin{document}
 \maketitle
-
-\begin{abstract}
-
-	While anthropomorphism in robotics is a commonly discussed trait of human-robot interaction (HRI), it is paradoxically an overlooked research topic. This article attempts first at providing a comprehensive synthesis of the social phenomenon of \textit{attributing human characteristics to robots}. It draws on social sciences and psychology, as well as on a critical survey of existing literature in the HRI community, to ground the concept of \textit{anthropomorphism}. We further present different kinds of \textit{anthropomorphic design} of robots and outline their role in social robotics. We then propose to go beyond the traditional perception of anthropomorphism as a static feature. We suggest to understand anthropomorphism as a dynamic, context-dependent process. This also provides an account of the so-called \textit{novelty effect}. To this end, we introduce an initial function of anthropomorphism that models the phenomenon along three interaction phases. Our function is supported by results of a long-term study that we conducted in a real human environment.
-
-
-%	This article synthesizes the social phenomenon of attributing human characteristics to robots, and illustrates the role of human-like form and human social behavior cues in the design of robots. We draw on backgrounds from social sciences and psychology to first provide a common ground for the understanding of  anthropomorphism. The theoretical background is featured by an overview of different kinds of anthropomorphic design in robots. We also provide a comprehensive summary and critical comparison of findings from experiments studying anthropomorphism in human-robot interaction. Finally, we propose to understand anthropomorphism as a dynamic phenomenon which is not only determined by 1) \textit{individual characteristics} of the human user, and 2) the \textit{anthropomorphic design of the robot}, but might also be impacted by 3) \textit{dynamics}, such as \textit{time} and the \textit{context of use}. Consequently, we propose different levels of anthropomorphism that might shift with increased time of interaction and the context of use of a robot.
-	
-
-
-\keywords{
-	Anthropomorphism \and
-	Design \and    
-    Human-Robot Interaction \and
-    Social Issues in Robotics \and
-    Acceptance of Robots}
-% \PACS{PACS code1 \and PACS code2 \and more}
-% \subclass{MSC code1 \and MSC code2 \and more}
-\end{abstract}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -857,112 +797,17 @@ between expectations and actual observed behavior.
 
 
 
-
-%\subsection{Subsection title}
-%\label{sec:X.X}
-%as required. Don't forget to give each section
-%and subsection a unique label (see Sect.~\ref{sec:1}).
-%\paragraph{Paragraph headings} Use paragraph headings as needed.
-%\begin{equation}
-%a^2+b^2=c^2
-%\end{equation}
-
-% For one-column wide figures use
-% \begin{figure}
-% Use the relevant command to insert your figure file.
-% For example, with the graphicx package use
-%  \includegraphics{example.jpg}
-% figure caption is below the figure
-% \caption{Please write your figure caption here}
-% \label{fig:1}       % Give a unique label
-% \end{figure}
-%
-% For two-column wide figures use
-% \begin{figure*}
-% Use the relevant command to insert your figure file.
-% For example, with the graphicx package use
-%  \includegraphics[width=0.75\textwidth]{example.eps}
-% figure caption is below the figure
-% \caption{Please write your figure caption here}
-% \label{fig:2}       % Give a unique label
-% \end{figure*}
-%
-
-
-\begin{acknowledgements}
+\section*{Acknowledgements}
 AJung Moon, Aude Billard.\\
-\end{acknowledgements}
 
-% BibTeX users please use one of
- \bibliographystyle{spbasic}      % basic style, author-year citations
-%\bibliographystyle{elsart-harv}
-%\bibliographystyle{spmpsci}      % mathematics and physical sciences
-%\bibliographystyle{spphys}       % APS-like style for physics
+This research was supported by the Swiss National Science Foundation through
+the National Centre of Competence in Research Robotics.
+
+\section{Bibliography}
 \bibliography{anthropomorphism}   % name your BibTeX data base
 
-
-%\begin{thebibliography}{42}
-%\providecommand{\natexlab}[1]{#1}
-%\providecommand{\url}[1]{{#1}}
-%\providecommand{\urlprefix}{URL }
-%\expandafter\ifx\csname urlstyle\endcsname\relax
-%  \providecommand{\doi}[1]{DOI~\discretionary{}{}{}#1}\else
-%  \providecommand{\doi}{DOI~\discretionary{}{}{}\begingroup
-%  \urlstyle{rm}\Url}\fi
-%\providecommand{\eprint}[2][]{\url{#2}}
-%
-%
-%\bibitem[{Young et~al(2008)Young, Hawkins, Sharlin, and
-%  Igarashi}]{young_toward_2008}
-%Young JE, Hawkins R, Sharlin E, Igarashi T (2008) Toward acceptable domestic
-%  robots: Applying insights from social psychology. International Journal of
-%  Social Robotics 1(1):95--108
-%
-%
-%\end{thebibliography}
-
-% Non-BibTeX users please use
-% \begin{thebibliography}{}
-%
-% and use \bibitem to create references. Consult the Instructions
-% for authors for reference list style.
-%
-% \bibitem{RefJ}
-% Format for Journal Reference
-% Author, Article title, Journal, Volume, page numbers (year)
-% Format for books
-% \bibitem{RefB}
-% Author, Book title, page numbers. Publisher, place (year)
-% etc
-% \end{thebibliography}
-
-%\paragraph{ }
-%\begin{description}
-$\newline$
-
-\textbf{Julia Fink} is a PhD student in Human-Robot Interaction at EPFL. Her
-work focuses on the analysis of interaction, user experience and acceptance of
-robots in domestic spaces. She has a multi-disciplinary background in Media,
-Technology, Communication, and Interaction Studies. \\
-
-\textbf{Dr. Séverin Lemaignan} is a postdoctoral researcher at EPFL. His work
-focuses on robotics and its application to education and learning, with an
-emphasis on human-robot interaction. He obtained in 2012 a PhD from the
-CNRS/LAAS (France) and the Technical University of Munich (Germany) in
-cognitive robotics, and has a background both in mechanical engineering and
-education sciences.\\
-
-\textbf{Prof. Pierre Dillenbourg} is professor of learning technologies at
-EPFL. Former teacher in elementary school, he graduated in educational science
-(University of Mons, Belgium). He obtained a PhD in computer science from the
-University of Lancaster (UK), in the field of educational applications of
-artificial intelligence.  His work covers various domains of computer-supported
-collaborative learning (CSCL), ranging from novel interfaces for face-to-face
-collaboration (interactive furniture, tangibles, paper computing) to more
-cognitive projects on dual eye tracking.
-%\end{description}
-
-
+\hrule
+\vspace*{.1in}
+Authors' names and contact information: Julia Fink {\tt julia.fink@epfl.ch}, Séverin Lemaignan {\tt severin.lemaignan@epfl.ch}, Pierre Dillenbourg {\tt pierre.dillenbourg@epfl.ch}, CHILI Lab, EPFL, Lausanne, Switzerland.
 \end{document}
-% end of file template.tex
 
