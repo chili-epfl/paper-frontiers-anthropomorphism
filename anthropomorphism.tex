@@ -449,18 +449,16 @@ human-robot interactions evolves over time (during the process of
 \emph{adopting} a robot, for instance): we propose to go beyond the traditional
 perception of anthropomorphism in robotics as a static feature that once
 observed during a short-term interaction reflects a sustaining social effect.
-Based on an extensive literature review and our own work \fxfatal{Summarize
-these findings in a specific section!}, we believe that the social phenomenon
-is not always be the same but evolve over time, along with growing interaction
-and experience with the robot.
-
+Based on an extensive literature review \cite{fink_anthropomorphism_2012} and \hl{our own work} \fxfatal{Summarize
+these findings in a specific section!}, we believe that anthropomorphic effects in HRI are not always the same but evolve over time, along with growing interaction
+and experience with the robot, similar to how relationships among people evolve over time \hl{(cite Hinde, 1988)}. In fact, Kanda \textit{et al.} \cite{kanda_interactive_2004} also hypothesized that people's attitude toward technological artifacts and their relationship with them would evolve over time, and they were among the first who described \textit{novelty effects} during a long-term study with an interactive robot in a school.
 
 The model of anthropomorphism we propose (Figure~\ref{fig:dynamics}) represents
 how the level of anthropomorphic effects (\ie observable manifestations of
-anthropomorphism, as defined at section~\ref{sec:intro}) evolves over a
+anthropomorphism, as defined in section~\ref{sec:intro}) evolves over a
 long-term human-robot interaction. By long-term interaction, we mean direct
 (non-mediated), repeated interaction with the same robot, over (at least) several
-days. The nature of the interaction (goal-directed, entertainment,...) may vary.
+days. The nature of the interaction (goal-directed, entertainment, etc.) may vary.
 
 The model uses a \emph{normalized} level of anthropomorphic effects: because
 anthropomorphic effects are not quantified on an absolute scale, we present
@@ -469,7 +467,7 @@ effects) to a maximum (corresponding to the novelty effect peak on
 Figure~\ref{fig:dynamics}). The actual maximum value of anthropomorphic effects
 is strongly correlated to the human, the robot and other factors we introduce
 below. Hence, the model we propose only focuses on the general \emph{shape} of
-the level of antropomorphism over time, \ie the general dynamics of
+the level of anthropomorphism over time, \ie the general dynamics of
 anthropomorphism.
 
 The model takes into account the duration of the interaction, the nature of the
@@ -482,14 +480,14 @@ anthropomorphic effect are observed.
 \label{sec:phases}
 
 We distinguish three main phases that describe the evolution of the
-anthorpomorphic effects in a long-term human-robot interaction. They are
+anthropomorphic effects in a long-term human-robot interaction. They are
 depicted in different shades on Figure~\ref{fig:dynamics}.
 
 First, the \emph{initialization} phase. During this short phase (from a couple
 of seconds to a couple of hours), we observe an increased level of
-antrophomorphism, from an \emph{initial capital of anthropomorphism}
-(detailled in the next section) and a peak of antropomorphic manifestations
-that correspond to the maximum of the \emph{novelty effect}.
+anthropomorphism, from an \emph{initial capital of anthropomorphism}
+(detailed in the next section) and a peak of anthropomorphic manifestations
+that corresponds to the maximum of the \emph{novelty effect}.
 Section~\ref{sec:initialization} details this first phase.
 
 The second phase, \emph{familiarization}, lasts longer (up to several days) and
@@ -498,13 +496,13 @@ and interaction, the human builds a model of the robot's behavior that allows
 him/her to predict the robot's actions. We observe a decrease of
 anthropomorphic effects during this phase, that we explain by the acquired
 ability to predict the behavior of the robot: the initial apparent behavioral
-complexity vanishes, and the robot is considered more and more as a machine.
+complexity vanishes, and the robot is considered more and more as \hl{a machine (Julia: I would rather say "a tool")}.
 Section~\ref{sec:familiarization} discusses the second phase.
 
 The last phase is the \emph{stabilization} phase. The level of anthrpomorphic
 effects tends to stabilize over a longer time, to reach a \emph{stabilized
 level of anthropomorphism} (SLA). The SLA may be null (no anthropomorphic
-effects observed anymore), but it may also remain at an higher level.  This
+effects observed anymore), but it may also remain at a higher level.  This
 third phase, as well as the \emph{stabilized level of anthropomorphism}, are
 discussed in section~\ref{sec:stabilization} below.
 
@@ -512,7 +510,7 @@ discussed in section~\ref{sec:stabilization} below.
 \subsection{Initial Capital of Anthropomorphism}
 \label{sec:ica}
 
-	Initially, there is a given potential that a robot will be anthropomorphized. Our proposed function to model the dynamics of anthropomorphism starts with this what we call \textit{initial capital of anthropomorphism} (ICA) at time point $t_{0}$, which describes the first (real or imagined) contact to the robot (see Figure \ref{fig:dynamics}). Time point $t_{0}$ can temporally be before the first real physical interaction with the robot, for instance, when a person learns about the existence of vacuum-cleaning robots and imagines using one (\textit{e.g.} when one watches an advertisement of the robot, or observes one at a trade show). In this stage of "pre-interaction", people form initial expectations toward the robot and imagine how they will use / interact with it. Time point $t_{0}$ can be understood as duration of interaction = 0 and user experience = 0. How can we hypothetically quantify the ICA on a normalized scale of anthropomorphism? For this, we suggest, what we call the \textit{"Three P's"}. These are three main factors that \textit{a priori} determine the potential to anthropomorphize a robot:
+	Initially, there is a given potential that a robot will be anthropomorphized. Our proposed function to model the dynamics of anthropomorphism starts with this what we call \textit{initial capital of anthropomorphism} (ICA) at time point $t_{0}$, which describes the first (real or imagined) contact to the robot (see Figure \ref{fig:dynamics}). Time point $t_{0}$ can temporally be before the first real physical interaction with the robot, for instance, when a person learns about the existence of vacuum-cleaning robots and imagines using one (\textit{e.g.} when one watches an advertisement of the robot, or observes one at a trade show). In this stage of "pre-interaction", people form initial expectations toward the robot and imagine how they will use / interact with it. Time point $t_{0}$ can be understood as duration of interaction = 0 and user experience = 0. How can we hypothetically quantify the ICA on a normalized scale of anthropomorphism? For this, we suggest, what we call the \textit{"Three P's"}. These are three main factors that \textit{a priori} determine the potential that a robot will be anthropomorphized:
 	
 \begin{enumerate}
 
@@ -525,11 +523,12 @@ discussed in section~\ref{sec:stabilization} below.
 \end{enumerate}	
 
 	The ICA comprises some hypothetical values for each of the \textit{"Three P's"}, such that different ICA values can be obtained, given the robot, human user, and environmental context.
-	For \textbf{personality}, we suggest to apply Epley \textit{et al.}'s psychological \textit{"Three Factory Theory"} of anthropomorphism. For instance, children generally tend to anthropomorphize objects more than adults. Also, a person who lacks social connection is said to be more likely to anthropomorphize. Both aspects would increase the ICA. This means that, one and the same robot used in a different context or by a different user, can lead to a different ICA.
 	
-	For \textbf{perception}, we understand that a robot that follows an anthropomorphic design (e.g. NAO) leads to a higher ICA than a rather functional robot (e.g. Roomba). Also, a robot that displays facial expressions would increase the ICA. However, \hl{as discussed before} a classification of the "amount" of anthropomorphic design in a robot, as for instance suggested by Fong \textit{et al.} \cite{fong_survey_2003}, can be difficult.
+	For \textbf{personality}, we suggest to apply Epley \textit{et al.}'s \cite{epley_seeing_2007} psychological \textit{"Three Factor Theory"} of anthropomorphism. For instance, children generally tend to anthropomorphize objects more than adults. Also, a person who lacks social connection is said to be more likely to anthropomorphize. Both aspects would increase the ICA. This means that, one and the same robot used by a different user, can lead to a different ICA.
 	
-	For \textbf{purpose}, we propose that the real or imagined context in which a robot is used, impacts how far the robot will be attributed human-social characteristics. We	draw on findings such as presented in Joosse \textit{et al.}. The authors showed that when the same robot (NAO) is used in a different task context (cleaning task \textit{vs.} tour guide), this influences the perception of the "personality" of the robot. In general, we think that a robot which is (imagined to be) used in a social, entertaining or playful context leads to a higher ICA than a robot which is used for a serious task (security, rescue, etc.). This idea receives support from \hl{XX (Kiesler / Goetz?)} work that revealed that people prefer a serious robot for serious tasks and a less serious robot for more playful tasks \hl{REF}. Also, we suggest that the environmental context in which people experience and interact with the robot impacts the ICA. When several people who might be friends interact simultaneously with the robot this might lead to an increased ICA \hl{study: people are more emotional when watching TV in company than when watching TV on their own}.
+	For \textbf{perception}, we understand that a robot that follows an anthropomorphic design (e.g. NAO) leads to a higher ICA than a rather functional robot (e.g. Roomba). Also, a robot that is able to display facial expressions would increase the ICA. However, \hl{as discussed before} a classification of the "amount" of anthropomorphic design in a robot, as for instance suggested by Fong \textit{et al.} \cite{fong_survey_2003}, can be difficult. Nevertheless, the important aspect is how the robot appears to the user, e.g. human-like or machine-like. Studies have shown that an anthropomorphic robot is perceived differently to a non-anthropomorphic robot.
+	
+	For \textbf{purpose}, we propose that the real or imagined context in which a robot is used and the interaction that it brings along, impacts how far the robot will be attributed human-like characteristics. We	draw on findings such as presented in Joosse \textit{et al.}. The authors showed that when the same robot (NAO) is used in a different task context (cleaning task \textit{vs.} tour guide), this influences the perception of the "personality" of the robot. In general, we think that a robot which is (imagined to be) used in a social, entertaining or playful context leads to a higher ICA than a robot which is used for a serious task (security, rescue, etc.). This idea receives support from \hl{XX (Kiesler / Goetz?)} work that revealed that people prefer a serious robot for serious tasks and a less serious robot for more playful tasks \hl{REF}. Also, we suggest that the environmental context in which people experience and interact with the robot impacts the ICA. When several people who might be friends interact simultaneously with the robot this might lead to an increased ICA \hl{study: people are more emotional when watching TV in company than when watching TV on their own}.
 
 \subsection{Anthropomorphism during Initialization Phase}
 \label{sec:initialization}
@@ -569,7 +568,7 @@ The model of anthropomorphism we propose is still a work in progress. In
 particular, its implications regarding the design of (social) robots and
 human-robot interaction are still to be refined.
 
-In this section, we discuss more speculative aspects and hypothesis that follow
+In this section, we discuss more speculative aspects and hypotheses that follow
 from the model. These aspects would require further investigation and
 experimental support to be validated.
 
@@ -624,10 +623,9 @@ Figure~\ref{fig:cognitivemodel} offers a cognitive perspective on the dynamics
 of anthropomorphism presented in the previous section.
 
 The first cognitive phase we identify that contribute to anthropomorphism is
-actually \emph{pre-cognitive}. In~\cite{Rosenthal-vonderPutten2013Neural},
-Rosenthal-von der Pütten et al. investigated the neural correlates of emotional
+actually \emph{pre-cognitive}. Rosenthal-von der Pütten \textit{et al.} \cite{rosenthal-vonderputten_experimental_2013} investigated the neural correlates of emotional
 reactions of human towards robot or other human that showed comparable
-responses. \fxfatal{Complete that. Reference to the pleo paper}.
+responses. \fxfatal{Complete that. Reference to the pleo paper}
 
 After a longer observation period (typically including complete action
 sequences of the robot) or short interaction (touching, short talk like
@@ -637,8 +635,8 @@ support both the observed and imagined capabilities of the robot. Based on the
 \emph{familiarity thesis}\fxfatal{citation!}, we suggest that the human first
 projects onto the robot mental models of similar agents he/she is already
 familiar with. This may range from animals to adults, through pets and
-children. We hypothesise that the nature of the projected mental model, as well
-as how deep the human engage in this projection, are driven by the same
+children. We hypothesize that the nature of the projected mental model, as well
+as how deep the human engages in this projection, might be driven by the same
 parameters as we presented for the \emph{initial capital of anthropomorphism}
 (section~\ref{sec:ica}, p.\pageref{sec:ica}).
 
@@ -649,11 +647,11 @@ entertainment, is explicit and conscious for the human), and takes place in an
 environment that fosters a stronger cognitive (and possibly affective)
 commitment from the human in the interaction (typically, at home). During this
 interaction, the human iteratively restate and reshape its behavioral and
-mental model of the robot (\emph{how does the robot react to such and such
-situation/input? what does the robot knows about me? about itself? about our
-environment? what can the robot learn?}, etc.).
+mental model of the robot (\emph{How does the robot react to such and such
+situation/input? What does the robot know about me? About itself? About our
+environment? What can the robot learn?}, etc.).
 
-This mental process heavily depends on the human understanding of the robot
+This mental process heavily depends on the human understanding of the robot's
 inner working, as well as his/her own tendency to anthropomorphize (the
 \emph{personality} in ICA factor), but at this stage, the \emph{perception} of
 the robot (its shape for instance) and its intended \emph{purpose} play only a
@@ -671,9 +669,9 @@ rapidly engaging the human in the interaction through this initial projected
 models) supports the novelty effect by inducing beliefs that the robot is set
 up with possibly complex cognitive abilities.
 
-The cognitive phase II also overlaps with the \emph{Familiarization} phase: as
+The cognitive phase II also overlaps with the \emph{familiarization} phase: as
 (s)he get used to the robot, we hypothesize the human restate and adapt its
-cognitive model of the robot by iteratively reshaping pre-existant, familiar
+cognitive model of the robot by iteratively reshaping pre-existent, familiar
 models until it provides a satisfying support to explain and justify the
 observed robot behavior.
 
@@ -701,7 +699,7 @@ Frederic: role of uselessness
 \subsection{Effect of Time and Familiarization}
 \label{sec:8.2}
 
-	The \textit{context of use} is related to the purpose (and functionality) of the robot and influences the user interaction experience. With \textit{time}, we refer to long-term interaction with the robot, which is related to what has been described as 'novelty effect' but also accounts for the user getting used to the robot. Consequently, we propose that anthropomorphism is not static but likely to change, due to what we call \textit{dynamics}, in space and time.
+	The \textit{context of use} is related to the purpose (and functionality) of the robot and influences the user interaction experience. With \textit{time}, we refer to long-term interaction with the robot, which is related to what has been described as \textit{novelty effect} but also accounts for the user getting used to the robot. Consequently, we propose that anthropomorphism is not static but likely to change, due to what we call \textit{dynamics}, in space and time.
 
 
 	As outlined in section \hl{XX}, the tendency to anthropomorphize is motivated by a person's wish to make sense of an agent which might be difficult to understand (in its functionality or behavior, for instance). In turn, a user might ascribe intentions or emotions to the system because the systems output was unexpected for the user. Based on this explanation, we estimate that when the user has familiarized herself / himself with the system, thus reached the point of when the system is usable and explainable, the tendency to anthropomorphize decreases. Therefore, our second hypothesis is as follows: 
@@ -727,16 +725,16 @@ Given our first hypothesis from above, this might not hold over all contexts; mo
 \label{sec:disruptive}
 
 Common observation of naive people (children or adults) interacting with robots
-shows that unexpected behaviors of the robot has a notable impact on
-interaction.
+shows that unexpected behaviors of the robot can have a notable impact on
+interaction. \hl{cite literature, e.g. cheating robot, disagreeing, disobeying, HRI2013 paper}
 
-During a normal interaction with the robot, the user iteratively refine its own
+During a normal interaction with the robot, the user iteratively refines his/her own
 model of the behavior of the robot. As explained in previous sections, as the
-user improves its model of the robot actions, it also improves its ability to predict
+user improves his/her model of the robot's actions, he/she also improves the ability to predict
 the actions and thus, the user tends to anthropomorphize less.
 
-We emit the hypothesis that an unexpected robot behavior leads the user to
-suddently restate its behavioral model of the robot and will temporarly lead to
+We emit the hypothesis that an unexpected robot behavior might lead the user to
+suddenly restate his/her behavioral model of the robot and will temporarily lead to
 an increase of the level of anthropomorphism (depicted by the spikes on
 Figure~\ref{fig:dynamics}).
 
@@ -761,11 +759,11 @@ When talking about \emph{unexpected robot behaviors}, several distinct cases
 must be considered, summarized in Table~\ref{fig:perceptionUnexpectedBehavior}.
 
 If the unexpected behavior is not planned, and perceived as such by the human
-(case I), the human can interpret that the robot is faillible. If the robot
+(case I), the human can interpret that the robot is able to fail. If the robot
 explicitly states its failure (for instance, by saying ``I'm lost!''), the
-behavior is then called \emph{transparent} \fixme{cite here, Julia?}, and the
+behavior is then called \emph{transparent} \fixme{cite here, Julia?} \hl{(literature on transparency)}, and the
 user may besides hypothesize that the robot has \emph{introspective}
-capabilities, which in turn may leads to higher anthropomorphism level.  On the
+capabilities \hl{(what is this?)}, which in turn may leads to higher anthropomorphism level.  On the
 contrary, if the robot shows no sign of recognizing its own failure, the user
 may ascribe a lower level of anthropomorphism to the robot.
 
@@ -777,12 +775,12 @@ increase of anthropomorphism attribution due to the human ascribing
 intentionality to the robot.
 
 Case IIIa and IIIb correspond to misinterpretations of the robot behavior. Case
-IIIb may actually lead to increased level of anthropomorphism since the human
+IIIb may actually lead to an increased level of anthropomorphism since the human
 will (wrongfully) attribute intentionality to the robot, while case IIIa is
 expected to lead to a lower anthropomorphism level.  However, in those two
 cases, the next occurrence of an expected behavior, if correctly interpreted
 (case I or II), is likely to lead to stronger effects due to a larger delta
-between expectations and actual observed behavior.
+between expectations and actual observed behavior. \hl{(we actually assume that anthropomorphism can be radically changing and be a very spontaneous "reaction".)}
 
 %% experience -> unexpected behavior should not impact the interaction child-robot BEFORE the theory of mind is established!
 
