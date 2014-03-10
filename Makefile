@@ -1,5 +1,5 @@
 
-TARGET=dynamics-anthropomorphism.tex
+TARGET=paper.tex
 
 DOT=$(wildcard figs/*.dot)
 SVG=$(wildcard figs/*.svg)

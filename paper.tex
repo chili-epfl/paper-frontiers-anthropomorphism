@@ -1,9 +1,9 @@
-\documentclass[lettersize, apacite, twoside, HRI]{apa_HRI}
-\usepackage{times} % Required package for HRI journal format
+\documentclass{frontiersSCNS} % for Science articles
 
-% UTF8 support
-\usepackage[utf8x]{inputenc}
-\usepackage[T1]{fontenc}
+%\usepackage[utf8x]{inputenc}
+%\usepackage[T1]{fontenc}
+
+%\usepackage[english]{babel}
 
 \usepackage{graphicx}
 \graphicspath{{figs/}}
@@ -15,7 +15,6 @@
 %
 \usepackage{color, soul}
 \usepackage{url}
-\usepackage[numbers, square, comma, sort&compress]{natbib}
 \usepackage{multirow}
 \usepackage{array}
 \usepackage{fixltx2e}
@@ -26,24 +25,42 @@
 \usepackage[draft, nomargin, marginclue, footnote]{fixme}
 \fxsetup{targetlayout=color}
 
-\rightheader{Journal of Human-Robot Interaction}
-\leftheader{Fink et al.}
-
 \newcommand{\eg}{{\textit{e.g.~}}}
 \newcommand{\etal}{{\textit{et al.~}}}
 \newcommand{\ie}{{\textit{i.e.~}}}
 
 \hyphenation{com-mon-ly}
 
+% Leave a blank line between paragraphs in stead of using \\
 
-\title{On the Dynamics of Anthropomorphism in Robotics
-}
+\copyrightyear{}
+\pubyear{}
 
-\author{Julia Fink, Séverin Lemaignan, Pierre Dillenbourg}
-\affiliation{ Computer-Human Interaction in Learning and Instruction (CHILI) \\
-              Ecole Polytechnique Fédérale de Lausanne (EPFL) \\
-              CH-1015 Lausanne, Switzerland
-}
+\def\journal{Cognitive Science}%%% write here for which journal %%%
+\def\DOI{}
+\def\articleType{Research Article}
+\def\keyFont{\fontsize{8}{11}\helveticabold }
+\def\firstAuthorLast{Fink {et~al.}} %use et al only if is more than 1 author
+\def\Authors{Julia Fink\,$^{*}$, S\'{e}verin Lemaignan\, Claire Braboszcz and Pierre Dillenbourg}
+\def\Address{Computer-Human Interaction in Learning and Instruction (CHILI) \\ Ecole Polytechnique F\'{e}d\'{e}rale de Lausanne (EPFL) \\ CH-1015 Lausanne, Switzerland}
+\def\corrAuthor{Julia Fink \vspace{1mm}}
+\def\corrAddress{EPFL - CHILI, RLC D1 740, Station 20, CH-1015 Lausanne, Switzerland}
+\def\corrEmail{julia.fink@epfl.ch}
+
+
+\begin{document}
+\onecolumn
+\firstpage{1}
+
+\title[Dynamics of Anthropomorphism]{Dynamics of Anthropomorphic Effects in Human-Robot Interaction}
+\author[\firstAuthorLast ]{\Authors}
+\address{}
+\correspondance{}
+\extraAuth{}
+\topic{The Uncanny Valley Hypothesis and Beyond}% If your article is part of a Research Topic, please indicate here which.
+
+\maketitle
+
 
 \abstract{While anthropomorphism in robotics is a commonly discussed trait of
 HRI, it paradoxically lacks formal grounds. This article
@@ -63,10 +80,7 @@ and we discuss cognitive interpretations that follow.
 }
 
 
-\keywords{Anthropomorphism, Design, Human-Robot Interaction, Social Issues in Robotics, Acceptance of Robots}
-
-\begin{document}
-\maketitle
+%\keywords{Anthropomorphism, Design, Human-Robot Interaction, Social Issues in Robotics, Acceptance of Robots}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -146,7 +160,8 @@ anthropomorphism.
 	 
 
 
-\paragraph{Anthropomorphism in robotics \hl{[I think this first paragraph should go somewhere else, later probably]}}
+\paragraph{Anthropomorphism in robotics}
+\hl{[I think this first paragraph should go somewhere else, later probably]}
 
 Anthropomorphism represents just one of many examples of induction whereby
 "people reason about an unknown stimulus based on a better-known representation
@@ -1239,13 +1254,13 @@ these hypothesis.\fxnote{...}
 Frederic: role of uselessness
 
 
-\begin{description}
+\begin{itemize}
     \item[\textbf{Hypothesis 1}] A person's tendency to anthropomorphize a robot
         is impacted by the context of use and purpose of the robot. A social
         context and purpose of the robot increases anthropomorphism.
         \textit{(context and purpose of the robot)}
 
-\end{description}
+\end{itemize}
 
 \subsection{Impact of the behavioral complexity of robots}
 
@@ -1297,9 +1312,9 @@ familiarized herself / himself with the system, thus reached the point of when
 the system is usable and explainable, the tendency to anthropomorphize
 decreases. Therefore, our second hypothesis is as follows: 
 
-\begin{description}
+\begin{itemize}
 	\item[\textbf{Hypothesis 2}] A person's tendency to anthropomorphize a robot decreases over time and with growing experience the person has with the robot. \textit{(familiarize oneself with the robot)}
-\end{description}	
+\end{itemize}	
 	
 
 Given our first hypothesis from above, this might not hold over all contexts;
@@ -1475,10 +1490,9 @@ This research was supported by the Swiss National Science Foundation through
 the National Centre of Competence in Research Robotics.
 
 \section{Bibliography}
+
+\bibliographystyle{frontiersinSCNS&ENG} % for Science and Engineering articles
 \bibliography{dynamics-anthropomorphism}   % name your BibTeX data base
 
-\hrule
 
-\vspace*{.1in}
-Authors' names and contact information: Julia Fink {\tt julia.fink@epfl.ch}, Séverin Lemaignan {\tt severin.lemaignan@epfl.ch}, Pierre Dillenbourg {\tt pierre.dillenbourg@epfl.ch}, CHILI Lab, EPFL, Lausanne, Switzerland.
 \end{document}
