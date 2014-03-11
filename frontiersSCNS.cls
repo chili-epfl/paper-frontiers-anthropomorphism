@@ -540,7 +540,7 @@
   \begingroup
   \let\section\absection
   \fontfamily{\sfdefault}\fontsize{12}{12}\sffamily\selectfont
-  {\fontseries{b}\selectfont EXTENDED ABSTRACT}\par}
+  {\fontseries{b}\selectfont ABSTRACT}\par}
 {\endgroup\bigskip\@afterheading\@afterindentfalse\vskip 12pt plus 3pt minus 1pt}
 
 % Section macros
