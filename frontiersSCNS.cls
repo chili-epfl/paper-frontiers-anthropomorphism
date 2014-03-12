@@ -1,6 +1,6 @@
 \newcommand\classname{frontiers} %this file is based in bioninfo.cls
-\newcommand\lastmodifieddate{2013/09/09}
-\newcommand\versionnumber{2.0}
+\newcommand\lastmodifieddate{2014/01/09}
+\newcommand\versionnumber{2.3}
 
 % For printing crop marks
 \newif\if@cropmarkson \@cropmarksontrue
@@ -516,7 +516,7 @@
         \vspace{4\p@}
     {\helvetica\fontsize{12}{12}\selectfont\raggedright\slshape\@address \Address \\ \par}%
       \vspace{6\p@}
-  {\helvetica\fontsize{12}{10}\selectfont\raggedright {*Correspondence:\\ }\@correspondance \corrAuthor \\ \corrAddress, \corrEmail \par}
+  {\helvetica\fontsize{12}{10}\selectfont\raggedright {Correspondence*:\\ }\@correspondance \corrAuthor \\ \corrAddress, \corrEmail \par}
         \vspace{4\p@}
     {\helvetica\fontsize{12}{12}\selectfont\raggedright\@extraAuth \par}%
     \vspace{8\p@}
@@ -596,11 +596,6 @@
   \textbf{#1.}\enskip{#2}\par
   \endgroup}
 
-\long\def\@tablecaption#1#2{%
-  \begingroup
-  \tiny
-  \textbf{#1.}\enskip{#2\strut\par}
-  \endgroup\vspace{\belowcaptionskip}}
 
 % Table rules
 \def\toprule{\noalign{\ifnum0=`}\fi\hrule \@height 0.5pt \hrule \@height 6pt \@width 0pt \futurelet
