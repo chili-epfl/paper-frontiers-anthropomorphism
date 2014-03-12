@@ -45,7 +45,7 @@
 \def\articleType{Research Article}
 \def\keyFont{\fontsize{8}{11}\helveticabold }
 \def\firstAuthorLast{Fink {et~al.}} %use et al only if is more than 1 author
-\def\Authors{Julia Fink\,$^{*}$, S\'{e}verin Lemaignan\, Claire Braboszcz and Pierre Dillenbourg}
+\def\Authors{Julia Fink\,$^{*}$, S\'{e}verin Lemaignan, Claire Braboszcz and Pierre Dillenbourg}
 \def\Address{Computer-Human Interaction in Learning and Instruction (CHILI) \\ Ecole Polytechnique F\'{e}d\'{e}rale de Lausanne (EPFL) \\ CH-1015 Lausanne, Switzerland}
 \def\corrAuthor{Julia Fink \vspace{1mm}}
 \def\corrAddress{EPFL - CHILI, RLC D1 740, Station 20, CH-1015 Lausanne, Switzerland}
@@ -82,7 +82,7 @@ understand anthropomorphism as a dynamic, non-monotonic and context-dependent
 process, which evolves over time and accounts for special events such as the
 so-called \textit{novelty effect}. To this end, we introduce a model of
 anthropomorphism that analyzes the phenomenon along three interaction phases,
-and we discuss cognitive interpretations that follow.
+and we discuss cognitive interpretations that follow. \hl{(Julia: probably the abstract needs to be refined once we finished writing the paper)}
 
 \tiny
  \keyFont{ \section{Keywords:} Anthropomorphism, Design, Human-Robot Interaction, Social Issues in Robotics, Acceptance of Robots}
@@ -101,70 +101,12 @@ and we discuss cognitive interpretations that follow.
 
 % JULIA: brief problem definition / issue, motivation, objectives, contribution ...
 
-\vspace{2cm}
 \section{Introduction and Overview}
 \label{sec:intro}
 
-%DEFINITION OF ANTHROPOMORPHISM
+The essence of anthropomorphism is the perception of human-like characteristics in either real or imagined non-human agents. In human-robot interaction (HRI), anthropomorphism is a commonly observed phenomenon: people tend to ascribe human-like characteristics to robots, and they are willing to treat and react to robots as if they were human-social counterparts. The HRI and social robotics literature is full of various kinds of studies showing how humans readily interact in a social fashion with robots -- despite the fact that robots are not humans. In our own work on human-robot interaction analysis, we also observed anthropomorphism. However, we found qualitative differences and dynamics in how participants anthropomorphized and socially related to the robots used in our studies, which were mostly conducted in natural settings with normal people. More concretely, we found that anthropomorphism was not only based on how much the robot resembles a human (anthropomorphic design) but that it was determined by multiple factors, including the individual characteristics of the human user, and the context of use. We also found that anthropomorphism changed over time with growing experience of the user with the system. By trying to understand these variances and dynamics in anthropomorphism, we reviewed related work from the HRI domain and social robotics. Despite the fact that there is a vast amount of literature on anthropomorphism in HRI, we did not come across findings that were similar to ours and described how anthropomorphism would evolve over time. Instead, we found ourselves confronted with diverse and partially contradictory understandings of anthropomorphism. We also had the impression that the reported data were sometimes over-interpreted or obtained in settings and in a way that we believe do not give enough consideration to the complex nature of anthropomorphism.\footnote{As anthropomorphism emerges from an interaction between a human and a non-human agent, we believe that showing pictures of different kinds of robots and then using questionnaires to measure anthropomorphism is somehow limited. In the discussion section \ref{sec:discussion} we discuss what tools and measurements could be used to study anthropomorphism and its dynamics in interaction studies in real-world environments.} However, we found support for the observed variances and dynamics in anthropomorphism in literature from social psychology, cognitive science, and neuroscience. As these domains are also relevant in for HRI, we believe it is valid to use theories from these domains for interpreting our results and to report this.
 
-The essence of anthropomorphism is the perception of human-like characteristics
-in either real or imagined non-human agents. According to Epley \textit{et al.}
-\cite{epley_when_2008}, these human-like characteristics may include physical
-appearance, emotional states perceived to be uniquely human, or inner mental
-states and motivations. Real or imagined non-human agents can be "anything that
-acts -- or is believed to act -- with apparent independence, including non-human
-animals, natural forces, religious agents, technological gadgets, or mechanical
-devices". Such anthropomorphic representations are important determinants of how
-a person perceives and in turn behaves towards these agents, or how a person may
-behave in light of these agents \cite{epley_when_2008}.
-
-%ANTHROPOMORPHISM AS SUBJECT IN HCI AND HRI	
-	
-Phenomenons related to anthropomorphism -- along with questions such as "how
-much human do we perceive in the non-human" or "how human-like do we treat
-non-human artifacts" (and why?) -- have received remarkable attention in the
-domains of Human-Computer Interaction (HCI) and Human-Robot Interaction (HRI):
-the study of humans interacting with an artificial system / machine. Following
-the \textit{Media Equation}, it has been described that people mindlessly react
-socially to computers \cite{reeves_media_1996} and may even attribute human
-(social) characteristics to their artificial counterpart. The phenomenon has
-also been observed with virtual characters \hl{cite [50, 100] in rosenthal-von
-der P{\"u}tten (2013)}, and more recent studies investigated how far people
-ascribe personality or intentions to artificial embodied agents or whether they
-show empathetic behavior toward robots
-\cite{rosenthal-vonderputten_experimental_2013}. The common base for this
-research is the assumption that humans perceive or react to a non-human agent or
-artifact as somewhat similar to a human.
-
-In this article we will use the term \emph{anthropomorphic effect} to denote
-observable correlates of anthropomorphism. With these we include, amongst
-others, verbal utterances (such as direct speech or the use of pronouns
-"he/she"), (social) gestures (such as a hug, waving, deictic gestures) or
-\hl{anticipation of certain actions of an agent [what??]}.
-
-%CONTROVERSAL UNDERSTANDINGS OF ANTHROPOMORPHISM
-
-However, not everything colloquially labeled as \emph{anthropomorphism} really
-is anthropomorphism. Different, even partially conflicting, understandings of
-anthropomorphism exist across and within disciplines
-\cite{duffy_anthropomorphism_2002}. Epley \textit{et al.} \cite{epley_when_2008}
-try to narrow down and clarify the understanding of anthropomorphism in
-psychology by explaining what it is \textit{not}. The authors list four things
-that anthropomorphism does not include: First, anthropomorphism does not include
-behavioral descriptions of observable actions. Anthropomorphism requires going
-beyond what is directly observable. Second, anthropomorphism does not merely
-entail animism, as animate life is not a uniquely human-like characteristic.
-Third, anthropomorphism does not include any requirement of reasoned or
-reflective endorsement of an inference (\hl{the strength of anthropomorphic
-inferences can vary} \footnote{for further explanation the reader may refer to
-the original work \cite{epley_when_2008}.}).	Finally, anthropomorphism is not
-necessarily inaccurate. A psychological theory should take this (in)accuracy in
-anthropomorphism into account and predict variability in the tendency to
-perceive human-like traits in non-human agents.  In conclusion, it has been
-noted that anthropomorphism is a very complex phenomenon - in itself, its
-understanding, and when studying it. A common formal ground is missing; however,
-it is important to be clear about what exactly we mean when using the term
-anthropomorphism.
+In this article, we would like to share our somehow critical but constructive considerations on anthropomorphism in robotics. Thereby, we contribute to a refined understanding of this complex phenomenon related to interactions between humans and robots. In accordance with theories from other domains, we propose that anthropomorphism is determined and affected by multiple factors. Based on this multi-factor understanding, and the findings from our work, we suggest an initial model that we call "dynamics of anthropomorphism" that serves to describe how anthropomorphism evolves over time. We then present a cognitive and neuroscience perspective on anthropomorphism to consolidate this model. Finally, we discuss alternative ways how anthropomorphism in HRI can be studied and measured, as this is an important questions. 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -185,12 +127,14 @@ anthropomorphism.
 %
 %
 
-\vspace{2cm}
 \section{Anthropomorphism}
 \label{sec:anthropomorphism}
 
-\hl{bridge sentence}
+Anthropomorphism is an interesting social phenomenon because it tells us something about the relation between the human who anthropomorphizes, and the non-human agent that is anthropomorphized. Though commonly observed, it appears controversial at the same time that humans tend to perceive human-like physical appearance (\eg faces), emotional states, or inner mental states and motivations in non-human agents\footnote{According to \cite{epley_when_2008}, a non-human agent can be anything that acts -- or is believed to act -- with apparent independence.}, such as animals, natural forces, religious agents, technological gadgets, or mechanical devices \citep{epley_when_2008}.  
 
+Anthropomorphism and related questions such as "how much human do we perceive in the non-human" or "how human-like do we treat and interact with non-human artifacts" (and why?) have received remarkable attention across several domains.\footnote{Especially in human-pet relations and human-machine relations, anthropomorphism is frequently studied.}
+
+In this section we will first clarify the terminology used. We present anthropomorphism as a social phenomenon and propose to use another term, namely anthropomorphic form, to refer to the human-inspired design of artifacts.
 
 
 \subsection{Anthropomorphism as a Social Phenomenon}
@@ -523,6 +467,28 @@ social toward them or accept them more easily:
 \subsection{Anthropomorphism in Robotics and Human-Robot Interaction}
 \label{sec:anthropomorphism-robotics}
 
+Following research in human-computer interaction (HCI) the \textit{Media Equation} \citep{reeves_media_1996} describes that people mindlessly react socially to their computer and may even attribute human (social) characteristics to it. The phenomenon has also been observed with virtual characters, and artificial embodied agents, such as robots. For instance, recent studies found that people tend to ascribe personality and intentions to robots \hl(REFS) and that they show empathetic behavior toward robots \cite{rosenthal-vonderputten_experimental_2013}. To subsume it, there is a growing body of literature that describes anthropomorphism in HCI and HRI.
+
+However, not everything colloquially labeled as \emph{anthropomorphism} really is anthropomorphism. Different, even partially conflicting understandings of anthropomorphism exist across and within disciplines \cite{duffy_anthropomorphism_2002}. \cite{epley_when_2008} try to narrow down and clarify the understanding of anthropomorphism in psychology by explaining what it is \textit{not}. The authors list four things
+that anthropomorphism does not include: First, anthropomorphism does not include
+behavioral descriptions of observable actions. Anthropomorphism requires going
+beyond what is directly observable. Second, anthropomorphism does not merely
+entail animism, as animate life is not a uniquely human-like characteristic.
+Third, anthropomorphism does not include any requirement of reasoned or
+reflective endorsement of an inference (\hl{the strength of anthropomorphic
+inferences can vary} \footnote{for further explanation the reader may refer to
+the original work \cite{epley_when_2008}.}).	Finally, anthropomorphism is not
+necessarily inaccurate. A psychological theory should take this (in)accuracy in
+anthropomorphism into account and predict variability in the tendency to
+perceive human-like traits in non-human agents.  In conclusion, it has been
+noted that anthropomorphism is a very complex phenomenon - in itself, its
+understanding, and when studying it. A common formal ground is missing; however,
+it is important to be clear about what exactly we mean when using the term
+anthropomorphism.
+
+
+How a person relates to an agent further determines how she perceives and in turn behaves towards the agent, or how she may behave in light of this agent \cite{epley_when_2008}. 
+
 Anthropomorphism is a commonly observed phenomenon in human-robot interaction.
 Studies showed that there are people who directly talk to their robot (even if
 it does not recognize speech), give it a name, greet it, wonder about its
@@ -678,7 +644,6 @@ interaction} (time and space), to the previous two factors of anthropomorphism
 %
 %
 
-\vspace{2cm}
 \section{Anthropomorphism as a multi-factor phenomenon that evolves over time}
 \label{sec:our-ideas}
 
@@ -686,6 +651,12 @@ interaction} (time and space), to the previous two factors of anthropomorphism
 
 \subsection{Multiple factors of anthropomorphism}
 \label{sec:multi-factors}
+
+In this article we will use the term \emph{anthropomorphic effect} to denote
+observable correlates of anthropomorphism. With these we include, amongst
+others, verbal utterances (such as direct speech or the use of pronouns
+"he/she"), (social) gestures (such as a hug, waving, deictic gestures) or
+\hl{anticipation of certain actions of an agent [what??]}.
 
 Anthropomorphism can also be viewed as an \textit{experience} that arises in the
 \textit{interaction} between a set of user expectations and external reality
@@ -1114,7 +1085,6 @@ lasting affective bonds with the same robot, and keeps anthropomorphizing it
 %
 %
 
-\vspace{2cm}
 \section{Cognitive Correlates and Neuroscience Perspective}
 \label{sec:cognition-neuroscience}
 
@@ -1425,7 +1395,6 @@ anthropomorphism can be radically changing and be a very spontaneous
 % JULIA & SEVERIN: how to measure / quantify anthropomorphism ...
 % CLAIRE: FMRI study idea
 
-\vspace{2cm}
 \section{Discussion}
 \label{sec:discussion}
 
@@ -1477,7 +1446,6 @@ applications to better manage long-term human-robot interactions.
 
 % JULIA & SEVERIN
 
-\vspace{2cm}
 \section{Conclusion}
 \label{sec:conclusion}
 
@@ -1510,7 +1478,7 @@ contribution consolidates the scientific grounds of anthropomorphism, and
 provides support for a better understanding of long-term acceptance of robots in
 human environments.
 
-\vspace{2cm}
+
 \section{Acknowledgments}
 
 We would like to acknowledge the fruitful discussions with A Jung Moon and
