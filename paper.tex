@@ -34,6 +34,8 @@
 \newcommand{\ie}{{\textit{i.e.~}}}
 
 \hyphenation{com-mon-ly}
+\hyphenation{an-thro-po-mor-phism}
+\hyphenation{an-thro-po-mor-phic}
 
 % Leave a blank line between paragraphs in stead of using \\
 
@@ -101,10 +103,10 @@ and we discuss cognitive interpretations that follow. \hl{(Julia: probably the a
 
 % JULIA: brief problem definition / issue, motivation, objectives, contribution ...
 
-\section{Introduction and Overview}
+\section{Introduction and overview}
 \label{sec:intro}
 
-The essence of anthropomorphism is the perception of human-like characteristics in either real or imagined non-human agents. In Human-Robot Interaction (HRI), anthropomorphism is a commonly observed phenomenon: people tend to ascribe human-like characteristics to robots, and they are willing to treat and react to robots as if they were human-social counterparts. The HRI and social robotics literature is full of various kinds of studies showing how humans readily interact in a social fashion with robots -- despite the fact that robots are not humans. In our own studies on HRI analysis in real-world settings, we also observed anthropomorphism. However, we found qualitative differences and dynamics over time in how participants anthropomorphized and related to the robots used in our studies. More concretely, we found that anthropomorphism was not only based on how much the robot resembles a human (anthropomorphic design) but that it was determined by multiple factors, including individual characteristics of the human user, and the context of use, for instance. We also found that anthropomorphism changed over time with growing experience of the user with the system. By trying to understand these variances and dynamics in anthropomorphism, we reviewed related work from the HRI domain and social robotics. Despite the fact that there is a vast amount of literature on anthropomorphism in HRI, we were surprised to find that other studies do not describe similar variances or dynamics. Instead, we came across diverse and partially conflicting understandings of anthropomorphism. We also had the impression that the reported data were sometimes over-interpreted (probably due to the confusion of what exactly anthropomorphism is) or obtained in settings and assessed in ways that we believe do not give enough consideration to the complex nature of anthropomorphism.\footnote{As anthropomorphism emerges from an interaction between a human and a non-human agent, we believe that showing pictures of different kinds of robots and then using questionnaires to measure anthropomorphism is somehow limited. In the discussion in section \ref{sec:discussion} we discuss what tools and measurements could be used to study anthropomorphism and its dynamics in interaction studies in real-world environments.} However, when reviewing literature from social psychology, cognitive science, and neuroscience, we found support for the variances and dynamics in anthropomorphism that we observed in our studies. As HRI integrates many disciplines, we think that it is valid to use theories from these related domains for interpreting our results and that it is relevant to report on this integration.
+The essence of anthropomorphism is the perception of human-like characteristics in either real or imagined non-human agents. In Human-Robot Interaction (HRI), anthropomorphism is a commonly observed phenomenon: people tend to ascribe human-like characteristics to robots, and they are willing to treat and react to robots as if they were human-social counterparts. The HRI and social robotics literature is full of various kinds of studies showing how humans readily interact in a social fashion with robots -- despite the fact that robots are not humans. In our own studies on HRI analysis in real-world settings, we also observed anthropomorphism. However, we found qualitative differences and dynamics over time in how participants anthropomorphized and related to the robots used in our studies. More concretely, we found that anthropomorphism was not only based on how much the robot resembles a human (anthropomorphic design) but that it was determined by multiple factors, including individual characteristics of the human user, and the context of use, for instance. We also found that anthropomorphism changed over time with growing experience of the user with the system. By trying to understand these variances and dynamics in anthropomorphism, we reviewed related work from the HRI domain and social robotics. Despite the fact that there is a vast amount of literature on anthropomorphism in HRI, we were surprised to find that other studies do not describe similar variances or dynamics. Instead, we came across diverse and partially conflicting understandings of anthropomorphism. We also had the impression that the reported data were sometimes over-interpreted (probably due to the confusion of what exactly anthropomorphism is) or obtained in settings and assessed in ways that we believe do not give enough consideration to the complex nature of anthropomorphism. However, when reviewing literature from social psychology, cognitive science, and neuroscience, we found support for the variances and dynamics in anthropomorphism that we observed in our studies. As HRI integrates many disciplines, we think that it is valid to use theories from these related domains for interpreting our results and that it is relevant to report on this integration.
 
 In this article, we would like to share some critical but constructive considerations on anthropomorphism in robotics. Thereby, we contribute to the understanding of this complex phenomenon related to HRI. In accordance with theories from other related domains, we propose that anthropomorphism is determined and affected by multiple factors, and we show how this can impact the user experience and acceptance of robots in daily life environments. We further suggest an initial model that we call ``dynamics of anthropomorphism'' that serves to describe how anthropomorphism evolves and shapes the interaction over time. We illustrate our idea with empirical findings from several HRI studies that we conducted in natural environments. We then present a cognitive and neuroscience perspective on anthropomorphism to consolidate our considerations and the observed dynamics. Finally, we discuss alternative ways to measure anthropomorphism in HRI, as this is a critical aspect of gaining a better understanding of it. 
 
@@ -132,87 +134,101 @@ In this article, we would like to share some critical but constructive considera
 
 In this section we will try to create a common ground in the understanding of anthropomorphism since we have found conflicting definitions of the term. We first present anthropomorphism as a social phenomenon. Then we propose to use another term, namely ``anthropomorphic form'', to refer to the human-inspired design of artifacts. Finally, we focus on anthropomorphism in Human-Robot Interaction, as it naturally brings together (and needs to question) the usage of an anthropomorphic design of robots and its consequences for the interaction with the human user. 
 
-
-\subsection{Anthropomorphism as a Social Phenomenon}
-\label{sec:social-phenomenon}
+%\subsection{What is anthropomorphism?}
+%\label{sec:social-phenomenon}
 
 Anthropomorphism is an interesting phenomenon because it tells us something about the relationship between the human who anthropomorphizes, and the non-human agent which is anthropomorphized. Though commonly observed, it appears controversial, at the same time, that humans tend to perceive human-like physical appearance (\eg faces), emotional states, or inner mental states and motivations in non-human agents such as animals, natural forces, religious agents, technological gadgets, or mechanical devices \citep{epley_when_2008}.\footnote{According to \cite{epley_when_2008}, a non-human agent can be anything that acts -- or is believed to act -- with apparent independence.}  Anthropomorphism is one of not so many other topics that has received remarkable attention across various different domains, such as natural sciences, developmental and social psychology, Human-Computer Interaction (HCI), and Human-Robot Interaction (HRI). However, the term is used in different senses throughout these disciplines \citep{duffy_anthropomorphism_2003} which makes it difficult to synthesize findings.
 
 Originally, the term \textbf{anthropomorphism} comes from the Greek \textit{`anthropos'} for `man' (or `human') and \textit{`morphe'} for `form / structure' (or `shape'). Anthropomorphism is generally understood as people's tendency to perceive a non-human agent as if it had some human characteristics or traits. In turn, how a person perceives an agent further determines how she relates to and behaves towards the agent, or how she may behave in light of this agent \citep{epley_when_2008}.
 As such, anthropomorphism can be seen as a special kind of relationship between a human interacting with a non-human agent. This anthropomorphic relationship is often characterized by the fact that the human attributes or ascribes human-unique characteristics to the non-human agent. Since anthropomorphism becomes observable through these attributions, some definitions claim that anthropomorphism is not the perception but rather the attribution of human attributes to non-human agents, and name thoughts, emotions, and intentions as examples. The most prominently anthropomorphized non-human agents are probably animals and robots \citep{duffy_anthropomorphism_2003,schmitz_concepts_2011}.
 
-Apart from anthropomorphism there also exists the term \textbf{animism}, which can be defined as the attribution of life to the nonliving.\footnote{The study of animism was pioneered by \hl{Piaget} in the 1920s with his work on child's conception of the  world and of the living. He found that children tend to regard many inanimate objects as capable of sensations, emotions and intentions, and called this view `animism'. Since then, children's inferences about the world have been studied intensively and it has been found that especially younger children (according to \hl{Piaget} up to the age of about 10 years) tend to interpret physical phenomena in terms of intention on the part of the inanimate subject, for instance \textit{``the sun is hot because it wants to make people warm''}. However, there is an agreement that children's views and concepts of living, animal, and plant evolve as they grow up.} Using this definition, animism differs in two main aspects from anthropomorphism:
+Apart from anthropomorphism there also exists the term \textbf{animism}, which can be defined as the attribution of life to the nonliving. The study of animism was pioneered by Piaget in the 1920s with his work on \textit{The Child's Conception of the  World}. He found that children tend to regard many inanimate objects as capable of sensations, emotions and intentions, and called this view `animism'. Since then, children's inferences about the world have been studied intensively. However, there is an agreement that children's views and concepts of living, animal, and plant evolve as they grow up. Using this definition, animism differs in two main aspects from anthropomorphism:
 First, the property which is ascribed differs: life-likeness is not human-unique but applies to all living beings. The second difference between anthropomorphism and animism stems from the agent (or better artifact) to which life is attributed. Living beings (most importantly animals) are naturally excluded from being animized. Consequently, while animals can be anthropomorphized (perceived to have human unique characteristics), they cannot be animized as they are already living beings. (Similarly to the fact that humans cannot be anthropomorphized as they are already humans.)
 Often synonymously used to animism is the term \textbf{zoomorphism}, which applies to the cases when non-lifelike instances / things are associated with animalistic attributes, excluding human-specific traits. Both anthropomorphism and animism / zoomorphism can be embraced by the concept of \textbf{life-likeness}.
 
 There exist also inverse phenomenons to anthropomorphism, which can be found in the literature as \textbf{dehumanization} \citep{haslam_dehumanization:_2006}, and \textbf{mechanomorphism} \citep{caporael_anthropomorphism_1986}. However, we do not treat these phenomenons here.
 
- \begin{figure}\centering
+ \begin{figure}[b]\centering
 % Use the relevant command to insert your figure file.
 % For example, with the graphicx package use
-  \includegraphics[scale=0.91]{north-wind.jpg}
-  \includegraphics[scale=0.91]{sun.jpg}
+  \includegraphics[scale=1]{north-wind.jpg}
+  \includegraphics[scale=1]{sun.jpg}
 % figure caption is below the figure
  \caption{Milo Winter illustration of Aesop Fable \textit{The North Wind and the Sun}, 1919; both natural forces wind and sun are anthropomorphized with a human face; picture source: wikipedia}
- \label{fig:1}       % Give a unique label
+ \label{fig:north-wind-sun}       % Give a unique label
  \end{figure}
 
-To illustrate better how anthropomorphism differs from attributions of animacy or life-likeness, it is worth looking at paraphrases and examples of it. That is to say, anthropomorphism can alternatively be understood as \textbf{humanization} or \textbf{personification} of anything other than a human being. Personification has ancient roots, \eg in mythology but also in storytelling. Anthropomorphism was also used to describe and be able to predict natural forces or anticipate great spirits, for instance. An illustration of an anthropomorphism related to nature is shown in Figure \ref{fig:1}. In this Milo Winter (1919) drawing \textit{"The North Wind and the Sun"}, both north wind and sun are given a human face.
+To illustrate better how anthropomorphism differs from attributions of animacy or life-likeness, it is worth looking at paraphrases and examples of it. That is to say, anthropomorphism can alternatively be understood as \textbf{humanization} or \textbf{personification} of anything other than a human being. Personification has ancient roots, \eg in mythology but also in storytelling. Anthropomorphism was also used to describe and be able to predict natural forces or anticipate great spirits, for instance. An illustration of an anthropomorphism related to nature is shown in Figure \ref{fig:north-wind-sun}. In this Milo Winter (1919) drawing \textit{"The North Wind and the Sun"}, both north wind and sun are given a human face.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+%
+%		WHY DO PEOPLE ANTHROPOMORPHIZE?
+%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	 
 
-\paragraph{Explanations for Anthropomorphism}
+\section*{Why do people anthropomorphize?}
 \label{sec:explanations}
 
-But why do people anthropomorphize? One general reason is that by anthropomorphizing the non-human subject, it is made more \emph{graspable}, \emph{understandable}, \emph{predictable}, and one can feel \emph{more empathetic} toward it, and possible anticipate the subject's behavior. \fxnote{important part. Emphasize this 4 facets, eg by saying we build on top of them} For instance, people commonly anthropomorphize their pets, ascribing mental states, intentions or feelings to them\footnote{Interestingly, pet-ownership seems to have a significant impact on human-robot interaction: several studies suggest that pet-owners are more likely to anthropomorphize technologies and robots than non pet-owners} \cite{eddy_attribution_1993}. But what are the motivations behind this, generally speaking?
+But why do people anthropomorphize? First and foremost, it needs to be mentioned that anthropomorphism is a fairly complex phenomenon. Paradoxically, there is a huge and diverse body of literature on it but nevertheless, it seems that anthropomorphism is still not very well understood (especially in more recent fields like HRI).
+
+One common reason for anthropomorphism is that by perceiving some human-like characteristics in the non-human agent, this agent is made more \emph{graspable}, \emph{understandable}, \emph{predictable}, and one can feel \emph{more empathetic} toward it, and possibly one can then anticipate the agent's behavior. These are central motivations when trying to explain anthropomorphism, and we will come back to them in more detail later on. 
+It is described that for the just mentioned reasons, people commonly anthropomorphize their pets, by ascribing mental states, intentions or feelings to them\footnote{Interestingly, pet-ownership seems to have a significant impact on human-robot interaction: several studies suggest that pet-owners are more likely to anthropomorphize technologies and robots than non pet-owners} \cite{eddy_attribution_1993}. But how can these motivations behind anthropomorphism be explained?
+
+It is important to keep in mind that anthropomorphism as a social phenomenon arises in an interaction \citep{persson_anthropomorphism_2000}, and thus includes at least two interaction partners (the human and the real or imagined non-human agent). Therefore, one can also take two main perspectives on explaining it \citep{lee_human_2005}: a human-centered, and an artifact-centered. We briefly outline both views in the following. It has to be kept in mind that both perspectives are inseparable; they apply at the same time, and we would like to present them here just as two different viewpoints on the same kind of phenomenon.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+%
+%		HUMAN-CENTERED PERSPECTIVE: SOCIAL PHENOMENON
+%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+
+\subsection{A human-centered perspective on anthropomorphism}
+
+The human-centered perspective builds on research from developmental and social psychology as well as cognitive sciences.  In the following, we present what we found in reviewing this literature: (1) a line of research in developmental psychology that studies the attribution of animacy; (2) a line of research in more cognitive sciences that studies the cognitive processes that underlie anthropomorphism, and (3) a theory that explains anthropomorphism based on psychological factors~\citep{epley_seeing_2007}. All three branches apply a human-centered perspective on anthropomorphism.
 
 
-Anthropomorphism represents just one of many examples of induction whereby ``people reason about an unknown stimulus based on a better-known representation of a related stimulus"~\cite{epley_when_2008}, in this case reasoning about a non-human agent based on representation of the self or other humans. \hl{Julia: this needs to go somewhere else ...}
+\paragraph*{Developmental psychology research on the attribution of animacy and intention}
 
-According to \cite{lee_human_2005}, there are two main perspectives in explaining people's tendency to anthropomorphize. 
+The phenomenon of attributing animacy and intentions to nonliving objects such as simple shapes has been intensively studied in developmental psychology. As mentioned earlier, Piaget found that children tend to ascribe life to the nonliving. They also tend to interpret physical phenomena in terms of intention on the part of the non-human subject. For instance children are likely to argue that \textit{``the sun is hot because it wants to make people warm''} \citep{leeds_childrens_1992}. In this example it is in fact questionable whether children really anthropomorphize the sun (believing that it has an intention) or whether they are using anthropomorphism in a metaphoric sense (because their conceptions of the world and of the living are not yet fully formed). Later however, two famous experiments by \cite{heider_experimental_1944} and \cite{michotte_perception_1963} showed that also adult participants attribute animacy and intention to simple things and shapes based on motion.\footnote{For more details, the reader may refer to the ``attribution theory''.} In both experiments, participants viewed animations of simple shapes, such as circles or triangles (see Figure \ref{fig:animacy_attribution}). Asked to describe what they observed, most people developed elaborate stories, attributing motivations, emotions and relationships between the objects.
 
-First one explains anthropomorphism from ascertainable parts / the design of the non-human agent. This perspective assumes that humans directly respond to life-like or social cues that an object or system emits, without thoughtful mental processing, by simply applying stereotypes and heuristics to it. In fact, from early childhood on, humans are inherently well-trained to perceive life \citep{epley_seeing_2007}. \cite{schmitz_concepts_2011} describes that within the visual scope of design, the outer appearance of an object can have an important impact on how it is overall perceived. The basic assumption here is that if an artifact somehow resembles a human, it is likely to be treated similar to a human. If this explanation of anthropomorphism is correct, people may respond automatically to social cues emitted by an artificial embodied agent such as a robot, and apply human-human social schemas and norms to the occurring interactions.
-
-\hl{Julia: change the order of the two explanations! that makes more sense in terms of previous paragraph and anth form as following paragraph}
-
-The second perspective applies a human-centered, cognitive viewpoint where anthropomorphism is described through people's specific mental model they construct about how an artifact works the way it does. We then anthropomorphize because it allows us to explain things we do not understand in terms that we do understand, and what we understand best is ourselves as human beings. This is consistent with the \emph{familiarity thesis}~\cite{hegel_understanding_2008} which claims that we understand the world based upon a mental model of the world that we are most familiar with.
-Consequently, people tend to thoughtfully develop a mental model of agents in their environment and make inferences about it based on what is familiar to them -- humans and human behavior, for instance. This point of view implicitly builds on a person's ability to attribute mental states to oneself and others, which is called \textit{Theory of Mind}~\cite{Premack1978}. The link between a tendency to anthropomorphize and the engagement in the attribution of mental states to other humans has been recently demonstrated at the brain level in~\cite{cullen2013individual}. A theory of mind for other agents enables us to attribute intentionality to those agents \cite{leslie_pretense_1987,admoni_multi-category_2012}. If a system behaves much like a human being (\eg emits a human voice), people's mental model of the system's behavior may approach their mental model of humans, though the model may differ in some important aspects. In turn, people's estimation of a robot's knowledge model and its capabilities affects the way they relate to it. Previous research examined the validity of the mental model concept with various kinds of robots \cite{schmitz_concepts_2011,kiesler_mental_2002}. Findings suggest that people tend to hold richer mental models of anthropomorphic robots in contrast to mechanic ones \cite{kiesler_mental_2002}. Later in this article, we may however come to question this result for longer human-robot interactions, after one get's acquainted with the robot's behavior.
-
-
-\paragraph{Insights from Social and Developmental Psychology}
-\label{sec:psychological-factors}
-
-To understand the social phenomenon of anthropomorphism better, it makes sense
-to take a look at studies and explanations from developmental psychology. The
-phenomenon of attributing intentions and \hl{animacy} to simple shapes based on
-motion has been intensively studied in developmental psychology. Two famous
-studies on the perception of and attribution to simple things have been done in
-the mid 1940s: Heider and Simmel's work on the \textit{attribution theory}
-\cite{heider_experimental_1944} and Michotte's studies on \textit{the perception
-of causality} \cite{michotte_perception_1963}. In both experiments, participants
-viewed animations of simple shapes, such as circles or triangles (see Figure
-\ref{fig:animacy_attribution}). Asked to describe what they observed,
-interestingly, most people developed elaborate stories, attributing motivations,
-emotions and relationships between the objects.
-
-\begin{figure}\centering
+\begin{figure}[h]\centering
 % Use the relevant command to insert your figure file.
 % For example, with the graphicx package use
   \includegraphics[scale=0.6]{heider-simmel_animation.jpeg}
 % figure caption is below the figure
- \caption{Fritz Heider and Mary-Ann Simmel's animated film to study people's tendency to attribute animacy and intention to simple shapes; \textit{An experimental study of apparent behaviour}, 1944}
+ \caption{Fritz Heider and Mary-Ann Simmel's animated film to study people's tendency to attribute animacy and intention to simple shapes; \textit{An experimental study of apparent behavior}, 1944}
  \fxnote{wrap text around this figure?}
  \label{fig:animacy_attribution}       % Give a unique label
  \end{figure}
 
-What is a person's motivation to attribute human characteristics to simple
-geometric shapes, or more sophisticated, anthropomorphic shapes, animated or
-not? Irrespective of the artifact's characteristics, there are psychological
-theories to explain the phenomenon. An interesting recent psychological theory
-of anthropomorphism (also related to robotics) is provided by Epley, Waytz, and
-Cacioppo \cite{epley_seeing_2007}. The authors established a three-factor theory
-of when people are likely to anthropomorphize based on psychological
-determinants. Namely, the theory suggests that some people are more likely to
-anthropomorphize when:
+Summing it up, it seems that there is a natural, relatively spontaneous reaction that makes a person attribute animacy and intention to moving shapes, even when there is no similarity of the shape to a human. This tendency to animize / anthropomorphize is already developed (and even more distinct) in infants and children.\footnote{\hl{Julia: I think we should mention this also in the anthropomorphic design section; as movements / motions as one of the most basic "lifelike" cues.}}
+
+
+\paragraph*{Cognitive science research and the mental model theory (Theory of Mind)}
+
+Anthropomorphism and similar phenomenons can also be understood as a thoughtful process of induction whereby \textit{``people reason about an unknown stimulus based on a better-known representation of a related stimulus"}~\citep{epley_when_2008}. In the case of anthropomorphism this means a person's reasoning about a non-human agent based on the representation of the self or other humans. The general assumption here is that all other agents (and entities) but oneself are \textit{``unknown''} (because we can only be our self). A central construct of this perspective is the so-called \textit{mental model} that a person has (and builds) of the agents she is reasoning about and interacting with. The specific mental model we have about an artifact / agent basically explains how this artifact / agent works the way it does. But how can we explain the phenomenon that a person uses a human-inspired mental model to explain the actions of a non-human (unknown) agent? Well, what we know and understand best is ourselves as human beings (the mental model that we have of our self and other humans). So by applying a similar mental model (or parts of it) to the unknown agent, we seek to be able to explain this unknown agent.
+This view is consistent with the \emph{familiarity thesis}~\citep{hegel_understanding_2008} which claims that we understand the world based upon a mental model of the world that we are most familiar with. Also, the mental model (human-centered perspective) is supported by \cite{epley_seeing_2007} \textit{Three Factor Theory} which applies a social psychology view, and will be presented in the next paragraph.
+
+In sum, this branch of research suggests that anthropomorphism implies that people thoughtfully develop a mental model of agents in their environment and that they make inferences about these agents based on what is familiar to them -- themselves, humans and human behavior. This understanding builds on a person's ability to attribute mental states to oneself and others, which is called \textit{Theory of Mind}~\cite{Premack1978}. A theory of mind for other agents enables us to attribute intentionality to those agents \cite{leslie_pretense_1987,admoni_multi-category_2012}. The link between this tendency to thoughtfully anthropomorphize and the engagement in the attribution of mental states to other humans has recently also been demonstrated at the brain level~\citep{cullen2013individual}.
+
+
+\paragraph*{The mental model theory in human-robot interaction}
+
+Mental models have also been studied in HRI. Starting point for this research is the assumption that if a system behaves much like a human being (\eg a robot that emits a human voice), people's mental model of the system's behavior may approach their mental model of humans (though the model may differ in some important aspects). In turn, people's estimation of an agent's knowledge model and its capabilities affects the way they relate to it. This holds important implications for the resulting interaction with the system, the user experience, and the acceptance. Previous research examined the validity of the mental model concept with various kinds of robots \cite{schmitz_concepts_2011,kiesler_mental_2002}. Findings suggest that people tend to hold richer mental models of anthropomorphic robots in contrast to mechanic ones \cite{kiesler_mental_2002}. \footnote{\hl{Later in this article, we may however come to question how far this result is based on expectations from the human user side, which are likely to be refined after continued interaction, and after the user gets acquainted with the robot's behavior.}} \hl{Julia:leave this paragraph here or put it later in the HRI section??}
+
+
+\paragraph*{Social psychology research: a 3-factor theory of anthropomorphism}
+\label{sec:psychological-factors}
+
+Social psychology offers interesting theories that can be applied to understand people's motivation to anthropomorphize. Irrespective of the artifact's characteristics, several psychological determinants have been found to explain a person's tendency to anthropomorphize. \cite{epley_seeing_2007} present a ``3-factor theory'' of when people are likely to anthropomorphize based on psychological determinants. Namely, the theory suggests that some people are more likely to anthropomorphize when: 
 
 \begin{itemize}
 	\item anthropocentric knowledge is accessible and applicable to the artifact (\textit{elicited agent knowledge}),
@@ -220,56 +236,30 @@ anthropomorphize when:
 	\item they have the desire for social contact and affiliation (\textit{social motivation}).
 \end{itemize}
 
-Epley \textit{et al.} describe that \textit{elicited agent knowledge} is a
-\textbf{cognitive determinant  of anthropomorphism} which is understood as the
-activation of knowledge about humans (or the self) when making inferences about
-non-human agents. One basic reasons for this are a person's physical constraints
-of being a human and nothing else. Consequently, one has no other experience
-than the self and in turn people tend to make inferences about others' mental
-states by relying inordinately on their own mental state. \footnote{Using one's
-own mental states and characteristics as a guide when reasoning about other
-humans is ego-centrism; when reasoning about non-human agents is
-anthropomorphism. See Epley, 2007 \textit{et al.} \cite{epley_seeing_2007}} Also
-empirical findings suggest that knowledge about humans in general, or
-self-knowledge in particular, is likely to serve as a readily accessible base
-for induction when reasoning about non-human agents. This tendency is usually
-stronger in young children and decreases with cognitive development and the
-learning to distinguish the self from other humans, and non-human agents. 
+\cite{epley_seeing_2007} describe that \textit{elicited agent knowledge} is a \textbf{cognitive determinant of anthropomorphism} which is understood as the activation of knowledge about humans (or the self) when making inferences about non-human agents. One basic reasons for this are a person's physical constraints of being a human and nothing else. Consequently, one has no other experience than the self and in turn people tend to make inferences about others' mental states by relying inordinately on their own mental state. \footnote{Using one's own mental states and characteristics as a guide when reasoning about other humans is ego-centrism; when reasoning about non-human agents is anthropomorphism. See \cite{epley_seeing_2007}} Also empirical findings suggest that knowledge about humans in general, or self-knowledge in particular, is likely to serve as a readily accessible base for induction when reasoning about non-human agents. This tendency is usually stronger in young children and decreases with cognitive development and the learning to distinguish the self from other humans, and non-human agents. 
 	
-Both \textit{effectance} and \textit{sociality} are \textbf{motivational
-determinants of anthropomorphism}. \textit{Effectance} is understood as the
-motivation to interact effectively in one's environment: understand, predict,
-\hl{reduce uncertainty (this feeds again our hypothesis that as soon as a robot
-is not uncertain anymore, there is no need to keep on anthropomorphizing
-it)}\fxfatal{important! move/copy that to the 'model' section or discussion}
-about one's environment and the agents that inhabit it. According to Epley
-\textit{et al.}, anthropomorphism serves as one way to reduce uncertainty and
-increase comprehension of events in one's environment. They mention for
-instance, children (as they are in their early stages of life) appear to be more
-likely to anthropomorphize than adults, as they might feel more uncertain within
-their environment.
+Both \textit{effectance} and \textit{sociality} are \textbf{motivational determinants of anthropomorphism}. \textit{Effectance} is understood as the motivation to interact effectively in one's environment: understand, predict, \hl{reduce uncertainty (this feeds again our hypothesis that as soon as a robot is not uncertain anymore, there is no need to keep on anthropomorphizing it)}\fxfatal{important! move/copy that to the 'model' section or discussion} about one's environment and the agents that inhabit it. According to \cite{epley_seeing_2007}, anthropomorphism serves as one way to reduce uncertainty and increase comprehension of events in one's environment. They mention for instance, children (as they are in their early stages of life) appear to be more likely to anthropomorphize than adults, as they might feel more uncertain within their environment.
 
-\textit{Sociality} describes the motivation for social contact, social
-connection, and social approval from other agents. Importantly for
-anthropomorphism, this social connection appears to be satisfied by connections
-with \hl{ \textit{"two of the most commonly anthropomorphized non-human agents,
-namely pets and religious agents"}} \cite{epley_seeing_2007}. According to Epley
-\textit{et al.}, the motivation of being socially connected increases the
-tendency to anthropomorphize non-human agents because first sociality motivation
-increases the tendency to perceive human-like characteristics and traits even in
-non-human agents, and second it increases the tendency to search for sources of
-social connection in one's environment. Consequently, the authors suggest
-\textit{"[...] those who are chronically lonely should be more likely to
-anthropomorphize nonhuman agents than those who are more chronically
-connected"}. 
+\textit{Sociality} describes the motivation for social contact, social connection, and social approval from other agents. Importantly for anthropomorphism, this social connection appears to be satisfied by connections with \hl{\textit{"two of the most commonly anthropomorphized non-human agents, namely pets and religious agents"}} \cite{epley_seeing_2007}. According to \cite{epley_seeing_2007}, the motivation of being socially connected increases the tendency to anthropomorphize non-human agents because first sociality motivation increases the tendency to perceive human-like characteristics and traits even in non-human agents, and second it increases the tendency to search for sources of social connection in one's environment. Consequently, the authors suggest \textit{"[...] those who are chronically lonely should be more likely to anthropomorphize nonhuman agents than those who are more chronically connected"}. 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+%
+%		ARTIFACT-CENTERED PERSPECTIVE: ANTHROPOMORPHIC DESIGN
+%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	 
 
-
-\subsection{Anthropomorphic Design Principle}
+\subsection{An artifact-centered perspective on anthropomorphism}
 \label{sec:anthropomorphic-design}
 
-\hl{check if we really need this section ... maybe yes because it is important for the uncanny valley hypothesis}
+In contrast to the human-centered perspective, the artifact-centered perspective explains anthropomorphism from the ascertainable parts / the design of the non-human agent. 
 
+
+
+This perspective assumes that humans directly respond to life-like or social cues that an object or system emits, without thoughtful mental processing, by simply applying stereotypes and heuristics to it. In fact, from early childhood on, humans are inherently well-trained to perceive life \citep{epley_seeing_2007}. \cite{schmitz_concepts_2011} describes that within the visual scope of design, the outer appearance of an object can have an important impact on how it is overall perceived. The basic assumption here is that if an artifact somehow resembles a human, it is likely to be treated similar to a human. If this explanation of anthropomorphism is correct, people may respond automatically to social cues emitted by an artificial embodied agent such as a robot, and apply human-human social schemas and norms to the occurring interactions.
 
 Anthropomorphic forms based on  have already in prehistoric artworks and illustrations, anthropomorphic (but sometimes also animal-shaped) characters
 
@@ -361,7 +351,16 @@ social toward them or accept them more easily:
 
 	\hl{empathy --> check Iolanda's paper}
 
-	 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+%
+%		PART 1.3: ANTHROPOMORPHISM IN HRI / SOCIAL ROBOTICS
+%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	 
 
 \subsection{Anthropomorphism in Robotics and Human-Robot Interaction}
 \label{sec:anthropomorphism-robotics}
@@ -1327,9 +1326,14 @@ Another question raised by these models relates to their transposition to
 human-human interaction: while concepts like \emph{novelty effect} are not
 directly meaningful when analyzing human-human interaction, insights from
 cognitive sciences (and in particular social psychology) regarding how we, as
-humans, cope with unexpected behaviours from peers, or on the dynamics of mental
+humans, cope with unexpected behaviors from peers, or on the dynamics of mental
 model refinements, could bring interesting perspectives with possible
 applications to better manage long-term human-robot interactions.
+
+\paragraph*{How to measure anthropomorphism?}
+
+As anthropomorphism emerges from an interaction between a human and a non-human agent, we believe that showing pictures of different kinds of robots and then using questionnaires to measure anthropomorphism is somehow limited. We discuss what tools and measurements could be used to study anthropomorphism and its dynamics in interaction studies in real-world environments.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -1378,13 +1382,8 @@ human environments.
 
 \section{Acknowledgments}
 
-We would like to acknowledge the fruitful discussions with A Jung Moon and
-Aude Billard.
+This research was supported by the Swiss National Science Foundation through the National Centre of Competence in Research Robotics.
 
-This research was supported by the Swiss National Science Foundation through
-the National Centre of Competence in Research Robotics.
-
-\vspace{2cm}
 \section{Bibliography}
 
 \bibliographystyle{frontiersinSCNS&ENG} % for Science and Engineering articles
