@@ -1172,40 +1172,48 @@ experimental support.
 \begin{figure}[htb]
 \centering
 %\resizebox{\linewidth}{!}{
-\begin{tikzpicture}[scale=1.2, transform shape]
+\begin{tikzpicture}
 \baselineskip=8pt
 
-% horizontal axis
-\draw[->] (0,0) -- (10,0) node[anchor=north] {$t$};
-% labels
-\draw   (2,0) node[anchor=north] {Phase I}
-        (5,0) node[anchor=north] {Phase II}
-        (8,0) node[anchor=north] {Phase III};
+\path[fill=gray!20] (0,0) rectangle (10.5,2);
+\path[fill=gray!50] (0,2) rectangle (10.5,4);
+\path[fill=gray!20] (0,4) rectangle (10.5,6);
 
-\draw[dotted] (3.5, -0.5) -- (3.5,6);
-\draw[dotted] (6.5, -0.5) -- (6.5,6);
+\draw (-0.3,1) node[rotate=90] {Level 1}
+      (-0.3,3) node[rotate=90] {Level 2}
+      (-0.3,5) node[rotate=90] {Level 3};
 
-% vertical axis
-\draw[-|] (0,0) -- (0,6) node[anchor=east] {};
+\draw[->] (0,0) -- (11,0) node[anchor=north] {$t$};
+\draw[-|] (0,0) -- (0,6.5) node[anchor=east] {};
 % Us
-\draw[thick] (0,0) -- (1,2) -- (3,2) -- (4,4) -- (6,4) -- (7,6) -- (10,6);
+\draw[ultra thick, ->] (0,0) -- (1,2) -- (3,2) -- (4,4) -- (6,4) -- (7,6) --
+(9.5,6);
+\draw[ultra thick, dashed, ->] (3,2) -- (9.5,2);
+\draw[ultra thick, dashed, ->] (6,4) -- (9.5,4);
 
-\draw (2.2,2) node[align=center] {\scriptsize{sub-cognitive}\\\scriptsize{anthropomorphism}}; %label
-\draw (5,3.85) node[align=center] {\scriptsize{projection of existing}\\\scriptsize{mental models}\\\scriptsize{\it (familiarity)}}; %label
-\draw (8.5,5.85) node[align=center] {\scriptsize{adapted mental model} \\ $\to$ \scriptsize{adapted interaction}\\\scriptsize{\it (antropomorphic or not)}}; %label
+\draw (11,1) node[align=left, anchor=west]{\scriptsize pre-cognitive\\\scriptsize anthropomorphism}; %label
 
-\draw (2.2,1) node[align=left] {\tiny{\it observation (shape, motion, sound)}}; %label
-\draw (5.2,3) node[align=left] {\tiny \it observation (interactive behavior) \\ \tiny \it or short interaction}; %label
-\draw (7.8,5) node[align=left] {\tiny \it contextualized interaction}; %label
+\draw (11,3) node[align=left, anchor=west] {\scriptsize{projection of existing}\\\scriptsize{mental models}\\\scriptsize{\it (familiarity)}}; %label
+
+\draw (11,5) node[align=left, anchor=west] {\scriptsize{adapted mental
+model} \\ $\to$ \scriptsize{adapted interaction}\\\scriptsize{\it (anthropomorphic or not)}}; %label
+
+
+\draw[dashed,->] (1,0.1) to[bend right] (2,1.9)  node at (4.5,1) {\tiny{\it observation (shape, motion, sound)}}; %label
+
+\draw[dashed,->] (4,2.1) to[bend right] (5,3.9)  node[align=left] at (7.5,3) {\tiny \it observation (interactive behavior) \\ \tiny \it or short interaction}; %label
+
+\draw[dashed,->] (7,4.1) to[bend right] (8,5.9)  node[align=left] at (9,5)
+{\tiny \it contextualized\\ \tiny \it interaction}; %label
 
 \end{tikzpicture}
 %}
-\caption{The three cognitive phases of anthropomorphism: Phase I is the instinctive,
+\caption{The three cognitive levels of anthropomorphism: Level 1 is the instinctive,
 sub-cognitive identification of living peers. {\it Empathy} is characteristic
 of this stage. After longer observation or short, non-contextualized interaction
-(typically, a lab environment), the user enters Phase II: the user projects a
+(typically, a lab environment), the user reaches Level 2: the user projects a
 mental model he/she is already familiar with onto the robot. After longer {\it
-contextualized} interaction (typically, at home), the user enters Phase III of
+contextualized} interaction (typically, at home), the user enters Level 3 of
 anthropomorphism: the user recomposes an accurate mental model of the robot,
 based on experience. This leads to adapted interaction modalities, that may
 still be anthropomorphic, or not.}
