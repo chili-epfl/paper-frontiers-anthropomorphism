@@ -12,6 +12,10 @@
 \usepackage{graphicx}
 \graphicspath{{figs/}}
 \usepackage{tikz}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+\floatstyle{plaintop}
 \usetikzlibrary{shapes}
 %
 \usepackage{amsmath} 
@@ -208,14 +212,17 @@ Finally, Section \ref{sec:conclusion} concludes this article and offers starting
 \section{A few results from the field}
 \label{sec:overview-studies}
 
-In this section we give a brief overview of the studies that we conducted to investigate anthropomorphism. Note that it was not the main purpose of these studies to analyze in detail the effect of different dimensions human-likeness of a robot on the user's perception of and interaction with the robot. Each of these studies were motivated also by other research questions, and we encourage the reader to refer to our other main publications about these studies for more details.
+In this section we give a brief overview of the studies that we conducted to investigate anthropomorphism in human-robot interaction. Note that it was not the main purpose of these studies to analyze in detail the effect of different dimensions human-likeness of a robot on the user's perception of and interaction with the robot. Each of these studies were motivated also by other research questions, and we encourage the reader to refer to our other main publications about these studies for more details.
 
 
 \subsection{Roomba study: how people live with a vacuum cleaning robot}
 
-We openly explored interactions between human users and a domestic service robot in a 6-months lasting ethnographic study in nine households to which we gave a commercially available vacuum cleaning robot (iRobot's Roomba).\footnote{This study is published in \cite{fink_living_2013}.} Hereafter, we refer to this study as the "Roomba study".
+We openly explored long-term interactions between human users and a domestic service robot in a 6-months lasting ethnographic study. We gave a commercially available vacuum cleaning robot (iRobot's Roomba) to nine different types of households in the French speaking part of Switzerland. The fairly diverse sample of households consisted of 2 single homes, 1 couple, and 6 families with children in their home. In total, this summed up to 30 participants: 15 adults (26-71 years old, mean age 43.6 years), and 15 children (6 months to 18 years old). During the 6 months, each household was visited 5 times to conduct interviews and make field observations in the households. Moreover during several weeks, households were asked to fill in a diary to report the usage of the robot and other cleaning activities.
 
-We can report on several findings related to anthropomorphism and the anthropomorphic design of robots. The gathered data for these aspects include qualitative observations, semi-structured interviews, and also quantitative assessments of various aspects of human-robot interaction. The Roomba study is one of very few long-term human-robot interaction studies in the domestic environment. 
+The main goal of this study was to explore how households live with a vacuum cleaning robot over an extended period of time. We wanted to analyze how the usage of and interaction with the robot evolve over time, and to identify adoption phases as well as factors that impact on the long-term acceptance of service robots in homes.
+\footnote{This study is published in \cite{fink_living_2013}.} Hereafter, we refer to this study as the "Roomba study".
+
+From the Roomba study, we can report on several findings related to anthropomorphism and the anthropomorphic design of robots. The gathered data for these aspects include qualitative observations, semi-structured interviews, and also quantitative assessments of various aspects of human-robot interaction. The Roomba study is one of very few long-term human-robot interaction studies in the domestic environment. 
 
 In the following, we present findings in respect of two aspects:
 First, we qualitatively describe what kinds of anthropomorphic interactions between participants and the robot were observed and outline how these interactions evolved over time.
@@ -223,60 +230,95 @@ Second, we present people's perception of human-likeness and social capabilities
 
 \subsubsection{Anthropomorphic interactions with the robot}
 
+It has been described in several previous studies of the Roomba \citep{forlizzi_service_2006,forlizzi_how_2007,krumm_my_2007,sung_domestic_2010}, that users tend to engage in a variety of non-cleaning activities associated with the Roomba including, but not limited to, naming, ascribing personality and gender. \cite{sung_housewives_2008} carried out a survey among 379 Roomba users to investigate how common these activities are. 
 
-\begin{figure}
-    \centering
-    \includegraphics[width=0.6\columnwidth]{roomba-activities.png}
-    \caption{This bar chart shows how many of the 9 households carried out different kinds of activities with and related to the robot over a period of 6 months. Activities included using the robot for \texttt{cleaning}, \texttt{watching} the robot for fun, giving a \texttt{demo} of the robot to guests / visitors, taking a \texttt{photo/video} of the robot, \texttt{personalizing} the robot, giving a \texttt{name} to the robot, \texttt{talking} to the robot, \texttt{playing} with the robot, \texttt{hacking} the robot, having a \texttt{conversation} about the robot, making \texttt{adjustments} to the home due to the robot. Participants were asked to report on these activities at 3 time points after the robot was deployed in their home: after 2 weeks, after 2 months, and after 6 months. \hl{(strangely, in the pdf version of this graph the bars were not displayed!)}}
+We also found that people tend to anthropomorphize or interact socially (in a broader sense) with their vacuum cleaning robot.
+However, our long-term observations suggest that this effect is marginal, and that the social impact of a functional robot on a household seems to be generally overestimated.
+In contrast to the previous work, we found that there were just few instances of people anthropomorphizing the robot and interacting with it in a human-social way. More importantly, overall, these anthropomorphic interactions with the robot did not last but seemed to be somehow related to the novelty of the robot.
 
-    \label{fig:roomba-activities}
-\end{figure}
+In terms of how people interacted with the robot, we categorized several interactions and actions with the robot as anthropomorphic or social, in a broader sense. Examples of what we categorized as somehow social and anthropomorphic (human-like) interactions with the robot include \textit{watching} the robot for fun, giving a \textit{demo} of the robot to guests / visitors, taking a \textit{photo/video} of the robot, \textit{personalizing} the robot, giving a \textit{name} to the robot, \textit{talking} to the robot using direct speech, \textit{playing} with the robot, and making \textit{adjustments} to the home due to the robot. Figure \ref{fig:roomba-activities}) shows how many of the 9 households engaged in what kind of activity with the robot at three different points of time after the robot was deployed in the household.
+
+\paragraph*{Watching the robot for fun.} We categorize watching a robot for fun as an entertaining, social activity, reflecting a feeling of empathy for the robot. In \cite{sung_housewives_2008} survey, 73~\% of the participants reported to watch their Roomba running for fun. While in the beginning of our study, also a quite high proportion (6 of 9 households) reported to watch the robot for fun, after 2 and 6 months the number of households that engaged in this activity decreased by half. 
+
+\paragraph*{Giving a robot demo to visitors.} \cite{sung_domestic_2010} described that a vacuum cleaning robot can serve as a mediator and encourage social interaction among people. We categorize giving a demo of the robot to visitors / guest to the household as such an activity. During the first 2 weeks with the robot 8 of 9 households in our study showed their robot to others, and still after 2 and 6 months 5 of the households engaged in this activity. This number is more or less in accordance with the 57~\% of survey respondents who stated to give demonstrations to others \citep{sung_housewives_2008}.
+
+\paragraph*{Taking photos / videos of the robot.} How far taking a photo or video of a robot can be seen as an anthropomorphic interaction is questionable. However, it reflects the fact that the robot is observed by the user who for some reason is motivated to record the event. The number of households that took a photo or video of the robot decreased over time from 5 households in the beginning to 1 household after 6 months.
+
+\paragraph*{Personalizing the robot.} It has been found that people are motivated to personalize technology as a form of self-expression (identity projection) or when they use a technology a lot and know how to customize it (technical identity projection) \citep{blom_personalization:_2000}. Though \cite{sung_pimp_2009} found that some Roomba users who were given a customization toolkit personalized their Roomba, none of the users in her study who was \textit{not} given this toolkit personalized their Roomba. Also in our study none of the 9 households engaged in a personalization activity.
+
+\paragraph*{Giving a name to the robot.} Giving a name to an artificial agent reflects a certain kind of personal relationship to the agent. By naming a robot, it is not anonymous anymore, and might be perceived as a moral agent. As such, naming an artificial agent can be classified as anthropomorphizing this agent. It further suggests that the agent is talked to directly. Though more than 23~\% of the survey participants in \cite{sung_housewives_2008} study reported to name their Roomba, only 1 of 9 households in our study did so. 
+
+\paragraph*{Talking directly to the robot.} Using direct speech toward an object or artificial agent that does not have the ability to recognize and process speech (such as verbal comments) or other sound cues, is an interesting phenomenon which can be classified as an anthropomorphic interaction. Whereas only 11~\% of the survey respondents in \cite{sung_housewives_2008} study reported to talk to their robot, around half of the households engaged in this activity and the proportion did not notably decrease over time. 
+
+\paragraph*{Playing with the robot.} In our study, it were mostly children who engaged in playing with the robot, however, most of them stopped doing so after some time. The number of household playing with their Roomba decreased from 8 when asked after 2 weeks with the robot, to 4 households after 2 months, and 1 household after 6 months. In \cite{sung_housewives_2008} survey, 37~\% of the Roomba owners reported to play and experiment with their robot. 
+
+\paragraph*{Making adjustments to the home due to the robot.} To help Roomba clean, \cite{sung_housewives_2008} found in an online survey that about half of the 379 participants made physical modifications to their homes. This process is referred to as \textit{roombarization}, and it seems to be a unique aspect of adopting a domestic service robot. In our study, almost all the households made adjustments when they used the robot for the first time in front of us. However, during the first two weeks with the robot, only 3 households reported to have adjusted something due to the robot, and after 6 months it was only 1 household that still engaged in this activity. This decrease is, however, logical since after some time most people had done all the necessary adjustments to enable the robot show a good performance.
+
+\paragraph*{Emerging anthropomorphic interactions.} Another, from our side more unexpected interaction that we would describe as somehow anthropomorphic, is what we call \textit{``collaborative cleaning''} with the robot. In the initial phase of the study, some people spontaneously helped the robot to clean by either picking up crumbs from the floor themselves or pushing it right in front of the robot. Another way of collaborating with the robot we observed was to help it go everywhere by spontaneously putting up the trash bin or the carpet in the bathroom (things that are not just lying around and need to be cleaned up). However, the activity of collaborative cleaning faded out soon, and we suspect it was encouraged by the novelty of the robot.
 
 
 \subsubsection{Perception of human-like characteristics of the robot}
 
+\begin{figure}[t]
+	\centering
+    
+    \subfloat[activities with the robot over time,\\ n = 9 households]
+    {\label{fig:roomba-activities}
+    \includegraphics[width=8.5cm]{roomba-activities.png}}
+	\subfloat[people's perception of the robot over time,\\ n = 15 participants]    
+	{\label{fig:roomba-perception}
+    \includegraphics[width=8.5cm]{roomba-perception.pdf}}    
+    
+    \caption{\textbf{Activities with and perception of the robot over time.}\\
+	\textbf{(a)} This bar chart shows how many of the 9 households carried out different kinds of anthropomorphic / social activities with and related to the robot at 3 time points during 6 months. Activities include \texttt{watching} the robot for fun, giving a \texttt{demo} of the robot to guests / visitors, taking a \texttt{photo/video} of the robot, \texttt{personalizing} the robot, giving a \texttt{name} to the robot, \texttt{talking} to the robot, \texttt{playing} with the robot, and making \texttt{adjustments} to the home due to the robot. Participants were asked to report on these activities at 3 time points after the robot was deployed in their home: after 2 weeks, after 2 months, and after 6 months.\\
+	\textbf{(b)} This line chart shows how people's perception of the robot evolves over time. At 5 time points people were asked to rate the robot according to the following aspects: the perceived \texttt{intelligence} of the robot, the perceived \texttt{usefulness}, the perceived \texttt{easy of use}, how much \texttt{fun} it was to use the robot, how far they found the robot had an \texttt{impact} on their household, and their {overall} impression of it.}
+
+\end{figure}
 
 
-\begin{figure*}[htb]
-\centering
 
-\begin{tikzpicture}[scale=0.5, y = 2cm]
-%axis
-\draw (0,0) -- coordinate (x axis mid) (20,0);
-\draw (0,0) -- coordinate (y axis mid) (0,7);
-%ticks
-\foreach \x in {0,4,...,20}
-    \draw (\x,1pt) -- (\x,-3pt);
-\foreach \y in {1,...,7} 
-    \draw[black!20] (20,\y) -- (-3pt,\y);
-\foreach \y in {1,...,7} 
-    \draw (-3pt, \y) node[anchor=east] {\y}; 
-%labels
-\node[below=0.8cm] at (x axis mid) {People's perception ($\sigma=15$)};
-\node at (2, -0.4) {\tiny expectations};
-\node[align=center] at (6, -0.4) {\tiny after\\ \tiny first usage};
-\node[align=center] at (10, -0.4) {\tiny after\\ \tiny 2 weeks};
-\node[align=center] at (14, -0.4) {\tiny after\\ \tiny 2 months};
-\node[align=center] at (18, -0.4) {\tiny after\\ \tiny 6 months};
+%\begin{figure*}[htb]
+%\centering
+%
+%\begin{tikzpicture}[scale=0.5, y = 2cm]
+%%axis
+%\draw (0,0) -- coordinate (x axis mid) (20,0);
+%\draw (0,0) -- coordinate (y axis mid) (0,7);
+%%ticks
+%\foreach \x in {0,4,...,20}
+%    \draw (\x,1pt) -- (\x,-3pt);
+%\foreach \y in {1,...,7} 
+%    \draw[black!20] (20,\y) -- (-3pt,\y);
+%\foreach \y in {1,...,7} 
+%    \draw (-3pt, \y) node[anchor=east] {\y}; 
+%%labels
+%\node[below=0.8cm] at (x axis mid) {People's perception ($\sigma=15$)};
+%\node at (2, -0.4) {\tiny expectations};
+%\node[align=center] at (6, -0.4) {\tiny after\\ \tiny first usage};
+%\node[align=center] at (10, -0.4) {\tiny after\\ \tiny 2 weeks};
+%\node[align=center] at (14, -0.4) {\tiny after\\ \tiny 2 months};
+%\node[align=center] at (18, -0.4) {\tiny after\\ \tiny 6 months};
+%
+%\draw[dashed, black!50] (6,0) -- (6,7) node[sloped, below, pos=0.25] {\tiny novelty effect};
+%
+%\draw[ultra thick, red!50] (2,5.6) -- (6,6.1) -- (10,6.3) -- (14,6.3) -- (18,6.1) node at (15,6.5) {\tiny \it ease of use};
+%\draw[ultra thick, purple] (2,4.9) -- (6,5.2) -- (10,5.1) -- (14,4.5) -- (18,4.2) node at (3,4.7) {\tiny \it usefulness};
+%\draw[ultra thick, blue!50] (2,4) -- (6,4.1) -- (10,4.6) -- (14,4.1) -- (18,4.3) node at (16,4) {\tiny \it fun};
+%\draw[ultra thick, green!50] (2,3.9) -- (6,4.1) -- (10,4.2) -- (14,3.8) -- (18,3.3) node at (19,3.5) {\tiny \it intelligence};
+%\draw[ultra thick, orange] (2,3.5) -- (6,4.2) -- (10,4) -- (14,3.2) -- (18,2.8) node at (14,2.7) {\tiny \it impact};
+%
+%\draw[ultra thick, dashed] (2,5.2) -- (6,5.2) -- (10,5) -- (14,4.9) -- (18,4.5) node at (14,5.3) {\tiny \it overall};
+%
+%\end{tikzpicture}
+%
+%\caption{User perception of the Roomba robot over a 6 month period
+%($\sigma=15$).}
+%
+%\label{roomba-perception}
+%\end{figure*}
 
-\draw[dashed, black!50] (6,0) -- (6,7) node[sloped, below, pos=0.25] {\tiny novelty effect};
 
-\draw[ultra thick, red!50] (2,5.6) -- (6,6.1) -- (10,6.3) -- (14,6.3) -- (18,6.1) node at (15,6.5) {\tiny \it ease of use};
-\draw[ultra thick, purple] (2,4.9) -- (6,5.2) -- (10,5.1) -- (14,4.5) -- (18,4.2) node at (3,4.7) {\tiny \it usefulness};
-\draw[ultra thick, blue!50] (2,4) -- (6,4.1) -- (10,4.6) -- (14,4.1) -- (18,4.3) node at (16,4) {\tiny \it fun};
-\draw[ultra thick, green!50] (2,3.9) -- (6,4.1) -- (10,4.2) -- (14,3.8) -- (18,3.3) node at (19,3.5) {\tiny \it intelligence};
-\draw[ultra thick, orange] (2,3.5) -- (6,4.2) -- (10,4) -- (14,3.2) -- (18,2.8) node at (14,2.7) {\tiny \it impact};
-
-\draw[ultra thick, dashed] (2,5.2) -- (6,5.2) -- (10,5) -- (14,4.9) -- (18,4.5) node at (14,5.3) {\tiny \it overall};
-
-\end{tikzpicture}
-
-\caption{User perception of the Roomba robot over a 6 month period
-($\sigma=15$).}
-
-\label{roomba-perception}
-\end{figure*}
-
+In accordance with \cite{sung_housewives_2008} we also found relatively low rates of users treating and perceiveing their vacuum cleaning robot as a living (or human-like) entity. We interpret that it might be the pure functional purpose and non human-like form of the Roomba vacuum cleaning robot that prevented people from anthropomorphizing it. Still, we observed some initial anthropomorphic effects, such as collaborative cleaning with the robot, and talking to the robot.
 
 
 \subsection{Forum study: using anthropomorphic language to describe a robot}
