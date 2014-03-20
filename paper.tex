@@ -108,7 +108,7 @@ and we discuss cognitive interpretations that follow. \hl{(Julia: probably the a
 
 % JULIA: brief problem definition / issue, motivation, objectives, contribution ...
 
-\section{Introduction and overview}
+\section{Introduction}
 \label{sec:intro}
 
 %{Intro when start with anthropomorphic design}
@@ -181,6 +181,64 @@ lead to a discussion about the short- and long-term benefits and other effects
 of the human-like (anthropomorphic) design of robots and other artificial
 agents.\\
 
+\subsection{A few results from the field}
+
+To support the reflection, it may be useful to consider a few experimental
+results. Figure~\ref{roomba-perception} gives a first perspective on how naive
+users perceive robots over a long period of time. Here, \emph{Roomba} robots
+were given to nine household for a 6 months period. The aim was to explore how
+people use and perceive the robot over time, and how they generally live with
+the Roomba in their home. At various time points, users were asked to rated
+their perception of different features of the robot on a 7-Likert scale. As
+Figure~\ref{roomba-perception} shows, some features remained stable over time
+(\emph{ease of use} and \emph{fun}), and other decreased: the perceived
+\emph{usefulness}, \emph{intelligence} and \emph{impact} on their household.
+\emph{intelligence} and \emph{impact} reflect the cognitive engagement of the
+user towards the machine: we can assume that one do not care to engage in a
+(cognitive) interaction with an artifact perceived as non-intelligent and with
+no impact on his/her life. Even if one can argue that the Roomba is not designed
+to foster interaction, the question is raised: how to sustain engagement between
+a robot and a human over a long period of time? And, as a pre-requisite, do we
+actually understand the psychological phenomenon, and can we effectively account
+for the dynamics of these interactions?
+
+Those questions are certainly not new, but paradoxically, while anthropomorphism
+in robotics is a commonly discussed and studied trait of human-robot
+interaction, it appears it lacks a formal ground and unified understanding to
+take into account the wide range of phenomena that it encompasses.
+
+\subsection{Towards a formal understanding of anthropomorphism}
+
+\fxnote{state here our main research hypothesis}
+\fxnote{state here our main contributions}
+
+So far, the HRI community has not much investigated how anthropomorphism in
+human-robot interactions evolves over time (during the process of
+\emph{adopting} a robot, for instance). Anthropomorphism is traditionally
+perceived in robotics as a static feature that once observed during a
+short-term interaction reflects a sustaining social effect.  Based on an
+literature review previously published~\cite{fink_anthropomorphism_2012}, a
+long-term field study in a natural environment~\cite{fink_living_2013}, as well
+as two on-going child-robot experiments, we believe that anthropomorphic
+effects do evolve over time in non-monotonic ways, and play a central role in
+sustaining engagement in human-robot interaction.
+
+We propose to formalize these dynamic effects into a model that we call the
+\emph{dynamics of anthropomorphism}. We hope that it may support further
+discussions and reflections on how anthropomorphism impacts human-robot
+interaction on the long run, and also foster research on the affective bonds
+induced by anthropomorphic projections on robots.
+
+As such, we propose to represent how the level of anthropomorphic effects (\ie
+observable manifestations of anthropomorphism) evolves over a long-term
+human-robot interaction (Figure~\ref{fig:dynamics}). By long-term interaction,
+we mean direct (non-mediated), repeated interaction with the same robot, over
+an extended period of time (typically longer than a week).
+
+
+In this article, we would like to share some critical but constructive
+considerations on anthropomorphism in robotics and HRI. Thereby, we contribute
+to a better understanding of this complex phenomenon related to robots.
 
 The remainder of this article is organized as follows.  First, in Section
 \ref{sec:overview-studies}, we give a brief overview on the various studies that
@@ -208,63 +266,6 @@ measure anthropomorphism in human-robot interactions.  Finally, Section
 further research on anthropomorphism and the effect of the human-like design
 approach in robotics.
 
-
-%{Intro when start with anthropomorphism}
-%The essence of anthropomorphism is the perception of human-like characteristics
-%in either real or imagined non-human agents. In Human-Robot Interaction (HRI),
-%anthropomorphism is a commonly observed phenomenon: people tend to ascribe
-%human-like characteristics to robots, and they are willing to treat and react to
-%robots as if they were human-social counterparts. The HRI and social robotics
-%literature is full of various kinds of studies showing how humans readily
-%interact in a social fashion with robots -- despite the fact that robots are not
-%humans. In our own studies on HRI analysis in real-world settings, we also
-%observed anthropomorphism. However, we found qualitative differences and
-%dynamics over time in how participants anthropomorphized and related to the
-%robots used in our studies. More concretely, we found that anthropomorphism was
-%not only based on how much the robot resembles a human (anthropomorphic design)
-%but that it was determined by multiple factors, including individual
-%characteristics of the human user but also the context of use, for instance. We also
-%found that anthropomorphism changed over time with growing experience of the
-%user with the system. By trying to understand these variances and dynamics in
-%anthropomorphism, we reviewed related work from the HRI domain and social
-%robotics. Despite the fact that there is a vast amount of literature on
-%anthropomorphism in HRI, we were surprised to find that other studies do not
-%describe similar variances or dynamics. Instead, we came across diverse and
-%partially conflicting understandings of anthropomorphism. We also had the
-%impression that the reported data were sometimes over-interpreted (probably due
-%to the confusion of what exactly anthropomorphism is) or obtained in settings
-%and assessed in ways that we believe do not give enough consideration to the
-%complex nature of anthropomorphism. However, when reviewing literature from
-%social psychology, cognitive science, and neuroscience, we found support for the
-%variances and dynamics in anthropomorphism that we observed in our studies. As
-%HRI integrates many disciplines, we think that it is valid to use theories from
-%these related domains for interpreting our results and that it is relevant to
-%report on this integration.
-%
-%In this article, we would like to share some critical but constructive
-%considerations on anthropomorphism in robotics and HRI. Thereby, we contribute
-%to a better understanding of this complex phenomenon related to robots. In
-%Section \ref{sec:anthropomorphism} we would first like to give an overview of
-%how anthropomorphism can be defined, and then, in Section \ref{sec:explanations}
-%present explanations to the question why people anthropomorphize, with a focus
-%on anthropomorphism as a social phenomenon in HRI and the trend to design
-%human-like robots. Then, based on these reviews of theories and concepts from
-%related domains, in Section \ref{sec:multi-factors} we propose that
-%anthropomorphism is determined and affected by multiple factors. We outline how
-%anthropomorphism as a multi-factor phenomenon can impact the user experience and
-%acceptance of robots in daily life environments. Next, in Section
-%\ref{sec:dynamics-model} we suggest that anthropomorphism changes over time, and
-%describe these changes in an initial model that we call ``Dynamics of
-%Anthropomorphism''. We illustrate our idea with empirical findings from several
-%HRI studies that we conducted in natural environments. In Section
-%\ref{sec:cognition-neuroscience} we present a cognitive and neuroscience
-%perspective on anthropomorphism to consolidate our considerations and the
-%observed dynamics. Next, Section \ref{sec:discussion} considers limitations in
-%our approach and we discuss existing and alternative ways to measure
-%anthropomorphism in HRI. Finally, in Section \ref{sec:conclusion} we conclude
-%this article. 
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %
@@ -275,7 +276,7 @@ approach in robotics.
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{A few results from the field}
+\section{Studying anthropomorphism}
 \label{sec:overview-studies}
 
 In this section we give a brief overview of the studies that we conducted to
@@ -753,11 +754,6 @@ counter-intuitive (one could hypothesize that the more playful the children are
 with the robot, the more likely they are to consider it as a friend/pet/lively
 being) and we discuss at section~\ref{sec:cognition-neuroscience} possible
 cognitive explanations.
-
-\subsection{Towards an understanding of anthropomorphism}
-
-\fxnote{state here our main research hypothesis}
-\fxnote{state here our main contributions}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
