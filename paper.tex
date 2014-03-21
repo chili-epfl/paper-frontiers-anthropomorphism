@@ -12,10 +12,10 @@
 \usepackage{graphicx}
 \graphicspath{{figs/}}
 \usepackage{tikz}
-\usepackage{caption}
-\usepackage{subcaption}
-\usepackage{float}
-\floatstyle{plaintop}
+%\usepackage{caption}
+%\usepackage{subcaption}
+%\usepackage{float}
+%\floatstyle{plaintop}
 \usetikzlibrary{shapes}
 %
 \usepackage{amsmath} 
@@ -136,7 +136,7 @@ Based on these observations and an extensive literature review, we would like to
 The remainder of this article is organized as follows. 
 First, in Section \ref{sec:overview-studies}, we give a brief overview on the various studies that we conducted to investigate anthropomorphism, namely (1) the Roomba study, (2) the Forum study, (3) the Ranger domino study. As an outcome of these studies, we propose two main research hypotheses related to anthropomorphism.
 Next, in Section \ref{sec:anthropomorphism} we investigate these hypotheses by synthesizing literature on anthropomorphism. This should also serve to establish a common ground. We first explore an artifact-centered perspective and briefly outline how the human-like design of agents can encourage anthropomorphism. Then, we explore a human-centered perspective by integrating theories from cognitive science, developmental and social psychology that serve to explain anthropomorphism. At the end of this section we bring both perspectives together and interpret that anthropomorphism is a multi-factor phenomenon.
-Based on the two previous sections, we propose an initial model of the \textit{``Dynamics of Anthropomorphism''} in Section \ref{sec:dynamics-model}. This model describes the variances and dynamics of people's tendency to anthropomorphize an artificial agent, such as a robot.
+Based on the two previous sections, we propose an initial model of the \textit{``Dynamics of Anthropomorphism''} in Section \ref{sec:our-ideas}. This model describes the variances and dynamics of people's tendency to anthropomorphize an artificial agent, such as a robot.
 Next, in Section \ref{sec:cognition-neuroscience} we present a cognitive and neuroscience perspective on anthropomorphism to consolidate our considerations and the proposed model.
 This will be followed by a discussion about the limitations of our approach (Section \ref{sec:discussion}). Further, we debate existing and alternative ways to measure
 anthropomorphism in human-robot interactions.
@@ -217,7 +217,7 @@ In this section we give a brief overview of the studies that we conducted to inv
 
 \subsection{Roomba study: how people live with a vacuum cleaning robot}
 
-We openly explored long-term interactions between human users and a domestic service robot in a 6-months lasting ethnographic study. We gave a commercially available vacuum cleaning robot (iRobot's Roomba) to nine households in the French speaking part of Switzerland. The fairly diverse sample of households consisted of 2 single homes, 1 couple, and 6 families with children in their home. In total, this summed up to 30 participants: 15 adults (26-71 years old, mean age 43.6 years), and 15 children (6 months to 18 years old). During the 6 months, each household was visited 5 times to conduct interviews and make field observations in the households. Moreover, during several weeks, households were asked to fill in a diary to report the usage of the robot and other cleaning activities.
+We openly explored long-term interactions between human users and a domestic service robot in a 6-months lasting ethnographic study. We gave a commercially available vacuum cleaning robot (iRobot's Roomba, see Figure \ref{fig:aibo-roomba-ipad} middle) to nine households in the French speaking part of Switzerland. The fairly diverse sample of households consisted of 2 single homes, 1 couple, and 6 families with children in their home. In total, this summed up to 30 participants: 15 adults (26-71 years old, mean age 43.6 years), and 15 children (6 months to 18 years old). During the 6 months, each household was visited 5 times to conduct interviews and make field observations in the households. Moreover, during several weeks, households were asked to fill in a diary to report the usage of the robot and other cleaning activities.
 \footnote{This study is published in \cite{fink_living_2013}.}
 Hereafter, we refer to this study as the "Roomba study".
 
@@ -243,6 +243,13 @@ We categorized several interactions and actions with the robot as anthropomorphi
 %Examples of what we categorized as somehow social and anthropomorphic (human-like) interactions with the robot include \textit{watching} the robot for fun, giving a \textit{demo} of the robot to guests / visitors, taking a \textit{photo/video} of the robot, \textit{personalizing} the robot, giving a \textit{name} to the robot, \textit{talking} to the robot using direct speech, \textit{playing} with the robot, and making \textit{adjustments} to the home due to the robot. 
 Figure \ref{fig:roomba-activities}) shows how many of the 9 households engaged in these activities during the 6 months when the study was conducted. 
 
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\columnwidth]{roomba-activities.png}
+    \caption{Activities with the robot over time, n = 9 households. This bar chart shows how many of the 9 households carried out different kinds of anthropomorphic / social activities with and related to the robot at 3 time points during 6 months. Activities include \texttt{watching} the robot for fun, giving a \texttt{demo} of the robot to guests / visitors, \texttt{personalizing} the robot, giving a \texttt{name} to the robot, \texttt{talking} to the robot, \texttt{playing} with the robot. Participants were asked to report on these activities at 3 time points after the robot was deployed in their home: after 2 weeks, after 2 months, and after 6 months.}
+    \label{fig:roomba-activities}
+\end{figure}
+
 \paragraph*{Watching the robot for fun.} We categorize watching a robot for fun as an entertaining, emotional activity, reflecting a feeling of empathy for the robot. In \cite{sung_housewives_2008} survey, 73~\% of the participants reported to watch their Roomba running for fun. While in the beginning of our study, also a quite high proportion (6 of 9 households) reported to watch the robot for fun, after 2 and 6 months the number of households that engaged in this activity decreased by half. 
 
 \paragraph*{Giving a robot demo to visitors.} It is somehow natural that owners of innovative devices show the device to others and ask for their opinion about it \citep{rogers_diffusion_1995}. However, this activity suggests that the robot is presented as a new part of the household to visitors. \cite{sung_domestic_2010} described that a vacuum cleaning robot can serve as a mediator and encourage social interaction among people. We categorize giving a demo of the robot to visitors / guests as such an activity. During the first 2 weeks with the robot 8 of 9 households in our study showed their robot to others, and still after 2 and 6 months 5 of the households engaged in this activity. This number is more or less in accordance with the 57~\% of survey respondents who stated to give demonstrations to others \citep{sung_housewives_2008}.
@@ -262,24 +269,6 @@ Figure \ref{fig:roomba-activities}) shows how many of the 9 households engaged i
 %\paragraph*{Emerging anthropomorphic interactions.} Another, from our side more unexpected interaction that we would describe as somehow anthropomorphic, is what we call \textit{``collaborative cleaning''} with the robot. In the initial phase of the study, some people spontaneously helped the robot to clean by either picking up crumbs from the floor themselves or pushing it right in front of the robot. Another way of collaborating with the robot we observed was to help it go everywhere by spontaneously putting up the trash bin or the carpet in the bathroom (things that are not just lying around and need to be cleaned up). However, the activity of collaborative cleaning faded out soon, and we suspect it was encouraged by the novelty of the robot.\\
 
 Overall, Figure \ref{fig:roomba-activities} shows that as time goes by, less households engage in the before-mentioned non-cleaning activities with the vacuum cleaning robot: after 2 weeks, on average, 4.67 of 9 households engage in a human-like activity with the robot; after 2 months, the value decreases to 2.83, and after 6 months to 2.3. Our interpretation is that the nature of human-robot interaction changes over time. More concretely, we suspect  that anthropomorphic / human-social interactions with the robot become less over time, and that only with some people these interactions sustain.
-
-
-\begin{figure}[t]
-	\centering
-    
-    \subfloat[activities with the robot over time,\\ n = 9 households]
-    {\label{fig:roomba-activities}
-    \includegraphics[width=8.5cm]{roomba-activities.pdf}}
-	\subfloat[people's perception of the robot over time,\\ n = 15 participants]    
-	{\label{fig:roomba-perception}
-    \includegraphics[width=8.5cm]{roomba-perception.pdf}}    
-    
-    \caption{\textbf{Activities with and perception of the robot over time.}\\
-	\textbf{(a)} This bar chart shows how many of the 9 households carried out different kinds of anthropomorphic / social activities with and related to the robot at 3 time points during 6 months. Activities include \texttt{watching} the robot for fun, giving a \texttt{demo} of the robot to guests / visitors, \texttt{personalizing} the robot, giving a \texttt{name} to the robot, \texttt{talking} to the robot, \texttt{playing} with the robot. Participants were asked to report on these activities at 3 time points after the robot was deployed in their home: after 2 weeks, after 2 months, and after 6 months.\\
-	\textbf{(b)} This line chart shows how people's perception of the robot evolves over time. At 5 time points people were asked to rate the robot according to the following aspects: the perceived \texttt{intelligence} of the robot, the perceived \texttt{usefulness}, the perceived \texttt{ease of use}, how much \texttt{fun} it was to use the robot, how far they found the robot had an \texttt{impact} on their household, and their {overall} impression of it.}
-
-\end{figure}
-
 
 
 %\begin{figure*}[htb]
@@ -325,22 +314,45 @@ Overall, Figure \ref{fig:roomba-activities} shows that as time goes by, less hou
 
 \subsubsection{Perception of anthropomorphic characteristics of the robot\\}
 
-We also studied people's perception of the robot, and how it evolved over time (see Figure \ref{fig:roomba-perception}). The main idea was to find out which of the perceived attributes could be related to how far the robot was integrated in the household as a cleaning tool.
+We also studied people's perception of the robot, and how it evolved over time (see Figure \ref{fig:roomba-perception}). The main idea was to find out which of the perceived attributes could be related to how far the robot was integrated in the household as a cleaning tool. Concerning anthropomorphism, we included \textit{perceived intelligence} and experienced \textit{fun} when using the robot as indicators for the perception of human-likeness in the robot.
 
-Concerning anthropomorphism, we included \textit{perceived intelligence} and experienced \textit{fun} when using the robot as indicators for the perception of human-likeness in the robot.
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\columnwidth]{roomba-perception.pdf}
+    \caption{People's perception of the robot over time, n = 15 participants. This line chart shows how people's perception of the robot evolves over time. At 5 time points people were asked to rate the robot according to the following aspects: the perceived \texttt{intelligence} of the robot, the perceived \texttt{usefulness}, the perceived \texttt{ease of use}, how much \texttt{fun} it was to use the robot, how far they found the robot had an \texttt{impact} on their household, and their {overall} impression of it.}
+    \label{fig:roomba-perception}
+\end{figure}
 
 \paragraph*{Perceived intelligence.} On a scale from 1-7, people were not sure about how intelligent they should expect the robot to be (mean value 3.9). The rating did not change much and not significantly over time (average ratings between 3.3-4.2) \citep{fink_living_2013}. Interestingly, at all five time points, male participants rated the robot as more intelligent (average 4.5) than females (average 3.4), however, this difference was not significant. When asked why they thought Roomba possesses intelligence, men more often referred to the 'robot side' of Roomba: its abilities to detect and avoid obstacles, stairs, and being able to recharge itself. Contrary, women referred to its rather limited vacuuming performance and found it was not as intelligent because \textit{``it doesn't see where the dirt is, it sometimes leaves it, it can't be smart!''}. This difference in the perception of intelligence of a robot suggests that gender,and probably other individual characteristics need to be taken into account.
 
-\paragraph*{Experienced fun.} Participants rated the robot as 'somewhat fun' (values from 4.0-4.6). There was a qualitative gender difference (not significant), in the sense that the experienced fun remained quite stable for male participants, whereas it tended to decrease with time for female participants. Men described the robot more as a 'fun gadget' than females, who referred to it as \textit{``In the end, Roomba is a cleaning tool and it is not really fun to use it''}. Again for this aspect, gender seems to play a role in how the robot is perceived and experienced. 
+\paragraph*{Experienced fun.} Participants rated the robot as 'somewhat fun' (values from 4.0-4.6). There was a qualitative gender difference (not significant), in the sense that the experienced fun remained quite stable for male participants, whereas it tended to decrease with time for female participants. Men described the robot more as a 'fun gadget' than females, who referred to it as \textit{``In the end, Roomba is a cleaning tool and it is not really fun to use it''}. Again for this aspect, gender seems to play a role in how the robot is perceived and experienced.\\
+
+Overall, Figure \ref{fig:roomba-perception} shows that after the first usage of the Roomba (T2), most of the perceived constructs slightly decrease (and hence are less positively rated) as time goes by. The course is different for the perceived \textit{ease of use} of the robot, as participants become more experienced with the robot over time. Also, the experienced \textit{fun} does not decrease with time.
+ 
 
 \subsubsection{Summary Roomba study\\}
 
-In accordance with \cite{sung_housewives_2008} we also found relatively low rates of users treating and perceiving their vacuum cleaning robot as a living (or human-like) entity. We interpret that it might be the pure functional purpose and non human-like form of the Roomba that prevented people from anthropomorphizing it. Still, we observed some initial anthropomorphic effects, both reflected in interaction with and perception of the robot. However, most of the anthropomorphic effects did not last long. \hl{One fairly stable human-like interaction with the robot was \textit{talking to the robot}, despite the fact that the robot was not able to recognize and respond to verbal statements.\footnote{important! I think I've seen that finding somewhere else when comparing ASIMO to AIBO or so.}}
+In accordance with previous work we also found relatively low rates of users treating and perceiving their vacuum cleaning robot as a living (or human-like) entity \citep{sung_housewives_2008}. We interpret that it might be the pure functional purpose and non human-like form of the Roomba that prevented people from anthropomorphizing it. Still, we observed some initial anthropomorphic effects, both reflected in interaction with and perception of the robot. However, most of the anthropomorphic effects did not last long. \hl{One fairly stable human-like interaction with the robot was \textit{talking to the robot}, despite the fact that the robot was not able to recognize and respond to verbal statements.\footnote{important! I think I've seen that finding somewhere else when comparing ASIMO to AIBO or so.}}
 
 
-\subsection{Forum study: using anthropomorphic language to describe a robot}
+\subsection{Forum study: using anthropomorphic expressions to describe a robot}
 
-\hl{Julia: I think we should also include this study ... if it is not getting too much}
+We investigated the amount and context of anthropomorphic language in three online discussion forums about the robotic dog AIBO, the vacuum cleaning robot Roomba, and the tablet computer iPad. This analysis was done by means of a content analysis of 750 forum posts that were further partitioned in n = 1208 valid segments \citep{fink_anthropomorphic_2012}. These three devices, pictured in Figure \ref{fig:aibo-roomba-ipad}, were chosen as they show different designs and fulfill different purposes. We would describe (1) AIBO as a zoomorphic / pet-like robot that does not have a clear purpose but engages people to play with it; (2) Roomba as a mechanical / functional domestic service robot that has a practical main purpose (vacuum cleaning) but offers not much of interactivity; (3) the iPad as a minimalistic designed interactive (touch-based) technology with multiple purposes (both entertainment, and professional / practical use). Based on these different characteristics, we made the two following hypotheses concerning anthropomorphism:
+
+\begin{enumerate}
+	\item People engage in a more social and human-like way with a robotic pet compared to a functional robot and a tablet computer, therefore there will be a higher amount of anthropomorphic language in the AIBO and Roomba forum, compared to the iPad forum.
+	\item As anthropomorphism can be seen as a certain kind of emotional / social relation to an artifact, there will be more anthropomorphic language in forum posts in which the author describes a relation to the device, compared to discussing technological aspects or how the device is used.
+\end{enumerate}
+
+
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\columnwidth]{aibo-roomba-ipad_2.jpg}
+    \caption{The Sony AIBO robotic dog (left), the iRobot Roomba vacuum-cleaning robot (middle), and the Apple Inc. iPad tablet computer (right) were compared in terms of how far users of these devices use anthropomorphic expressions in discussions about their technology / robot in online discussion forums.}
+    \label{fig:aibo-roomba-ipad}
+\end{figure}
 
 
 
