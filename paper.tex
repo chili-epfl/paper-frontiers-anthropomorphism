@@ -191,13 +191,13 @@ real-world settings. There is not much research that investigates
 anthropomorphism based on real interaction between a human and a robot, and
 above all in natural settings and over extended periods of time. 
 
-Figure~\ref{roomba-perception} gives a first perspective on how naive
+Figure~\ref{fig:roomba-perception} gives a first perspective on how naive
 users perceive robots over a long period of time. Here, \emph{Roomba} vacuum cleaning robots
 were given to nine households for a 6-months period. The aim was to explore how
 people use and perceive the robot over time, and how they generally live with
 the Roomba in their home. At various time points, users were asked to rate
 their perception of different features of the robot on a 7-point rating scale. As
-Figure~\ref{roomba-perception} shows, some features remained stable over time
+Figure~\ref{fig:roomba-perception} shows, some features remained stable over time
 (\emph{ease of use} and \emph{fun}), and others decreased: the perceived
 \emph{usefulness}, \emph{intelligence} and \emph{impact} on their household.
 \emph{intelligence} and \emph{impact} reflect the cognitive engagement of the
@@ -214,10 +214,8 @@ in robotics is a commonly discussed and studied trait of human-robot
 interaction, it appears that it lacks a formal ground and unified understanding to
 take into account the wide range of phenomena that it encompasses.
 
-\subsection{Towards a formal understanding of anthropomorphism}
 
-\fxnote{state here our main research hypothesis}
-\fxnote{state here our main contributions}
+\subsection{Towards a formal understanding of anthropomorphism}
 
 So far, the HRI community has not much investigated how anthropomorphism in
 human-robot interactions evolves over time. In robotics, anthropomorphism is traditionally
@@ -343,22 +341,6 @@ anthropomorphism from these two angles!}}
 %adoption phases as well as factors that impact on the long-term acceptance of
 %service robots in homes.
 
-From the Roomba study, we can report on several findings related to
-anthropomorphism and the anthropomorphic design of robots.
-%The gathered data for these aspects include qualitative observations,
-%semi-structured interviews, and also quantitative assessments of various
-%aspects of human-robot interaction.
-The Roomba study is one of very few long-term human-robot interaction studies in
-the domestic environment. 
-
-In the following, we present findings in respect of two aspects: First, we
-qualitatively describe what kinds of anthropomorphic interactions between
-participants and the robot were observed and outline how these interactions
-evolved over time.  Second, we present people's perception of human-likeness and
-social capabilities of the robot and how this perception changed over
-time.\footnote{\hl{note that these two different kinds of data
-(behavior/interaction and perception) already show that we try to measure
-anthropomorphism from these two angles!}}
 
 \subsubsection{Anthropomorphic interactions with the robot\\}
 
@@ -515,36 +497,36 @@ robot as indicators for the perception of human-likeness in the robot.\fixme{JF:
     \centering
     \includegraphics[width=0.5\columnwidth]{roomba-perception.pdf}
 
-    \begin{tikzpicture}[scale=0.5, y = 2cm]
-    %axis
-    \draw (0,0) -- coordinate (x axis mid) (20,0);
-    \draw (0,0) -- coordinate (y axis mid) (0,7);
-    %ticks
-    \foreach \x in {0,4,...,20}
-        \draw (\x,1pt) -- (\x,-3pt);
-    \foreach \y in {1,...,7} 
-        \draw[black!20] (20,\y) -- (-3pt,\y);
-    \foreach \y in {1,...,7} 
-        \draw (-3pt, \y) node[anchor=east] {\y}; 
-    %labels
-    \node[below=0.8cm] at (x axis mid) {People's perception ($\sigma=15$)};
-    \node at (2, -0.4) {\tiny expectations};
-    \node[align=center] at (6, -0.4) {\tiny after\\ \tiny first usage};
-    \node[align=center] at (10, -0.4) {\tiny after\\ \tiny 2 weeks};
-    \node[align=center] at (14, -0.4) {\tiny after\\ \tiny 2 months};
-    \node[align=center] at (18, -0.4) {\tiny after\\ \tiny 6 months};
-
-    \draw[dashed, black!50] (6,0) -- (6,7) node[sloped, below, pos=0.25] {\tiny novelty effect};
-
-    \draw[ultra thick, red!50] (2,5.6) -- (6,6.1) -- (10,6.3) -- (14,6.3) -- (18,6.1) node at (15,6.5) {\tiny \it ease of use};
-    \draw[ultra thick, purple] (2,4.9) -- (6,5.2) -- (10,5.1) -- (14,4.5) -- (18,4.2) node at (3,4.7) {\tiny \it usefulness};
-    \draw[ultra thick, blue!50] (2,4) -- (6,4.1) -- (10,4.6) -- (14,4.1) -- (18,4.3) node at (16,4) {\tiny \it fun};
-    \draw[ultra thick, green!50] (2,3.9) -- (6,4.1) -- (10,4.2) -- (14,3.8) -- (18,3.3) node at (19,3.5) {\tiny \it intelligence};
-    \draw[ultra thick, orange] (2,3.5) -- (6,4.2) -- (10,4) -- (14,3.2) -- (18,2.8) node at (14,2.7) {\tiny \it impact};
-
-    \draw[ultra thick, dashed] (2,5.2) -- (6,5.2) -- (10,5) -- (14,4.9) -- (18,4.5) node at (14,5.3) {\tiny \it overall};
-
-    \end{tikzpicture}
+%    \begin{tikzpicture}[scale=0.5, y = 2cm]
+%    %axis
+%    \draw (0,0) -- coordinate (x axis mid) (20,0);
+%    \draw (0,0) -- coordinate (y axis mid) (0,7);
+%    %ticks
+%    \foreach \x in {0,4,...,20}
+%        \draw (\x,1pt) -- (\x,-3pt);
+%    \foreach \y in {1,...,7} 
+%        \draw[black!20] (20,\y) -- (-3pt,\y);
+%    \foreach \y in {1,...,7} 
+%        \draw (-3pt, \y) node[anchor=east] {\y}; 
+%    %labels
+%    \node[below=0.8cm] at (x axis mid) {People's perception (n = 15)};
+%    \node at (2, -0.4) {\tiny expectations};
+%    \node[align=center] at (6, -0.4) {\tiny after\\ \tiny first usage};
+%    \node[align=center] at (10, -0.4) {\tiny after\\ \tiny 2 weeks};
+%    \node[align=center] at (14, -0.4) {\tiny after\\ \tiny 2 months};
+%    \node[align=center] at (18, -0.4) {\tiny after\\ \tiny 6 months};
+%
+%    \draw[dashed, black!50] (6,0) -- (6,7) node[sloped, below, pos=0.25] {\tiny novelty effect};
+%
+%    \draw[ultra thick, red!50] (2,5.6) -- (6,6.1) -- (10,6.3) -- (14,6.3) -- (18,6.1) node at (15,6.5) {\tiny \it ease of use};
+%    \draw[ultra thick, purple] (2,4.9) -- (6,5.2) -- (10,5.1) -- (14,4.5) -- (18,4.2) node at (3,4.7) {\tiny \it usefulness};
+%    \draw[ultra thick, blue!50] (2,4) -- (6,4.1) -- (10,4.6) -- (14,4.1) -- (18,4.3) node at (16,4) {\tiny \it fun};
+%    \draw[ultra thick, green!50] (2,3.9) -- (6,4.1) -- (10,4.2) -- (14,3.8) -- (18,3.3) node at (19,3.5) {\tiny \it intelligence};
+%    \draw[ultra thick, orange] (2,3.5) -- (6,4.2) -- (10,4) -- (14,3.2) -- (18,2.8) node at (14,2.7) {\tiny \it impact};
+%
+%    \draw[ultra thick, dashed] (2,5.2) -- (6,5.2) -- (10,5) -- (14,4.9) -- (18,4.5) node at (14,5.3) {\tiny \it overall};
+%
+%    \end{tikzpicture}
 
 
     \caption{People's perception of the robot over time, n = 15 participants.
@@ -598,21 +580,20 @@ entity \citep{sung_housewives_2008}. We interpret that it might be the pure
 functional purpose and non human-like form of the Roomba that prevented people
 from anthropomorphizing it. Still, we observed some initial anthropomorphic
 effects, both reflected in interaction with and perception of the robot.
-However, most of the anthropomorphic effects did not last long. \hl{One fairly
+However, most of the anthropomorphic effects did not last long. One fairly
 stable human-like interaction with the robot was \textit{talking to the robot},
 despite the fact that the robot was not able to recognize and respond to verbal
-statements.\footnote{important! I think I've seen that finding somewhere else
-when comparing ASIMO to AIBO or so.}}
+statements.
 
 
 \subsection{Forum study: using anthropomorphic expressions to describe a robot}
 
-\begin{figure}
-    \centering
-    \includegraphics[width=0.7\columnwidth]{aibo-roomba-ipad_2.jpg}
-    \caption{The Sony AIBO robotic dog (left), the iRobot Roomba vacuum-cleaning robot (middle), and the Apple Inc. iPad tablet computer (right) were compared in terms of how far users of these devices use anthropomorphic expressions in discussions about their technology / robot in online discussion forums.}
-    \label{fig:aibo-roomba-ipad}
-\end{figure}
+%\begin{figure}
+%    \centering
+%    \includegraphics[width=0.7\columnwidth]{aibo-roomba-ipad_2.jpg}
+%    \caption{The Sony AIBO robotic dog (left), the iRobot Roomba vacuum-cleaning robot (middle), and the Apple Inc. iPad tablet computer (right) were compared in terms of how far users of these devices use anthropomorphic expressions in discussions about their technology / robot in online discussion forums.}
+%    \label{fig:aibo-roomba-ipad}
+%\end{figure}
 
 We investigated the amount and context of anthropomorphic language in three
 online discussion forums about the robotic dog AIBO, the vacuum cleaning robot
@@ -631,9 +612,7 @@ Based on these different characteristics, we made the two following hypotheses
 concerning anthropomorphism:
 
 \begin{enumerate}
-
     	\item People engage in a more social and human-like way with a robotic pet compared to a functional robot and a tablet computer, therefore there will be a higher amount of anthropomorphic language in the AIBO and Roomba forum, compared to the iPad forum.
-
     	\item As anthropomorphism can be seen as a certain kind of emotional / social relation to an artifact, there will be more anthropomorphic language in forum posts in which the author describes a relation to the device, compared to discussing technological aspects or how the device is used.
 \end{enumerate}
 
@@ -652,23 +631,17 @@ device was described in terms of:
     \item \textit{Life-likeness}, such as being alive or having (parts of) a
         body, \eg \textit{``she can be reborn since you copied her memory
         stick''};
-
     \item \textit{Emotional states, empathy} or the technology having a
         \textit{feeling}, \eg \textit{``oh no, poor AIBO''};
-
     \item \textit{Gender, personality} or the technology having an
         \textit{intention}, \eg Roomba \textit{``seems to like to hang around
         under the sofa''};
-
     \item When the author gave the technology a \textit{name}, \eg
         \textit{``whenever I show Java his pink ball''};
-
     \item Being \textit{socially integrated}, such as being a family member, \eg
         \textit{``I'm considering adding a Roomba to the family''};
-
     \item \textit{Metaphorical ways}, \eg Roomba \textit{``sings its victory
         song when it finishes and docks''}.
-
 \end{itemize}
 
 In the next paragraphs, we present findings in respect of our two hypotheses:
@@ -1222,15 +1195,6 @@ A common formal ground is missing so far; however, it is important to be clear a
 \hl{(maybe here Persson: anthropomorphism as a multi-layered phenomenon)}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%
-%
-%		WHY DO PEOPLE ANTHROPOMORPHIZE?
-%
-%
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	 
 
 \subsubsection{Why do people anthropomorphize?\\}
 \label{sec:explanations}
@@ -1243,23 +1207,10 @@ It is described that for the just mentioned reasons, people commonly anthropomor
 Anthropomorphism as a social phenomenon arises in an interaction \citep{persson_anthropomorphism_2000}, and thus includes at least two interaction partners (the human and the real or imagined non-human agent). Therefore, one can take two main perspectives on explaining it \citep{lee_human_2005}: a human-centered, and an artifact-centered. We briefly outline both views in the following. It has to be kept in mind that both perspectives are inseparable; they apply at the same time, and we would like to present them here just as two different viewpoints on the same kind of phenomenon.
 
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%
-%
-%		HUMAN-CENTERED PERSPECTIVE: SOCIAL PHENOMENON
-%
-%
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
-
-\subsection{A human-centered perspective on anthropomorphism}
-
 The human-centered perspective builds on research from developmental and social psychology as well as cognitive sciences.  In the following, we present what we found in reviewing this literature: (1) a line of research in developmental psychology that studies the attribution of animacy; (2) a line of research in more cognitive sciences that studies the cognitive processes that underlie anthropomorphism, and (3) a theory that explains anthropomorphism based on psychological factors~\citep{epley_seeing_2007}. All three branches apply a human-centered perspective on anthropomorphism.
 
 
-\paragraph*{Developmental psychology research on the attribution of animacy and intention\\ \\}
+\paragraph*{Developmental psychology research on the attribution of animacy and intention\\}
 
 The phenomenon of attributing animacy and intentions to nonliving objects such as simple shapes has been intensively studied in developmental psychology. As mentioned earlier, Piaget found that children tend to ascribe life to the nonliving. They also tend to interpret physical phenomena in terms of intention on the part of the non-human subject. For instance children are likely to argue that \textit{``the sun is hot because it wants to make people warm''} \citep{leeds_childrens_1992}. In this example it is in fact questionable whether children really anthropomorphize the sun (believing that it has an intention) or whether they are using anthropomorphism in a metaphoric sense (because their conceptions of the world and of the living are not yet fully formed). Later however, two famous experiments by \cite{heider_experimental_1944} and \cite{michotte_perception_1963} showed that also adult participants attribute animacy and intention to simple things and shapes based on motion.\footnote{For more details, the reader may refer to the ``attribution theory''.} In both experiments, participants viewed animations of simple shapes, such as circles or triangles (see Figure \ref{fig:animacy_attribution}). Asked to describe what they observed, most people developed elaborate stories, attributing motivations, emotions and relationships between the objects.
 
@@ -1276,7 +1227,7 @@ The phenomenon of attributing animacy and intentions to nonliving objects such a
 Summing it up, it seems that there is a natural, relatively spontaneous reaction that makes a person attribute animacy and intention to moving shapes, even when there is no similarity of the shape to a human. This tendency to animize / anthropomorphize is already developed (and even more distinct) in infants and children.\footnote{\hl{Julia: I think we should mention this also in the anthropomorphic design section; as movements / motions as one of the most basic "lifelike" cues.}}
 
 
-\paragraph*{Cognitive science research and the mental model theory (Theory of Mind)\\ \\}
+\paragraph*{Cognitive science research and the mental model theory (Theory of Mind)\\}
 
 Anthropomorphism and similar phenomenons can also be understood as a thoughtful process of induction whereby \textit{``people reason about an unknown stimulus based on a better-known representation of a related stimulus"}~\citep{epley_when_2008}. In the case of anthropomorphism this means a person's reasoning about a non-human agent based on the representation of the self or other humans. The general assumption here is that all other agents (and entities) but oneself are \textit{``unknown''} (because we can only be our self). A central construct of this perspective is the so-called \textit{mental model} that a person has (and builds) of the agents she is reasoning about and interacting with. The specific mental model we have about an artifact / agent basically explains how this artifact / agent works the way it does. But how can we explain the phenomenon that a person uses a human-inspired mental model to explain the actions of a non-human (unknown) agent? Well, what we know and understand best is ourselves as human beings (the mental model that we have of our self and other humans). So by applying a similar mental model (or parts of it) to the unknown agent, we seek to be able to explain this unknown agent.
 This view is consistent with the \emph{familiarity thesis}~\citep{hegel_understanding_2008} which claims that we understand the world based upon a mental model of the world that we are most familiar with. Also, the mental model (human-centered perspective) is supported by \cite{epley_seeing_2007} \textit{Three Factor Theory} which applies a social psychology view, and will be presented later in this section.
@@ -1289,7 +1240,7 @@ In sum, this branch of research suggests that anthropomorphism implies that peop
 Mental models have also been studied in HRI. Starting point for this research is the assumption that if a system behaves much like a human being (\eg a robot that emits a human voice), people's mental model of the system's behavior may approach their mental model of humans (though the model may differ in some important aspects). In turn, people's estimation of an agent's knowledge model and its capabilities affects the way they relate to it. This holds important implications for the resulting interaction with the system, the user experience, and the acceptance. Previous research examined the validity of the mental model concept with various kinds of robots \cite{schmitz_concepts_2011,kiesler_mental_2002}. Findings suggest that people tend to hold richer mental models of anthropomorphic robots in contrast to mechanic ones \cite{kiesler_mental_2002}.\footnote{\hl{Later in this article, we may however come to question how far this result is based on expectations from the human user side, which are likely to be refined after continued interaction, and after the user gets acquainted with the robot's behavior.}} \hl{Julia:leave this paragraph here or put it later in the HRI section??}
 
 
-\paragraph*{Social psychology research: a 3-factor theory of anthropomorphism\\ \\}
+\paragraph*{Social psychology research: a 3-factor theory of anthropomorphism\\}
 \label{sec:psychological-factors}
 
 Social psychology offers interesting theories that can be applied to understand people's motivation to anthropomorphize. Irrespective of the artifact's characteristics, several psychological determinants have been found to explain a person's tendency to anthropomorphize. \cite{epley_seeing_2007} present a ``3-factor theory'' of when people are likely to anthropomorphize based on psychological determinants. Namely, the theory suggests that some people are more likely to anthropomorphize when: 
@@ -1312,14 +1263,13 @@ The third factor \textit{sociality} describes a person's motivation for social c
 %
 %
 %
-%		ARTIFACT-CENTERED PERSPECTIVE: ANTHROPOMORPHIC DESIGN
+%		ANTHROPOMORPHISM AS A MULTI-FACTOR PHENOMENON
 %
 %
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	 
 
-\subsection{An artifact-centered perspective on anthropomorphism}
-\label{sec:anthropomorphic-design}
+
 
 \subsection{Summary: Anthropomorphism as a multi-factor phenomenon}
 \label{sec:multi-factors}
@@ -1365,8 +1315,7 @@ interaction} (time and space), to the previous two factors of anthropomorphism
 % constructively discuss anthropomorphic design of personal and socially
 % interactive robots. 
 
-\subsection{Summary: Anthropomorphism as a multi-factor phenomenon}
-\label{sec:multi-factors}
+
 
 In this article we will use the term \emph{anthropomorphic effect} to denote
 observable correlates of anthropomorphism. With these we include, amongst
@@ -1472,12 +1421,6 @@ interactive robot in a school.
 
 \subsection{A Model of the Dynamics of Anthropomorphism}
 \label{sec:dynamics-model}
-
-\paragraph{Why is anthropomorphism likely to change over time?}
-\hl{maybe we need to move this paragraph to PART 3}
-
-
-\subsection{A Model of the Dynamics of Anthropomorphism}
 
 The phenomenological model of anthropomorphism we propose
 (Figure~\ref{fig:dynamics},~\cite{lemaignan2014dynamics}) represents how the
