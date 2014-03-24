@@ -133,7 +133,6 @@ tendency to perceive human-like characteristics in non-human agents.
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% JULIA: brief problem definition / issue, motivation, objectives, contribution ...
 
 \section{Introduction}
 \label{sec:intro}
@@ -373,7 +372,7 @@ anthropomorphic or human-social (in a broader sense).
 Figure \ref{fig:roomba-activities} shows how many of the 9 households engaged
 in these activities during the 6 months when the study was conducted. 
 
-\begin{figure}[hb]
+\begin{figure}
     \centering
     \includegraphics[width=0.5\columnwidth]{roomba-activities.png}
     \caption{Activities with the robot over time, n = 9 households. This bar
@@ -483,7 +482,6 @@ anthropomorphic / human-social interactions with the robot become less over
 time, and that only with some people these interactions sustain.
 
 
-
 \subsubsection{Perception of anthropomorphic characteristics of the robot\\}
 
 We also studied people's perception of the robot, and how it evolved over time
@@ -493,40 +491,40 @@ the household as a cleaning tool. Concerning anthropomorphism, we included
 \textit{perceived intelligence} and experienced \textit{fun} when using the
 robot as indicators for the perception of human-likeness in the robot.\fixme{JF: Severin, you also mentioned impact as one factor. Please include it here below as another paragraph.}
 
-\begin{figure}[b]
+\begin{figure}
     \centering
-    \includegraphics[width=0.5\columnwidth]{roomba-perception.pdf}
+%    \includegraphics[width=0.5\columnwidth]{roomba-perception.pdf}
 
-%    \begin{tikzpicture}[scale=0.5, y = 2cm]
-%    %axis
-%    \draw (0,0) -- coordinate (x axis mid) (20,0);
-%    \draw (0,0) -- coordinate (y axis mid) (0,7);
-%    %ticks
-%    \foreach \x in {0,4,...,20}
-%        \draw (\x,1pt) -- (\x,-3pt);
-%    \foreach \y in {1,...,7} 
-%        \draw[black!20] (20,\y) -- (-3pt,\y);
-%    \foreach \y in {1,...,7} 
-%        \draw (-3pt, \y) node[anchor=east] {\y}; 
-%    %labels
-%    \node[below=0.8cm] at (x axis mid) {People's perception (n = 15)};
-%    \node at (2, -0.4) {\tiny expectations};
-%    \node[align=center] at (6, -0.4) {\tiny after\\ \tiny first usage};
-%    \node[align=center] at (10, -0.4) {\tiny after\\ \tiny 2 weeks};
-%    \node[align=center] at (14, -0.4) {\tiny after\\ \tiny 2 months};
-%    \node[align=center] at (18, -0.4) {\tiny after\\ \tiny 6 months};
-%
-%    \draw[dashed, black!50] (6,0) -- (6,7) node[sloped, below, pos=0.25] {\tiny novelty effect};
-%
-%    \draw[ultra thick, red!50] (2,5.6) -- (6,6.1) -- (10,6.3) -- (14,6.3) -- (18,6.1) node at (15,6.5) {\tiny \it ease of use};
-%    \draw[ultra thick, purple] (2,4.9) -- (6,5.2) -- (10,5.1) -- (14,4.5) -- (18,4.2) node at (3,4.7) {\tiny \it usefulness};
-%    \draw[ultra thick, blue!50] (2,4) -- (6,4.1) -- (10,4.6) -- (14,4.1) -- (18,4.3) node at (16,4) {\tiny \it fun};
-%    \draw[ultra thick, green!50] (2,3.9) -- (6,4.1) -- (10,4.2) -- (14,3.8) -- (18,3.3) node at (19,3.5) {\tiny \it intelligence};
-%    \draw[ultra thick, orange] (2,3.5) -- (6,4.2) -- (10,4) -- (14,3.2) -- (18,2.8) node at (14,2.7) {\tiny \it impact};
-%
-%    \draw[ultra thick, dashed] (2,5.2) -- (6,5.2) -- (10,5) -- (14,4.9) -- (18,4.5) node at (14,5.3) {\tiny \it overall};
-%
-%    \end{tikzpicture}
+    \begin{tikzpicture}[scale=0.5, y = 2cm]
+    %axis
+    \draw (0,0) -- coordinate (x axis mid) (20,0);
+    \draw (0,0) -- coordinate (y axis mid) (0,7);
+    %ticks
+    \foreach \x in {0,4,...,20}
+        \draw (\x,1pt) -- (\x,-3pt);
+    \foreach \y in {1,...,7} 
+        \draw[black!20] (20,\y) -- (-3pt,\y);
+    \foreach \y in {1,...,7} 
+        \draw (-3pt, \y) node[anchor=east] {\y}; 
+    %labels
+    \node[below=0.8cm] at (x axis mid) {People's perception (n = 15)};
+    \node at (2, -0.4) {\tiny expectations};
+    \node[align=center] at (6, -0.4) {\tiny after\\ \tiny first usage};
+    \node[align=center] at (10, -0.4) {\tiny after\\ \tiny 2 weeks};
+    \node[align=center] at (14, -0.4) {\tiny after\\ \tiny 2 months};
+    \node[align=center] at (18, -0.4) {\tiny after\\ \tiny 6 months};
+
+    \draw[dashed, black!50] (6,0) -- (6,7) node[sloped, below, pos=0.25] {\tiny novelty effect};
+
+    \draw[ultra thick, red!50] (2,5.6) -- (6,6.1) -- (10,6.3) -- (14,6.3) -- (18,6.1) node at (15,6.5) {\tiny \it ease of use};
+    \draw[ultra thick, purple] (2,4.9) -- (6,5.2) -- (10,5.1) -- (14,4.5) -- (18,4.2) node at (3,4.7) {\tiny \it usefulness};
+    \draw[ultra thick, blue!50] (2,4) -- (6,4.1) -- (10,4.6) -- (14,4.1) -- (18,4.3) node at (16,4) {\tiny \it fun};
+    \draw[ultra thick, green!50] (2,3.9) -- (6,4.1) -- (10,4.2) -- (14,3.8) -- (18,3.3) node at (19,3.5) {\tiny \it intelligence};
+    \draw[ultra thick, orange] (2,3.5) -- (6,4.2) -- (10,4) -- (14,3.2) -- (18,2.8) node at (14,2.7) {\tiny \it impact};
+
+    \draw[ultra thick, dashed] (2,5.2) -- (6,5.2) -- (10,5) -- (14,4.9) -- (18,4.5) node at (14,5.3) {\tiny \it overall};
+
+    \end{tikzpicture}
 
 
     \caption{People's perception of the robot over time, n = 15 participants.
@@ -588,13 +586,6 @@ statements.
 
 \subsection{Forum study: using anthropomorphic expressions to describe a robot}
 
-%\begin{figure}
-%    \centering
-%    \includegraphics[width=0.7\columnwidth]{aibo-roomba-ipad_2.jpg}
-%    \caption{The Sony AIBO robotic dog (left), the iRobot Roomba vacuum-cleaning robot (middle), and the Apple Inc. iPad tablet computer (right) were compared in terms of how far users of these devices use anthropomorphic expressions in discussions about their technology / robot in online discussion forums.}
-%    \label{fig:aibo-roomba-ipad}
-%\end{figure}
-
 We investigated the amount and context of anthropomorphic language in three
 online discussion forums about the robotic dog AIBO, the vacuum cleaning robot
 Roomba, and the tablet computer iPad. This was done by means of a content
@@ -616,10 +607,10 @@ concerning anthropomorphism:
     	\item As anthropomorphism can be seen as a certain kind of emotional / social relation to an artifact, there will be more anthropomorphic language in forum posts in which the author describes a relation to the device, compared to discussing technological aspects or how the device is used.
 \end{enumerate}
 
-\begin{figure}[b]
+\begin{figure}
     \centering
     \includegraphics[width=0.5\columnwidth]{aibo-roomba-ipad_2.jpg}
-    \caption{The Sony AIBO robotic dog (left), the iRobot Roomba vacuum-cleaning robot (middle), and the Apple Inc. iPad tablet computer (right) were compared in terms of how far users of these devices use anthropomorphic expressions in discussions about their technology / robot in online discussion forums.}
+    \caption{The Sony AIBO robotic dog (left), the iRobot Roomba vacuum-cleaning robot (middle), and the Apple Inc. iPad tablet computer (right) were compared in terms of how far users of these devices use anthropomorphic expressions in online discussion forums about their technology / robot.}
     \label{fig:aibo-roomba-ipad}
 \end{figure}
 
@@ -707,7 +698,12 @@ ascribe human-like abilities to it while interacting with it.
 
 Overall, findings of the content analysis suggest that there are differences in
 people's tendency to use anthropomorphic language, originating form the design
-characteristics of the artifact. Interestingly, not only the physical embodiment
+characteristics of the artifact. A pet-like robot encourages people to use more 
+anthropomorphic expressions when discussing about it in an online forum. However, 
+the difference might also be related to other factors that we did not analyze 
+here (\eg. author's characteristics). Our analysis further shows that the design 
+of the robot seems to more important than the topic of the discussion. 
+Interestingly, not only the physical embodiment
 of the object but also the interaction complexity and purpose of use of the
 object seems to play a role in how far the object is anthropomorphized.
 
@@ -853,8 +849,8 @@ being). We discuss possible cognitive explanations of this in Section~\ref{sec:c
 Anthropomorphism is an interesting phenomenon because it tells us something about 
 the relationship between the human who anthropomorphizes, and the non-human agent 
 which is anthropomorphized. Though commonly observed, it appears controversial, at 
-the same time, that humans tend to \hl{\textit{``see human in the non-
-human''}}. 
+the same time, that humans tend to \textit{``see human in the non-
+human''} \citep{epley_seeing_2007}. 
 Anthropomorphism as a social phenomenon arises in an interaction 
 \citep{persson_anthropomorphism_2000}, and thus includes at least two interaction 
 partners (the human and the real or imagined non-human agent). Therefore, one can 
@@ -1069,8 +1065,7 @@ For instance, recent studies found that people tend to ascribe personality and i
 
 But what is the motivation which underlies the efforts of enhancing anthropomorphism through specific anthropomorphic design in robots? Why does anthropomorphism seem to be so important in robotics? There is no one single answer to this question but certainly, developers and designers have discovered that anthropomorphism seems to be beneficial for human-robot relations, especially with socially interactive robots \cite{fong_survey_2003}.
 
-More concretely, it has been found that the appearance and function of a impacts how people perceive it, interact with it, and build long-term relations with it \cite{bartneck_shaping_2004}. Consequently, the domain of (social) robotics tries to exploit this fact by enhancing anthropomorphism through anthropomorphic robots: \textit{"Applying anthropomorphism or zoomorphism changes the way how users try to understand and make sense of a [system] by projecting everyday \hl{expectations} of human and animalistic life onto it."} \cite{schmitz_concepts_2011}\fxfatal{paragraph a bit
-confusing...}. 
+The domain of (social) robotics tries to exploit this fact by enhancing anthropomorphism through anthropomorphic robots: \textit{"Applying anthropomorphism or zoomorphism changes the way how users try to understand and make sense of a [system] by projecting everyday \hl{expectations} of human and animalistic life onto it."} \cite{schmitz_concepts_2011}. 
 
 Studies have further shown that perceived similarity between the user and the robot influences the intensity of the participants' attributions towards the robot. Thus, anthropomorphism plays an important role in the design of robots as it is strongly related to the perception of intelligence, fun, the attribution of intentions and thus the predictability of the robot \hl{which ref??}.
 
