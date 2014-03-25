@@ -30,6 +30,8 @@
 \usepackage{float}
 \floatstyle{plaintop}
 
+\usepackage{paralist} % inparaenum
+
 \usepackage[bookmarks]{hyperref}
 
 \usepackage[draft, nomargin, marginclue, footnote]{fixme}
@@ -243,74 +245,85 @@ results.
 
 \subsection{Towards a formal understanding of anthropomorphism}
 
-So far, the HRI community has not much investigated how anthropomorphism in
-human-robot interactions evolves over time. In robotics, anthropomorphism is traditionally
-perceived as a static feature triggered by the human-like design of a robot that once observed (during a
-short-term interaction) reflects a sustaining social effect. Based on a previously published
-literature review~\citep{fink_anthropomorphism_2012}, a
-long-term field study in a natural environment~\citep{fink_living_2013}, a 
-content analysis of online discussion 
-forums~\citep{fink_anthropomorphic_2012}, and an on-going child-robot 
-interaction study, we believe that anthropomorphic
-effects are based on several factors, and that they do evolve over time in 
-non-monotonic ways. Moreover, we assume that these variances and dynamics 
-play a central role in sustaining engagement in human-robot interaction.
+These first remarks lead to the main question we attempt to address in this
+article: how can we understand \emph{anthropomorphism} as a whole, and in such a
+way that is support improved human-robot interactions?
 
-This article is organized around two main hypothesis that we formulated based on 
-our empirical studies of HRI, and by integrating previous work from several domains. 
 
-\begin{itemize}
-    \item \textbf{Hypothesis 1~} A person's tendency to anthropomorphize a robot
-is based on several factors, including (but not limited to) (1) the 
-design of the robot, (2) the personal characteristics of the human user, 
-and (3) the context and situation of use. For instance, a social 
-context and purpose of the robot increase anthropomorphism. 
-\textit{(anthropomorphism as a multi-factor phenomenon)}
-	\item \textbf{Hypothesis 2~} A person's tendency to anthropomorphize a robot 
-evolves in a non-linear way over time and with growing experience that the 
-person has with the robot. For instance, a more experienced user will perceive 
-the robot as more familiar and predictable, and in turn anthropomorphizes the 
-robot less. \textit{(anthropomorphism as a dynamic phenomenon)}
-\end{itemize}
+Based on an extensive literature review~\citep{fink_anthropomorphism_2012},
+several field and lab studies~\citep{ fink_anthropomorphic_2012,
+fink_living_2013, fink2014which, lemaignan2014dynamics} and insights from the
+cognitive neurosciences, we propose to discuss anthropomorphism from three
+complementary perspectives.
 
-We propose to formalize these variances and dynamic effects into a model that we call the
-\emph{Dynamics of Anthropomorphism}. We hope that it may support further
-discussions and reflections on how anthropomorphism impacts human-robot
-interaction on the long run, and also foster research on the affective bonds
-induced by anthropomorphic projections on robots.
-Through our model, we propose to represent how the level of anthropomorphic effects (\ie
-observable manifestations of anthropomorphism) evolves over a long-term
-human-robot interaction (Figure~\ref{fig:dynamics}). By long-term interaction,
-we mean direct (non-mediated), repeated interaction with the same robot, over
-an extended period of time (typically longer than a week).
+First, we would like to clarify what anthropomorphism actually \emph{means}:
+besides the \emph{artifact-centered} understanding of anthropomorphism, it
+seems important to explicit the human and social factors of anthropomorphism.
 
-%In this article, we would further like to share some critical but constructive
-%considerations on anthropomorphism in robotics and HRI. Thereby, we contribute
-%to a better understanding of this complex phenomenon related to robots.
+Then, we propose a model to understand how anthropomorphism evolves over time.
+These dynamics are non-monotonic, and psychological factors like the
+\emph{novelty effect} play here a key role.
+
+Finally, we adopt a third perspective on anthropomorphism by investigating its
+\emph{cognitive correlates}. Several studies previously showed that we build
+instinctive bonds with robots as soon as we attribute animacy, and we also know
+from social psychology some of the mechanisms that lead to
+\emph{familiarization}. We attempt here to ``connect the dots'', in order to
+build a practical model of the cognitive stages we encounter in human-robot
+interaction.
+
+
+\paragraph{Two hypotheses} Our research question also translates to two
+hypotheses, which structure the reflections of this article:
+
+\begin{enumerate} 
+    
+\item A person's tendency to anthropomorphize a robot
+    is based on several factors, including (but not limited to) (1) the
+    design of the robot, (2) the personal characteristics of the human user,
+    and (3) the context and situation of use. For instance, a social context
+    and purpose of the robot increase anthropomorphism: \textit{anthropomorphism
+    as a multi-factor phenomenon}.
+
+\item A person's tendency to anthropomorphize a robot
+    evolves in a non-linear way over time and with growing experience that the
+    person has with the robot. For instance, a more experienced user will
+    perceive the robot as more familiar and predictable, and in turn
+    anthropomorphizes the robot less: \textit{anthropomorphism as a dynamic
+    phenomenon}.
+
+\end{enumerate}
+
+\subsection{Article overview}
+
+\begin{inparaenum}[\itshape 1)\upshape]
 
 The remainder of this article is organized as follows.  First, in Section
 \ref{sec:overview-studies}, we give a brief overview on the various studies that
-we conducted to investigate anthropomorphism, namely (1) the Roomba study, (2)
-the Forum study, (3) the Ranger domino study. Next, in Section 
-\ref{sec:anthropomorphism} we aim to establish a common ground in the understanding 
-of anthropomorphism. We first explore an artifact-centered perspective and briefly
-outline how the human-like design of agents can encourage anthropomorphism.
-Then, we explore a human-centered perspective by integrating theories from
-cognitive science, developmental and social psychology that serve to explain
-anthropomorphism. At the end of this section we bring both perspectives together
-and interpret that anthropomorphism is a multi-factor phenomenon.  Based on the
-two previous sections, we propose an initial model of the \textit{``Dynamics of
-Anthropomorphism''} in Section \ref{sec:our-ideas}. This model describes the
-variances and dynamics of people's tendency to anthropomorphize an artificial
-agent, such as a robot.  Next, in Section \ref{sec:cognition-neuroscience} we
-present a cognitive and neuroscience perspective on anthropomorphism to
-consolidate our considerations and the proposed model.  This will be followed by
-a discussion about the limitations of our approach (Section
-\ref{sec:discussion}). Further, we debate existing and alternative ways to
-measure anthropomorphism in human-robot interactions.  Finally, Section
-\ref{sec:conclusion} concludes this article and offers starting points for
-further research on anthropomorphism and the effect of the human-like design
-approach in robotics.
+we conducted to investigate anthropomorphism, namely \item the Roomba study,
+\item the Forum study, \item the Ranger domino study. Next, Section
+\ref{sec:anthropomorphism} aims to establish a common ground in the
+understanding of anthropomorphism. We first explore an artifact-centered
+perspective and briefly outline how the human-like design of agents can
+encourage anthropomorphism.  Then, we explore a human-centered perspective
+by integrating theories from cognitive science, developmental and social
+psychology that serve to explain anthropomorphism. At the end of this
+section we bring both perspectives together and interpret that
+anthropomorphism is a multi-factor phenomenon.  Based on the two previous
+sections, Section~\ref{sec:our-ideas} introduces an initial model of the
+\textit{dynamics of anthropomorphism}. This model describes the variances
+and dynamics of people's tendency to anthropomorphize an artificial agent,
+such as a robot.  Then Section \ref{sec:cognition-neuroscience} presents a
+cognitive and neuroscience perspective on anthropomorphism to consolidate
+our considerations and the proposed model.  This is followed by a discussion
+about the limitations of our approach (Section \ref{sec:discussion}) and the
+existing and alternative ways to measure anthropomorphism in human-robot
+interactions.  Finally, Section \ref{sec:conclusion} concludes this article
+and offers starting points for further research on anthropomorphism and the
+effect of the human-like design approach in robotics.
+
+\end{inparaenum}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
