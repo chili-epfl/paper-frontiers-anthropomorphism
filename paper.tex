@@ -51,16 +51,31 @@
         {$\mathcal{A}(#1)$}
 }
 
+\newcommand{\AntNorm}[1][]{%
+      \ifthenelse{\isempty{#1}}%
+      {$\widehat{\mathcal{A}}$}
+      {$\widehat{\mathcal{A}}(#1)$}
+}
+
+
 % for use inside a math environment
 \newcommand{\ant}[1][]{%
       \ifthenelse{\isempty{#1}}%
         {\mathcal{A}}
         {\mathcal{A}(#1)}
 }
+
+\newcommand{\antNorm}[1][]{%
+      \ifthenelse{\isempty{#1}}%
+      {\widehat{\mathcal{A}}}
+      {\widehat{\mathcal{A}}(#1)}
+}
+
 \newcommand{\ICA}{{$\mathcal{A}_0$~}}
 \newcommand{\SLA}{{$\mathcal{A}_\infty$~}}
 \newcommand{\sla}{{\mathcal{A}_\infty}}
 \newcommand{\AntMax}{{$\mathcal{A}_{max}$~}}
+\newcommand{\antMax}{{\mathcal{A}_{max}}}
 
 \hyphenation{com-mon-ly}
 \hyphenation{an-thro-po-mor-phism}
@@ -1549,26 +1564,25 @@ interactive robot in a school.
 \label{sec:dynamics-model}
 
 The phenomenological model of anthropomorphism we propose
-(Figure~\ref{fig:dynamics},~\cite{lemaignan2014dynamics}) represents how the
-level of anthropomorphic effects (\ie observable manifestations of
+(Figure~\ref{fig:dynamics}~\citep{lemaignan2014dynamics}) represents how the
+level of anthropomorphic effects~\Ant[R,H,C,t] (\ie observable manifestations of
 anthropomorphism, as defined in section~\ref{sec:intro}) evolves over a
-long-term human-robot interaction. By long-term interaction, we mean direct
-(non-mediated), repeated interaction with the same robot, over a long period of
-time. 
+long-term human-robot interaction.
 
 While the model primarily considers \emph{long-term interaction} -- direct
 (non-mediated), repeated interaction with the same robot, over an extended
-period of time (typically longer than a week) --, we also formally introduce a
+period of time (typically longer than a week), we also formally introduce a
 so-called \emph{novelty effect}~\cite{kanda_interactive_2004} that models the
 first phase of human-robot interaction, during which a specific increase of
 anthropomorphic interactions is observed.
 
 In this model, anthropomorphism is quantified by a \emph{normalized level of
-anthropomorphic effects}: because anthropomorphic effects are not quantified on
-an absolute scale, we present them as a normalized value, that spans from a
-minimum (no anthropomorphic effects: $\ant=0$) to a maximum (noted \AntMax, with
-$t_{max} = \operatorname{arg\,max}_t \, \ant[t]$). We also discuss at
-section~\ref{measuring} possible methodologies for the quantitative and
+anthropomorphic effects} $\antNorm[R,H,C,t] = \frac{\ant[R,H,C,t]}{\antMax}$: because anthropomorphic effects are
+not quantified on an absolute scale, we present them as a normalized value, that
+spans from a minimum (no anthropomorphic effects: $\ant=0$) to a maximum (noted
+\AntMax, with $t_{max} = \operatorname{arg\,max}_t \, \ant[t]$). For readability
+reasons, we however omit the hat on \Ant in the following sections. We discuss
+at section~\ref{measuring} possible methodologies for the quantitative and
 qualitative assessment of anthropomorphic effects.
 
 As pictured on Figure~\ref{fig:dynamics}, we suggest that $t_{max}$ actually
@@ -1609,7 +1623,7 @@ however vary.
 
 % vertical axis
 \draw[->] (0,0) -- (0,6) node[anchor=east] {};
-\draw(-0.8,3) node[rotate=90,anchor=south] {\scriptsize Normalized level of anthropomorphic effects};
+\draw(-0.8,3) node[rotate=90,anchor=south] {\scriptsize Anthropomorphic effects};
 
 \draw (-0.05, 3) -- (0.05, 3) node[anchor=east] {\ICA};
 \draw (-0.05, 5) -- (0.05, 5) node[anchor=east] {\AntMax};
@@ -1622,11 +1636,12 @@ however vary.
 \draw[<-] (0.65,5) -- (0.8,5.2) node[anchor=east] {};
 \draw (0.9,5.3) node[anchor=west] {\tiny \it novelty peak};
 
+\draw[dashed] (0.6, 0) -- (0.6,5.1);
+\draw (0.6,0) node[anchor=north] {$t_{max}$};
 
 \draw[dotted] (0, 5) -- (6.2,5);
 \draw[dotted] (0, 3) -- (6.2,3);
-\draw[<->] (6.1,3) -- (6.1,5) node[anchor=east] {};
-\draw (6.2,4) node[rotate=90, anchor=north, align=center] {\tiny Expectation\\\tiny mismatch};
+\draw[<->] (6.1,3) -- (6.1,5) node[sloped, above, midway] {$\Delta_{a}$};
 
 \draw[<-] (1.7,4.4) -- (3.2,4.1) node[anchor=east] {};
 \draw[<-] (2.85,2.6) -- (3.2,4.1) node[anchor=east] {};
@@ -1801,6 +1816,9 @@ qualities)~\cite{baxter2013do}.
 \paragraph{The Novelty Effect}
 \label{sec:noveltyeffect}
 
+\fxfatal{Julia, do you have smthg to provide an initial account of what the
+novelty effect is?}
+
 To illustrate how the novelty of a robot can evoke anthropomorphic effects, we
 present an example from our long-term ethnographic study with Roomba vacuum
 cleaning robots in households. The observed scenario describes how an elderly
@@ -1841,6 +1859,15 @@ During the following visits at the woman's place, she did not talk to the robot
 anymore, and generally behaved in a less anthropomorphizing way. This is why we
 suspect the observed effects were due to the novelty of the robot.
 
+\paragraph{Attractiveness Delta}
+
+Besides, we propose to call \emph{attractiveness delta}, noted $\Delta_{a}$, the
+difference between the initial capital of anthropomorphism \ICA for a given tuple (user,
+robot, context) and the anthropomorphism peak \AntMax (Figure~\ref{fig:dynamics}).
+This can be interpreted as the initial \emph{excitement} over the robot, or how
+much a user tend to increase his/her anthropomorphic engagement when he/she
+starts to actually interact with the robot.
+
 \subsubsection{Familiarization Phase}
 \label{sec:familiarization}
 
@@ -1876,13 +1903,6 @@ process, which in turn leads to the supposition of complex cognitive skills, or
 conversely as a failure, reminding the human that the robot is ``just a
 machine''. Section~\ref{sec:disruptive} discusses more in depth the impact of
 the user's perception of disruptive behaviours, and their cognitive correlates.
-
-\paragraph{Expectation mismatch}
-
-Besides, we propose to call \emph{expectation mismatch} the delta between the
-initial capital of anthropomorphism for a given tuple (user, robot, context)
-and the anthropomorphism peak of novelty effect (Figure~\ref{fig:dynamics}).
-\fixme{Need to rediscuss what this delta actually represent...}
 
 \subsubsection{Stabilization Phase}
 \label{sec:stabilization}
@@ -2074,9 +2094,9 @@ process.  The result of this third phase would be an iteratively adapted
 cognitive model of the robot.
 
 
-\subsection{Relation to the model of anthropomorphism}
+\subsection{Relation to the dynamics of anthropomorphism}
 
-These cognitive levels overlap but do not exactly match the
+These cognitive levels overlap over time but do not exactly match the
 \emph{Initialization}, \emph{Familiarization} and \emph{Stabilization} phases
 introduced in our model of the dynamics of anthropomorphism. In particular,
 the cognitive levels 1 and 2 are both included in the \emph{initialization} phase
