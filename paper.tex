@@ -25,6 +25,11 @@
 \usepackage{fixltx2e}
 \usepackage{textcomp}
 
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+\floatstyle{plaintop}
+
 \usepackage[bookmarks]{hyperref}
 
 \usepackage[draft, nomargin, marginclue, footnote]{fixme}
@@ -372,10 +377,39 @@ anthropomorphic or human-social (in a broader sense).
 Figure \ref{fig:roomba-activities} shows how many of the 9 households engaged
 in these activities during the 6 months when the study was conducted. 
 
+%\begin{figure}
+%    \centering
+%    \includegraphics[width=0.5\columnwidth]{roomba-activities.png}
+%    \caption{Activities with the robot over time, n = 9 households. This bar
+%        chart shows how many of the 9 households carried out different kinds of
+%        anthropomorphic / social activities with and related to the robot at 3
+%        time points during 6 months. Activities include \texttt{watching} the
+%        robot for fun, giving a \texttt{demo} of the robot to guests / visitors,
+%        \texttt{personalizing} the robot, giving a \texttt{name} to the robot,
+%        \texttt{talking} to the robot, \texttt{playing} with the robot.
+%        Participants were asked to report on these activities at 3 time points
+%        after the robot was deployed in their home: after 2 weeks, after 2 months,
+%        and after 6 months.} 
+%
+%\label{fig:roomba-activities}
+%\end{figure}
+
 \begin{figure}
-    \centering
-    \includegraphics[width=0.5\columnwidth]{roomba-activities.png}
-    \caption{Activities with the robot over time, n = 9 households. This bar
+        \centering
+        \begin{subfigure}[b]{0.48\columnwidth}
+                \includegraphics[width=\textwidth]{roomba-activities.png}
+                \caption{Roomba activities}
+                \label{fig:roomba-activities}
+        \end{subfigure}%
+        ~ %add desired spacing between images, e. g. ~, \quad, \qquad etc.
+          %(or a blank line to force the subfigure onto a new line)
+        \begin{subfigure}[b]{0.48\columnwidth}
+                \includegraphics[width=\textwidth]{roomba-perception.pdf}
+                \caption{Roomba perception}
+                \label{fig:roomba-perception}
+        \end{subfigure}
+        \caption{\textbf{The Roomba study: Long-term interaction with a robot.\\}
+    \textbf{a)} Activities with the robot over time, n = 9 households. This bar
         chart shows how many of the 9 households carried out different kinds of
         anthropomorphic / social activities with and related to the robot at 3
         time points during 6 months. Activities include \texttt{watching} the
@@ -384,10 +418,17 @@ in these activities during the 6 months when the study was conducted.
         \texttt{talking} to the robot, \texttt{playing} with the robot.
         Participants were asked to report on these activities at 3 time points
         after the robot was deployed in their home: after 2 weeks, after 2 months,
-        and after 6 months.} 
-
-\label{fig:roomba-activities}
+        and after 6 months.\\
+	\textbf{b)} People's perception of the robot over time, n = 15 participants.
+    		This line chart shows how people's perception of the robot evolves over
+    		time. At 5 time points people were asked to rate the robot according to the
+    		following aspects: the perceived \texttt{intelligence} of the robot, the
+    		perceived \texttt{usefulness}, the perceived \texttt{ease of use}, how much
+    		\texttt{fun} it was to use the robot, how far they found the robot had an
+    		\texttt{impact} on their household, and their {overall} impression of it.}
+    		\label{fig:roomba-study}
 \end{figure}
+
 
 \paragraph*{Watching the robot for fun.} We categorize watching a robot for fun
 as an entertaining, emotional activity, reflecting a feeling of empathy for the
@@ -491,52 +532,52 @@ the household as a cleaning tool. Concerning anthropomorphism, we included
 \textit{perceived intelligence} and experienced \textit{fun} when using the
 robot as indicators for the perception of human-likeness in the robot.\fixme{JF: Severin, you also mentioned impact as one factor. Please include it here below as another paragraph.}
 
-\begin{figure}
-    \centering
+%\begin{figure}
+%    \centering
 %    \includegraphics[width=0.5\columnwidth]{roomba-perception.pdf}
 
-    \begin{tikzpicture}[scale=0.5, y = 2cm]
-    %axis
-    \draw (0,0) -- coordinate (x axis mid) (20,0);
-    \draw (0,0) -- coordinate (y axis mid) (0,7);
-    %ticks
-    \foreach \x in {0,4,...,20}
-        \draw (\x,1pt) -- (\x,-3pt);
-    \foreach \y in {1,...,7} 
-        \draw[black!20] (20,\y) -- (-3pt,\y);
-    \foreach \y in {1,...,7} 
-        \draw (-3pt, \y) node[anchor=east] {\y}; 
-    %labels
-    \node[below=0.8cm] at (x axis mid) {People's perception (n = 15)};
-    \node at (2, -0.4) {\tiny expectations};
-    \node[align=center] at (6, -0.4) {\tiny after\\ \tiny first usage};
-    \node[align=center] at (10, -0.4) {\tiny after\\ \tiny 2 weeks};
-    \node[align=center] at (14, -0.4) {\tiny after\\ \tiny 2 months};
-    \node[align=center] at (18, -0.4) {\tiny after\\ \tiny 6 months};
+%    \begin{tikzpicture}[scale=0.5, y = 2cm]
+%    %axis
+%    \draw (0,0) -- coordinate (x axis mid) (20,0);
+%    \draw (0,0) -- coordinate (y axis mid) (0,7);
+%    %ticks
+%    \foreach \x in {0,4,...,20}
+%        \draw (\x,1pt) -- (\x,-3pt);
+%    \foreach \y in {1,...,7} 
+%        \draw[black!20] (20,\y) -- (-3pt,\y);
+%    \foreach \y in {1,...,7} 
+%        \draw (-3pt, \y) node[anchor=east] {\y}; 
+%    %labels
+%    \node[below=0.8cm] at (x axis mid) {People's perception (n = 15)};
+%    \node at (2, -0.4) {\tiny expectations};
+%    \node[align=center] at (6, -0.4) {\tiny after\\ \tiny first usage};
+%    \node[align=center] at (10, -0.4) {\tiny after\\ \tiny 2 weeks};
+%    \node[align=center] at (14, -0.4) {\tiny after\\ \tiny 2 months};
+%    \node[align=center] at (18, -0.4) {\tiny after\\ \tiny 6 months};
+%
+%    \draw[dashed, black!50] (6,0) -- (6,7) node[sloped, below, pos=0.25] {\tiny novelty effect};
+%
+%    \draw[ultra thick, red!50] (2,5.6) -- (6,6.1) -- (10,6.3) -- (14,6.3) -- (18,6.1) node at (15,6.5) {\tiny \it ease of use};
+%    \draw[ultra thick, purple] (2,4.9) -- (6,5.2) -- (10,5.1) -- (14,4.5) -- (18,4.2) node at (3,4.7) {\tiny \it usefulness};
+%    \draw[ultra thick, blue!50] (2,4) -- (6,4.1) -- (10,4.6) -- (14,4.1) -- (18,4.3) node at (16,4) {\tiny \it fun};
+%    \draw[ultra thick, green!50] (2,3.9) -- (6,4.1) -- (10,4.2) -- (14,3.8) -- (18,3.3) node at (19,3.5) {\tiny \it intelligence};
+%    \draw[ultra thick, orange] (2,3.5) -- (6,4.2) -- (10,4) -- (14,3.2) -- (18,2.8) node at (14,2.7) {\tiny \it impact};
+%
+%    \draw[ultra thick, dashed] (2,5.2) -- (6,5.2) -- (10,5) -- (14,4.9) -- (18,4.5) node at (14,5.3) {\tiny \it overall};
+%
+%    \end{tikzpicture}
 
-    \draw[dashed, black!50] (6,0) -- (6,7) node[sloped, below, pos=0.25] {\tiny novelty effect};
 
-    \draw[ultra thick, red!50] (2,5.6) -- (6,6.1) -- (10,6.3) -- (14,6.3) -- (18,6.1) node at (15,6.5) {\tiny \it ease of use};
-    \draw[ultra thick, purple] (2,4.9) -- (6,5.2) -- (10,5.1) -- (14,4.5) -- (18,4.2) node at (3,4.7) {\tiny \it usefulness};
-    \draw[ultra thick, blue!50] (2,4) -- (6,4.1) -- (10,4.6) -- (14,4.1) -- (18,4.3) node at (16,4) {\tiny \it fun};
-    \draw[ultra thick, green!50] (2,3.9) -- (6,4.1) -- (10,4.2) -- (14,3.8) -- (18,3.3) node at (19,3.5) {\tiny \it intelligence};
-    \draw[ultra thick, orange] (2,3.5) -- (6,4.2) -- (10,4) -- (14,3.2) -- (18,2.8) node at (14,2.7) {\tiny \it impact};
-
-    \draw[ultra thick, dashed] (2,5.2) -- (6,5.2) -- (10,5) -- (14,4.9) -- (18,4.5) node at (14,5.3) {\tiny \it overall};
-
-    \end{tikzpicture}
-
-
-    \caption{People's perception of the robot over time, n = 15 participants.
-    This line chart shows how people's perception of the robot evolves over
-    time. At 5 time points people were asked to rate the robot according to the
-    following aspects: the perceived \texttt{intelligence} of the robot, the
-    perceived \texttt{usefulness}, the perceived \texttt{ease of use}, how much
-    \texttt{fun} it was to use the robot, how far they found the robot had an
-    \texttt{impact} on their household, and their {overall} impression of it.}
-
-    \label{fig:roomba-perception}
-\end{figure}
+%    \caption{People's perception of the robot over time, n = 15 participants.
+%    This line chart shows how people's perception of the robot evolves over
+%    time. At 5 time points people were asked to rate the robot according to the
+%    following aspects: the perceived \texttt{intelligence} of the robot, the
+%    perceived \texttt{usefulness}, the perceived \texttt{ease of use}, how much
+%    \texttt{fun} it was to use the robot, how far they found the robot had an
+%    \texttt{impact} on their household, and their {overall} impression of it.}
+%
+%    \label{fig:roomba-perception}
+%\end{figure}
 
 \paragraph*{Perceived intelligence.} On a scale from 1-7, people were not sure
 about how intelligent they should expect the robot to be (mean value 3.9). The
@@ -607,13 +648,6 @@ concerning anthropomorphism:
     	\item As anthropomorphism can be seen as a certain kind of emotional / social relation to an artifact, there will be more anthropomorphic language in forum posts in which the author describes a relation to the device, compared to discussing technological aspects or how the device is used.
 \end{enumerate}
 
-\begin{figure}
-    \centering
-    \includegraphics[width=0.5\columnwidth]{aibo-roomba-ipad_2.jpg}
-    \caption{The Sony AIBO robotic dog (left), the iRobot Roomba vacuum-cleaning robot (middle), and the Apple Inc. iPad tablet computer (right) were compared in terms of how far users of these devices use anthropomorphic expressions in online discussion forums about their technology / robot.}
-    \label{fig:aibo-roomba-ipad}
-\end{figure}
-
 Similar to how \cite{friedman_hardware_2003} analyzed anthropomorphic language
 in online forums, we coded a segment as anthropomorphic when the respective
 device was described in terms of:
@@ -638,6 +672,13 @@ device was described in terms of:
 In the next paragraphs, we present findings in respect of our two hypotheses:
 anthropomorphic language related to the device, and anthropomorphic language
 related to the topic of the forum post.
+
+\begin{figure}[b]
+    \centering
+    \includegraphics[width=0.5\columnwidth]{aibo-roomba-ipad_2.jpg}
+    \caption{The Sony AIBO robotic dog (left), the iRobot Roomba vacuum-cleaning robot (middle), and the Apple Inc. iPad tablet computer (right) were compared in terms of how far users of these devices use anthropomorphic expressions in online discussion forums about their technology / robot.}
+    \label{fig:aibo-roomba-ipad}
+\end{figure}
 
 %Overall, our analysis revealed that in all three forums, discussions about
 %\textit{technical} aspects of the respective device were most frequent (67.7~\%
@@ -744,6 +785,38 @@ of the robot was analyzed in a qualitative way and processed in a
 qualitative scale (higher values on that scale indicate more 
 anthropomorphism), see Figure \ref{fig:qualitative-score}.
 
+\begin{figure}
+        \centering
+        \begin{subfigure}[b]{0.48\columnwidth}
+                \includegraphics[width=\textwidth]{ranger-interactions-per-runs}
+                \caption{Interactions per run}
+                \label{fig:interactions-per-run}
+        \end{subfigure}%
+        ~ %add desired spacing between images, e. g. ~, \quad, \qquad etc.
+          %(or a blank line to force the subfigure onto a new line)
+        \begin{subfigure}[b]{0.48\columnwidth}
+                \includegraphics[width=\textwidth]{ranger-interactions-vs-qualitative-score}
+                \caption{Qualitative score by interactions}
+                \label{fig:qualitative-score}
+        \end{subfigure}
+        \caption{\textbf{The Ranger domino study: Child-robot interaction.}\\
+    \textbf{a)} Quantitative assessment: here, six interaction modalities have
+        been selected: showing something to the robot ({\tt show}), talking to
+        the robot ({\tt talk}), touching it ({\tt touch}), misbehaving (like
+        shaking it, {\tt mis}), using gestures ({\tt ges}), and looking
+        for help by glancing at the experimenter ({\tt look}). In each
+        of the 13 experimental runs, we annotated and counted the number of
+        occurrences of each of these interactions. Highlighted runs 2.3, 2.4,
+        2.7 and 2.8 correspond to unexpected robot behaviors: we observe peaks
+        of interactions every time the robot's behavior changes from expected to
+        unexpected or from unexpected to expected. (n = 26 children)\\
+	\textbf{b)} We found a significant negative correlation ($p=0.048$) between the
+    number of interactions and the qualitative anthropomorphic projections. This 
+    suggests that children who interacted more with the robot, anthropomorphized it 
+	less, and \textit{vice versa}. (n = 13 groups)}
+    		\label{fig:Ranger-domino}
+\end{figure}
+
 
 \subsubsection{Anthropomorphic interactions with the robot\\}
 
@@ -760,22 +833,22 @@ tended to use slightly more active engagement interactions: gestures toward the
 robot, and to talk more to the robot. Also, they were looking more often at the 
 experimenter, seeking help. 
 
-\begin{figure}
-    \centering
-    \includegraphics[width=0.5\columnwidth]{ranger-interactions-per-runs}
-    \caption{Quantitative assessment: here, six interaction modalities have
-        been selected: showing something to the robot ({\tt show}), talking to
-        the robot ({\tt talk}), touching it ({\tt touch}), misbehaving (like
-        shaking it, {\tt mis}), using gestures ({\tt ges}), and looking
-        for help by glancing at the experimenter ({\tt look}). In each
-        of the 13 experimental runs, we annotated and counted the number of
-        occurrences of each of these interactions. Highlighted runs 2.3, 2.4,
-        2.7 and 2.8 correspond to unexpected robot behaviors: we observe peaks
-        of interactions every time the robot's behavior changes from expected to
-        unexpected or from unexpected to expected. (n = 26 children)}
-
-    \label{fig:interactions-per-run}
-\end{figure}
+%\begin{figure}
+%    \centering
+%    \includegraphics[width=0.5\columnwidth]{ranger-interactions-per-runs}
+%    \caption{Quantitative assessment: here, six interaction modalities have
+%        been selected: showing something to the robot ({\tt show}), talking to
+%        the robot ({\tt talk}), touching it ({\tt touch}), misbehaving (like
+%        shaking it, {\tt mis}), using gestures ({\tt ges}), and looking
+%        for help by glancing at the experimenter ({\tt look}). In each
+%        of the 13 experimental runs, we annotated and counted the number of
+%        occurrences of each of these interactions. Highlighted runs 2.3, 2.4,
+%        2.7 and 2.8 correspond to unexpected robot behaviors: we observe peaks
+%        of interactions every time the robot's behavior changes from expected to
+%        unexpected or from unexpected to expected. (n = 26 children)}
+%
+%    \label{fig:interactions-per-run}
+%\end{figure}
 
 
 \subsubsection{Perception of anthropomorphic characteristics of the robot\\}
@@ -801,15 +874,15 @@ that perceive more human-like characteristics in the robot also interact with it
 a more human-like way?
 
 
-\begin{figure}
-    \centering
-    \includegraphics[width=0.5\columnwidth]{ranger-interactions-vs-qualitative-score}
-    \caption{We found a significant negative correlation ($p=0.048$) between the
-    number of interactions and the qualitative anthropomorphic projections. This 
-    suggests that children who interacted more with the robot, anthropomorphized it 
-    less, and \textit{vice versa}. (n = 13 groups)}
-    \label{fig:qualitative-score}
-\end{figure}
+%\begin{figure}
+%    \centering
+%    \includegraphics[width=0.5\columnwidth]{ranger-interactions-vs-qualitative-score}
+%    \caption{We found a significant negative correlation ($p=0.048$) between the
+%    number of interactions and the qualitative anthropomorphic projections. This 
+%    suggests that children who interacted more with the robot, anthropomorphized it 
+%    less, and \textit{vice versa}. (n = 13 groups)}
+%    \label{fig:qualitative-score}
+%\end{figure}
 
 Figure~\ref{fig:qualitative-score} plots the qualitative against the quantitative assessment of
 anthropomorphic effects during the Ranger domino study: the correlation is
@@ -853,26 +926,26 @@ the same time, that humans tend to \textit{``see human in the non-
 human''} \citep{epley_seeing_2007}. 
 Anthropomorphism as a social phenomenon arises in an interaction 
 \citep{persson_anthropomorphism_2000}, and thus includes at least two interaction 
-partners (the human and the real or imagined non-human agent). Therefore, one can 
-take two main perspectives on explaining it \citep{lee_human_2005}: an artifact-
-centered, and a human-centered. We briefly outline both views in the following. 
+partners: the human and the real or imagined non-human agent. Therefore, one can 
+take two main perspectives on explaining anthropomorphism \citep{lee_human_2005}: a human-centered and an artifact-centered. We briefly outline both views in the following. 
 It has to be kept in mind that both perspectives are inseparable; they apply at the 
 same time, and we would like to present them here just as two different viewpoints 
-on the same kind of phenomenon.
+on the same phenomenon.
 
-In this section we will try to create a common ground in the understanding of 
-anthropomorphism, with a focus on it related to human-robot interaction. 
+By doing so, this section tries to create a common ground in the understanding of 
+anthropomorphism, with a focus on the design of robots and human-robot interaction. 
 First of all, we would like to propose a clarification of terms.
-We call an imitation of human form (or in a broader sense also animal and natural) 
-form \textit{``anthropomorphic design''} or \textit{``anthropomorphic form''} -- 
-but \textit{not anthropomorphism}. Contrary, we call the social phenomenon of 
-people's tendency to perceive human-likeness in non human-like 
-agents \textit{anthropomorphism}.
+In short, we propose to use two different terms, in order to differentiate between the human-like design of a non-human agent, and the perception of human-likeness in a non-human agent.
+We use the terms \textit{``anthropomorphic design''} and \textit{``anthropomorphic 
+form''} interchangeably to refer to an imitation of human form (or in a broader sense 
+also animal and natural) in the design of objects and artificial agents. We propose to 
+\textit{not} refer to this as \textit{anthropomorphism}.
+Because we use \textit{anthropomorphism} to refer to the social phenomenon of 
+people's tendency to perceive human-likeness in non human-like agents. This is an important differentiation.
 
-In the following, we first present an artifact-centered perspective on 
-anthropomorphism, and outline how the human-like 
-design approach (\textit{anthropomorphic form}) is used in robotics to encourage 
-people to interact socially with robots. Then, we apply a human-centered 
+In the following, we first present an artifact-centered perspective on anthropomorphism, and outline how 
+the human-like design approach (\textit{anthropomorphic form}) is used in robotics to encourage 
+people to interact in a social way with robots. Then, we apply a human-centered 
 perspective and shed light on \textit{anthropomorphism as a social phenomenon}. We present 
 theories from psychology and cognitive science to explain people's tendency to 
 perceive human-like characteristics in non-human agents. In the end, we synthesize 
@@ -895,10 +968,10 @@ as a multi-factor phenomenon.
 
 An artifact-centered perspective explains anthropomorphism from the ascertainable 
 parts / the design of the non-human agent.
-The direction of causality in this view is that the non-human artifact (or certain 
-features of it) encourages the human to anthropomorphize it.
+The direction of causality in this view is that the non-human artifact (or a certain 
+feature of it) encourages the human to anthropomorphize the artifact / agent.
 This perspective assumes that humans directly respond to life-like and social cues 
-that the non-human artifact or system emits, without thoughtful mental processing, 
+that the non-human agent or system emits, without thoughtful mental processing, 
 by simply applying stereotypes and heuristics to it. In fact, from early childhood 
 on, humans are inherently well-trained to perceive life \citep{epley_seeing_2007}, 
 and to respond to social cues, such as facial expressions, social gestures or turn-
@@ -992,7 +1065,7 @@ strangely familiar which defeats our efforts to separate ourselves from it"} (ci
 after \cite{hegel_understanding_2008}).
 In other words, humans are very sensitive to the limits of what is familiar to them 
 in a sense of being human. At the same time, humans are naturally very skilled when 
-it comes to identifying what is acceptable as a human and what is a \hl{NACHAHMUNG} 
+it comes to identifying what is acceptable as a human and what is an imitation 
 of it. Even subtle differences can be crucial -- humans are inherently well trained 
 in identifying if there is \hl{``something strange''} in the familiar.
 Summing it up, a not yet very well defined thin line separates acceptable human-like forms in 
