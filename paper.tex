@@ -107,7 +107,7 @@ Universit\'{e} de Gen\`{e}ve \\ CH-1211 Gen\`{e}ve, Switzerland
 \onecolumn
 \firstpage{1}
 
-\title[The Dynamics of Anthropomorphism]{The Dynamics of Anthropomorphic Effects in Human-Robot Interaction}
+\title[The Dynamics of Anthropomorphism]{The Dynamics of Anthropomorphism in Human-Robot Interaction}
 \author[\firstAuthorLast ]{\Authors}
 \address{}
 \correspondance{}
@@ -169,7 +169,7 @@ emotional engagement with and feelings of empathy for the non-human agent
 (\eg digital characters, robots) for several reasons. Amongst others,
 anthropomorphic design should serve to evoke a positive valence as the Uncanny
 Valley hypothesis suggests, which in turn should foster people's acceptance of
-the artificial agent, and enable effective (human-like and especially
+the artificial agent, and enable effective (human-like and 
 human-social) interaction.  However, at a certain point as the non-human agent
 approaches but fails to closely resemble a human, the evoked valence in the
 human user suddenly turns into a negative uncanny feeling of what
@@ -188,23 +188,23 @@ inconsistent \citep{cheetham_human_2011}.
 
 Along this line, this article aims at fostering a better understanding of
 \textbf{anthropomorphism} (noted \Ant in this paper) by considering the phenomenon
-\textbf{as a whole}: robotics researchers often tend to believe that
+as a whole: robotics researchers often tend to believe that
 anthropomorphism only describes a static set of human-like features of a robot
 (like shape, speech capabilities, facial expressions, etc.). We refer to these
 characteristics as the \emph{anthropomorphic design} of the
-robot~\cite{fink_anthropomorphism_2012}. But \emph{anthropomorphism} in general
+robot~\citep{fink_anthropomorphism_2012}. But \emph{anthropomorphism} in general
 refers to the larger \emph{social phenomenon} that emerges from the (real or
 imagined) \emph{interaction} between a robot and a
 user~\citep{persson_anthropomorphism_2000}. According to~\cite{epley_when_2008},
 this includes for instance emotional states, motivations, intentions
 \emph{ascribed by the user} to the robot. As such, the dynamic and
 socio-cognitive dimensions of anthropomorphism are essential to understand the
-complex bonds that human users build with the robots.
+complex bonds that human users build with robots.
 
 \subsection{A few results from the field}
 
 To support the reflection, it may be useful to consider a few experimental
-results. We studied anthropomorphism effects in several short- and long-term
+results. We studied anthropomorphism in several short- and long-term
 human-robot interaction studies that we carried out with embodied robots, both
 in ecologically valid real-world environments and controlled lab settings. Those
 experiments are presented in details in previously published
@@ -214,22 +214,20 @@ underline the complexity of the phenomenon.
 
 \begin{figure}[h!]
         \centering
-        \begin{subfigure}[b]{0.48\columnwidth}
+        \begin{subfigure}[t]{0.48\columnwidth}
                 \includegraphics[width=\textwidth]{roomba-activities.png}
-                \caption{Roomba activities}
+                \caption{Activities related to Roomba, n = 9 households}
                 \label{fig:roomba-activities}
         \end{subfigure}%
-        ~ %add desired spacing between images, e. g. ~, \quad, \qquad etc.
-          %(or a blank line to force the subfigure onto a new line)
-        \begin{subfigure}[b]{0.48\columnwidth}
+        \hspace{0.5cm} 
+        \begin{subfigure}[t]{0.48\columnwidth}
                 \includegraphics[width=\textwidth]{roomba-perception.pdf}
-                \caption{Roomba perception}
+                \caption{People's perception of Roomba, n = 15 participants}
                 \label{fig:roomba-perception}
         \end{subfigure}
-    \caption{Usage and perception of the Roomba robot over a 6 months period.}
+    \caption{Usage and perception of the Roomba vacuum-cleaning robot over a 6 months period. Qualitative data suggest that people's activities related to the robot as well as their perception of the robot change over time. Overall, a rather low social engagement of the users with the robot, and few perception of human-likeness in the robot were found.}
     \label{fig:roomba}
 \end{figure}
-
 
 Figures~\ref{fig:roomba-activities} and~\ref{fig:roomba-perception} give a first
 perspective on how naive users interact and perceive robots over a long period
@@ -244,7 +242,7 @@ time (\emph{ease of use} and \emph{fun}), and others decreased: the perceived
 \emph{intelligence} and \emph{impact} reflect the cognitive engagement of the
 user towards the machine: we can assume that one does not care to engage in a
 (cognitive) interaction with an artifact perceived as non-intelligent and with
-no impact on his/her life (and the level of activity pictured on
+no impact on one's life (and the level of activity pictured in
 Figure~\ref{fig:roomba-activities} qualitatively confirms this intuition). Even
 if one can argue that the Roomba is not designed to foster interaction, it
 raises a first question: how to sustain engagement between a robot and a human
@@ -253,45 +251,43 @@ understand the psychological phenomenon, and can we effectively account for the
 dynamics of these interactions?
 
 Those questions are certainly not new, but paradoxically, while anthropomorphism
-in robotics is a commonly discussed trait of human-robot interaction, it appears
+is a commonly discussed trait of human-robot interaction, it appears
 that we lack formal grounds and models that would account for the long-term
 dynamics of these interactions.
 
+\begin{figure}[h!]
+        \centering
+        \begin{subfigure}[b]{0.48\columnwidth}
+                \centering
+                \includegraphics[width=0.75\textwidth]{ranger}
+                \caption{Interaction scenario of the \emph{Ranger} domino study: the robot toy box Ranger transports domino tiles between the two children}
+                \label{fig:ranger-expe}
+        \end{subfigure}%
+        \hspace{0.5cm}
+        \begin{subfigure}[b]{0.48\columnwidth}
+            \includegraphics[width=\textwidth]{ranger-interactions-vs-qualitative-score}
+            \caption{Qualitative level of anthropomorphic projections ($y$-axis) versus the actual interactions with the robot ($x$-axis) are negatively correlated.}
+            \label{fig:qualitative-score}
+        \end{subfigure}
+        \caption{Children`s interactions with the Ranger robot toy box, and their anthropomorphic projections onto the robot. Overall, large variations of both children`s behavior and their perception of the robot were found but seemed to be correlated to each other.}
+    \label{fig:ranger}
+\end{figure}
+
+%\fixme{It was written as caption of fig:ranger: ``Level of interaction with a semi-anthropomorphic robot is \emph{not} a predictor of anthropomorphic projections.'' Comment JF: this statement does not make sense to me as we found a significant negative correlation between the two.}
+
 Figure~\ref{fig:qualitative-score} calls for other initial remarks. This diagram
-comes from a (yet unpublished) study where 13 pairs of children (4-5 years old)
-played for about 20 minutes a Domino game with a robot (the robot was tasked to
+shows data from a (yet unpublished) study in which 13 pairs of children (4-5 years old)
+played for about 20 minutes a Domino game with a robot toy box (the robot was tasked to
 carry domino pieces from one child to the other, Figure~\ref{fig:ranger-expe}).
 The $x$-axis represents the number of social interactions between the children
-and the robot (like talking or showing objects), based on video annotations. On
+and the robot (like talking to the robot or showing objects), based on video annotations. On
 the $y$-axis, we have a synthetic qualitative measurement of anthropomorphic
-projections based on two questionnaires. The correlation between both these
+projections onto the robot, based on two interviews with the children. The correlation between both these
 values is significantly \emph{negative}: the more the children engaged into
 interaction, the less prone to anthropomorphic projections they were. This
 diagram also highlights an interesting cluster of children who did not interact
 much with the robot, and still reported a strong anthropomorphic perception of
 the robot.
-
-
-\begin{figure}[h!]
-        \centering
-        \begin{subfigure}[t]{0.48\columnwidth}
-                \centering
-                \includegraphics[width=0.6\textwidth]{ranger}
-                \caption{The \emph{Ranger} Domino study}
-                \label{fig:ranger-expe}
-        \end{subfigure}%
-        ~ %add desired spacing between images, e. g. ~, \quad, \qquad etc.
-          %(or a blank line to force the subfigure onto a new line)
-        \begin{subfigure}[t]{0.48\columnwidth}
-            \includegraphics[width=0.9\textwidth]{ranger-interactions-vs-qualitative-score}
-            \caption{Qualitative level of anthropomorphic projections versus
-            actual interactions with the robot}
-            \label{fig:qualitative-score}
-        \end{subfigure}
-        \caption{Level of interaction with a semi-anthropomorphic robot is
-        \emph{not} a predictor of anthropomorphic projections.}
-    \label{fig:ranger}
-\end{figure}
 
 These results may seem counter-intuitive at first sight, and illustrate that the
 mechanisms that relate anthropomorphism to adoption and engagement are
@@ -299,24 +295,26 @@ non-trivial. In section~\ref{sec:cognition-neuroscience}, we sketch a model of
 the cognitive correlates of anthropomorphism that partially account for these
 results.
 
+
 \subsection{Towards a formal understanding of anthropomorphism}
 
 These first remarks lead to the main question we attempt to address in this
-article: how can we understand \emph{anthropomorphism} as a whole, and in such a
-way that is support improved human-robot interactions?
+article: how can we understand \emph{anthropomorphism} as a whole, \hl{and in such a
+way that is support improved human-robot interactions?}\fixme{JF: something's wrong with this sentence}
 
+We propose to discuss anthropomorphism from three
+complementary perspectives: 
 
-Based on an extensive literature review~\citep{fink_anthropomorphism_2012},
-several field and lab studies previously mentioned and insights from the
-cognitive neurosciences, we propose to discuss anthropomorphism from three
-complementary perspectives.
+%Based on an extensive literature review~\citep{fink_anthropomorphism_2012},
+%several field and lab studies previously mentioned, and insights from the
+%cognitive neuroscience, we propose to discuss anthropomorphism from three
+%complementary perspectives.
 
-First, we would like to clarify what anthropomorphism actually \emph{means}:
-besides the \emph{artifact-centered} understanding of anthropomorphism, it
-seems important to explicit the human and social factors of anthropomorphism.
+First, by reviewing what anthropomorphism actually \emph{means}:
+besides an \emph{artifact-centered} understanding that explains anthropomorphism from the human-like design of the non-human artifact, it seems important to explicit the social component, namely a \emph{human-centered} understanding, of anthropomorphism.
 
-Then, we propose a model to understand how anthropomorphism evolves over time.
-These dynamics are non-monotonic, and psychological factors like the
+Second, we propose a model, called the \textit{Dynamics of Anthropomorphism} to understand how anthropomorphism evolves over time ~\citep{lemaignan2014dynamics}.
+These dynamics are non-monotonic, and effects like the
 \emph{novelty effect} play here a key role.
 
 Finally, we adopt a third perspective on anthropomorphism by investigating its
@@ -328,19 +326,19 @@ build a practical model of the cognitive stages we encounter in human-robot
 interaction.
 
 
-\paragraph{Two hypotheses} Our research question also translates to two
+%\paragraph{Two hypotheses}
+Our research question also translates to two
 hypotheses, which structure the reflections of this article:
 
 \begin{enumerate} 
-    
-\item A person's tendency to anthropomorphize a robot
+\item ~A person's tendency to anthropomorphize a robot
     is based on several factors, including (but not limited to) (1) the
     design of the robot, (2) the personal characteristics of the human user,
     and (3) the context and situation of use. For instance, a social context
     and purpose of the robot increase anthropomorphism: \textit{anthropomorphism
     as a multi-factor phenomenon}.
 
-\item A person's tendency to anthropomorphize a robot
+\item ~A person's tendency to anthropomorphize a robot
     evolves in a non-linear way over time and with growing experience that the
     person has with the robot. For instance, a more experienced user will
     perceive the robot as more familiar and predictable, and in turn
@@ -351,33 +349,33 @@ hypotheses, which structure the reflections of this article:
 
 \subsection{Article overview}
 
-\begin{inparaenum}[\itshape 1)\upshape]
+%\begin{inparaenum}[\itshape 1)\upshape]
 
-The remainder of this article is organized as follows.  First, in Section
-\ref{sec:overview-studies}, we give a brief overview on the various studies that
-we conducted to investigate anthropomorphism, namely \item the Roomba study,
-\item the Forum study, \item the Ranger domino study. Next, Section
-\ref{sec:anthropomorphism} aims to establish a common ground in the
-understanding of anthropomorphism. We first explore an artifact-centered
-perspective and briefly outline how the human-like design of agents can
-encourage anthropomorphism.  Then, we explore a human-centered perspective
-by integrating theories from cognitive science, developmental and social
-psychology that serve to explain anthropomorphism. At the end of this
-section we bring both perspectives together and interpret that
-anthropomorphism is a multi-factor phenomenon.  Based on the two previous
-sections, Section~\ref{sec:our-ideas} introduces an initial model of the
-\textit{dynamics of anthropomorphism}. This model describes the variances
+The remainder of this article is organized as follows.
+According to the three perspectives that we take, 
+we first (in Section
+%\ref{sec:overview-studies}, we give a brief overview on the various studies that
+%we conducted to investigate anthropomorphism, namely \item the Roomba study,
+%\item the Forum study, \item the Ranger domino study. Next, Section
+\ref{sec:anthropomorphism}) aim to establish a common ground in the
+understanding of anthropomorphism. We review literature from several relevant domains and integrate the different explanations into an understanding of
+anthropomorphism as a multi-factor phenomenon.
+Based on this, Section~\ref{sec:our-ideas} introduces our initial model of the
+\textit{Dynamics of Anthropomorphism}. This model describes the variances
 and dynamics of people's tendency to anthropomorphize an artificial agent,
-such as a robot.  Then Section \ref{sec:cognition-neuroscience} presents a
+such as a robot. 
+Then Section \ref{sec:cognition-neuroscience} presents a
 cognitive and neuroscience perspective on anthropomorphism to consolidate
-our considerations and the proposed model.  This is followed by a discussion
+our considerations and the proposed model.
+This is followed by a discussion
 about the limitations of our approach (Section \ref{sec:discussion}) and the
 existing and alternative ways to measure anthropomorphism in human-robot
-interactions.  Finally, Section \ref{sec:conclusion} concludes this article
+interactions.
+Finally, Section \ref{sec:conclusion} concludes this article
 and offers starting points for further research on anthropomorphism and the
 effect of the human-like design approach in robotics.
 
-\end{inparaenum}
+%\end{inparaenum}
 
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -999,49 +997,36 @@ effect of the human-like design approach in robotics.
 %
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% JULIA: there will be 4-5 subsections
-%	1) anthropomorphism as a social phenomenon, definitions, origins, etc.
-%	2) anthropomorphism as a consequence of anthropomorphic / life-like design
-%	3) the link to robotics and HRI, mention the uncanny valley theory ...
-%	4) however: we suggest anthropomorphism is more than a static feature ...
-%
-%
+
 
 \section{Anthropomorphism}
 \label{sec:anthropomorphism}
 
 Anthropomorphism is an interesting phenomenon because it tells us something about 
 the relationship between the human who anthropomorphizes, and the non-human agent 
-which is anthropomorphized. Though commonly observed, it appears controversial, at 
+which is anthropomorphized. Though commonly observed, it still appears controversial, at 
 the same time, that humans tend to \textit{``see human in the non-
 human''} \citep{epley_seeing_2007}. 
-Anthropomorphism as a social phenomenon arises in an interaction 
-\citep{persson_anthropomorphism_2000}, and thus includes at least two interaction 
-partners: the human and the real or imagined non-human agent. Therefore, one can 
-take two main perspectives on explaining anthropomorphism \citep{lee_human_2005}: a human-centered and an artifact-centered. We briefly outline both views in the following. 
+To shed light on this phenomenon, first of all, we would like to propose a clarification of terms.
+In short, we propose to differentiate between \textbf{anthropomorphic form} to refer to an imitation of human-like form in the \textit{design} of artificial agents, and  \textbf{anthropomorphism} to refer to the social phenomenon of 
+people's tendency to \textit{perceive} human-likeness in non human-like agents.
+\citep{fink_anthropomorphism_2012} In the following, we might use the terms \texitit{form} and \textit{design} interchangeably.
+
+As anthropomorphism arises in an interaction between a human and a non-human agent
+\citep{persson_anthropomorphism_2000}, one can also
+take two main perspectives on explaining anthropomorphism \citep{lee_human_2005}: an artifact-centered perspective and a human-centered perspective. 
+We now first present an artifact-centered perspective on anthropomorphism, and outline how 
+robotics uses \textit{anthropomorphic design} to encourage 
+people to interact in a social way with robots.
+Then, we present a human-centered 
+perspective and shed light on \textit{anthropomorphism as a social phenomenon}. We present 
+theories from psychology and cognitive science to explain people's tendency to 
+perceive human-like characteristics in non-human agents.
 It has to be kept in mind that both perspectives are inseparable; they apply at the 
 same time, and we would like to present them here just as two different viewpoints 
 on the same phenomenon.
-
-By doing so, this section tries to create a common ground in the understanding of 
-anthropomorphism, with a focus on the design of robots and human-robot interaction. 
-First of all, we would like to propose a clarification of terms.
-In short, we propose to use two different terms, in order to differentiate between the human-like design of a non-human agent, and the perception of human-likeness in a non-human agent.
-We use the terms \textit{``anthropomorphic design''} and \textit{``anthropomorphic 
-form''} interchangeably to refer to an imitation of human form (or in a broader sense 
-also animal and natural) in the design of objects and artificial agents. We propose to 
-\textit{not} refer to this as \textit{anthropomorphism}.
-Because we use \textit{anthropomorphism} to refer to the social phenomenon of 
-people's tendency to perceive human-likeness in non human-like agents. This is an important differentiation.
-
-In the following, we first present an artifact-centered perspective on anthropomorphism, and outline how 
-the human-like design approach (\textit{anthropomorphic form}) is used in robotics to encourage 
-people to interact in a social way with robots. Then, we apply a human-centered 
-perspective and shed light on \textit{anthropomorphism as a social phenomenon}. We present 
-theories from psychology and cognitive science to explain people's tendency to 
-perceive human-like characteristics in non-human agents. In the end, we synthesize 
-the presented backgrounds and suggest an extended understanding of anthropomorphism 
+In the end of this section, we synthesize 
+the presented backgrounds into an extended understanding of anthropomorphism 
 as a multi-factor phenomenon.
 
 
@@ -1059,22 +1044,20 @@ as a multi-factor phenomenon.
 \label{sec:anthropomorphic-design}
 
 An artifact-centered perspective explains anthropomorphism from the ascertainable 
-parts / the form of the non-human agent, namely the anthropomorphic design of it.
-Using the term \textit{``form''} to describe the design of an artifact, we refer 
-not only to the shape of an artifact (how the artifact looks like) but to the total 
-expression of the product \citep{bartneck_shaping_2004}. \cite{disalvo_hug:_2003} 
+parts of the non-human agent, namely the anthropomorphic form of it.
+Using the term \textit{form} to describe the design of an artifact, we refer 
+not only to the shape (how it looks like) but to the total 
+expression of the artifact \citep{bartneck_shaping_2004}. \cite{disalvo_hug:_2003} 
 argues that \textit{form} includes a product's physical shape, materials, and 
-behavioral qualities. Latter aspect is of special importance for interactive 
+behavioral qualities. The behavioral aspect is of special importance for interactive 
 systems that show some degree of autonomy (independence).
 Several categories of anthropomorphic form can be classified, but there is no 
 common agreement on the borders and transitions between these categories: 
 anthropomorphic, zoomorphic, caricatured, functional \citep{fong_survey_2003}.
 The use of nature-inspired and in particular anthropomorphic (human-like) form in the 
 design of non-human things is as old and manifold as people's tendency to anthropomorphize. 
-Anthropomorphic (and also animal-shaped) forms were used already in prehistoric 
-artworks and illustrations, and they have a long-standing tradition in design in 
-general, and with respect of the design of daily life things, in particular 
-\citep{norman_design_1988,guthrie_bottles_2000}.
+Anthropomorphic (and life-like) forms have a long-standing tradition in design in general, and in the design of daily life things, in particular 
+\citep{norman_design_1988,guthrie_bottles_2000}. Interestingly, from its very beginning the image of a robot exists as an outstanding challenge to mankind \citep{replicant_????}. Starting from when the term \texit{robot} first appeared in a play by Karel \^{C}apek in the 1920ies, robots were man-made beings, created as the \textit{``shadow of man''} (and sometimes resembling a human being in appearance).
 
 The direction of causality in the artifact-centered view is that the non-human artifact 
 (or a certain feature of it) encourages the human to anthropomorphize the artifact / 
