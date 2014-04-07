@@ -2574,20 +2574,32 @@ spikes in Figure~\ref{fig:dynamics}).
 
 
 
-\begin{figure}\footnotesize
+%\begin{figure}\footnotesize
+%    \centering
+%    \begin{tabular}{  >{\centering\arraybackslash}m{2cm} | >{\centering\arraybackslash}m{2cm} | >{\centering\arraybackslash}m{2cm} }
+%     & Unplanned by the robot & Planned by the robot \\ \hline
+%    Perceived as non-intentional & case I  & case IIIa  \\ \hline
+%    Perceived as intentional &  case IIIb & case II 
+%    \end{tabular}
+%\caption{
+%    Behaviors of the robot that are unexpected by the user may be intentional
+%    (the robot has planned the behavior) or not (typically, a failure:
+%    misdetection, bug,...). Independently of that, the behavior may be
+%    \emph{perceived} by the user as intentional or not.}
+%\label{fig:perceptionUnexpectedBehavior}
+%\end{figure}
+
+\begin{figure}
     \centering
-    \begin{tabular}{  >{\centering\arraybackslash}m{2cm} | >{\centering\arraybackslash}m{2cm} | >{\centering\arraybackslash}m{2cm} }
-     & Unplanned by the robot & Planned by the robot \\ \hline
-    Perceived as non-intentional & case I  & case IIIa  \\ \hline
-    Perceived as intentional &  case IIIb & case II 
-    \end{tabular}
-\caption{
-    Behaviors of the robot that are unexpected by the user may be intentional
+    \includegraphics[width=0.75\columnwidth]{un-expected-behavior.pdf}
+    \caption{Behaviors of the robot that are unexpected by the user may be intentional
     (the robot has planned the behavior) or not (typically, a failure:
     misdetection, bug,...). Independently of that, the behavior may be
     \emph{perceived} by the user as intentional or not.}
-\label{fig:perceptionUnexpectedBehavior}
+
+    \label{fig:perceptionUnexpectedBehavior}
 \end{figure}
+
 
 When talking about \emph{unexpected robot behaviors}, several distinct cases
 must however be considered, summarized in
