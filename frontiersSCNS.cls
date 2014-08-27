@@ -1,6 +1,6 @@
-\newcommand\classname{frontiers} %this file is based in bioninfo.cls
-\newcommand\lastmodifieddate{2014/01/09}
-\newcommand\versionnumber{2.3}
+\newcommand\classname{frontiersSCNS} %this file is based in bioninfo.cls
+\newcommand\lastmodifieddate{2014/03/12}
+\newcommand\versionnumber{2.4}
 
 % For printing crop marks
 \newif\if@cropmarkson \@cropmarksontrue
