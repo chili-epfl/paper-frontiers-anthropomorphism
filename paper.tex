@@ -30,11 +30,12 @@
 \usepackage[draft, nomargin, marginclue, footnote]{fixme}
 \fxsetup{targetlayout=color}
 
-\newcommand{\eg}{{\textit{e.g.~}}}
-\newcommand{\etal}{{\textit{et al.~}}}
-\newcommand{\ie}{{\textit{i.e.~}}}
-\newcommand{\etc}{{\textit{etc.~}}}
-\newcommand{\vs}{{\textit{vs.~}}}
+\usepackage{xspace}
+\newcommand{\eg}{\textit{e.g.}\xspace}
+\newcommand{\etal}{\textit{et al.}\xspace}
+\newcommand{\ie}{\textit{i.e.}\xspace}
+\newcommand{\etc}{\textit{etc.}\xspace}
+\newcommand{\vs}{\textit{vs.}\xspace}
 
 \usepackage{xifthen}% provides \isempty test
 
@@ -196,14 +197,15 @@ underline the complexity of the phenomenon.
 \begin{figure}[b]
         \centering
         \begin{subfigure}[t]{0.48\columnwidth}
-                \includegraphics[width=\textwidth]{roomba-activities.png}
-                \caption{Activities related to Roomba, n = 9 households}
+                \includegraphics[height=7cm]{roomba-activities}
+                \caption{Activities related to Roomba, \textit{n = 9 households}}
                 \label{fig:roomba-activities}
         \end{subfigure}%
         \hspace{0.5cm} 
         \begin{subfigure}[t]{0.48\columnwidth}
-                \includegraphics[width=\textwidth]{roomba-perception.pdf}
-                \caption{People's perception of Roomba, n = 15 participants}
+                \includegraphics[height=7cm]{roomba-ratings}
+                \caption{People's perception of Roomba, \textit{n = 15
+                participants}}
                 \label{fig:roomba-perception}
         \end{subfigure}
     \caption{Usage and perception of the Roomba vacuum-cleaning robot over a 6
@@ -337,9 +339,6 @@ hypotheses, which structure the reflections of this article:
 
 \end{enumerate}
 
-Further, we would like to investigate the link between the variances in
-anthropomorphism and the correlating cognitive states.
-
 \subsection{Article overview}
 
 The remainder of this article is organized as follows.  According to the three
@@ -380,48 +379,6 @@ there also exist different understandings of the \textit{phenomenon} that the
 term ``anthropomorphism'' describes.  In this section we will first give an
 overview on the diversity of terms and then try to establish a common ground in
 the understanding of anthropomorphism as a psychological phenomenon.
-
-
- \subsection{The lexical field of anthropomorphism}
-
-Originally, the term \textbf{anthropomorphism} comes from the Greek
-\textit{anthropos} for ``man'' (or ``human'') and \textit{morphe} for ``form /
-structure'' (or ``shape''). Anthropomorphism is generally understood as people's
-tendency to perceive a non-human agent as if it had some human characteristics
-or traits. How a person perceives an agent is crucial, as it further determines
-how he/she relates to, and behaves towards the agent, or how he/she may behave in
-light of this agent \citep{epley_when_2008}. An anthropomorphic relationship is
-often characterized by the fact that the human attributes human-unique
-characteristics to the non-human agent. Since anthropomorphism becomes
-observable through these attributions, some definitions claim that
-anthropomorphism is not the \textit{perception} but rather the
-\textit{attribution} of human qualities to non-human agents.  Ascribing
-thoughts, emotions, and intentions are given as examples, and as the most
-prominently anthropomorphized non-human agents, animals and robots are mentioned
-\citep{duffy_anthropomorphism_2003,schmitz_concepts_2011}.
-
-Apart from anthropomorphism, there also exists the term \textbf{animism}, which
-can be defined as the attribution of life to the nonliving. The study of animism
-was pioneered by Piaget in the 1920s with his work on \textit{The Child's
-Conception of the  World}. He found that children tend to regard many inanimate
-objects as capable of sensations, emotions and intentions, and called this view
-``animism''. Since then, children's inferences about the world have been studied
-intensively, and there is an agreement that children's views and concepts of
-living, animal, and plant evolve as they grow up. Often synonymously used to
-animism is the term \textbf{zoomorphism}, which similarly applies to the cases
-when non-lifelike instances / artifacts are associated with animalistic
-attributes, excluding human-specific traits.  As ``being alive'' is not a
-human-unique property but applies to all living beings, the attribution of life
-may not be labeled as anthropomorphism (in a narrow understanding of it).
-Another possibility to illustrate how anthropomorphism differs from attributions
-of animacy is to look at paraphrases of anthropomorphism. That is to say,
-anthropomorphism can alternatively be understood as \textbf{humanization} or
-\textbf{personification} of anything other than a human being.\footnote{There
-exist also the phenomenons inverse to anthropomorphism, which can be found
-in the literature as \textbf{dehumanization}
-\citep{haslam_dehumanization:_2006}, or \textbf{mechanomorphism}
-\citep{caporael_anthropomorphism_1986}.} Robots can
-both be animized and anthropomorphized, but often the difference is not made.
 
 \subsection{Overview of the diverse understandings of anthropomorphism}
 
@@ -531,24 +488,24 @@ transitions between those: anthropomorphic, zoomorphic, caricatured, functional
     \label{fig:anthropofig}
 \end{figure}
 
-
-\begin{figure}
-    \centering
-    \includegraphics[width=0.75\columnwidth]{in_our_heads.pdf}
-    \caption{[ALTERNATIVE TO FIGURE \ref{fig:anthropofig}] Anthropomorphism is a
-        subjective, psychological phenomenon which arises in a social context, during an
-        interaction between a human agent and a non-human agent. One can take
-        two main perspectives when trying to explain anthropomorphism: a
-        human-centered and an artifact-centered perspective.
-        Several external factors influence the anthropomorphism phenomenon.
-        Person- and artifact-related characteristics, but also related to the
-        context of use as well as the actual time spent interacting with the
-        robot (interaction history).}
-
-
-    \label{fig:anthropofig-alt}
-\end{figure}
-
+%
+%\begin{figure}
+%    \centering
+%    \includegraphics[width=0.75\columnwidth]{in_our_heads.pdf}
+%    \caption{[ALTERNATIVE TO FIGURE \ref{fig:anthropofig}] Anthropomorphism is a
+%        subjective, psychological phenomenon which arises in a social context, during an
+%        interaction between a human agent and a non-human agent. One can take
+%        two main perspectives when trying to explain anthropomorphism: a
+%        human-centered and an artifact-centered perspective.
+%        Several external factors influence the anthropomorphism phenomenon.
+%        Person- and artifact-related characteristics, but also related to the
+%        context of use as well as the actual time spent interacting with the
+%        robot (interaction history).}
+%
+%
+%    \label{fig:anthropofig-alt}
+%\end{figure}
+%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -1813,11 +1770,11 @@ model, the maximum level of anthropomorphism \AntMax is reached with the novelty
 effect, and then decreases. A natural question is whether we can design robots
 such that \AntMax remains high, possibly higher than $\ant[t_{novelty~peak}]$
 (note that to know if sustaining strong anthropomorphic interaction is desirable
-is entirely another question, see Section \ref{sec:ethics}).
+is entirely another question).
 
 Intuitively, the behavioral complexity of the robot, and in particular, the
 ability for the robot to evolve over time and \emph{adapt its behavior to the
-user} as the user familiarizes his/herself with the robot (\ie,
+user} as the user familiarizes his/herself with the robot (\ie
 \emph{co-familiarize}), seems to play a key role.
 
 Our model is based on the assumption that anthropomorphism tends to decrease
@@ -1843,37 +1800,6 @@ Anthropomorphism} needs to be verified, to see how far our hypotheses can hold.
 In particular, the effect of the user's familiarity with the system needs to be
 studied over a longer period of time.
 
-\subsection{General observations}
-
-By adopting both a cognitive and a dynamic perspective on the anthropomorphic
-bonds that establish between a robot and a human during an interaction, some
-observations can be raised.
-
-For instance, we propose that the human \emph{adapts} iteratively to the robot
-by restating its cognitive model of the robot. Could our two models be
-conversely relied on to have the robot itself iteratively adapting its behavior?
-In particular, we hypothesize that the so-called novelty effect represents a
-peak in anthropomorphic manifestations, followed by mostly deception-driven
-refinements of the cognitive behavioral model of the robot.  Could we imagine
-that the robot pro-actively \emph{verbalizes} its own limits, in a timely manner
-(likely before the end of the novelty effect). And how would this affect the
-cognitive models built by the human?
-
-One related question we plan to elaborate on is the effects of \emph{mutual
-explicitation of the mental model of the other agent}: a human and a robot
-interact on a given task, and after a while, we interrupt the task and ask each
-of the agents to explicit the mental model it has built of its partner
-(emotional state, beliefs, intentions, etc.). Depending on the cognitive stages
-the two agents are in, we may expect varying accuracy levels in the produced
-mental models.
-
-Another question raised by these models relates to their transposition to
-human-human interaction: while concepts like \emph{novelty effect} are not
-directly meaningful when analyzing human-human interaction, insights from
-cognitive sciences (and in particular social psychology) regarding how we, as
-humans, cope with unexpected behaviors from peers, or on the dynamics of mental
-model refinements, could bring interesting perspectives with possible
-applications to better manage long-term human-robot interactions.
 
 \subsection{Measuring anthropomorphism}
 \label{sec:measuring}
@@ -2008,26 +1934,6 @@ questionnaires and an analysis of behavior were used to assess children's and
 adult's engagement with, and perception of the robot. This seems to be a
 promising approach to investigate anthropomorphism, as it is also possible to
 combine quantitative and qualitative techniques. 
-
-\subsection{Ethical aspects of anthropomorphism and human-like form of robots}
-\label{sec:ethics}
-
-After all discussion, there remains the question how far a sustained
-anthropomorphic (human social) interaction between a human and a non-human can
-be favored, regarding ethical aspects. We need to rethink carefully the
-consequences that emotional bonds between humans and robots can have. They might
-be beneficial on one hand but can also hold negative implications. How far
-should a robot's design encourage us to lastingly project feelings or intentions
-to it? Why should a machine even react to us as if it had emotions? Can this be
-the reality we want to live in? What happens as soon as the artificial agent is
-considered a \textit{moral agent} \citep{sullins_when_2006}? Also, the use of
-\textit{socially interactive robots} in contexts involving elderly care or in
-rehabilitation and with autistic children is a controversially discussed topic
-\cite{robins_robots_2005}. Do we want robots to comfort us; robots that make us
-eventually even falling in love with them?  The anthropomorphic design of robots
-is critical. Why do we even need this? The HRI / robotics community needs to
-discuss these and other questions. 
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
