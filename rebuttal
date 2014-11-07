@@ -1,0 +1,295 @@
+Reviewer 1
+==========
+
+
+> Are there any objective errors or fundamental flaws in the hypothesis or
+> theory presented? If so, please specify.
+
+Yes
+The authors propose to use a factor R that describes how human like the robot
+is. There are no physical measurements that would enable us to measure
+anthropomorphism directly on a robot. We always have to go back to the
+perception of the humans.
+
+---
+
+> Does the hypothesis or theory have a greater explanatory potential than
+> previously posed hypotheses or theories? If not, please explain the
+> deficiencies of this hypothesis or theory.
+
+No
+I fully understand why AntX would be a desirable indicator and the authors are
+able to describe it on a very high level of abstractions. But neither the
+authors nor I would know how to operationalize such an indicator. The devil is,
+as usual, in the detail. This is a common theme throughout the paper. The
+authors raise not necessarily novel, but certainly important issues in HRI but
+fail to provide concrete solutions. The suggestions the author make remain on a
+very high abstraction level. Their position take to the extreme would be:
+Anthropomorphism has something to do with robots and humans. I am also trying
+hard to find a truly novel contribution that is not just the summary of somebody
+else's work. The discussion of the benefits of questionnaires in comparison to
+observing behavior, for example, is not unique to HRI. It has been discussed in
+HCI for a long time.
+
+---
+
+> Please add here any further comments on this manuscript.
+
+The ideas presented in this paper, as far as they are novel contributions of the
+authors, remain on a very high abstraction level and I doubt that it will be
+possible to operationalize them. 
+
+
+===================================================================================
+
+Reviewer 2
+==========
+
+> Does this manuscript conform to the definition below of Hypothesis and Theory
+> articles? If not, please contact the Frontiers Editorial Office
+> (editorial.office@frontiersin.org).
+
+> Hypothesis and Theory articles present an argument, synthesis, hypothesis or
+> theory. Hypothesis and Theory articles should be closely tied to empirical data,
+> and provide novel insights into a significant question or issue. In addition,
+> the argument or theory put forth should lead to testable predictions.
+
+No
+The proposal of the anthropomorphism index AntX remains very unclear as can be
+seen in Section 2.4. Here, the authors remain on a very speculative level using
+phrasings like "would like to take initial steps toward developing", "can be",
+"would also be interesting", "one could again think of assigning", "there may be
+a pre-defined maximum". This confusing indeterminism goes on in Section 3.1.1
+when the authors state that it "would theoretically be possible to compute a
+human specific value [..]" only to add in parentheses that "in practice this
+looks different". How this could lead to clear, testable hypothesis, which could
+be approached scientifically, is not even discussed once.
+
+---
+
+> A Hypothesis and Theory article should not exceed 12'000 words. Should any
+> part of the manuscript be shortened? If so, please specify.
+
+Yes
+Without references the document comprises more than 15000 words. Perhaps, one of
+the sections about their own three research projects could be left out. In fact,
+the online survey word-count study seems quite irrelevant for the argument
+behind the development of AntX.
+
+
+---
+
+> What is the main hypothesis or theory reported in this manuscript?
+
+The main idea behind this manuscript is the argument that anthropomorphism is
+such a multi-faceted and complex phenomenon that it cannot only be derived from
+a robot's appearance/design. Also context and the characteristics of each human
+interlocutor are supposed to play into it. Therefore, the authors propose to
+discuss the development of an Anthropomorphism Index AntX, which should include
+all three aspects, human characteristics, robot characteristics, and context.
+The authors try to substantiate their argument with summaries of results of
+three of their own previous studies involving robots. The Roomba and the Domino
+study indeed support the authors' (new) notion of anthropomorphism (and how to
+research it) to some extend, but the Forum study somehow contradicts their own
+advice given later. That is, if the presentation of pictures and/or videos is
+insufficient to measure anthropomorphism, then analyzing online discussions
+about these devices seems similarly limited in what can be concluded with
+respect to the interactive, human-robot-specific phenomenon of subjectively
+ascribed anthropomorphism.
+Later, the authors correctly discuss previous research by Bartneck, Duffy,
+Takayama, Epley, Hegel, and others, who's empirical research is much better
+suited to support AntX. This happens after (on page 9) it is mentioned that
+"[t]he literature review helped us to better interpret our unexpected results",
+which is a surprising statement given that most of the then discussed literature
+has been available already before the authors' studies had been designed. Thus,
+they might/should have helped to form ones expectations beforehand.
+
+---
+
+> Is the study presented in a consistent and succinct form?
+
+No
+First of all, not only one study is presented, but three previous studies are
+summarized. In result, it is understandable that the manuscript is too long.
+Secondly, at least to some extent the presented results do not really seem
+consistent with the proposed AntX measurement tool (see above).
+
+---
+
+> Are there any objective errors or fundamental flaws in the hypothesis or
+> theory presented? If so, please specify.
+
+Yes
+The description of the "Anthropomorphism Index" remains on a much too general
+level to be useful as a basis for other researchers. Perhaps, this does not
+count as a fundamental flaw, but it deserves to be mentioned.
+
+---
+
+> Does the title clearly and precisely reflect the main message of the
+> manuscript, as described in the author guidelines?
+
+No
+The title might better mention the proposed development of an anthropomorphism
+index as this seems to be the main idea behind the article.
+
+---
+
+> Does the hypothesis or theory have a greater explanatory potential than
+> previously posed hypotheses or theories? If not, please explain the
+> deficiencies of this hypothesis or theory.
+
+No
+As said before, AntX remains on a superficial level. In fact, one could expect
+to find a kind of table that contains said "index". Saying that the value f some
+variables "might" range from 0 to 1 is clearly not helpful.
+
+---
+
+> Is prior work properly and fully cited?
+
+No
+Actually, the omission of any work related to android robots such as
+Geminoid-type androids is surprising. These robots are often considered to be
+the prime example of "anthropomorphism by design". They should at least be
+discussed in one paragraph.
+
+---
+
+> Please add here any further comments on this manuscript.
+
+Figure 1 seems to need color to be fully comprehensible. I am not sure, if this
+is OK.
+Figure 5 seems to be taken directly out of Ruijten et al. (2014). Thus, this
+might be judged as plagiarism.
+
+================================================================================
+
+Reviewer 3
+==========
+
+> A Hypothesis and Theory article should not exceed 12'000 words. Should any
+> part of the manuscript be shortened? If so, please specify.
+
+Yes
+Presentation of the results and discussions of the three studies (roomba, forum,
+domino)
+Part 3 is lengthy, causing it to lose some of its structure
+
+---
+
+> Please add here any further comments on this manuscript.
+
+Below I have also included a detailed review of the manuscript:
+
+The paper “Dynamics of anthropomorphism in human-robot interaction” presents
+arguments on how to understand and measure anthropomorphism in the context of
+interactions between humans and robots. The authors argue that anthropomorphism
+needs to be considered from the perspectives of the user, the robot, and the
+context. They also suggest that anthropomorphism exists as a range instead of
+being dichotomous (being there or not), and that it evolves over time. More
+specifically, the authors suggest that measurements of anthropomorphism should
+also incorporate user’s familiarization with the robot. All arguments are based
+and/or building on existing literature, and they are included in a conceptual
+model that the authors call the Dynamics of anthropomorphism. In addition, the
+authors suggest a concept towards measuring anthropomorphism which they call the
+Anthropomorphism Index. The paper provides a broad and complete overview of
+existing literature, discussions on several aspects related to anthropomorphism
+and its measurement, which together contributes to the existing literature on
+anthropomorphism in HRI. I do find some issues that need to be addressed before
+accepting the paper. These issues will be stated below in order of their
+importance, from high to low.
+
+• In the first part of the paper, the authors aim to clearly and specifically
+state what they mean with anthropomorphism. They state that a robot does not
+contain anthropomorphism, but instead can give rise to the process of being
+anthropomorphized (69-71). Do they mean that anthropomorphism is then the
+outcome of this process? Also, the terms anthropomorphism, anthropomorphic, and
+anthropomorphized are used interchangeably without it being clear what they
+exactly mean by each. I would argue for clarifying this a bit more in the first
+part of the paper.
+
+• The authors present highly detailed results and discussions of three of their
+former studies on anthropomorphism (roomba, forum, and domino studies). The
+results are presented with figures and numbers (percentages, p-values etc.). To
+my view presenting these detailed results is superfluous in the current paper,
+because its aim is not to present empirical data. Instead I would argue to
+shorten the presentation of results and discussions from those three studies to
+the essential contributions to the current paper. The main findings of each of
+the studies can in my view be summarized to several sentences (not having
+separate heading for each of the three studies), including the references to the
+original work for more details.
+
+• When the authors introduce the Anthropomorphism Index, they frame it as a
+toolkit (281) or measurement tool (852) to measure anthropomorphism. Also, they
+refer to using a value that reflects how much a person anthropomorphized a robot
+in an interaction, which consists of combining the results on a number of
+hypothetical questions. However, they do not provide tools (i.e. measurement
+instruments) but instead a conceptual idea for measuring anthropomorphism. I
+would argue for framing it as they do in the introduction of the paper: a
+concept towards measuring anthropomorphism (91-92), and refrain from using
+concepts like tool(kit) or value.
+
+• In general, the authors use much abstract and lengthy language to present
+their ideas (especially in part 2.4 where they present a number of ways to
+include questions in anthropomorphism measurements). Also, the literature review
+in part 3 becomes rather lengthy due to this style, and as a reader I lost the
+structure of the argumentation at section 3.2.2. The authors provide an
+extensive overview and try to grasp it in a conceptual model, which is
+definitely worthwhile. However, I would argue that shortening part 3 and
+focusing on the contribution of each of the sections in it could greatly enhance
+(this part of) the paper’s readability. (for example, the authors suggest three
+cognitive stages at line 525, and begin explaining them in line 586)
+
+• The authors argue about the importance of including familiarization with
+robots in the measurement of anthropomorphism (line 677), but how does this
+relate to the 3 stage theory they presented before (588-655)? The way I
+interpret it is that the 3 stages are relevant for investigation of the user
+side, whereas the familiarization is relevant for the dynamics argument. I argue
+that the paper would benefit from (more) explicitly stating which
+aspect/theory/argument belongs to which aspect of anthropomorphism.
+
+• One of the main claims of the paper is that anthropomorphism should be
+measured according to each of the three main aspects (having multiple factors,
+being multi-layered, and being dynamic). The authors argue for the
+Anthropomorphism Index as a conceptual way of measuring anthropomorphism.
+Despite being one of the main arguments in the paper, this is not mentioned in
+the abstract. I would argue for including some information about this concept of
+measurement in the abstract.
+
+• In the discussion part of the paper, the authors present results from the
+roomba study. To my opinion this is not relevant material for a discussion part,
+but should instead be mentioned in the section where they present the main
+findings of that specific study.
+
+• The authors state that the statistical analysis of the interaction data was
+unfortunately not very conclusive (222). Do they mean that the results were
+unsatisfying (insignificant)? If so, I would argue to soften the argument in
+such a way that although not supported by statistical analyses, a pattern
+emerged.
+
+• There are some language issues. The authors often use the phrase ‘the authors’
+in their referencing, but it is not always clear whether they mean themselves or
+the authors of a reference they mentioned in that paragraph. Also, they often
+use words like give/think/call which are not considered to be academic language.
+In addition, there were some typos (e.g., line 110: bu; line 496: their; line
+497: ow). Please consider correcting these issues.
+
+• The authors refer to an unknown figure on line 74.
+
+• When describing the characteristics of the robot, the authors refer to a value
+R that indicates how much the robot is likely to anthropomorphized, ranging from
+0 to 1, with 1 being human. However, ‘human’ is not a likelihood for
+anthropomorphism.
+
+• In the caption of Figure 5 it says that the figure was adapted by, which
+should be adapted from.
+
+
+
+
+
+
+
+
+
