@@ -47,6 +47,13 @@
         {$\mathcal{A}(#1)$}
 }
 
+\newcommand{\AntE}[1][]{%
+      \ifthenelse{\isempty{#1}}%
+      {$\mathcal{A}^{e}$}
+      {$\mathcal{A}^{e}(#1)$}
+}
+
+
 \newcommand{\AntNorm}[1][]{%
       \ifthenelse{\isempty{#1}}%
       {$\widehat{\mathcal{A}}$}
@@ -57,21 +64,30 @@
 % for use inside a math environment
 \newcommand{\ant}[1][]{%
       \ifthenelse{\isempty{#1}}%
-        {\mathcal{A}}
-        {\mathcal{A}(#1)}
+      {\mathcal{A}}
+      {\mathcal{A}(#1)}
 }
 
-\newcommand{\antNorm}[1][]{%
+\newcommand{\antE}[1][]{%
       \ifthenelse{\isempty{#1}}%
-      {\widehat{\mathcal{A}}}
-      {\widehat{\mathcal{A}}(#1)}
+      {\mathcal{A}^{e}}
+      {\mathcal{A}^{e}(#1)}
+}
+
+\newcommand{\antENorm}[1][]{%
+      \ifthenelse{\isempty{#1}}%
+      {\widehat{\mathcal{A}^{e}}}
+      {\widehat{\mathcal{A}^{e}}(#1)}
 }
 
 \newcommand{\ICA}{{$\mathcal{A}_0$~}}
+\newcommand{\ICAe}{{$\mathcal{A}^{e}_0$~}}
 \newcommand{\SLA}{{$\mathcal{A}_\infty$~}}
+\newcommand{\SLAe}{{$\mathcal{A}^{e}_\infty$~}}
 \newcommand{\sla}{{\mathcal{A}_\infty}}
 \newcommand{\AntMax}{{$\mathcal{A}_{max}$~}}
-\newcommand{\antMax}{{\mathcal{A}_{max}}}
+\newcommand{\AntEMax}{{$\mathcal{A}^{e}_{max}$~}}
+\newcommand{\antEMax}{{\mathcal{A}^{e}_{max}}}
 
 \hyphenation{com-mon-ly}
 \hyphenation{an-thro-po-mor-phism}
@@ -941,59 +957,40 @@ the next section.
 \section{Anthropomorphism: a dynamic phenomenon}
 \label{sec:our-ideas}
 
-So far, the HRI community has not much investigated how anthropomorphism in
-human-robot interactions evolves over time (during the process of
-\emph{adopting} a robot, for instance). Though conflicts were found in the
-understanding of what anthropomorphism is, the HRI community more or less
-accepted viewing anthropomorphism as a static feature that once observed during
-a short-term interaction reflects a sustaining social effect. However, if we
-agree that anthropomorphism arises in an interaction, and thus reflects a
-specific relation, we cannot accept it as a static phenomenon.
+So far, the HRI community has not investigated how anthropomorphism in
+interactions with robots evolve over time. There are several reasons for why it
+makes sense to consider temporal dynamics in anthropomorphism.
 
-Similarly, \citet{kanda_interactive_2004} point out that relationships among
-people evolve over time and, in a similar manner, one can expect people's
-attitude toward technological artifacts and their relationship with them to
-evolve as well.  In their study, \citet{kanda_interactive_2004} were among the
-first to describe empirically \emph{novelty effects} during a long-term study
-with an interactive robot in a school.
+One reason for why changes in anthropomorphism over time are likely, comes from
+the cognitive perspective, as outlined in the previous section. We are
+spontaneous but also reflect on our interactions with the robot.  From the
+artifact-centered perspective on anthropomorphism (thus, looking at the
+characteristics of the robot) it is assumed that humans directly (more or less
+mindlessly) respond to life-like and social cues that a non-human agent (here:
+robot) emits~\citep{reeves_media_1996,nass_machines_2000}. Without huge
+thoughtful mental processing, humans tend to apply stereotypes and heuristics to
+the robot, and in turn apply human-human social schemas and norms to the
+occurring interactions. However, this may only be some \textit{immediate}
+(sometimes visceral) experience, reflecting the first impression that the user
+has of the robot, based on its appearance~\citep{norman_emotional_2003}.
+\cite{takayama_perspectives_2012} refers to this as the \textit{in-the-moment}
+perspective we have on the robot, compared to a more distanced cogitation and
+consideration, which the author calls \textit{reflective}.  Further, we also
+become familiar with the robot as we continue interacting and dealing with it,
+we gain knowledge about it, and refine our mental model of the robot.
 
-From a theoretical perspective, we also expect anthropomorphism to change over
-time, with growing experience with a robot. As discussed in the previous
-sections, anthropomorphism means in essence \emph{reasoning about and perceiving
-    something non-human (and unknown or unfamiliar) based on one's
-representation of the familiar and well-known concept of being human (or
-one-self)}. According to \citet{epley_when_2008}, the basic operations that
-underlie these inductive inferences are the \emph{acquisition of knowledge}, the
-\emph{activation or elicitation of knowledge}, and the \emph{application of
-activated knowledge at the time of the judgment}. By applying knowledge to a
-given situation or interaction, one also attempts to correct, adjust, or maybe
-integrate less accessible information into a more automatically activated
-default representation.  This process of refining the applied knowledge are
-natural because a person's knowledge base changes constantly with newly acquired
-things. For instance, a person can acquire new knowledge about a robot when
-interacting with it. With continued interaction with the unknown system also the
-user's expertise with the system grows, and it can be expected that in turn, the
-user will become able to better predict the previously unknown system.
-Consequently, as the robot becomes more predictable, there is less uncertainty,
-and the ``need to anthropomorphize'' the robot decreases (from the
-human-centered point of view).
+Another reason for considering temporal dynamics are the changes in user
+experience~\citep{karapanos_user_2009} and relationship to the robot.
+\cite{kanda_interactive_2004} pointed out that not only the relationships among
+people evolve over time but that, in a similar manner, one can expect that also
+people's relationship and their attitude toward robots evolve. The authors were
+among the first ones to describe empirically \textit{novelty effects} during a
+long-term study with an interactive robot in a school.
 
-In other words, humans have a motivation to interact effectively in their
-environment \textit{(effectance)} \citep{epley_when_2008}.  This means that
-humans are motivated to be able to understand and predict the environment and
-the agents around them. Thus, a person will seek to become familiar with what is
-unfamiliar. Anthropomorphism is encouraged when an agent is unfamiliar.
-Consequently, in the process of familiarizing oneself with an agent, the
-tendency to anthropomorphize this agent should decrease.
-
-We can not be sure about how exactly the process of familiarization to an
-unfamiliar agent (based on continued interaction with the robot) looks like. In
-turn, we can not make a precise statement about how continued interaction
-decreases anthropomorphism but we suspect there is a link between the two.
 
 In the introduction, we reported on a few selected experimental results that
 illustrate how the user tendency to anthropomorphize decreased over time.
-Combined with the extensive discussion on the nature and factors of
+Combined with the discussion on the nature and factors of
 anthropomorphism that we proposed in section~\ref{sec:anthropomorphism}, we
 introduce in the following section a novel qualitative model of the evolution of
 anthropomorphism over time, \ie a model of the \emph{dynamics of
@@ -1005,43 +1002,33 @@ anthropomorphism}.
 
 The phenomenological model of anthropomorphism we propose
 (Figure~\ref{fig:dynamics},~\citep{lemaignan2014dynamics}) represents how the
-level of ``anthropomorphic effects''~\Ant[R,H,C,t] (\ie the observable
-manifestations of anthropomorphism) evolves over a long-term human-robot
-interaction.\footnote{We cannot make a precise statement about how long
-``long-term'' interaction has to be to be considered as such. It seems to be
-practical to not speak of ``several days'' or ``weeks'' but to rather consider
-the duration and frequency of the actual interactions with the artifact. One
-could probably call this the ``interaction history''.}
+level of anthropomorphic \emph{effects}~\AntE[R,H,C,t] (\ie the observable
+manifestations of the anthropomorphism \Ant) evolves over a long-term human-robot
+interaction.
 
 While the model primarily considers \emph{long-term interaction} -- direct
 (non-mediated), repeated interaction with the same robot, over an extended
-period of time (typically longer than a week), we also formally introduce a
+period of time (typically longer than a week) --, we also formally introduce a
 so-called \emph{novelty effect}~\citep{kanda_interactive_2004} that models the
 first phase of human-robot interaction, during which a specific increase of
 anthropomorphic interactions is observed.
 
-In the \emph{Dynamics of Anthropomorphism} model, anthropomorphism is quantified
-by a \emph{normalized level of anthropomorphic effects} $\antNorm[R,H,C,t] =
-\frac{\ant[R,H,C,t]}{\antMax}$: because anthropomorphic effects are often
+In this model, anthropomorphism is quantified
+by a \emph{normalized level of anthropomorphic effects} $\antENorm[R,H,C,t] =
+\frac{\antE[R,H,C,t]}{\antEMax}$: because anthropomorphic effects are often
 qualitative and difficult to quantify on an absolute scale, we present them as a
 normalized value, that spans from a minimum (no anthropomorphic effects:
-$\ant=0$) to a maximum (noted \AntMax, with $t_{max} = \operatorname{arg\,max}_t
-\, \ant[t]$). For the sake of readability, we will use \Ant in the following
+$\antE=0$) to a maximum (noted \AntEMax, with $t_{max} = \operatorname{arg\,max}_t
+\, \antE[t]$). For the sake of readability, we will use \Ant in the following
 sections to refer to the normalized level of anthropomorphic effects. Note also
 that we discuss in section~\ref{sec:measuring} possible methodologies for the
 quantitative and qualitative assessment of anthropomorphic effects.
 
 The actual maximum value of anthropomorphic effects depends on each unique
 combination of a human, a robot, a situation and several other factors we
-introduce below. Thus, the maximum value varies according to the specific
-characteristics of these factors. Figure~\ref{fig:dynamics} pictures this
-maximum value at $t_{max}$, which actually corresponds to what we call the
-novelty effect peak.\footnote{We assume that there is a peak in the human's
-experiences of the novelty effects of the unfamiliar system. Further, we suspect
-that this novelty peak comes along with the maximum value of anthropomorphic
-effects.} The general \emph{shape} of the curve remains however the same and
-depicts the evolution of anthropomorphism over time, \ie the general dynamics of
-anthropomorphism.
+introduce below. Figure~\ref{fig:dynamics} pictures this
+maximum value at $t_{max}$, which we hypothesize to correspond to the
+novelty effect ``peak''.
 
 \begin{figure*}[htb]
 \centering
@@ -1065,12 +1052,12 @@ anthropomorphism.
 \draw[->] (0,0) -- (0,6) node[anchor=east] {};
 \draw(-0.8,3) node[rotate=90,anchor=south] {\scriptsize Anthropomorphic effects};
 
-\draw (-0.05, 3) -- (0.05, 3) node[anchor=east] {\ICA};
-\draw (-0.05, 5) -- (0.05, 5) node[anchor=east] {\AntMax};
+\draw (-0.05, 2.1) -- (0.05, 2.1) node[anchor=east] {\ICAe};
+\draw (-0.05, 5) -- (0.05, 5) node[anchor=east] {\AntEMax};
 
 % vertical axis - end
 \draw[->] (9.8,0) -- (9.8,4) node[anchor=east] {};
-\draw (9.8, 0.8) node[anchor=west] {\SLA};
+\draw (9.8, 0.8) node[anchor=west] {\SLAe};
 
 
 \draw[<-] (1.15,5.1) -- (1.30,5.3) node[anchor=east] {};
@@ -1108,7 +1095,7 @@ anthropomorphism.
 
 \end{tikzpicture}
 
-\caption{\textbf{Conceptual model of the dynamics of anthropomorphism}. We
+\caption{\textbf{Qualitative model of the dynamics of anthropomorphism}. We
     distinguish three main phases: \emph{initialization}, \emph{familiarization}
     and \emph{stabilization}, preceded by a \emph{pre-interaction} phase. The
     pre-interaction phase is characterized through an \emph{initial capital of
@@ -1133,21 +1120,20 @@ We distinguish three main phases that describe the evolution of the
 anthropomorphic effects in a long-term human-robot interaction. They are
 depicted in different shades in Figure~\ref{fig:dynamics}.
 
-\subsubsection{Initialization Phase\\}
+\subsubsection{Pre-Interaction and Initialization Phase\\}
 
-The \textit{Initialization Phase} starts with the so-called \textit{Initial
-Capital of Anthropomorphism} ($ICA$), which corresponds to \ICA (value of \Ant
-at time point $0$). This value considers the multiple factors presented in
-section~\ref{sec:multiple-factors}, thus it is composed by factors of the human
-$H$, the robot $R$, and the context of use $C$. As such, \ICA describes the
-value of anthropomorphic effects that can be expected to occur during the first
-contact between the human and the robot in a given situation. During this first
+The \emph{initial capital of anthropomorphism} \ICA describes the initial potential
+for the human user to anthropomorphize the robot in a given situation.
+This potential depends on several factors, introduced in
+section~\ref{sec:multi-factors}.
+It represents the level of anthropomorphic effects that can be expected to occur
+during the very first contacts between the human and the robot. During this first
 phase, pre-conceptions and initial expectations as well as previous experience
-of the user with other similar types of robots and similar contexts can have a
-strong impact and influence the general tendency to anthropomorphize.
+of the user with other similar types of robots and similar contexts are the
+primary source of influence.
 
-During the \textit{Initialization Phase} we expect an increasing value of $A$
-that may be partly due to the so-called \textit{effects of novelty} of the
+During the initialization phase, we expect an increasing value of \Ant
+that is due to the so-called \textit{effects of novelty} of the
 robot. Such effects have been described with interactive technologies in general
 \citep{rogers_diffusion_1995}, and also in several long-term HRI studies in
 workplaces \citep{huttenrauch_fetch-and-carry_2003,mutlu_robots_2008}, in
@@ -1158,38 +1144,33 @@ studies of domestic robots have shown similar effects and found that after some
 time people's interest, engagement, and fascination of the robot decreased
 \citep{sung_robots_2009,sung_domestic_2010,fernaeus_how_2010,fink_living_2013}.
 
-What type of anthropomorphic effects are typical during the
-\textit{Initialization Phase}? In our own work, we observed that users
-spontaneously tend to talk directly to the robot (though the user knows that the
-system is not be able to recognize speech), for instance, by greeting the robot,
-asking questions to it, giving it nick-names or ascribing a gender, praising the
-robot, commenting on its performance in general, and giving commands. Also, the
-use of point gestures and waving at the robot were fairly common among
-participants of our studies, as well as ascribing gender and some personal
-preferences or intention to the robot. (Note that we did not even use an
-anthropomorphic robot but a Roomba vacuum cleaning robot.)
-
-In general, it appears that anthropomorphism during the \textit{Initialization
-Phase} is a commonly observed phenomenon. But we would like to stress again that
-most of these effects are likely to fade out over time.
+The type of anthropomorphic effects typically observed during the initialization
+hpase include users who spontaneously tend to talk directly to the robot while
+they are aware that the system is not be able to recognize speech: greeting the
+robot, asking questions to it, giving it a nickname, praising the robot,
+commenting on its performances and giving commands. Also, the use of pointing
+gestures and waving at the robot are often found, as well as ascribing gender
+and some personal preferences or intention to the robot.
 
 \subsubsection{Familiarization Phase\\}
 
-In the \textit{Familiarization Phase} the user gets acquainted and familiar with
-the robot and with using the robot, and hence the tendency to anthropomorpize
-decreases. This phase typically starts as the local maximum value of
-anthropomorphic effects that are enhanced by the novelty of the robot start to
-wear off. The user may think that he/she faces an agent that aims at
-``human-level intelligence'' (to take McCarthy's words). This is a transient
-state that quickly vanishes as the user recognized that the behavior of the
-robot is generally \textit{predictable} and possibly \textit{deceptive}. For
-instance, the robot produces verbal utterances (it ``talks'') but it does not
-understand when we talk; or the robot is endowed with eyes but does not
-recognize the objects we show it.
+In this context, \emph{familiarization} means \emph{to get acquainted with}.
+It is not to be confused with the \emph{familiarity thesis} that relates to the
+projection of already known cognitive models onto the robot. We discuss this other
+aspect in section~\ref{sec:cognition-neuroscience}.
+
+The \emph{familiarization phase} starts at the peak of the \emph{novelty
+effect}: anthropomorphic effects are at their maximum, the user thinks (s)he is
+potentially facing an agent aiming at ``human-level intelligence'' (to take
+McCarthy's words). This is a transient state that quickly vanishes, and the
+projected anthropomorphism then starts to decrease while the human observes and
+recognizes that the behavior of the robot is generally \emph{predictable} and
+possibly \emph{deceptive} (for instance, it talks but does not understand when
+we talk; it has eyes but does not recognize everyday objects we show; \etc).
 
 \paragraph{Disruptive behaviors.}
 
-We call \emph{disruptive behaviors} any behavior exhibited by the robot hat
+We call \emph{disruptive behaviors} any behavior exhibited by the robot that
 appears unexpected to the user: for instance, a robot may usually follow always
 the same route to go from one place in a house to the other, but suddenly it
 might change the route. The actual underlying reason may span from a bug to the
@@ -1201,26 +1182,27 @@ discuss the role of disruptive behaviors in cognitive terms in section
 
 \subsubsection{Stabilization Phase\\}
 
-During the \textit{Stabilization Phase} the value of $A$ tends to stabilize over
+During the \textit{Stabilization Phase} the value of \Ant tends to stabilize over
 a longer time, to reach a value that we call the \textit{Stabilized Level of
-Anthropomorphism} ($SLA$), which corresponds to \SLA. The value that the
+Anthropomorphism} ($SLA$), noted \SLA. The value that the
 $SLA$ approaches is unique for each user interacting with a specific robot in a
 given situation. \SLA may approach $0$, when no anthropomorphic effects
-are observed anymore, for instance, when the user is interacting with the robot
+are observed anymore, for instance when the user is interacting with the robot
 in a routine way and he/she does not project any human-like traits unto the
-robot\footnote{The robot may have become \textit{``invisible in use''}
-\citep{takayama_toward_2011}.} As such, the $SLA$ stands for the long-term
-lasting value of anthropomorphism.  We proposed that \SLA (the value
-corresponding to the $ICA$) is built on multiple factors (see
-section~\ref{sec:multiple-factors}) and similar \SLA is based on these
-factors, however taking into account the \textit{interaction history} $t$ that
-the user has with the robot.  Note that the $ICA$ and the $SLA$ are generally
-not correlated. A person may initially have a high potential of
-anthropomorphizing (high \ICA), for instance a highly anthropomorphic robot,
-but subsequently get disappointed by the actual capabilities of it and stop
-explaining it in terms of human-like characteristics (low \SLA). Another
-user may however create lasting affective bonds with the same robot and may
-continue to anthropomorphize the robot (high \SLA).
+robot, what \cite{takayama_toward_2011} calls the robot being
+\textit{``invisible in use''}. \SLA may as well remains above 0 if the user
+continues to exhibit anthropomorphic behaviors when interacting with the robot
+on the long run.
+
+The level \SLA, like \ICA, is the result of a combination of multiple human,
+robotic and contextual factors, with the additional impact of the
+\emph{interaction history t} that the user experienced with the robot. Note that
+the $ICA$ and $SLA$ levels are generally not correlated: a person may initially
+have a high potential of anthropomorphizing (high \ICA), for instance a highly
+anthropomorphic robot, but subsequently get disappointed by the actual
+capabilities of it and stop explaining it in terms of human-like characteristics
+(low \SLA). Another user may however create lasting affective bonds with the
+same robot and may continue to anthropomorphize the robot (higher \SLA).
 
 
 
@@ -1265,13 +1247,17 @@ agency in HRI~\citep{takayama_perspectives_2012}.
 \begin{tikzpicture}
 \baselineskip=8pt
 
-\path[fill=gray!20] (0,0) rectangle (10.5,2);
-\path[fill=gray!50] (0,2) rectangle (10.5,4);
-\path[fill=gray!20] (0,4) rectangle (10.5,6);
+%\path[fill=gray!20] (0,0) rectangle (10.5,2);
+%\path[fill=gray!50] (0,2) rectangle (10.5,4);
+%\path[fill=gray!20] (0,4) rectangle (10.5,6);
 
-\draw (-0.3,1) node[rotate=90] {Stage 1}
-      (-0.3,3) node[rotate=90] {Stage 2}
-      (-0.3,5) node[rotate=90] {Stage 3};
+\draw (-0.3,2) node[anchor=east] {Stage 1}
+      (-0.3,4) node[anchor=east] {Stage 2}
+      (-0.3,6) node[anchor=east] {Stage 3};
+
+\draw[thin,black!50,dotted] (-0.10,2) -- (1,2);
+\draw[thin,black!50,dotted] (-0.10,4) -- (4,4);
+\draw[thin,black!50,dotted] (-0.10,6) -- (7,6);
 
 \draw[->] (0,0) -- (11,0) node[anchor=north] {$t$};
 \draw[-|] (0,0) -- (0,6.5) node[anchor=east] {};
@@ -1281,11 +1267,11 @@ agency in HRI~\citep{takayama_perspectives_2012}.
 \draw[ultra thick, dashed, ->] (3,2) -- (9.5,2);
 \draw[ultra thick, dashed, ->] (6,4) -- (9.5,4);
 
-\draw (11,1) node[align=left, anchor=west]{\scriptsize pre-cognitive\\\scriptsize anthropomorphism}; %label
+\draw (11,2) node[align=left, anchor=west]{\scriptsize pre-cognitive\\\scriptsize anthropomorphism}; %label
 
-\draw (11,3) node[align=left, anchor=west] {\scriptsize{projection of existing}\\\scriptsize{mental models}\\\scriptsize{\it (familiarity)}}; %label
+\draw (11,4) node[align=left, anchor=west] {\scriptsize{projection of existing}\\\scriptsize{mental models}\\\scriptsize{\it (familiarity)}}; %label
 
-\draw (11,5) node[align=left, anchor=west] {\scriptsize{adapted mental
+\draw (11,6) node[align=left, anchor=west] {\scriptsize{adapted mental
 model} \\ $\to$ \scriptsize{adapted interaction}\\\scriptsize{\it (anthropomorphic or not)}}; %label
 
 
@@ -1306,7 +1292,8 @@ mental model he/she is already familiar with onto the robot. After longer {\it
 contextualized} interaction (typically, at home), the user enters Stage 3 of
 anthropomorphism: the user composes a custom mental model of the robot,
 based on experience. This leads to adapted interaction modalities, that may
-still be anthropomorphic, or not.}
+still be anthropomorphic, or not. Note that the different stages coexist: Stage
+1 and 2 still affect the human perception of the robot in a Stage 3 interaction.}
 \label{fig:cognitivemodel}
 \end{figure}
 
@@ -1314,7 +1301,7 @@ We propose three different cognitive stages (Figure~\ref{fig:cognitivemodel}),
 which are not mutually exclusive but overlap over time. Note that these three
 cognitive stages are related but do not exactly match the \emph{Initialization},
 \emph{Familiarization} and \emph{Stabilization} phases introduced in our model
-of the dynamics of anthropomorphism.
+of the dynamics of anthropomorphism. We discuss this relation hereafter.
 
 
 \subsubsection{Cognitive Processes and Stages\\}
@@ -1347,15 +1334,15 @@ argues that neglecting to separate reflective perspectives from in-the-moment
 perspectives of agency is one of the major sources of confusion when people talk
 and write about anthropomorphism. There seems to be a disconnection between what
 people consciously perceive and how they respond to stimuli that they may not
-consciously perceive. That means, in the initial phase of interacting with a
+consciously perceive. This means that in the initial phase of interacting with a
 novel device \textit{(initialization)} (see Figure \ref{fig:dynamics}) people
 might not respond consciously but rather mindlessly \citep{nass_machines_2000},
-and in turn anthropomorphize more.  Only after some time of
-\textit{familiarization}, they might respond in a more reflective manner (in
-turn, the tendency to anthropomorphize might decrease). This can be illustrated
-by the fact that people tend to deny interacting with computational systems as
-if they were people and yet they respond to computers in many ways that are
-remarkably similar to how they respond to people \citep{reeves_media_1996}.
+and in turn anthropomorphize more. They start to respond in a more reflective
+manner only during the \textit{familiarization} (in turn, the tendency to
+anthropomorphize might decrease). This can be illustrated by the fact that
+people tend to deny interacting with computational systems as if they were
+people and yet they respond to computers in many ways that are remarkably
+similar to how they respond to people \citep{reeves_media_1996}.
 \cite{takayama_perspectives_2012} also applies a cognitive viewpoint on the two
 different perspectives of in-the-moment \vs reflective to illustrate
 differences. She states that in-the-moment perceptions of agency are largely
@@ -1370,15 +1357,15 @@ of the robot) or short interaction (touching, short talk like greetings), we
 suggest the human reaches the cognitive \emph{Stage 2}: in this phase, the human
 starts building a behavioral and cognitive model of the robot that would support
 both the observed and imagined capabilities of the robot.  The \emph{familiarity
-thesis}~\cite{hegel_understanding_2008} supports the idea that the human first
+thesis}~\citep{hegel_understanding_2008} supports the idea that the human first
 projects onto the robot mental models of similar agents he/she is already
 familiar with (ranging from animals to human adults, to pets and children). We
 hypothesize that the nature of the projected mental model, as well as how deep
 the human engages in this projection, might be driven by the same parameters as
-we mentioned for the \emph{initial capital of anthropomorphism}
-(section~\ref{sec:ica}).  At this stage the human might also change his attitude
-towards the robot, paying more attention to social cue than to low-level
-behavior which may reinforce the resonance mechanisms. 
+we mentioned for the \emph{initial capital of anthropomorphism}. We also believe
+that, at this stage, the human also changes his attitude towards the robot, by
+focusing his attention to social cue more than to low-level behaviors, which
+may in turn reinforce the resonance mechanisms.
 
 The cognitive \emph{Stage 3} is reached after a \emph{contextualized} interaction.
 A \emph{contextualized} interaction is \emph{explicitly purposeful} (the purpose
@@ -1392,37 +1379,10 @@ about me? About itself? About our environment? What can the robot learn?}, etc.)
 
 This mental process depends on the human understanding of the robot's inner
 working, as well as his/her own tendency to anthropomorphize (the
-\emph{personality} in ICA factor), but at this stage, the \emph{perception} of
-the robot (its shape for instance) and its intended \emph{purpose} play a less
-important role. It is mostly a human-centric process.  The result of this third
-phase would be an iteratively adapted cognitive model of the robot. It is also
-at this last stage that the human might have a modified tendency to
-anthropomorphize, because he/she has built a full cognitive model of the robot.
-Consequently, the human would now be able to attribute appropriate internal
-states to the robot through his/her theory of mind.
-
-
-\paragraph{Relation to the dynamics of anthropomorphism\\}
-
-As mentioned before, the three cognitive stages proposed here do not match with
-the three phases in the \emph{Dynamics of Anthropomorphism}.  In particular, the
-cognitive Stages 1 and 2 are both included in the \emph{initialization} phase of
-the anthropomorphism model. Sub-cognitive anthropomorphism typically
-\emph{initiates} the novelty effect by rapidly engaging the human in the
-interaction through an initial projected agency, whereas cognitive Stage 2
-(projection of familiar mental models) supports the novelty effect by inducing
-beliefs that the robot is set up with possibly complex cognitive abilities.
-
-The cognitive Stage 3 also overlaps with the \emph{Familiarization} phase: as
-the human gets used to the robot, he/she restates and adapts its
-cognitive model of the robot by iteratively reshaping pre-existent, familiar
-models until it provides a satisfying support to explain and justify the
-observed robot behavior.
-
-A \emph{stable level of anthropomorphism} is reached when the adaptation process
-depicted in the cognitive Stage 3 reached a stable state, \ie the user's
-experience with the robot is correctly supported by the cognitive model he/she
-has built.
+\emph{personality} in ICA factor). At this stage, the \emph{perception} of the
+robot (its shape for instance) and its original intended \emph{purpose} play
+less of an important role. It is mostly a human-centric process.  The result of
+this third phase is an iteratively adapted cognitive model of the robot.
 
 Another way to think of the three proposed cognitive stages is to relate them to
 the \textbf{user experience} which is characteristic of these three stages. For
@@ -1434,11 +1394,92 @@ not think about a product but make spontaneous judgments; \emph{(2)} the
 \emph{behavioral level}, in which people use and experience the product,
 appraise its functions, and consider aspects such as usefulness and usability;
 \emph{(3)} the \emph{reflective level}, in which consciousness takes part in the
-process, and past experiences are taken into account.  In a study which was
-carried out in a shopping mall, \cite{weiss_i_2009} explored the emotional
-attachment during first time reactions of children and adults with the robotic
-dog AIBO. The authors also argue that it is important to understand the
-long-term development of people's social bonds to robots.
+process, and past experiences are taken into account.
+
+\paragraph{Relation to the dynamics of anthropomorphism\\}
+
+\begin{figure}[]
+\centering
+%\resizebox{\linewidth}{!}{
+\begin{tikzpicture}
+\baselineskip=8pt
+
+\draw[dotted, black!50, thin] (1.8, 6) -- (1.8, 0);
+\draw[dotted, black!50, thin] (6.5, 6) -- (6.5, 0);
+
+\draw(0.5,5.5) node[anchor=south west] {\scriptsize \sc Init.};
+\draw(2.5,5.5) node[anchor=south west] {\scriptsize \sc Familiarization};
+\draw(7,5.5) node[anchor=south west] {\scriptsize \sc Stabilization};
+
+
+\begin{scope}[yscale=-1,shift={(-0.125,-0.46)}]
+    \draw[ultra thick, black!50] svg[scale=1cm] "M 0.125,-1.622832 c 0.093536,-0.9062795
+    0.21996726,-1.9131565 0.9017912,-2.5842389 0.4277536,-0.3944265
+    1.1653486,-0.5108382 1.605386,-0.071103 1.1558512,0.9403904
+    1.9535208,2.2825896 3.2616057,3.0430907 0.871821,0.52801518
+    1.8461798,0.91299355 2.8702084,0.98695145 0.4522402,0.0444213
+    0.9069132,0.0552179 1.3610087,0.0620963";
+
+\end{scope}
+
+\draw (-0.3,1.5) node[anchor=east] {Stage 1}
+      (-0.3,3) node[anchor=east] {Stage 2}
+      (-0.3,4.5) node[anchor=east] {Stage 3};
+
+\draw[thin,black!50,dotted] (-0.10,1.5) -- (1,1.5);
+\draw[thin,black!50,dotted] (-0.10,3) -- (4,3);
+\draw[thin,black!50,dotted] (-0.10,4.5) -- (7,4.5);
+
+\draw[->] (0,0) -- (11,0) node[anchor=north] {$t$};
+\draw[-|] (0,0) -- (0,6.5) node[anchor=east] {};
+% Us
+\draw[ultra thick, ->] (0,0) -- (0.2,1.5) -- (1,1.5) -- (1.2,3) -- (3,3) -- (6,4.5) --
+(9.5,4.5);
+\draw[ultra thick, dashed, ->] (1,1.5) -- (9.5,1.5);
+\draw[ultra thick, dashed, ->] (3,3) -- (9.5,3);
+
+\end{tikzpicture}
+%}
+\caption{\textbf{Towards a cognitive interpretation of the dynamics of
+    anthropomorphism}: This diagram combines the figures~\ref{fig:dynamics}
+    and~\ref{fig:cognitivemodel} to evidence their interplay: we suggest that
+    the cognitive stages 1 and 2 (pre-cognitive anthropomorphism and projection
+    of known existing cognitive models) first play a key role in the early
+    perception of the robot, leading to high levels of anthropomorphic
+    behaviors. Then, the user smoothly transitions from projecting already known
+    models to building a new, specific cognitive model of the robot: this occurs
+    while the user familiarizes with the robot and leads over time to a
+    stabilized level of anthropomorphic behaviors. In the current state of
+    robotic technology, this stabilization mostly reads as a \emph{decrease} of
+    anthropomorphic perception, due to the user being able to explain and
+    accurately predict the robot behavior after enough interaction time, hence
+    perceiving the robot as a simple machine.}
+
+\label{fig:mix}
+\end{figure}
+
+
+As mentioned before, the three cognitive stages proposed here do not directly
+match with the three phases in the model of the dynamics of anthropomorphism,
+and Figure~\ref{fig:mix} attempts to depict their interplay.
+The cognitive Stages 1 and 2, in particular, are both active in the
+\emph{initialization} phase of the anthropomorphism model. Sub-cognitive
+anthropomorphism typically \emph{initiates} the novelty effect by rapidly
+engaging the human in the interaction through an initial projected agency,
+whereas cognitive Stage 2 (projection of familiar mental models) supports the
+novelty effect by inducing beliefs that the robot is set up with possibly
+complex cognitive abilities.
+
+The cognitive Stage 3 also overlaps with the \emph{Familiarization} phase: as
+the human gets used to the robot, he/she restates and adapts its
+cognitive model of the robot by iteratively reshaping pre-existent, familiar
+models until it provides a satisfying support to explain and justify the
+observed robot behavior.
+
+A \emph{stable level of anthropomorphism} is reached when the adaptation process
+depicted in the cognitive Stage 3 reached a stable state, \ie the user's
+experience with the robot is correctly supported by the cognitive model he/she
+has built.
 
 
 \subsection{Role of disruptive behaviors}
@@ -1458,24 +1499,19 @@ it is unexpected) influence people's attribution of mental states and
 intentionality to a robot. Participants who were playing the
 ``rock-paper-scissors'' game with a robot that tried to cheat (either verbally
 or in its action), displayed a greater level of social engagement and made
-greater attributions of mental states.  However, an unexpected (disruptive)
-robot behavior might also have a negative effect on user's engagement with the
-robot. For instance, when the user interprets the robot's behavior as a failure,
-he/she might lose trust in the robot. \cite{desai_impact_2013} found that in an
-interaction scenario, especially early failures of the robot can cause a
-dramatically lower real-time trust, compared to middle or late drops of
-reliability of the robot.
+greater attributions of mental states, and conversely, unexpected robot
+behavior, when interpreted as a robot failure, has been observed to adversely
+affect cognitive engagement: \cite{desai_impact_2013}, for instance, found that
+in an interaction scenario, early failures of the robot can cause a dramatically
+lower real-time trust.
 
-During a normal interaction with the robot, the user iteratively refines his/her
-own model of the behavior of the robot. As explained in previous sections, as
-the user improves his/her model of the robot's actions, he/she also improves the
-ability to predict the actions and thus, the user tends to anthropomorphize
-less.
+Accordingly, we suggest that unexpected robot behaviors lead the user to restate
+his/her behavioral model, and hence, his/her cognitive model of the robot, which
+translates into an increase or decrease of the level of anthropomorphism
+(depicted by the spikes in Figure~\ref{fig:dynamics}, p.~\pageref{fig:dynamics}).
 
-We emit the hypothesis that an unexpected robot behavior might lead the user to
-suddenly restate his/her behavioral model of the robot and will temporarily lead
-to an increase or decrease of the level of anthropomorphism (depicted by the
-spikes in Figure~\ref{fig:dynamics}).
+When talking about \emph{unexpected robot behaviors}, several distinct cases can
+be considered, summarized in Table~\ref{fig:perceptionUnexpectedBehavior}.
 
 \begin{figure}
     \centering
@@ -1489,18 +1525,15 @@ spikes in Figure~\ref{fig:dynamics}).
 \end{figure}
 
 
-When talking about \emph{unexpected robot behaviors}, several distinct cases
-must however be considered, summarized in
-Table~\ref{fig:perceptionUnexpectedBehavior}.
-
 If the unexpected behavior is not planned, and perceived as such by the human
-(case I), the human can interpret that the robot is able to fail. If the robot
-explicitly states its failure (for instance, by saying ``I'm lost!''), the
-behavior is then called \emph{transparent} \citep{kim_who_2006}, and the user
-may hypothesize that the robot has \emph{introspective} capabilities (it can
-reflect on its own internal state), which may lead to higher anthropomorphic
-projections.  On the contrary, if the robot shows no sign of recognizing its own
-failure, the user may ascribe a lower level of anthropomorphism to the robot.
+(case I, Table~\ref{fig:perceptionUnexpectedBehavior}), the human can interpret
+that the robot is able to fail. If the robot explicitly states its failure (for
+instance, by saying ``I'm lost!''), the behavior is then called
+\emph{transparent}~\citep{kim_who_2006}, and suggests that the
+robot has \emph{introspective} capabilities (it can reflect on its own internal
+state), which may lead to higher anthropomorphic projections.  On the contrary,
+if the robot shows no sign of recognizing its own failure, the user may ascribe
+a lower level of anthropomorphism to the robot.
 
 In case II, the robot voluntary executes a behavior that is unexpected by the
 human, and the human perceives it rightfully as an \emph{intentional} behavior.
@@ -1512,10 +1545,7 @@ the robot.
 Case IIIa and IIIb correspond to misinterpretations of the robot behavior. Case
 IIIb may actually lead to an increased level of anthropomorphism since the human
 will (wrongfully) attribute intentionality to the robot, while case IIIa is
-expected to lead to a lower anthropomorphism level.  However, in those two
-cases, the next occurrence of an expected behavior, if correctly interpreted
-(case I or II), is likely to lead to stronger effects due to a larger delta 
-between expectations and actual observed behavior. 
+expected to lead to a lower anthropomorphism level.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -1530,17 +1560,16 @@ between expectations and actual observed behavior.
 \section{Measuring anthropomorphism}
 \label{sec:measuring}
 
-Most of the experiments that investigate anthropomorphism in HRI are
-conducted in controlled lab-settings during a short-term scenario. For instance,
-pictures or videos of different robots are shown to human subjects who
-subsequently fill in a questionnaire, to assess how far the different types of
-robots were perceived human-like. We think that such experimental
-settings have limitations for studying a social phenomenon like
-anthropomorphism. The critical question is: can anthropomorphism really be
-measured in a post-interaction closed questionnaire or by rating scales?
-Findings might possibly lead to interpretations that would not be generalizable
-to natural settings or real interaction scenarios (which is always an issue in
-social science research).
+Most of the experiments that investigate anthropomorphism in HRI are conducted
+in controlled lab-settings during a short-term scenario. For instance, pictures
+or videos of different robots are shown to human subjects who subsequently fill
+in a questionnaire, to assess how far the different types of robots were
+perceived human-like. Such experimental settings have limitations for studying a
+social phenomenon like anthropomorphism, and one may wonder if anthropomorphism
+can really be measured in a post-interaction closed questionnaire or by rating
+scales. Findings might possibly lead to interpretations that would not be
+generalizable to natural settings or real interaction scenarios (which is always
+an issue in social science research).
 
 The Godspeed questionnaire~\citep{bartneck_measurement_2008}, and in particular,
 its subpart focused on anthropomorphism, is the main validated questionnaire to
@@ -1552,8 +1581,6 @@ complex and abstract, \cite{kahn_jr._robotic_2006} suggest to ask for more
 concrete constructs that are typical or unique of the concept of
 ``human-likeness''.  For instance, \cite{ruijten_introducing_2014} propose a
 25-item questions to measure various concrete aspects of human-likeness.
-Consequently, anthropomorphism can be modeled along a scale that accounts for
-lower and higher levels of it.
 
 Still, measuring anthropomorphism (or social engagement with a robot) through
 subjective self-reporting remains challenging because the phenomenon is
