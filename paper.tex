@@ -49,15 +49,8 @@
 
 \newcommand{\AntE}[1][]{%
       \ifthenelse{\isempty{#1}}%
-      {$\mathcal{A}^{e}$}
-      {$\mathcal{A}^{e}(#1)$}
-}
-
-
-\newcommand{\AntNorm}[1][]{%
-      \ifthenelse{\isempty{#1}}%
-      {$\widehat{\mathcal{A}}$}
-      {$\widehat{\mathcal{A}}(#1)$}
+      {$\widetilde{\mathcal{A}}$}
+      {$\widetilde{\mathcal{A}}(#1)$}
 }
 
 
@@ -70,24 +63,24 @@
 
 \newcommand{\antE}[1][]{%
       \ifthenelse{\isempty{#1}}%
-      {\mathcal{A}^{e}}
-      {\mathcal{A}^{e}(#1)}
+      {\widetilde{\mathcal{A}}}
+          {\widetilde{\mathcal{A}}(#1)}
 }
 
 \newcommand{\antENorm}[1][]{%
       \ifthenelse{\isempty{#1}}%
-      {\widehat{\mathcal{A}^{e}}}
-      {\widehat{\mathcal{A}^{e}}(#1)}
+      {\widehat{\mathcal{A}}}
+      {\widehat{\mathcal{A}}(#1)}
 }
 
-\newcommand{\ICA}{{$\mathcal{A}_0$~}}
-\newcommand{\ICAe}{{$\mathcal{A}^{e}_0$~}}
+\newcommand{\IPA}{{$\mathcal{A}_0$~}}
+\newcommand{\IPAe}{{$\widetilde{\mathcal{A}_0}$~}}
 \newcommand{\SLA}{{$\mathcal{A}_\infty$~}}
-\newcommand{\SLAe}{{$\mathcal{A}^{e}_\infty$~}}
+\newcommand{\SLAe}{{$\widetilde{\mathcal{A}_\infty}$~}}
 \newcommand{\sla}{{\mathcal{A}_\infty}}
 \newcommand{\AntMax}{{$\mathcal{A}_{max}$~}}
-\newcommand{\AntEMax}{{$\mathcal{A}^{e}_{max}$~}}
-\newcommand{\antEMax}{{\mathcal{A}^{e}_{max}}}
+\newcommand{\AntEMax}{{$\widetilde{\mathcal{A}_{max}}$~}}
+\newcommand{\antEMax}{{\widetilde{\mathcal{A}_{max}}}}
 
 \hyphenation{com-mon-ly}
 \hyphenation{an-thro-po-mor-phism}
@@ -102,7 +95,8 @@
 \def\keyFont{\fontsize{8}{11}\helveticabold }
 \def\firstAuthorLast{Fink {et~al.}} 
 \def\Authors{Julia Fink\,$^{1*\dagger}$, S\'{e}verin Lemaignan$^{1\dagger}$, Claire Braboszcz$^{2}$ and Pierre Dillenbourg$^{1}$}
-\def\Address{$^{1}$Computer-Human Interaction in Learning and Instruction (CHILI) \\ Ecole Polytechnique F\'{e}d\'{e}rale de Lausanne (EPFL) \\ CH-1015 Lausanne, Switzerland \\
+\def\Address{$^{1}$Computer-Human Interaction in Learning and Instruction
+    (CHILI) \\ \'{E}cole Polytechnique F\'{e}d\'{e}rale de Lausanne (EPFL) \\ CH-1015 Lausanne, Switzerland \\
 \vspace{0.25cm}
 $^{2}$Laboratory for Neurology and Imaging of Cognition (LabNIC) \\
 Universit\'{e} de Gen\`{e}ve \\ CH-1211 Gen\`{e}ve, Switzerland 
@@ -118,7 +112,8 @@ Universit\'{e} de Gen\`{e}ve \\ CH-1211 Gen\`{e}ve, Switzerland
 \onecolumn
 \firstpage{1}
 
-\title[Dynamics of Anthropomorphism]{Dynamics of Anthropomorphism in Human-Robot Interaction}
+\title[Dynamics of Anthropomorphism]{Anthropomorphism in Human-Robot
+Interaction: Nature, Dynamics and Underlying Cognitive Mechanisms}
 \author[\firstAuthorLast ]{\Authors}
 \address{}
 \correspondance{}
@@ -135,19 +130,20 @@ characteristics in non-human agents -- is a phenomenon that is often
 studied from the sole perspective of the human-like \emph{design} of robots.
 
 By building upon experimental results from several studies, a comprehensive
-synthesis of literature, as well as insights from social psychology,
-cognitive science, and neuroscience, this article proposes to extend our current
-understanding of anthropomorphism. We propose a \textbf{qualitative model} that defines a
-clear terminology and accounts for the \textbf{non-monotonic dynamics} of
-the phenomenon. We further relate the observed effects of anthropomorphism to
-their \textbf{underlying cognitive precursors}.
+synthesis of literature, as well as insights from social psychology, cognitive
+science, and neuroscience, this article proposes to extend our current
+understanding of anthropomorphism. We examine the several \textbf{factors} that
+determine anthropomorphism, namely the design of the non-human agent, the
+individual psychological determinants of the human user, and the context of use.
+Moreover, we discuss several episodes of interaction that influence the
+anthropomorphic projections on the robot, like the \textbf{novelty effect}, the
+role of \textbf{familiarization} and the impact of \textbf{unexpected
+behaviors}.
 
-We examine several \textbf{factors} that determine anthropomorphism, namely the
-design of the non-human agent, the individual psychological determinants of the
-human user, and the context of use. Moreover, we discuss several episodes of
-interaction that influence the anthropomorphic projections on the robot, like
-the \textbf{novelty effect}, the role of \textbf{familiarization} and the
-impact of \textbf{disruptive behaviors}.
+We then propose a \textbf{qualitative model} that defines a clear terminology
+and accounts for the \textbf{non-monotonic dynamics} of the phenomenon. We
+further relate the observed effects of anthropomorphism to their
+\textbf{underlying cognitive precursors}.
 
 Finally, the article also discusses techniques to measure anthropomorphism,
 and we conclude with a few suggestions on how others can apply our model to
@@ -183,35 +179,27 @@ effective (human-like and human-social) interaction with the non-human agent,
 and increase people's acceptance of it. 
 
 A phenomenon that is often studied related to this is \textbf{anthropomorphism}.
-This article aims at fostering a better understanding of
-anthropomorphism (noted \Ant in this paper) in human-robot interaction by
-considering the phenomenon as a whole. Robotics researchers often tend to
-believe that anthropomorphism only describes a static set of human-like features
-of a robot (like shape, speech capabilities, facial expressions, etc.). We refer
-to these characteristics as the \emph{anthropomorphic design} of the
+This article aims at fostering a better understanding of anthropomorphism (noted
+\Ant in this paper) in human-robot interaction by considering the phenomenon as
+a whole. Robotics researchers often tend to consider that anthropomorphism only
+describes a static set of human-like features of a robot (like its shape, its
+speech capabilities, facial expressions, etc.). We refer to these
+characteristics as the \emph{anthropomorphic design} of the
 robot~\citep{fink_anthropomorphism_2012}, and propose that
 \emph{anthropomorphism} in general refers to a \emph{social phenomenon} that
-emerges from the (real or imagined) \emph{interaction} between a non-human agent
-(a robot in our case) and a human~\citep{persson_anthropomorphism_2000}. According
-to~\cite{epley_when_2008}, anthropomorphism includes that the human perceives,
-for instance, emotional states, motivations, or intentions in the non-human
-agent, and tends to ascribe those qualities to it.  As such, the dynamic and
-socio-cognitive dimensions of anthropomorphism are essential to understand the
-complex bonds that human users build with artificial agents such as robots.
-
+emerges from the (real or imagined) interaction between a non-human agent (a
+robot in our case) and a human~\citep{persson_anthropomorphism_2000}.  According
+to~\cite{epley_when_2008}, anthropomorphism includes the human perception of
+emotional states, motivations, intentions in the non-human agent, and tends to
+ascribe those qualities to it.  As such, the dynamic and socio-cognitive
+dimensions of anthropomorphism are essential to understand the complex bonds
+that human users build with artificial agents such as robots. This article aims
+at advancing our understanding of this phenomenon, both in term of an
+interdisciplinary literature synthesis, and in term of qualitative yet formal
+models that will support further research in this field.
 
 \subsection{A few results from the field}
 \label{sec:field-results}
-
-To support the reflection on variances and dimensions of anthropomorphism, it is 
-useful to consider a few experimental
-results. We studied anthropomorphism in several short- and long-term
-human-robot interaction studies that we carried out with embodied robots, both
-in ecologically valid real-world environments and controlled lab settings. Those
-experiments are presented in details in previously published
-articles~\citep{fink_anthropomorphic_2012, fink_living_2013, fink2014which,
-lemaignan2014dynamics}. We only highlight here a few qualitative results that
-underline the complexity of the phenomenon.
 
 \begin{figure}[b]
         \centering
@@ -233,9 +221,19 @@ underline the complexity of the phenomenon.
     \label{fig:roomba}
 \end{figure}
 
+To support the reflection on variances and dimensions of anthropomorphism, it is 
+useful to consider a few experimental
+results. We studied anthropomorphism in several short- and long-term
+human-robot interaction studies that we carried out with embodied robots, both
+in ecologically valid real-world environments and controlled lab settings. Those
+experiments are presented in details in previously published
+articles~\citep{fink_anthropomorphic_2012, fink_living_2013, fink2014which,
+lemaignan2014dynamics}. We only highlight here a few qualitative results that
+underline the complexity of the phenomenon.
+
 Figures~\ref{fig:roomba-activities} and~\ref{fig:roomba-perception} give a first
 perspective on how naive users interact and perceive robots over a long period
-of time. Here, \emph{Roomba} vacuum cleaning robots were given to nine
+of time. \emph{Roomba} vacuum cleaning robots were given to nine
 households for a 6-months period. The aim was to explore how people use and
 perceive the robot over time, and how they generally live with the Roomba in
 their home. At various time points, users were asked to rate their perception of
@@ -287,21 +285,20 @@ dynamics of these interactions.
 
 Figure~\ref{fig:qualitative-score} calls for other initial remarks. This diagram
 shows data from a (yet unpublished) study in which 13 pairs of children (4-5
-years old) played for about 20 minutes a domino game with a robot toy box (the
-robot was tasked to carry domino pieces from one child to the other,
-Figure~\ref{fig:ranger-expe}).  The $x$-axis represents the number of social
+years old) played for about 20 minutes a domino game with a robot toy box. The
+robot was tasked to carry domino pieces from one child to the other
+(Figure~\ref{fig:ranger-expe}).  The $x$-axis represents the number of social
 interactions between the children and the robot (like talking to the robot or
 showing objects), based on video annotations. On the $y$-axis, we have a
 synthetic qualitative measurement of anthropomorphic perception of the the
 robot, based on two interviews with the children. The scatter plot evidences one
 cluster of high-anthropomorphizers/low-interactors and a another group of
-children who interact more with the robot and anthropomorphize it less: the
-more the children engaged into interaction, the less prone to an anthropomorphic
-perception they were.
+children who interact more with the robot and anthropomorphize it less: the more
+the children anthropomophized, the less engaged into the interaction they were.
 
 These results may seem counter-intuitive at first sight, and illustrate that the
 mechanisms that relate anthropomorphism to adoption and engagement are
-non-trivial. In section~\ref{sec:cognition-neuroscience}, we sketch a model of
+non-trivial. In section~\ref{sec:cognition-neuroscience}, we will sketch a model of
 the cognitive correlates of anthropomorphism that partially account for these
 results.
 
@@ -315,9 +312,9 @@ way that it supports or improves the design of sustainable human-robot interacti
 We propose to discuss anthropomorphism from three complementary perspectives: 
 
 First, by reviewing what anthropomorphism actually means: besides an
-\emph{artifact-centered} understanding that explains anthropomorphism from the
+\emph{artifact-centric} understanding that explains anthropomorphism from the
 human-like design of the non-human artifact, it seems important to explicit the
-social component, namely a \emph{human-centered} understanding, of
+social component, namely a \emph{human-centric} understanding, of
 anthropomorphism.
 
 Second, we propose a qualitative model of the \textit{dynamics of
@@ -335,14 +332,22 @@ cognitive stages we encounter in human-robot interaction.
 
 \paragraph{Terminology used in this article\\}
 
-While we discuss in section~\ref{meaning} the different meanings of
-anthropomorphism found in literature, it seems appropriate to already precisely
-define the terminology used in this article.
+Despite the fact that there is no commonly accepted definition, the terms
+\textit{anthropomorphism}, \textit{anthropomorphic} or \textit{human-like} are
+often used as if their meanings were clear and agreed
+upon~\citep{persson_anthropomorphism_2000}. It is however argued that these
+terms might be misused~\citep{duffy_anthropomorphism_2002,epley_when_2008}, and
+while some researchers would refer for instance to \textit{``the robot's level
+of anthropomorphism''} \citep{bartneck_is_2007,feil-seifer_human-robot_2008},
+others disagree and argue that a system or artifact itself does not
+\emph{contain anthropomorphism} (anthropomorphism is not intrinsic to the robot)
+but only \emph{gives rise} to the process of anthropomorphizing in a given user
+and situation.
 
-We use the term \textbf{anthropomorphism} to describe the \emph{psychological}
-phenomenon which arises in the \emph{social context} of an interaction between a
-human agent and a non-human agent, in our case a robot (see Figure
-\ref{fig:anthropofig}). We use this term to refer to both people's tendency to
+In the frame of this article, we refer to the term \textbf{anthropomorphism} to
+describe the \emph{psychological} phenomenon which arises in the \emph{social
+context} of an interaction between a human agent and a non-human agent, in our
+case a robot. We use this term to refer to both people's tendency to
 \textit{perceive} (\textbf{anthropomorphic perceptions}) human-like
 characteristics, and to the tendency to \textit{ascribe} or \textit{attribute}
 such human-like characteristics to the agent or artifact
@@ -351,14 +356,14 @@ effects} the \emph{observable manifestations} of anthropomorphism, \ie the
 human's behaviors and actions toward a non-human agent that reflect the
 underlying cognitive process of anthropomorphizing.
 
-Despite the fact that ``anthropomorphism'' literally means ``human
-form'' we propose that the term should \textit{not} be used to refer to the
-\textit{form / design} of a non-human agent or artifact. To refer to an
-imitation of human-like \textit{form / design} of artificial agents, we propose
-to use the term \textbf{anthropomorphic design}. This explicit terminology
-prevents the commonly encountered confusion between anthropomorphism as a
-psychological, subjective phenomenon, and the external, objective factors that
-\emph{influence} the phenomenon itself.
+Despite the fact that ``anthropomorphism'' literally means ``human form'' we
+propose that the term should \textit{not} be used to refer to the \emph{form}
+and/or \emph{design} of a non-human agent or artifact. To refer to an imitation
+by an artificial agent of an human-like form, we propose to use the term
+\textbf{anthropomorphic design}. This explicit terminology prevents the commonly
+encountered confusion between anthropomorphism as a psychological, subjective
+phenomenon, and the external, objective factors that \emph{influence} the
+phenomenon itself.
 
 In the following, we might use the terms \emph{form} and \emph{design}
 interchangeably. Note that the terms \textit{form} or {\it design} do not only
@@ -370,16 +375,16 @@ systems that show some degree of autonomy (independence).
 
 \subsection{Article overview}
 
-The remainder of this article is organized as follows.  According to the three
+The remainder of this article is organized as follow.  According to the three
 perspectives that we take, section \ref{sec:anthropomorphism} establishes a
 common ground in the understanding of anthropomorphism. We review literature
 from several relevant domains and integrate the different explanations into an
 understanding of anthropomorphism as a multi-factor phenomenon.  Based on this,
-section~\ref{sec:our-ideas} proposes a new qualitative model of the
-\textit{dynamics of anthropomorphism}. This model describes the variances and
-dynamics of people's tendency to anthropomorphize an artificial agent, such as a
-robot. Section \ref{sec:cognition-neuroscience} then investigates the cognitive
-and neuro-biological mechanisms of anthropomorphism to consolidate our
+section~\ref{sec:our-ideas} proposes a new qualitative model of the dynamics of
+anthropomorphism. This model describes the variances and dynamics of people's
+tendency to anthropomorphize an artificial agent, such as a robot. Section
+\ref{sec:cognition-neuroscience} then investigates the cognitive and
+neuro-biological mechanisms of anthropomorphism to consolidate our
 considerations and the proposed model.  Section \ref{sec:measuring} looks at how
 these models can be operationalized, and in particular, what are the tools at
 hand to measure anthropomorphism. Finally, section \ref{sec:conclusion}
@@ -400,84 +405,15 @@ anthropomorphism and the effect of the human-like design approach in robotics.
 \section{The Dimensions of Anthropomorphism}
 \label{sec:anthropomorphism}
 
-Literature on anthropomorphism is quite diverse. There exist different and
-partly conflicting definitions of the term anthropomorphism, and it still
-appears controversial that humans tend to \textit{``see human in the non-
-human''} \citep{epley_seeing_2007}. As anthropomorphism arises in an interaction
-between a human and a non-human agent~\citep{persson_anthropomorphism_2000}, one
-can also take two main \textit{perspectives} when trying to explain why humans
-anthropomorphize~\citep{lee_human_2005}: an artifact-centered perspective and a
-human-centered perspective.
-
-After discussing and clarifying the different meanings of anthropomorphism, we
-present the main aspects of an \emph{artifact-centered} perspective on
-anthropomorphism. We then provide a synthesis of literature that study
- anthropomorphism from the perspective of the human: we aim here at providing a broad
-picture of this phenomenon by summarizing theories from developmental
-psychology, cognitive science, neuroscience, and social psychology.
-
-We then briefly discuss the impact of the interaction context on
-anthropomorphism, before restating anthropomorphism as a \emph{multi-factor
-phenomenon}.
-
-\subsection{Overview of the diverse understandings of anthropomorphism}
-\label{meaning}
-
-Naturally, conflicts in how terms are used lead to a diversity of understandings
-of the phenomenon which is described: anthropomorphism is a phenomenon that is
-studied in very different domains that each integrate their own understanding,
-use the same term to refer to different things.  Despite the fact that there is
-no commonly accepted definition, the terms \textit{anthropomorphism},
-\textit{anthropomorphic} or \textit{human-like} are often used as if their
-meanings were clear and agreed upon \citep{persson_anthropomorphism_2000}. It is
-however argued that these terms might be misused
-\citep{duffy_anthropomorphism_2002,epley_when_2008}.  For instance, some
-researchers refer to \textit{``the robot's level of anthropomorphism''}
-\citep{bartneck_is_2007,feil-seifer_human-robot_2008}, whereas others disagree
-to such a statement because they understand that a system or artifact itself
-does not \textit{``contain anthropomorphism''} (anthropomorphism is not
-intrinsic to the robot) but only gives rise to the process of anthropomorphizing
-in a given user and situation. Consequently,
-\cite{persson_anthropomorphism_2000} conclude that anthropomorphism emerges in
-the \textit{interaction} between the technology and the user, and has to be
-understood as such. We come back on this point in the next section.
-
-
-Another paradox is that, while human's tendency to anthropomorphize is commonly
-observed, the phenomenon is at the same time still rather poorly understood
-\citep{epley_seeing_2007}. The phenomenon itself has been found to be very
-complex, sometimes subtle and as such hard to study
-\citep{duffy_anthropomorphism_2002,epley_when_2008}. Besides, it is not clear
-how to operationalize and measure anthropomorphism (we discuss this specific question
-in section \ref{sec:measuring}).
-
-Depending on which definition of anthropomorphism is applied, not everything
-colloquially labeled as \emph{anthropomorphism} really is anthropomorphism.  For
-example, it is not always clear whether a person (may it be an adult or a child)
-who gives an anthropomorphic response, believes that the other agent really
-thinks or acts like a human or whether he/she is using anthropomorphism in a
-metaphoric sense \citep{leeds_childrens_1992}.  This call for explicitely
-stating what we mean when talking about anthropomorphism. 
-
-Several attempts have been made to clarify what the psychological phenomenon
-\emph{anthropomorphism} actually is.  From a psychology point of view,
-\citet{epley_when_2008} explain what anthropomorphism is \textit{not}. For
-instance, in their understanding, anthropomorphism does not include behavioral
-descriptions of observable actions but it requires going beyond what is directly
-observable. They also suggest that anthropomorphism does not merely entail
-\textit{animism}, as animate life is not a \textit{uniquely} human-like
-characteristic.\footnote{For the whole list and more details, the reader may
-refer to the original work \citep{epley_when_2008}.}
-
-As human-likeness itself is manifold and complex, some researchers argue that
-there might not just be one single type of anthropomorphism but different levels
-or gradations. For instance, \citet{persson_anthropomorphism_2000} proposes to
-understand anthropomorphism as a multi-layered phenomenon, namely
-\emph{primitive categorization}, \emph{primitive psychology},
-\emph{folk-psychology}, \emph{traits}, \emph{social roles}, and \emph{emotional
-anthropomorphism}. Correspondingly, \citet{ruijten_introducing_2014} propose to
-understand anthropomorphism as a continuum ranging from low to high human
-likeness, and to measure it as such.
+Anthropomorphism arises in an interaction between a human and a non-human agent,
+and one can consequently take two main perspectives when trying to explain why
+humans anthropomorphize~\citep{lee_human_2005}: an artifact-centric perspective
+and a human-centric perspective. We present these two perspectives, with a
+special focus on the complex human aspects: we attempt there to summarize the
+main approaches from developmental psychology, cognitive science, neuroscience,
+and social psychology. We then briefly discuss the impact of the interaction
+context on anthropomorphism, which will finally lead us to globally restate
+anthropomorphism as a \emph{multi-factor phenomenon}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -490,17 +426,15 @@ likeness, and to measure it as such.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\subsection{Artifact-centered perspective on anthropomorphism}
+\subsection{Artifact-centric perspective on anthropomorphism}
 
-The \emph{artifact-centered} perspective explains anthropomorphism from the
+The \emph{artifact-centric} perspective explains anthropomorphism from the
 ascertainable parts of the non-human agent, namely the anthropomorphic form of
-it. This section deals with the question how far anthropomorphism can be
-explained from the design of the artifact.  One of the most prominent working
-hypothesis in this field is the Uncanny Valley hypothesis
-\citep{mori_uncanny_1970}. In general, it is proposed that human-like designs of
-robots can evoke both positive and negative feelings in a human user. 
+it. One of the most prominent working hypothesis in this field is the Uncanny
+Valley hypothesis~\citep{mori_uncanny_1970}. It suggests that human-like designs
+of robots can evoke both positive and negative feelings in a human user.
 
-The direction of causality in the artifact-centered view goes from the artifact
+The direction of causality in the artifact-centric view goes from the artifact
 to the humans: the artifact (or a certain feature of it) \emph{encourages} the
 human to anthropomorphize it.  This perspective assumes that humans directly
 (mindlessly) respond to life-like and social cues that the non-human agent or
@@ -511,43 +445,40 @@ interactions.  \cite{takayama_perspectives_2012} proposes to refer to this
 immediate (sometimes visceral) sense in a situation as \textit{in-the-moment},
 compared to a more distanced cogitation and consideration which she calls
 \textit{reflective}. As this distinction implies different cognitive processes,
-it is more approriate to apply a human-centered perspective and we will come
+it is more approriate to apply a human-centric perspective and we will come
 back to it later, in section \ref{sec:cognitive-expl}.
 
 
-\paragraph{The Physical shape} of a robot refers to `how the robot looks like'
+\paragraph{The Physical shape} of a robot refers to ``how the robot looks like''
 and includes its general form, and other visible features, such as its size, the
-materials used, its color, and specific details. Generally, robots can be
-divided into human-like (anthropomorphic) and mechanical (non-anthropomorphic)
-robots. However, it makes sense to be slightly more specific about the form, and
+materials used, its color, and specific details. Specifically,
 \cite{fong_survey_2003} suggest four categories: anthropomorphic, zoomorphic,
 caricatured, functional. The borders and transitions between these categories
-are not very well defined.  Of particular importance seems to be the presence or
-absence of specific human body parts, such as arms and hands, legs, a torso or a
-head and face. Of those, the faces of robots have received remarkable attention
-concerning how they are perceived and accepted. \cite{disalvo_all_2002} studied
-what features and dimensions of a humanoid robot's face most dramatically
-contribute to people's perception of its humanness. The authors analyzed 48
-humanoid robot heads and found that the presence of certain features, the
-dimensions of the head, and the total number of facial features heavily
-influence the perception of humanness in robot heads. 
+are not very well defined. The presence or absence of specific human body parts,
+such as arms and hands, legs, a torso or a head and face seems of particular
+importance. Of those, the faces of robots have received remarkable attention:
+\cite{disalvo_all_2002} studied for instance what features and dimensions of a humanoid
+robot's face most dramatically contribute to people's perception of its
+humanness. The authors analyzed 48 humanoid robot heads and found that the
+presence of certain features, the dimensions of the head, and the total number
+of facial features heavily influence the perception of humanness in robot heads. 
 
 \paragraph{Expression, communication, and behavior} refers to how the robot
-expresses its human qualities through interacting and behaving. In fact, many
-humanoid robots express their human-likeness not in physical shape but only
-through the \textit{suggestion} of features~\citep{disalvo_all_2002}. Besides
-this, communication and interaction modalities of a robot are likely to play a
-role to what extent the robot will be anthropomorphized. Can the user interact
-with the robot through a touch interface, or using speech? Does the robot
-respond using linguistic utterances or non-linguistic sounds? Is the voice
-human-like or synthetic, on-board or coming from an external second device? A
-study by~\cite{takayama_im_2009} found that this has an effect on people's
-perception of trust in the robot and how convincing the robot appears to them.
-Besides this, we expect that a robot's behavioral aspects concerning
-human-social interaction have an impact. Does the robot use polite formulations,
-etiquette, appropriate facial expressions? Are its responses and reactions
-timely? Usually, robots that directly interact with humans are slow, which
-appears not very human-like to most participants. 
+expresses its human qualities through interacting and behaving, and as a matter
+of fact, many humanoid robots primarily express their human-likeness through the
+\textit{suggestion} of features~\citep{disalvo_all_2002} instead of their
+physical shape. Interaction modalities also play a role to what extent the robot
+will be anthropomorphized. Can the user interact with the robot through a touch
+interface, or using speech? Does the robot respond using linguistic or
+non-linguistic utterances? Is the voice human-like or synthetic, on-board or
+coming from an external second device? A study by~\cite{takayama_im_2009} found
+that this has an effect on people's perception of trust in the robot and how
+convincing the robot appears to them.  Finally, the implementation of \emph{social
+rules} into the robot's behavior also impacts the tendency to anthropomorphize. Does the
+robot use polite formulations, etiquette, appropriate facial expressions? Are
+its responses and reactions timely? As it stands today, robots tend on the
+contrary to interact with humans at a slow pace, which does not elicit a
+human-like perception by the user.
 
 \paragraph{The functionality, and purpose} are a robot-related characteristic
 that also partly determines the context of use. This aspect includes what kind
@@ -562,18 +493,13 @@ discuss this aspect in the section related to the context of use.
 %
 %
 %
-%		HUMAN-CENTERED PERSPECTIVE: SOCIAL PHENOMENON
+%		HUMAN-centric PERSPECTIVE: SOCIAL PHENOMENON
 %
 %
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
 
-\subsection{Human-centered perspective on anthropomorphism}
-
-In contrast to the artifact-centered perspective, in the human-centered
-perspective the argumentation is that the human is self-motivated to
-anthropomorphize the non-human artifact. As already mentioned, both these views
-go hand in hand.
+\subsection{Human-centric perspective on anthropomorphism}
 
 Humans tend to perceive human-like characteristics such as physical appearance,
 emotional states, or inner mental states and motivations in non-human agents
@@ -581,22 +507,20 @@ that do not have these characteristics themselves, such as animals, natural
 forces, religious agents, technological gadgets, or mechanical devices
 \citep{epley_when_2008}.\footnote{According to \citet{epley_when_2008}, a
 non-human agent can be anything that acts -- or is believed to act -- with
-apparent independence.} One common reason for anthropomorphism is that by
+apparent independence.} One common explanation for anthropomorphism is that by
 perceiving some human-like characteristics in the non-human agent, this agent is
 made more \emph{graspable}, \emph{understandable}, \emph{predictable}, and one
 can feel \emph{more empathetic} toward it, and possibly one can then anticipate
-the agent's behavior. These are central motivations when trying to explain
-anthropomorphism, and we will come back to them in more detail later on.
-\citet{eddy_attribution_1993} explain that, because of these reasons, people
-commonly anthropomorphize their pets, by ascribing mental states, intentions or
-feelings to them.\footnote{Interestingly, pet-ownership seems to have a
-significant impact on human-robot interaction: several studies suggest that
-pet-owners are more likely to anthropomorphize technologies and robots than
-non pet-owners} But how can these motivations behind anthropomorphism be
-explained from a human-centered point of view?
+the agent's behavior. These are the typical reasons used for instance
+by~\citet{eddy_attribution_1993} to explain people's tendency to
+anthropomorphize their pets, by ascribing mental states, intentions or feelings
+to them.\footnote{Interestingly, pet-ownership seems to have a significant
+impact on human-robot interaction: several studies suggest that pet-owners
+are more likely to anthropomorphize technologies and robots than non
+pet-owners} 
 
 In the following, we present what we found in reviewing literature that applies
-a human-centered perspective on anthropomorphism by building on: \textit{(1)} a
+a human-centric perspective on anthropomorphism by building on: \textit{(1)} a
 line of research in developmental psychology that studies the attribution of
 animacy; \textit{(2)} a line of research in more cognitive sciences that studies
 the cognitive processes that underlie anthropomorphism, and \textit{(3)} a
@@ -607,26 +531,22 @@ theory that explains anthropomorphism based on psychological factors.
 \label{sec:developmental-expl}
 
 The phenomenon of attributing animacy and intentions to nonliving objects such
-as simple shapes has been intensively studied in developmental psychology. As
-mentioned earlier, Piaget found that children tend to ascribe life to the
-nonliving. They also tend to interpret physical phenomena in terms of intention
-on the part of the non-human subject. For instance children are likely to argue
-that \textit{``the sun is hot because it wants to make people warm''}
-\citep{leeds_childrens_1992}. In this example it is in fact questionable whether
-children really anthropomorphize the sun (believing that it has an intention) or
-whether they are using anthropomorphism in a metaphoric sense (because their
-conceptions of the world and of the living are not yet fully formed). However,
-experiments by \cite{heider_experimental_1944} and
-\cite{michotte_perception_1963} showed that also adult participants attribute
-animacy and intention to simple things and shapes based on motion. In both
-experiments, participants viewed animations of simple shapes, such as circles or
-triangles. Asked to describe what they observed, most people developed elaborate
-stories, attributing motivations, emotions and relationships between the
-objects.\footnote{For more details, the reader may refer to the ``attribution
-theory''.}
-
-As mentioned earlier, it seems that there is a natural, relatively spontaneous
-reaction that accounts for people's tendency to attribute animacy and intention
+as simple shapes has been intensively studied in developmental psychology.
+Piaget found that children tend to ascribe life to the nonliving and they also
+tend to interpret physical phenomena in terms of intention on the part of the
+non-human subject. For instance children are likely to argue that \textit{``the
+sun is hot because it wants to make people warm''} \citep{leeds_childrens_1992}.
+It is questionable whether children really anthropomorphize the sun (believing
+that it has an intention) or whether they are using anthropomorphism in a
+metaphoric sense (because their conceptions of the world and of the living are
+not yet fully formed). However, experiments by \cite{heider_experimental_1944}
+and \cite{michotte_perception_1963} showed that also adult participants
+attribute animacy and intention to simple things and shapes based on motion. In
+both experiments, participants viewed animations of simple shapes, such as
+circles or triangles. Asked to describe what they observed, most people
+developed elaborate stories, attributing motivations, emotions and relationships
+between the objects.\footnote{For more details, the reader may refer to the
+\emph{attribution theory}.} People tend to attribute animacy and intention
 to moving shapes, even when there is no similarity of the shape to a human. This
 tendency to animize / anthropomorphize is already developed (and even more
 distinct) in infants and children. Thus besides the anthropomorphic cues emitted
@@ -658,10 +578,7 @@ because we can only be our self. This view is also consistent with the
 \emph{familiarity thesis}~\citep{hegel_understanding_2008} which claims that we
 understand the world based upon the mental model of the world that we are most
 familiar with (\ie our self). Thus, we can best use our self as source of induction
-when reasoning about other agents. However, in case we would like to understand
-the behavior of a spider, we would probably not use our mental model of a human
-(or our self) simply because we do not have many things in common with a spider.
-And this is the second central aspect here.
+when reasoning about other agents.
 
 \textit{(2)} One other assumption is based on the anthropomorphic design of the
 other agent: if the agent behaves, thus appears, much like a human being (\eg a
@@ -669,27 +586,22 @@ robot that emits a human voice), people's mental model of the agent's behavior
 is likely to approach their mental model of humans (though the model may differ
 in some important aspects).
 
-This cognitive viewpoint on anthropomorphism is important because people's
-estimation of an agent's knowledge model and its capabilities affects the way
-they relate to it. This holds implications for the resulting interaction with
-the system, the user experience, and the acceptance. Previous research examined
-the validity of the mental model concept with various kinds of robots
+People's estimation of an agent's knowledge model and its capabilities are of
+particular importance. This holds implications for the resulting interaction
+with the system, the user experience, and the acceptance. Previous research
+examined the validity of the mental model concept with various kinds of robots
 \citep{schmitz_concepts_2011,kiesler_mental_2002}. Findings suggest that people
 tend to hold richer mental models of anthropomorphic robots in contrast to
-mechanic ones \citep{kiesler_mental_2002}.\footnote{Later in this article,
-we may however come to question how far this result is based on
-expectations from the human user side, which are likely to be refined
-after continued interaction, and after the user gets acquainted with the
-robot's behavior.} A similar finding is described in
-\cite{hegel_understanding_2008} and \cite{krach_can_2008}. In a user study using
+mechanic ones \citep{kiesler_mental_2002}. A similar finding is described in
+\cite{hegel_understanding_2008} and \cite{krach_can_2008}: in a user study using
 functional magnetic resonance imagery (fMRI), the authors found that
 participants implicitly attributed human-like qualities, such as mental states,
 to their non-human interaction partner. Indeed, from an early age humans develop
 a tendency to explain one's own and others' actions in terms of beliefs, desires
-and goals,  called \textit{theory of mind}. The theory of mind allows the
+and goals, called \textit{theory of mind}. The theory of mind allows the
 implicit attribution of intentions and other mental states to others
 \citep{premack1978does,leslie_pretense_1987,Frith2003}.  The finding of
-\cite{hegel_understanding_2008} and \cite{krach_can_2008} was evident at the
+Hegel and Krach was evident at the
 behavioral level as well as on the neuro-physiological level: the more the
 human-likeness of the artefactual partner increases, the more brain areas
 associated with theory of mind  get activated \citep{krach_can_2008}.
@@ -730,17 +642,16 @@ In sum, this branch of research suggests that anthropomorphism implies that
 people thoughtfully develop a mental model of agents in their environment and
 that they make inferences about these agents based on what is familiar to them
 -- themselves, humans and human behavior. This understanding builds on the
-theory of mind,  a
-person's ability to attribute mental states to oneself and others. 
-We briefly reviewed  neuro-physiological evidence of a link between the tendency
-to thoughtfully anthropomorphize and the engagement of brain processes involved
-in the attribution of mental states to other humans. The human-likeness quality
-of the artefactual agent seems to play a role in the involvement of theory of
-mind but also the unpredictable feature of the agent behavior alone seems to be
-sufficient. Low-level mechanisms of the brain that allow humans to map others'
-motor behaviors into their own repertoire are equally elicited when perceiving a
-robot's action. It is not yet clear whether humans are processing emotional
-signals from a robot the same way as they do for human beings. 
+theory of mind,  a person's ability to attribute mental states to oneself and
+others.  There is also  neuro-physiological evidences of a link between the
+tendency to thoughtfully anthropomorphize and the engagement of brain processes
+involved in the attribution of mental states to other humans. The human-likeness
+quality of the artefactual agent seems to play a role in the involvement of
+theory of mind but also the unpredictable feature of the agent behavior alone
+seems to be sufficient. Low-level mechanisms of the brain that allow humans to
+map others' motor behaviors into their own repertoire are equally elicited when
+perceiving a robot's action. It is however not yet clear whether humans are processing
+emotional signals from a robot the same way as they do for human beings. 
 
 
 \subsubsection{Social psychology research: a 3-factor theory of anthropomorphism\\}
@@ -777,17 +688,12 @@ question here is why does she draw on knowledge about other humans / herself and
 not on something else? One basic reasons for this is a person's physical
 constraints of being a human and nothing else. Consequently, one has no other
 experience than the self and in turn people tend to make inferences about
-others' mental states by relying inordinately on their own mental state.
-\footnote{Using one's own mental states and characteristics as a guide when
-reasoning about other humans is called ego-centrism. In contrast, when using
-self-knowledge (or knowledge about humans in general) when reasoning about
-non-human agents, this is called anthropomorphism. See
-\cite{epley_seeing_2007}.} Also empirical findings suggest that knowledge about
-humans in general, or self-knowledge in particular, is likely to serve as a
-readily accessible base for induction when reasoning about non-human agents.
-This tendency is usually stronger in young children and decreases with cognitive
-development and the learning to distinguish the self from other humans, and
-non-human agents. 
+others' mental states by relying inordinately on their own mental state.  Also
+empirical findings suggest that knowledge about humans in general, or
+self-knowledge in particular, is likely to serve as a readily accessible base
+for induction when reasoning about non-human agents.  This tendency is usually
+stronger in young children and decreases with cognitive development and the
+learning to distinguish the self from other humans, and non-human agents. 
 
 Both the second factor \textit{effectance} and the third factor
 \textit{sociality} are \emph{motivational determinants} of anthropomorphism.
@@ -804,7 +710,7 @@ and consequently tend to anthropomorphize more.
 
 The third factor \textit{sociality} describes a person's motivation for social
 contact, social connection, and social approval from other agents. In lack of
-social connections to other humans (\etc friends, family, colleagues), a person
+social connections to other humans (friends, family, colleagues), a person
 is more likely to compensate these social connections by anthropomorphizing
 non-human agents. In other words \textit{``[...] those who are chronically
 lonely should be more likely to anthropomorphize nonhuman agents than those who
@@ -843,20 +749,19 @@ the robot is used / experienced are taken into account. Generally, when the
 context of use of a robot is social, entertaining or playful, it will enhance
 anthropomorphism, compared to when the context is a routine or focused serious
 task (security, rescue, \etc). \cite{joosse_what_2013} showed, for instance,
-that when the same robot ({\sc nao}) was used in a different task context (cleaning
-task \vs tour guide), users ascribed different personalities to the robot. \cite{goetz_cooperation_2002}
-revealed a link between a robot's context of use and people's perception of the
-robot. The authors found that people prefer a serious robot for serious tasks
-and a less serious robot for more playful tasks
-. \cite{kaplan_free_2000}
-discussed the role of uselessness in the design of robots. The author argues
-that artificial pets like AIBO have no real purpose, in a sense that they do not
-provide any kind of service or, in other words, \textit{``they are not doing
-what you tell them to do''} and \textit{``they might refuse the order of its
-owner''}. It may be this very aspect that increases people's tendency to
-anthropomorphize the robot. According to Kaplan, it is in our daily use language
-that we tend to attribute intentions to devices that are not doing their job
-well.
+that when the same robot ({\sc nao}) was used in a different task context
+(cleaning task \vs tour guide), users ascribed different personalities to the
+robot. \cite{goetz_cooperation_2002} revealed a link between a robot's context
+of use and people's perception of the robot: the authors found that people
+prefer a serious robot for serious tasks and a less serious robot for more
+playful tasks . \cite{kaplan_free_2000} discussed the role of uselessness in the
+design of robots. The author argues that artificial pets like AIBO have no real
+purpose, in a sense that they do not provide any kind of service or, in other
+words, \textit{``they are not doing what you tell them to do''} and
+\textit{``they might refuse the order of its owner''}. It may be this very
+aspect that increases people's tendency to anthropomorphize the robot. According
+to Kaplan, it is in our daily use language that we tend to attribute intentions
+to devices that are not doing their job well.
 
 The characteristics of the context can also impact on the user experience and in
 turn foster or hinder anthropomorphism indirectly. For instance, when there are
@@ -898,36 +803,25 @@ social interaction, and hence it may be attributed human-social qualities
 \end{figure}
 
 
-Summing it up, anthropomorphism is a commonly discussed and studied trait of
-human-robot interaction; however its current understanding seems to be stuck.
-More concretely, when seeking to understand why anthropomorphism in an
-interaction between a human and a non-human artifact happens, most attention is
-given to the artifact and/or to the human. We agree that these two are the
-essential ``players'' of anthropomorphism (see Figure \ref{fig:anthropofig}).
-Indeed and, as outlined before, research has shown that both the human and the
-artifact are not only the two players of anthropomorphism but also the two main
-``factors'' that can promote or hinder anthropomorphism.
-
-However, we think that this is not the full story. When agreeing to understand
+Summing it up, and while anthropomorphism is a commonly discussed and studied
+trait of human-robot interaction, its current understanding is somewhat limited:
+when looking at understanding why anthropomorphism arises in an interaction
+between a human and a non-human artifact, most attention is given to the
+artifact itself. This is however not the full story, and when considering
 anthropomorphism as a specific type of \textit{experience} that arises in an
-\textit{interaction} between a set of user expectations and the external reality
-\citep{persson_anthropomorphism_2000}, 
-%(see Figure~\ref{fig:anthropomorphism_and_interaction})
-it becomes clear that this interaction happens in a specific context, with a
-specific history. We think that the context and the history of the interaction
-(in Figure \ref{fig:anthropofig} denoted as \textit{time}), are two more factors
-that determine anthropomorphism.
+\textit{interaction} between a set of user expectations and the external
+reality~\citep{persson_anthropomorphism_2000}, it appears that complex human
+factors, the interaction context, and the interaction history do play key roles.
 
-Consequently, we propose a holistic understanding of anthropomorphism as a
-phenomenon which is determined by multiple factors (see also Figure
-\ref{fig:anthropofig}):
+It appears thus important to consider anthropomorphism as a phenomenon which is
+determined by multiple factors, depicted on Figure \ref{fig:anthropofig}:
 
 \begin{enumerate}
 
 \item ~the characteristics of the \textbf{robot's design} (degree of
     anthropomorphic form),
 
-\item ~the psychological determinants in the \textbf{human
+\item ~the complex cognitive and psychological determinants of the \textbf{human
     user}~\citep{epley_seeing_2007},
 
 \item ~the characteristics of the \textbf{context / situation} in which the
@@ -957,78 +851,59 @@ the next section.
 \section{Anthropomorphism: a dynamic phenomenon}
 \label{sec:our-ideas}
 
-So far, the HRI community has not investigated how anthropomorphism in
-interactions with robots evolve over time. There are several reasons for why it
-makes sense to consider temporal dynamics in anthropomorphism.
+The HRI community has yet to investigate in depth the impact of time on
+anthropomorphism. We already discussed how humans directly (more or less
+mindlessly) respond to life-like and social cues emitted by non-human agents:
+without thoughtful mental processing, humans tend to apply stereotypes and
+heuristics to the robot, and in turn apply human-human social schemas and norms
+to the occurring interactions. Following concepts introduced by
+\cite{takayama_perspectives_2012}, we also mentioned how \emph{reflective}
+interactions may succeed to \emph{in-the-moment} reactions, due to
+\emph{familiarization} effects.
 
-One reason for why changes in anthropomorphism over time are likely, comes from
-the cognitive perspective, as outlined in the previous section. We are
-spontaneous but also reflect on our interactions with the robot.  From the
-artifact-centered perspective on anthropomorphism (thus, looking at the
-characteristics of the robot) it is assumed that humans directly (more or less
-mindlessly) respond to life-like and social cues that a non-human agent (here:
-robot) emits~\citep{reeves_media_1996,nass_machines_2000}. Without huge
-thoughtful mental processing, humans tend to apply stereotypes and heuristics to
-the robot, and in turn apply human-human social schemas and norms to the
-occurring interactions. However, this may only be some \textit{immediate}
-(sometimes visceral) experience, reflecting the first impression that the user
-has of the robot, based on its appearance~\citep{norman_emotional_2003}.
-\cite{takayama_perspectives_2012} refers to this as the \textit{in-the-moment}
-perspective we have on the robot, compared to a more distanced cogitation and
-consideration, which the author calls \textit{reflective}.  Further, we also
-become familiar with the robot as we continue interacting and dealing with it,
-we gain knowledge about it, and refine our mental model of the robot.
-
-Another reason for considering temporal dynamics are the changes in user
-experience~\citep{karapanos_user_2009} and relationship to the robot.
-\cite{kanda_interactive_2004} pointed out that not only the relationships among
-people evolve over time but that, in a similar manner, one can expect that also
-people's relationship and their attitude toward robots evolve. The authors were
-among the first ones to describe empirically \textit{novelty effects} during a
-long-term study with an interactive robot in a school.
-
+These dynamic modes of interactions reflect the changes in user
+experience~\citep{karapanos_user_2009} and relationship to the robot, and are
+given rhythm by specific interaction episodes like the \emph{novelty effect},
+first pointed out by~\cite{kanda_interactive_2004}.
 
 In the introduction, we reported on a few selected experimental results that
 illustrate how the user tendency to anthropomorphize decreased over time.
-Combined with the discussion on the nature and factors of
-anthropomorphism that we proposed in section~\ref{sec:anthropomorphism}, we
-introduce in the following section a novel qualitative model of the evolution of
-anthropomorphism over time, \ie a model of the \emph{dynamics of
-anthropomorphism}.
+Combined with the discussion on the nature and factors of anthropomorphism that
+we proposed in section~\ref{sec:anthropomorphism}, we introduce in the following
+section a novel qualitative model of the evolution of anthropomorphism over
+time, \ie a model of the \emph{dynamics of anthropomorphism}.
 
 
 \subsection{A Model of the Dynamics of Anthropomorphism}
 \label{sec:dynamics-model}
 
-The phenomenological model of anthropomorphism we propose
-(Figure~\ref{fig:dynamics},~\citep{lemaignan2014dynamics}) represents how the
-level of anthropomorphic \emph{effects}~\AntE[R,H,C,t] (\ie the observable
-manifestations of the anthropomorphism \Ant) evolves over a long-term human-robot
-interaction.
+To better structure the reflection about the interplay between anthropomorphism
+and interaction history, we propose to introduce a phenomenological model of the
+dynamics of anthropomorphism.  (Figure~\ref{fig:dynamics}, first presented
+in~\citep{lemaignan2014dynamics}).  It represents how the level of
+anthropomorphic \emph{effects}~\AntE[R,H,C,t] (\ie the observable manifestations
+of the anthropomorphism \Ant) evolves over a long-term human-robot interaction.
 
 While the model primarily considers \emph{long-term interaction} -- direct
 (non-mediated), repeated interaction with the same robot, over an extended
-period of time (typically longer than a week) --, we also formally introduce a
+period of time (typically longer than a week) --, we also introduce the
 so-called \emph{novelty effect}~\citep{kanda_interactive_2004} that models the
 first phase of human-robot interaction, during which a specific increase of
 anthropomorphic interactions is observed.
 
-In this model, anthropomorphism is quantified
-by a \emph{normalized level of anthropomorphic effects} $\antENorm[R,H,C,t] =
-\frac{\antE[R,H,C,t]}{\antEMax}$: because anthropomorphic effects are often
-qualitative and difficult to quantify on an absolute scale, we present them as a
-normalized value, that spans from a minimum (no anthropomorphic effects:
-$\antE=0$) to a maximum (noted \AntEMax, with $t_{max} = \operatorname{arg\,max}_t
-\, \antE[t]$). For the sake of readability, we will use \Ant in the following
-sections to refer to the normalized level of anthropomorphic effects. Note also
-that we discuss in section~\ref{sec:measuring} possible methodologies for the
-quantitative and qualitative assessment of anthropomorphic effects.
+In this model, anthropomorphism is quantified by a \emph{normalized level of
+anthropomorphic effects} $\antENorm[R,H,C,t] = \frac{\antE[R,H,C,t]}{\antEMax}$:
+because anthropomorphic effects are often qualitative and difficult to quantify
+on an absolute scale, the model represents them as a normalized value, that
+spans from a minimum (no anthropomorphic effects: $\antE=0$) to a maximum
+(\AntEMax, with $t_{max} = \operatorname{arg\,max}_t \, \antE[t]$, which we
+hypothesize to correspond to the novelty effect ``peak''). For the sake of
+readability, we will use \AntE in the following sections to refer to the
+normalized level of anthropomorphic effects.
 
-The actual maximum value of anthropomorphic effects depends on each unique
-combination of a human, a robot, a situation and several other factors we
-introduce below. Figure~\ref{fig:dynamics} pictures this
-maximum value at $t_{max}$, which we hypothesize to correspond to the
-novelty effect ``peak''.
+While not the focus of this article, we discuss in section~\ref{sec:measuring}
+some of the possible methodologies and techniques for the quantitative and
+qualitative assessment of anthropomorphic effects.
 
 \begin{figure*}[htb]
 \centering
@@ -1052,7 +927,7 @@ novelty effect ``peak''.
 \draw[->] (0,0) -- (0,6) node[anchor=east] {};
 \draw(-0.8,3) node[rotate=90,anchor=south] {\scriptsize Anthropomorphic effects};
 
-\draw (-0.05, 2.1) -- (0.05, 2.1) node[anchor=east] {\ICAe};
+\draw (-0.05, 2.1) -- (0.05, 2.1) node[anchor=east] {\IPAe};
 \draw (-0.05, 5) -- (0.05, 5) node[anchor=east] {\AntEMax};
 
 % vertical axis - end
@@ -1098,17 +973,17 @@ novelty effect ``peak''.
 \caption{\textbf{Qualitative model of the dynamics of anthropomorphism}. We
     distinguish three main phases: \emph{initialization}, \emph{familiarization}
     and \emph{stabilization}, preceded by a \emph{pre-interaction} phase. The
-    pre-interaction phase is characterized through an \emph{initial capital of
-    anthropomorphism} (ICA, noted \ICA).  Once the interaction starts, the level
-    of anthropomorphism increases due to the \emph{novelty effect}, and then
+    pre-interaction phase is characterized through an \emph{initial potential to
+    anthropomorphize} (IPA, noted \IPAe).  Once the interaction starts, the level
+    of anthropomorphism increases, in part due to the \emph{novelty effect}, and then
     decreases to reach a \emph{stabilized level of anthropomorphism} (SLA, noted
-    \SLA). \ICA and \SLA may vary depending on the user (and his/her
+    \SLAe). \IPAe and \SLAe may vary depending on the user (and his/her
     expectations), the robot and the context of interaction.  During the
     interaction, unpredicted behaviors of the robot (\emph{disruptive
     behaviors}) may lead to local increases or decreases of the level of
     anthropomorphic effects. The duration of these phases may vary and the
     overall shape of the curve is unique to each human interacting with a
-    specific robot in a given context, as depicted by the alternative curves.}
+    specific robot in a given context, as emphasized by the alternative curves.}
 
 \label{fig:dynamics}
 \end{figure*}
@@ -1122,35 +997,35 @@ depicted in different shades in Figure~\ref{fig:dynamics}.
 
 \subsubsection{Pre-Interaction and Initialization Phase\\}
 
-The \emph{initial capital of anthropomorphism} \ICA describes the initial potential
-for the human user to anthropomorphize the robot in a given situation.
-This potential depends on several factors, introduced in
-section~\ref{sec:multi-factors}.
-It represents the level of anthropomorphic effects that can be expected to occur
-during the very first contacts between the human and the robot. During this first
-phase, pre-conceptions and initial expectations as well as previous experience
-of the user with other similar types of robots and similar contexts are the
-primary source of influence.
+The \emph{initial potential to anthropomorphize} \IPAe describes the initial
+potential for the human user to anthropomorphize the robot in a given situation.
+This potential depends on the several factors introduced in
+section~\ref{sec:multi-factors}.  It represents the level of anthropomorphic
+effects that can be expected to occur during the very first contacts between the
+human and the robot. During this first phase, pre-conceptions and initial
+expectations as well as previous experience of the user with other similar types
+of robots and similar contexts are of prime importance.
 
-During the initialization phase, we expect an increasing value of \Ant
-that is due to the so-called \textit{effects of novelty} of the
-robot. Such effects have been described with interactive technologies in general
-\citep{rogers_diffusion_1995}, and also in several long-term HRI studies in
-workplaces \citep{huttenrauch_fetch-and-carry_2003,mutlu_robots_2008}, in
-schools and public places
+During the initialization phase, we expect an increasing value of \Ant that is
+due to the effects of the novelty of the robot. Such effects have been described
+with interactive technologies in general \citep{rogers_diffusion_1995}, and also
+in several long-term HRI studies in workplaces
+\citep{huttenrauch_fetch-and-carry_2003,mutlu_robots_2008}, in schools and
+public places
 \citep{gockley_designing_2005,kanda_communication_2005,kanda_interactive_2004},
 and elder care centers \citep{sabelli_conversational_2011}. Also long-term
-studies of domestic robots have shown similar effects and found that after some
-time people's interest, engagement, and fascination of the robot decreased
+studies of domestic robots have shown similar effects -- and also found that
+after some time people's interest, engagement, and fascination of the robot
+decreased
 \citep{sung_robots_2009,sung_domestic_2010,fernaeus_how_2010,fink_living_2013}.
 
 The type of anthropomorphic effects typically observed during the initialization
-hpase include users who spontaneously tend to talk directly to the robot while
-they are aware that the system is not be able to recognize speech: greeting the
+phase include users who spontaneously tend to talk directly to the robot while
+they are aware that the system is not be able to recognize speech (greeting the
 robot, asking questions to it, giving it a nickname, praising the robot,
-commenting on its performances and giving commands. Also, the use of pointing
-gestures and waving at the robot are often found, as well as ascribing gender
-and some personal preferences or intention to the robot.
+commenting on its performances, giving commands), the use of pointing gestures
+and waving at the robot, as well as ascribing gender and some personal
+preferences or intention to the robot.
 
 \subsubsection{Familiarization Phase\\}
 
@@ -1184,25 +1059,25 @@ discuss the role of disruptive behaviors in cognitive terms in section
 
 During the \textit{Stabilization Phase} the value of \Ant tends to stabilize over
 a longer time, to reach a value that we call the \textit{Stabilized Level of
-Anthropomorphism} ($SLA$), noted \SLA. The value that the
-$SLA$ approaches is unique for each user interacting with a specific robot in a
-given situation. \SLA may approach $0$, when no anthropomorphic effects
+Anthropomorphism} (SLA), noted \SLAe. The value that the
+SLA approaches is unique for each user interacting with a specific robot in a
+given situation. \SLAe may approach $0$, when no anthropomorphic effects
 are observed anymore, for instance when the user is interacting with the robot
 in a routine way and he/she does not project any human-like traits unto the
 robot, what \cite{takayama_toward_2011} calls the robot being
-\textit{``invisible in use''}. \SLA may as well remains above 0 if the user
+\textit{``invisible in use''}. \SLAe may as well remains above 0 if the user
 continues to exhibit anthropomorphic behaviors when interacting with the robot
 on the long run.
 
-The level \SLA, like \ICA, is the result of a combination of multiple human,
+The level \SLAe, like \IPAe, is the result of a combination of multiple human,
 robotic and contextual factors, with the additional impact of the
 \emph{interaction history t} that the user experienced with the robot. Note that
-the $ICA$ and $SLA$ levels are generally not correlated: a person may initially
-have a high potential of anthropomorphizing (high \ICA), for instance a highly
+the IPA and SLA levels are generally not correlated: a person may initially
+have a high potential of anthropomorphizing (high \IPAe), for instance a highly
 anthropomorphic robot, but subsequently get disappointed by the actual
 capabilities of it and stop explaining it in terms of human-like characteristics
-(low \SLA). Another user may however create lasting affective bonds with the
-same robot and may continue to anthropomorphize the robot (higher \SLA).
+(low \SLAe). Another user may however create lasting affective bonds with the
+same robot and may continue to anthropomorphize the robot (higher \SLAe).
 
 
 
@@ -1326,7 +1201,7 @@ contributing at a lower level to the intuitive anthropomorphization.
 The intuitive anthropomorphization in the cognitive Stage 1 might be
 characteristic of what \cite{takayama_perspectives_2012} calls the
 \textit{in-the-moment} perspective on agency with a robot compared to the
-\textit{reflective} perspective (see paragraph ``artifact-centered perspective''
+\textit{reflective} perspective (see paragraph ``artifact-centric perspective''
 in section \ref{sec:anthropomorphism}).  For instance, we reflectively might
 \textit{not} perceive agency in a social robot, but it can feel quite
 differently in the moment of interaction. \cite{takayama_perspectives_2012}
@@ -1347,7 +1222,7 @@ similar to how they respond to people \citep{reeves_media_1996}.
 different perspectives of in-the-moment \vs reflective to illustrate
 differences. She states that in-the-moment perceptions of agency are largely
 shaped by bottom-up perceptual processes, evoking very immediate responses (\eg
-to the cues emitted by the artifact's design (``artifact-centered
+to the cues emitted by the artifact's design (``artifact-centric
 perspective''). In contrast, according to Takayama, reflective perceptions are
 more often shaped by top-down processes because of the nature of reflective
 thought.
@@ -1362,7 +1237,7 @@ projects onto the robot mental models of similar agents he/she is already
 familiar with (ranging from animals to human adults, to pets and children). We
 hypothesize that the nature of the projected mental model, as well as how deep
 the human engages in this projection, might be driven by the same parameters as
-we mentioned for the \emph{initial capital of anthropomorphism}. We also believe
+we mentioned for the \emph{initial potential to anthropomorphize}. We also believe
 that, at this stage, the human also changes his attitude towards the robot, by
 focusing his attention to social cue more than to low-level behaviors, which
 may in turn reinforce the resonance mechanisms.
@@ -1376,27 +1251,6 @@ possibly affective/social) commitment from the human in the interaction
 and reshapes his/her behavioral and mental model of the robot (\emph{How does
 the robot react to such and such situation/input?  What does the robot know
 about me? About itself? About our environment? What can the robot learn?}, etc.).
-
-This mental process depends on the human understanding of the robot's inner
-working, as well as his/her own tendency to anthropomorphize (the
-\emph{personality} in ICA factor). At this stage, the \emph{perception} of the
-robot (its shape for instance) and its original intended \emph{purpose} play
-less of an important role. It is mostly a human-centric process.  The result of
-this third phase is an iteratively adapted cognitive model of the robot.
-
-Another way to think of the three proposed cognitive stages is to relate them to
-the \textbf{user experience} which is characteristic of these three stages. For
-instance, \cite{norman_emotional_2003} characterizes  three user experience
-dimensions (related to emotional attachment), which occur when people use or see
-a product for the first time: \emph{(1)} the \emph{visceral level}, which is the
-first impression of a product based on its experience; at this level people do
-not think about a product but make spontaneous judgments; \emph{(2)} the
-\emph{behavioral level}, in which people use and experience the product,
-appraise its functions, and consider aspects such as usefulness and usability;
-\emph{(3)} the \emph{reflective level}, in which consciousness takes part in the
-process, and past experiences are taken into account.
-
-\paragraph{Relation to the dynamics of anthropomorphism\\}
 
 \begin{figure}[]
 \centering
@@ -1459,6 +1313,27 @@ process, and past experiences are taken into account.
 \end{figure}
 
 
+This mental process depends on the human understanding of the robot's inner
+working, as well as his/her own tendency to anthropomorphize (the
+\emph{personality} in IPA factor). At this stage, the \emph{perception} of the
+robot (its shape for instance) and its original intended \emph{purpose} play
+less of an important role. It is mostly a human-centric process.  The result of
+this third phase is an iteratively adapted cognitive model of the robot.
+
+Another way to think of the three proposed cognitive stages is to relate them to
+the \textbf{user experience} which is characteristic of these three stages. For
+instance, \cite{norman_emotional_2003} characterizes  three user experience
+dimensions (related to emotional attachment), which occur when people use or see
+a product for the first time: \emph{(1)} the \emph{visceral level}, which is the
+first impression of a product based on its experience; at this level people do
+not think about a product but make spontaneous judgments; \emph{(2)} the
+\emph{behavioral level}, in which people use and experience the product,
+appraise its functions, and consider aspects such as usefulness and usability;
+\emph{(3)} the \emph{reflective level}, in which consciousness takes part in the
+process, and past experiences are taken into account.
+
+\paragraph{Relation to the dynamics of anthropomorphism\\}
+
 As mentioned before, the three cognitive stages proposed here do not directly
 match with the three phases in the model of the dynamics of anthropomorphism,
 and Figure~\ref{fig:mix} attempts to depict their interplay.
@@ -1482,7 +1357,7 @@ experience with the robot is correctly supported by the cognitive model he/she
 has built.
 
 
-\subsection{Role of disruptive behaviors}
+\subsection{Role of unexpected behaviors}
 \label{sec:disruptive}
 
 A cognitive interpretation of anthropomorphism also allows to better interpret
@@ -1551,13 +1426,25 @@ expected to lead to a lower anthropomorphism level.
 %
 %
 %
-%				DISCUSSION + FUTURE WORK
+%				CONCLUSIONS
 %
 %
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Measuring anthropomorphism}
+\section{Conclusion}
+\label{sec:conclusion}
+
+In this paper, we presented a cognitive and psychological viewpoint on anthropomorphism, what we believe can offer relevant extensions to our understanding of anthropomorphism in HRI. Regarding anthropomorphism as a social phenomenon that arises in an interaction, we formulated the following three suggestions:
+\begin{enumerate}
+\item \textbf{Anthropomorphism is based on multiple factors.} The three main factors that constitute anthropomorphism, are characteristics of the human $H$, characteristics of the robot $R$, and characteristics of the context of use $C$. A temporal dimension is taken into account by the \textit{interaction history} $t$, which leads to anthropomorphism being also a dynamic phenomenon (see point 3).
+\item \textbf{Anthropomorphism is multi-layered.} Applying a cognitive viewpoint on anthropomorphism, there exist \textit{lower and higher levels} of the phenomenon. On one hand, the level (it may be a continuum rather than discrete levels) depends on one how typical or uniquely human the attributed characteristics are, and how much the mental model that the user build of the robot overlaps (or is inspired by) the mental model he/she has of another human. As an outcome of this, three different \textit{cognitive stages} have been identified. These stages reflect the implicated cognitive depth of the anthropomorphic effect.
+\item \textbf{Anthropomorphism is dynamic.} Looking at how experience and interaction evolve over time, we developed a conceptual model of the dynamics of anthropomorphism, which states that there is a non-linear relationship between the observable \textit{anthropomorphic effects} $A_t$ (a user's tendency to anthropomorphize a robot) and the \textit{interaction history} $t$ (taking into account the actual time the user has spent interacting with the robot for real or imagined). The shape of the hypothesized curve starts with the so-called \textit{Initial Capital of Anthropomorphism} ($ICA$) that can be measured as a pre-variable, based on the three main factors (see point 1). With a considerable interaction history, the curve approaches the so-called \textit{Stabilized Level of Antrhopomorphism} ($SLA$). How the curve evolves in between these two values is flexible and unique to each user, robot, and context. We generally assume an increase of \textit{anthropomorphic effects} driven by the \textit{novelty} of the robot, followed by a decrease of $A_t$ as the user \textit{familiarizes} him/herself with the robot and with using the robot. 
+\end{enumerate}
+
+
+
+\subsection{Measuring anthropomorphism}
 \label{sec:measuring}
 
 Most of the experiments that investigate anthropomorphism in HRI are conducted
@@ -1722,54 +1609,18 @@ adult's engagement with, and perception of the robot. This seems to be a
 promising approach to investigate anthropomorphism, as it is also possible to
 combine quantitative and qualitative techniques. 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%
-%
-%				CONCLUSIONS
-%
-%
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Implications}
 
-\section{Conclusion}
-\label{sec:conclusion}
+Overall, if we agree that \textbf{anthropomorphism arises in an interaction}, this requires studying the phenomenon as such, both in terms of evaluation scenarios, and in terms of measurements. Regarding \textbf{evaluation scenarios}, we suggest to go beyond using videos and pictures of robots, but to use real interaction scenarios (possibly long-term, \eg one interaction spanning over an extended period of time, or several sessions so to have repeated interactions). In terms of \textbf{measurements}, we suggest to go beyond using rating scales, but to apply a more holistic approach that regards not only participants perception of the robot but also the way they interact with the robot. For this, we proposed a so-called \textit{Anthropomorphism Index} $AntX$ that can be used both as a measurement tool and as a value that reflects how much a user anthropomorphized a robot in a given situation. To take into account the dynamics over time, we propose to measure $AntX$ at several points, as a pre-variable (focusing on user expectations, previous experience, robot design), in-situ variables (focusing on behavioral aspects, interaction, variations of robot behavior) and post-variables (perception and acceptance rating of interaction).  
 
-Anthropomorphism is a social phenomenon which seems to be natural on one side
-and very complex on the other side. It is a mechanism within oneself that makes
-a human observer think and treat a non-human agent as if it would have some
-human (social) characteristics, and ascribe to it intentions, emotions, or
-thoughts, for instance. Understanding the reasons and modalities of
-anthropomorphism is thus of prime importance to build a successful and lasting
-human-robot interaction.
+\subsection{Limitations}
 
-Based on our previous (and on-going) work, we hypothesized that there are
-qualitative differences and dynamics over time in how humans relate to different
-types of robots. More concretely, we described that people's perception of
-human-likeness in a robot and in turn their human-social engagement with a robot
-is based on four main factors: (1) the (anthropomorphic) design of the robot,
-(2) individual characteristics of the human user, (3) the context of use /
-interaction, and (4) the interaction history (time factor). We further suggested
-that people's tendency to anthropomorphize a robot is likely to change over time
-with growing experience of the user with the system. 
+We have proposed that the user's familiarization with the robot is a significant factor that influences how anthropomorphism evolves over time. We assume a general \textit{decrease} of anthropomorphic effects as the user gets familiar with the robot, and we applied a cognitive viewpoint to legitimate this. However, there exist opposite interpretations. \cite{eddy_attribution_1993} state that familiarization and more interaction with an agent \textit{increase} the tendency to anthropomorphize. Similarly, \citep{duffy_anthropomorphism_2003} reports that several psychological experiments and HRI studies showed that familiarity with the system eases social acceptance and tends to \textit{increase} people's tendency to perceive human-like characteristics in the system.
+We acknowledge that our conceptual model is an idea that needs to be verified, so to see whether our hypotheses can hold. In particular, the effect of the user's familiarity with the robot, and the role of disruptive robot behaviors needs to be studied in more detail and over extended periods of time.
 
-To formalize the variances in anthropomorphism, we proposed a model that we call
-\textit{Dynamics of Anthropomorphism}.  
+While subject to discussion and further refinements and extensions, we hope that this contribution consolidates the scientific grounds of anthropomorphism and provides support for a better understanding of anthropomorphism and its role in long-term acceptance of robots in human environments.
 
-We introduced the concepts of \emph{initial capital} and \emph{stabilized level
-of anthropomorphism} as compound factors to characterize the profile of a given
-anthropomorphic (long-term) interaction.
 
-The article also discussed the cognitive correlates of anthropomorphism. We
-proposed three cognitive stages corresponding to successive refinements of the
-mental models of the robot that the user builds during the interaction. We
-showed how these stages relate to observable anthropomorphic effects, and how
-they evolve over time.
-
-While subject to discussion and further extensions, we hope that this
-contribution consolidates the scientific grounds of anthropomorphism, and
-provides support for a better understanding of long-term acceptance of robots in
-human environments.
 
 
 \section*{Acknowledgments}
