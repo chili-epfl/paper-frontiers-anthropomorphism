@@ -1436,14 +1436,59 @@ expected to lead to a lower anthropomorphism level.
 \section{Conclusion}
 \label{sec:conclusion}
 
-In this paper, we presented a cognitive and psychological viewpoint on anthropomorphism, what we believe can offer relevant extensions to our understanding of anthropomorphism in HRI. Regarding anthropomorphism as a social phenomenon that arises in an interaction, we formulated the following three suggestions:
+In this paper, we have provided a broad account of the cognitive and
+psychological viewpoints on anthropomorphism, with a novel focus on the
+impact of time. Considering anthropomorphism as a social phenomenon that arises
+in an interaction, we formulated the following three suggestions:
+
 \begin{enumerate}
-\item \textbf{Anthropomorphism is based on multiple factors.} The three main factors that constitute anthropomorphism, are characteristics of the human $H$, characteristics of the robot $R$, and characteristics of the context of use $C$. A temporal dimension is taken into account by the \textit{interaction history} $t$, which leads to anthropomorphism being also a dynamic phenomenon (see point 3).
-\item \textbf{Anthropomorphism is multi-layered.} Applying a cognitive viewpoint on anthropomorphism, there exist \textit{lower and higher levels} of the phenomenon. On one hand, the level (it may be a continuum rather than discrete levels) depends on one how typical or uniquely human the attributed characteristics are, and how much the mental model that the user build of the robot overlaps (or is inspired by) the mental model he/she has of another human. As an outcome of this, three different \textit{cognitive stages} have been identified. These stages reflect the implicated cognitive depth of the anthropomorphic effect.
-\item \textbf{Anthropomorphism is dynamic.} Looking at how experience and interaction evolve over time, we developed a conceptual model of the dynamics of anthropomorphism, which states that there is a non-linear relationship between the observable \textit{anthropomorphic effects} $A_t$ (a user's tendency to anthropomorphize a robot) and the \textit{interaction history} $t$ (taking into account the actual time the user has spent interacting with the robot for real or imagined). The shape of the hypothesized curve starts with the so-called \textit{Initial Capital of Anthropomorphism} ($ICA$) that can be measured as a pre-variable, based on the three main factors (see point 1). With a considerable interaction history, the curve approaches the so-called \textit{Stabilized Level of Antrhopomorphism} ($SLA$). How the curve evolves in between these two values is flexible and unique to each user, robot, and context. We generally assume an increase of \textit{anthropomorphic effects} driven by the \textit{novelty} of the robot, followed by a decrease of $A_t$ as the user \textit{familiarizes} him/herself with the robot and with using the robot. 
+
+\item \textbf{Anthropomorphism is based on multiple factors.} The three main
+    factors that constitute anthropomorphism are the characteristics of the
+    human, the characteristics of the robot, and the characteristics of the
+    context of use. A temporal dimension is taken into account by the
+    \textit{interaction history} $t$, which reflects the fact that
+    anthropomorphism is also a dynamic phenomenon.
+
+\item \textbf{Anthropomorphism is dynamic.} Looking at how experience and
+    interaction evolve over time, we developed a qualitative model of the
+    dynamics of anthropomorphism, which materializes a non-linear relationship
+    between the observable \textit{anthropomorphic effects} \AntE of the human
+    behavior and the \textit{interaction duration} $t$ (the actual time the user
+    has spent interacting with the robot for real or imagined). This qualitative
+    relationship starts at $t_{0}$ with the \textit{initial potential to
+    anthropomorphize} (IPA), a function of the three factors previously
+    discussed (point 1) that measures a pre-interaction form of
+    anthropomorphism. On the other end, at $t_{\infty}$, we suggest that the
+    interaction reaches a \textit{stabilized level of anthropomorphism} (SLA).
+    How the curve evolves in between these two values is flexible and unique to
+    each user, robot, and context. We however generally hypothesize an increase of
+    \textit{anthropomorphic effects} driven by the \textit{novelty} of the
+    robot, followed by a decrease of \AntE as the user \textit{familiarizes}
+    him/herself with the robot and with using the robot. 
+
+\item \textbf{Anthropomorphism is multi-layered cognitive mechanism.} We have
+    identified three successive and overlapping cognitive layers that underlie
+    human-robot interaction and shape anthropomorphic behaviors.
+    These layers (that are likely continuum rather than discrete levels) depend
+    on one how typically human the robot is perceived, and how much the mental
+    model that the user builds of the robot overlaps (or is inspired by) the
+    mental model he/she has of another human. Each of the layers
+    reflect different depths of cognitive engagement between the human and the
+    robot.
+
 \end{enumerate}
 
+We believe that this systematic approach of anthropomorphism as a complex social
+and psychological phenomenon, along with the terminology clarification that we
+have proposed in the introduction of the article, can effectively support
+further research on the intricate interactions between humans and robots.
 
+We purposefully kept this work at a rather abstract level since our aim was to
+build and extend the theoretical grounds of anthropomorphism in HRI. The
+question of operationalizing these models is however also important, and the
+next section briefly sketch the state of the techniques and methods to
+concretely assess anthropomorphic attitudes in HRI.
 
 \subsection{Measuring anthropomorphism}
 \label{sec:measuring}
@@ -1467,69 +1512,21 @@ humanlike, unconscious \vs conscious, artificial \vs lifelike, moving rigidly
 \vs moving elegantly. Because the concept of ``human-likeness'' itself is
 complex and abstract, \cite{kahn_jr._robotic_2006} suggest to ask for more
 concrete constructs that are typical or unique of the concept of
-``human-likeness''.  For instance, \cite{ruijten_introducing_2014} propose a
-25-item questions to measure various concrete aspects of human-likeness.
+``human-likeness'', and \cite{ruijten_introducing_2014} propose for instance a
+25-item questionnaire to measure various concrete aspects of human-likeness.
 
-Still, measuring anthropomorphism (or social engagement with a robot) through
-subjective self-reporting remains challenging because the phenomenon is
-partially unconscious, its mediation is largely subject-dependent, and we found
-the phenomenon generally difficult to verbalize for users.
-
-As a consequence, to reduce subjectivity and still accurately account for
-psychological effects, it is necessary to interleave quantitative and
-qualitative assessments of anthropomorphic effects.
-
-We present in this section the methodology and techniques that we used to assess
-anthropomorphic projections in the child-robot interaction study, called the
-Domino study (see section \ref{sec:field-results}, and Figure \ref{fig:ranger}).
-
-\paragraph{Qualitative and quantitative assessment of anthropomorphism in
-human's behavior\\}
-
-Anthropomorphism can possibly be observed in how humans behave toward a
-non-human agent (social human-like engagement). Based on video recordings of the
-Domino experiment, we acquired both quantitative and qualitative behavioral data
-that reflects anthropomorphism.
-
-Quantitative data are acquired by systematic annotations of specific types of
-actions in the video records of the interaction. Six classes of interactions
-were identified as reflecting active commitment and/or an anthropomorphic
-interaction of the user: gestures toward the robot, touching the robot, direct
-talk to the robot, showing something to the robot, mistreating the robot (\eg
-kicking it), and looking at the experimenter because worried by the robot's
-behavior.
-
-By considering the number of occurrences, the duration, and consequently the
-frequency of these types of interaction, we can make statements of how far the
-robot is anthropomorphized in an interaction (based on quantitative data).
-
-We assessed anthropomorphic interactions qualitatively by looking at specific
-instances of human-social cues in the human's behavior, such as: facial
-expressions, observable emotional reactions (\eg surprised, high pitch voice or
-shouting to the robot), eye-contact with the robot, turn-taking gestures,
-greeting (waving) gestures. These are just suggestions of actions that might
-reflect anthropomorphism. These actions partly overlap with the quantitative
-assessment, however it is generally advisable to combine the two.
-
-
-\paragraph{Qualitative assessment of anthropomorphism when verbally referring to
-the robot (reflection)\\}
-
-The main tools for qualitative measurement of anthropomorphic effect are
-questionnaires and semi-structured interviews. We have explored both
-rating-scales in a questionnaire, and open questions in an interview.  In the
-Domino study, interviews were transcribed and participant's answers to the key
-questions that were assessing an anthropomorphic projection onto the robot, were
-analyzed. For instance, one question to see how far children would ascribe moral
-standing to the robot was \emph{``If you had this robot at home, and you were to
-leave for 2 weeks of holidays, would it be ok to leave the robot alone at
-home?''}. A point for anthropomorphism was counted, when the participant's
-answer indicated an anthropomorphic view of the robot. This process led to a
-``qualitative score'' that reflects how far the robot is anthropomorphized.
-Table~\ref{tab:domino-questions} summarizes the constructs that we used to
-measure how far the robot is perceived as a human-like agent, along with example
-questions.
-
+We have explored both rating-scales in a questionnaire, and open questions in an
+interview.  In the ``dominos'' study depicted in Figure~\ref{fig:ranger}
+(page~\pageref{fig:ranger}), interviews with the young children were transcribed
+and participant's answers to key questions were analyzed. For instance, one
+question to see how far children would ascribe moral standing to the robot was
+\emph{``If you had this robot at home, and you were to leave for 2 weeks of
+holidays, would it be ok to leave the robot alone at home?''}. We then
+attributed points when the participant's answer indicated an anthropomorphic
+view of the robot. This process led to a ``qualitative score'' that reflects how
+far the robot is anthropomorphized. Table~\ref{tab:domino-questions} summarizes
+the constructs that we used to measure how far the robot is perceived as a
+human-like agent, along with example questions.
 
 \begin{table}
 \centering
@@ -1599,27 +1596,78 @@ questions.
     related to the construct \emph{expectations} were asked during the
     pre-interview.
 
-     
-
 \end{table}
 
-Some of these questions were taken from previous work done by
-\cite{kahn_jr._robotic_2006} an \cite{weiss_i_2009}. In both studies, both
-questionnaires and an analysis of behavior were used to assess children's and
-adult's engagement with, and perception of the robot. This seems to be a
-promising approach to investigate anthropomorphism, as it is also possible to
-combine quantitative and qualitative techniques. 
+Still, measuring anthropomorphism (or social engagement with a robot) through
+subjective self-reporting remains challenging because the phenomenon is
+partially unconscious, it remains generally difficult to verbalize for users,
+and questionnaires, as post-hoc measurement, do not easily account for the
+dynamics of the phenomenon.  Some of the questions of the ``dominos'' study were
+taken from previous work done by~\cite{kahn_jr._robotic_2006}
+and~\cite{weiss_i_2009}, and in these two studies, questionnaires results were
+augmented with an analysis of behavior to assess children's and adult's
+engagement with the robot.
+
+We also explored the combination of interviews scoring with behavioral
+measurement in the ``dominos'' study: we acquired quantitative data by
+systematic annotations of specific types of actions in the video records of the
+interaction. Six classes of interactions were identified as reflecting active
+commitment and/or an anthropomorphic interaction of the user: gestures toward
+the robot, touching the robot, direct talk to the robot, showing something to
+the robot, mistreating the robot (\eg kicking it), and looking at the
+experimenter because worried by the robot's behavior.
+By considering the number of occurrences, the duration, and consequently the
+frequency of these types of interaction, we built a weighting scheme to rate
+the observed level of anthropomorphic behaviors in an interaction (\ie, \AntE).
+
+This approaches remain however fragile: in our experience, the weighting scheme
+of the annotated behaviors mostly relies on a subjective assessment by the
+experimenters, which makes it difficult to transfer to different experimental
+settings. And it remains to be seen how self-reported assessment of
+anthropomorphism (through questionnaires) can be meaningfully combined with
+behavioral measurements, in a way that account for the dynamic nature of
+anthropomorphism.
 
 \subsection{Implications}
 
-Overall, if we agree that \textbf{anthropomorphism arises in an interaction}, this requires studying the phenomenon as such, both in terms of evaluation scenarios, and in terms of measurements. Regarding \textbf{evaluation scenarios}, we suggest to go beyond using videos and pictures of robots, but to use real interaction scenarios (possibly long-term, \eg one interaction spanning over an extended period of time, or several sessions so to have repeated interactions). In terms of \textbf{measurements}, we suggest to go beyond using rating scales, but to apply a more holistic approach that regards not only participants perception of the robot but also the way they interact with the robot. For this, we proposed a so-called \textit{Anthropomorphism Index} $AntX$ that can be used both as a measurement tool and as a value that reflects how much a user anthropomorphized a robot in a given situation. To take into account the dynamics over time, we propose to measure $AntX$ at several points, as a pre-variable (focusing on user expectations, previous experience, robot design), in-situ variables (focusing on behavioral aspects, interaction, variations of robot behavior) and post-variables (perception and acceptance rating of interaction).  
+Overall, if we agree that \textbf{anthropomorphism arises in an interaction},
+this requires studying the phenomenon as such, both in terms of evaluation
+scenarios, and in terms of measurements. Regarding \textbf{evaluation
+scenarios}, we suggest to go beyond using videos and pictures of robots, but to
+use real interaction scenarios (possibly long-term, \eg one interaction spanning
+over an extended period of time, or several sessions so to have repeated
+interactions). In terms of \textbf{measurements}, we suggest to go beyond using
+rating scales, but to apply a more holistic approach that regards not only
+participants perception of the robot but also the way they interact with the
+robot. To take into account the dynamics over time, it appears important to
+assess anthropomorphism at several points, as a
+pre-variable (focusing on user expectations, previous experience, robot design),
+in-situ variables (focusing on behavioral aspects, interaction, variations of
+robot behavior) and post-variables (perception and acceptance rating of
+interaction).
 
 \subsection{Limitations}
 
-We have proposed that the user's familiarization with the robot is a significant factor that influences how anthropomorphism evolves over time. We assume a general \textit{decrease} of anthropomorphic effects as the user gets familiar with the robot, and we applied a cognitive viewpoint to legitimate this. However, there exist opposite interpretations. \cite{eddy_attribution_1993} state that familiarization and more interaction with an agent \textit{increase} the tendency to anthropomorphize. Similarly, \citep{duffy_anthropomorphism_2003} reports that several psychological experiments and HRI studies showed that familiarity with the system eases social acceptance and tends to \textit{increase} people's tendency to perceive human-like characteristics in the system.
-We acknowledge that our conceptual model is an idea that needs to be verified, so to see whether our hypotheses can hold. In particular, the effect of the user's familiarity with the robot, and the role of disruptive robot behaviors needs to be studied in more detail and over extended periods of time.
+We have proposed that the user's familiarization with the robot is a significant
+factor that influences how anthropomorphism evolves over time. We assume a
+general \textit{decrease} of anthropomorphic effects as the user gets familiar
+with the robot, and we applied a cognitive viewpoint to legitimate this.
+However, there exist opposite interpretations. \cite{eddy_attribution_1993}
+state that familiarization and more interaction with an agent \textit{increase}
+the tendency to anthropomorphize. Similarly, \cite{duffy_anthropomorphism_2003}
+reports that several psychological experiments and HRI studies showed that
+familiarity with the system eases social acceptance and tends to
+\textit{increase} people's tendency to perceive human-like characteristics in
+the system.  We acknowledge that our conceptual model is an idea that needs to
+be verified, so to see whether our hypotheses can hold. In particular, the
+effect of the user's familiarity with the robot, and the role of disruptive
+robot behaviors needs to be studied in more detail and over extended periods of
+time.
 
-While subject to discussion and further refinements and extensions, we hope that this contribution consolidates the scientific grounds of anthropomorphism and provides support for a better understanding of anthropomorphism and its role in long-term acceptance of robots in human environments.
+While subject to discussion and further refinements and extensions, we hope that
+this contribution consolidates the scientific grounds of anthropomorphism and
+provides support for a better understanding of anthropomorphism and its role in
+long-term acceptance of robots in human environments.
 
 
 
