@@ -15,14 +15,9 @@ One of the main point of the paper is to emphasize that anthropomorphism is
 fundamentally a psychological phenomenon, and as such is not intrinsic
 to the robot (the robot can, at best, *elicit* anthropomorphism by the human):
 so we agree with the reviewer, we always (and only) have to go back to the human
-perception.
-
-The purpose of our article is to advance our understanding of this human
-psychological phenomenon, and we focus in particular on how time impact
-anthropomorphism.
-
-The concept of "anthropomo
-
+perception. The variable 'R' simply reflects that, amongst the factors that result
+in an anthropomorphic attitude, the robot design has an impact. It is not meant
+as an operational metric that would be measured.
 
 ---
 
@@ -44,6 +39,27 @@ The concept of "anthropomo
 |observing behavior, for example, is not unique to HRI. It has been discussed in
 |HCI for a long time.
 
+Based on the feedback of the reviewers, we have undertaken a large rewrite of
+the article to clarify our contribution: our intent *is not* to provide
+concrete, applicable tools to measure anthropomorphism. Instead, our
+contribution is more theoretical. The call for this special issue "Beyond the
+Uncanny Valley Hypothesis" says that "the emerging picture indicates that the
+relationship between humanlike realism and subjective experience may not be as
+straightforward as the hypothesis suggests": along this line, our focus is to
+contribute to the establishment of a comprehensive understanding of
+anthropomorphism.
+
+While our paper indeed relies on a lot of previous work, we have attempted to
+organize this wealth of literature in a meaningful and systematic way. This
+should hopefully provide a novel, better picture of the "anthropomorphism"
+phenomenon to the community. We introduce in particular two models (that
+materialize on one hand the dynamics of anthropomorphism, and on the other hand,
+the underlying cognitive mechanism at play when we anthropomorphize) that are
+expected to act as reference and support for the further research in this field.
+We hope that the updated version of the paper evidence in a better way this
+contribution.
+
+
 ---
 
 |> Please add here any further comments on this manuscript.
@@ -52,6 +68,9 @@ The concept of "anthropomo
 |authors, remain on a very high abstraction level and I doubt that it will be
 |possible to operationalize them. 
 
+We have tentatively answered this comment above. The discussion about the means to
+operationalize our models is now solely in the 'Discussion' part of the article,
+and we clearly state that this is not the focus of the article.
 
 ===================================================================================
 
@@ -78,6 +97,15 @@ Reviewer 2
 |looks different". How this could lead to clear, testable hypothesis, which could
 |be approached scientifically, is not even discussed once.
 
+As explained to the Reviewer 1, we have conducted a large rewrite of the paper
+to clarify our focus, which is to contribute to the establishment of a
+comprehensive understanding of anthropomorphism at a theoretical level.
+The concept of an anthropomorphism index 'AntX' has been indeed removed, as it
+was outside of the core contribution of the article.
+
+The point on the wording is well taken, and the whole article has been carefully
+checked to ensure a suitable tone.
+
 ---
 
 |> A Hypothesis and Theory article should not exceed 12'000 words. Should any
@@ -89,6 +117,10 @@ Reviewer 2
 |the online survey word-count study seems quite irrelevant for the argument
 |behind the development of AntX.
 
+The article has been significantly shortened and we now count about 9200 words,
+excluding references.
+As suggested by the reviewer, the extensive presentation of previous studies has been
+transformed into a brief summary of important results relevant to anthropomorphism.
 
 ---
 
@@ -117,6 +149,9 @@ Reviewer 2
 |has been available already before the authors' studies had been designed. Thus,
 |they might/should have helped to form ones expectations beforehand.
 
+The rewrite of the paper and the removal of the AntX index concept do resolve
+these concerns.
+
 ---
 
 |> Is the study presented in a consistent and succinct form?
@@ -126,6 +161,8 @@ Reviewer 2
 |summarized. In result, it is understandable that the manuscript is too long.
 |Secondly, at least to some extent the presented results do not really seem
 |consistent with the proposed AntX measurement tool (see above).
+
+We have tentatively answered this concern above.
 
 ---
 
@@ -137,6 +174,8 @@ Reviewer 2
 |level to be useful as a basis for other researchers. Perhaps, this does not
 |count as a fundamental flaw, but it deserves to be mentioned.
 
+We have tentatively answered this concern above.
+
 ---
 
 |> Does the title clearly and precisely reflect the main message of the
@@ -145,6 +184,14 @@ Reviewer 2
 |No
 |The title might better mention the proposed development of an anthropomorphism
 |index as this seems to be the main idea behind the article.
+
+Due to our initial presentation, the Anthropomorphism Index has been wrongfully
+understood as one of the main contribution of the article. This should now be
+fixed.
+
+We however propose a new title ("Anthropomorphism in Human-Robot Interaction:
+Nature, Dynamics and Underlying Cognitive Mechanisms") that further clarifies
+the intent of the article.
 
 ---
 
@@ -157,6 +204,10 @@ Reviewer 2
 |to find a kind of table that contains said "index". Saying that the value f some
 |variables "might" range from 0 to 1 is clearly not helpful.
 
+The rewrite of the paper and the removal of the AntX index concept do resolve
+these concerns.
+
+
 ---
 
 |> Is prior work properly and fully cited?
@@ -167,6 +218,10 @@ Reviewer 2
 |the prime example of "anthropomorphism by design". They should at least be
 |discussed in one paragraph.
 
+While we discuss important contributions from Ishiguro (in collaboration with
+Kanda) to the field, the article does not focus on specific robots as it aims at
+a certain level of generality.
+
 ---
 
 |> Please add here any further comments on this manuscript.
@@ -175,6 +230,9 @@ Reviewer 2
 |is OK.
 |Figure 5 seems to be taken directly out of Ruijten et al. (2014). Thus, this
 |might be judged as plagiarism.
+
+Figures have been updated to make sure they render correctly in black and white.
+Figure by Ruijten et al. has been removed during the paper rewrite.
 
 ================================================================================
 
@@ -188,6 +246,11 @@ Reviewer 3
 |Presentation of the results and discussions of the three studies (roomba, forum,
 |domino)
 |Part 3 is lengthy, causing it to lose some of its structure
+
+The article has been largely rewritten and significantly shortened. We now count
+about 9200 words, excluding references.
+The article structure has been largely updated, to ensure balanced, easy to
+follow, sections.
 
 ---
 
@@ -299,8 +362,25 @@ Reviewer 3
 |should be adapted from.
 |
 
+We try here to address each of the points of the reviewer.
 
-
+- the terminology that we used is now clearly stated and justified early in the
+  article (section 1.2)
+- we have removed the lengthy description of our studies, and replaced them by a
+  short, 'to the point' summary of important results in regard to
+  anthropomorphism (section 1.1)
+- the concept of anthropomorphism index has been removed altogether since it was
+  outside the core contribution of the paper, and not well supported.
+- the lengthy wording has been entirely overhauled in the updated version of the
+  paper. Its new structure should ease the reading, by ensuring short, balanced
+  sections.
+- we added 2 figures (Fig. 5 and 6) to explicit the relationship between the observed dynamics
+  of anthropomorphism, and the underlying cognitive processes, as well as a
+  specific discussion of their interplay (section 4.2).
+- we have reworded the presentation of the 'dominos' interaction scatter plot as
+  suggested by the reviewer.
+- language/wording issues have been hopefully addressed in the updated version
+  of the paper.
 
 
 
