@@ -1029,13 +1029,8 @@ preferences or intention to the robot.
 
 \subsubsection{Familiarization Phase\\}
 
-In this context, \emph{familiarization} means \emph{to get acquainted with}.
-It is not to be confused with the \emph{familiarity thesis} that relates to the
-projection of already known cognitive models onto the robot. We discuss this other
-aspect in section~\ref{sec:cognition-neuroscience}.
-
 The \emph{familiarization phase} starts at the peak of the \emph{novelty
-effect}: anthropomorphic effects are at their maximum, the user thinks (s)he is
+effect}: anthropomorphic effects are at their maximum, the user thinks he/she is
 potentially facing an agent aiming at ``human-level intelligence'' (to take
 McCarthy's words). This is a transient state that quickly vanishes, and the
 projected anthropomorphism then starts to decrease while the human observes and
@@ -1043,21 +1038,23 @@ recognizes that the behavior of the robot is generally \emph{predictable} and
 possibly \emph{deceptive} (for instance, it talks but does not understand when
 we talk; it has eyes but does not recognize everyday objects we show; \etc).
 
-\paragraph{Disruptive behaviors.}
+During this phase, we call \emph{disruptive behaviors} any behavior exhibited by
+the robot that appears unexpected to the user: for instance, a robot usually
+always follows the same route to go from one place in a house to the other, and
+suddenly it changes the route. The actual underlying reason may span from a
+bug to the detection of a new obstacle, but as long as this reason is not
+immediately intelligible to the user, the behavior counts as \emph{disruptive}.
+We further discuss the role of disruptive behaviors in cognitive terms in
+section \ref{sec:disruptive}.
 
-We call \emph{disruptive behaviors} any behavior exhibited by the robot that
-appears unexpected to the user: for instance, a robot may usually follow always
-the same route to go from one place in a house to the other, but suddenly it
-might change the route. The actual underlying reason may span from a bug to the
-detection of a new obstacle, but as long as this reason is not immediately
-intelligible to the user, the behavior counts as \emph{disruptive}. We further
-discuss the role of disruptive behaviors in cognitive terms in section
-\ref{sec:disruptive}.
-
+Note that, in this context, \emph{familiarization} means \emph{to get acquainted with}.
+It is not to be confused with the \emph{familiarity thesis} that relates to the
+projection of already known cognitive models onto the robot. We discuss this other
+aspect in section~\ref{sec:cognition-neuroscience}.
 
 \subsubsection{Stabilization Phase\\}
 
-During the \textit{Stabilization Phase} the value of \Ant tends to stabilize over
+During the \textit{Stabilization Phase} the level of \AntE tends to stabilize over
 a longer time, to reach a value that we call the \textit{Stabilized Level of
 Anthropomorphism} (SLA), noted \SLAe. The value that the
 SLA approaches is unique for each user interacting with a specific robot in a
@@ -1079,7 +1076,13 @@ capabilities of it and stop explaining it in terms of human-like characteristics
 (low \SLAe). Another user may however create lasting affective bonds with the
 same robot and may continue to anthropomorphize the robot (higher \SLAe).
 
-
+The model that we have introduced so far helps to represent and organize the
+\emph{observations} of anthropomorphism. It does so at a conceptual level, and
+with a special emphasis on the evolution over time.  This abstract model may
+contribute to a better understanding of the \emph{phenomenology} of
+anthropomorphism, but it does not help to \emph{explain} the phenomenon. To this
+end, we propose in the following section to explore the cognitive mechanisms at
+play that account for anthropomorphism.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -1094,17 +1097,11 @@ same robot and may continue to anthropomorphize the robot (higher \SLAe).
 \section{Towards a Cognitive Interpretation}
 \label{sec:cognition-neuroscience}
 
-The model that we have introduced so far helps to represent and organize the
-\emph{observations} of anthropomorphism. It does so at a conceptual level, and
-with a special emphasis on the evolution over time.
-
-This abstract model may contribute to a better understanding of the
-\emph{phenomenology} of anthropomorphism, but it does not help to \emph{explain}
-the phenomenon. This section proposes to look at the dynamics of
-anthropomorphism in terms of \emph{cognitive correlates}: how human cognition
-can explain the dynamic nature of our interactions with robots, and what are the
-main cognitive layers upon which researchers can build to design better, deeper
-human-robot interactions.
+This section proposes to look at the dynamics of anthropomorphism in terms of
+their underlying cognitive mechanisms: how human cognition can explain the
+dynamic nature of our interactions with robots, and what are the main cognitive
+layers upon which researchers can build to design better, deeper human-robot
+interactions.
 
 We also discuss two specific aspects: the cognitive impact of disruptive
 behaviors (section~\ref{sec:disruptive}) on mutual modeling, and how our models
@@ -1159,16 +1156,18 @@ model} \\ $\to$ \scriptsize{adapted interaction}\\\scriptsize{\it (anthropomorph
 
 \end{tikzpicture}
 %}
-\caption{\textbf{The three cognitive layers of anthropomorphism}: Layer 1 is the instinctive,
-sub-cognitive identification of living peers. {\it Empathy} is characteristic
-of this stage. After longer observation or short, non-contextualized interaction
-(typically, a lab environment), the user enters Layer 2: the user projects a
-mental model he/she is already familiar with onto the robot. After longer {\it
-contextualized} interaction (typically, at home), the user enters Layer 3 of
-anthropomorphism: the user composes a custom mental model of the robot,
-based on experience. This leads to adapted interaction modalities, that may
-still be anthropomorphic, or not. Note that the different layers coexist: Layer
-1 and 2 still affect the human perception of the robot in a Layer 3 interaction.}
+\caption{\textbf{The three cognitive layers of anthropomorphism}: Layer 1 is the
+instinctive, sub-cognitive identification of living peers. {\it Empathy} is
+characteristic of this stage. The Layer 2 materializes after longer
+observation or short, non-contextualized interaction (typically, a lab
+environment): the user projects a mental model he/she is already familiar
+with onto the robot. After longer {\it contextualized} interaction
+(typically, at home), the user enters Layer 3 of anthropomorphism: the user
+composes a custom mental model of the robot, based on experience. This leads
+to adapted interaction modalities, that may still be anthropomorphic, or
+not. Note that the different layers coexist: Layer 1 and 2 continue to affect the
+human perception of the robot in a Layer 3 interaction.}
+
 \label{fig:cognitivemodel}
 \end{figure}
 
@@ -1176,7 +1175,8 @@ We propose three different cognitive layers (Figure~\ref{fig:cognitivemodel}),
 which are not mutually exclusive but overlap over time. Note that these three
 cognitive stages are related but do not exactly match the \emph{Initialization},
 \emph{Familiarization} and \emph{Stabilization} phases introduced in our model
-of the dynamics of anthropomorphism. We discuss this relation hereafter.
+of the dynamics of anthropomorphism. We discuss this relation in
+section~\ref{sec:relations}.
 
 The main underlying cognitive process in anthropomorphism is understood as
 perceiving and reasoning about something non-human and unfamiliar based on one's
@@ -1195,11 +1195,10 @@ automatic activation of the human's mirror neurons system  in response to
 viewing the robots action and human automatic emotional responses are
 contributing at a lower level to the intuitive anthropomorphization.
 
-The intuitive anthropomorphization in the cognitive Layer 1 might be
+This intuitive form of anthropomorphization in the cognitive Layer 1 might be
 characteristic of what \cite{takayama_perspectives_2012} calls the
 \textit{in-the-moment} perspective on agency with a robot compared to the
-\textit{reflective} perspective (see paragraph ``artifact-centric perspective''
-in section \ref{sec:anthropomorphism}).  For instance, we reflectively might
+\textit{reflective} perspective. For instance, we reflectively might
 \textit{not} perceive agency in a social robot, but it can feel quite
 differently in the moment of interaction. \cite{takayama_perspectives_2012}
 argues that neglecting to separate reflective perspectives from in-the-moment
@@ -1207,20 +1206,20 @@ perspectives of agency is one of the major sources of confusion when people talk
 and write about anthropomorphism. There seems to be a disconnection between what
 people consciously perceive and how they respond to stimuli that they may not
 consciously perceive. This means that in the initial phase of interacting with a
-novel device \textit{(initialization)} (see Figure \ref{fig:dynamics}) people
+novel device (\textit{initialization} on Figure \ref{fig:dynamics}) people
 might not respond consciously but rather mindlessly \citep{nass_machines_2000},
 and in turn anthropomorphize more. They start to respond in a more reflective
-manner only during the \textit{familiarization} (in turn, the tendency to
-anthropomorphize might decrease). This can be illustrated by the fact that
-people tend to deny interacting with computational systems as if they were
-people and yet they respond to computers in many ways that are remarkably
+manner only during the \textit{familiarization}, and in turn, the tendency to
+anthropomorphize might decrease. This can be illustrated by the fact that
+people tend to deny interacting with computers as if they were
+people and yet they respond to them in many ways that are remarkably
 similar to how they respond to people \citep{reeves_media_1996}.
 \cite{takayama_perspectives_2012} also applies a cognitive viewpoint on the two
 different perspectives of in-the-moment \vs reflective to illustrate
 differences. She states that in-the-moment perceptions of agency are largely
 shaped by bottom-up perceptual processes, evoking very immediate responses (\eg
-to the cues emitted by the artifact's design (``artifact-centric
-perspective''). In contrast, according to Takayama, reflective perceptions are
+to the cues emitted by the artifact's design -- the artifact-centric
+perspective. In contrast, according to Takayama, reflective perceptions are
 more often shaped by top-down processes because of the nature of reflective
 thought.
 
@@ -1249,6 +1248,13 @@ interaction, the human iteratively restates and reshapes his/her behavioral and
 mental model of the robot (\emph{How does the robot react to such and such
 situation/input?  What does the robot know about me? About itself? About our
 environment? What can the robot learn?}, etc.).
+This mental process depends on the human understanding of the robot's inner
+working, as well as his/her own tendency to anthropomorphize (the
+\emph{personality} in IPA factor). At this stage, the \emph{perception} of the
+robot (its shape for instance) and its original intended \emph{purpose} play
+less of an important role. It is mostly a human-centric process.  The result of
+this third phase is a custom cognitive model of the robot.
+
 
 \begin{figure}[]
 \centering
@@ -1259,9 +1265,9 @@ environment? What can the robot learn?}, etc.).
 \draw[dotted, black!50, thin] (1.8, 6) -- (1.8, 0);
 \draw[dotted, black!50, thin] (6.5, 6) -- (6.5, 0);
 
-\draw(0.5,5.5) node[anchor=south west] {\scriptsize \sc Init.};
-\draw(2.5,5.5) node[anchor=south west] {\scriptsize \sc Familiarization};
-\draw(7,5.5) node[anchor=south west] {\scriptsize \sc Stabilization};
+\draw(0.5,6.0) node[anchor=south west] {\scriptsize \sc Init.};
+\draw(2.5,6.0) node[anchor=south west] {\scriptsize \sc Familiarization};
+\draw(7,6.0) node[anchor=south west] {\scriptsize \sc Stabilization};
 
 
 \begin{scope}[yscale=-1,shift={(-0.125,-0.46)}]
@@ -1273,6 +1279,11 @@ environment? What can the robot learn?}, etc.).
     0.9069132,0.0552179 1.3610087,0.0620963";
 
 \end{scope}
+
+\draw (-0.05, 2.1) -- (0.05, 2.1) node[anchor=east] {\IPAe};
+\draw (1.8, 4.9) -- (1.8, 5.1) node[anchor=south] {\scriptsize \AntEMax};
+\draw (10, 0.8) node[anchor=west] {\SLAe};
+
 
 \draw (-0.3,1.5) node[anchor=east] {Layer 1}
       (-0.3,3) node[anchor=east] {Layer 2}
@@ -1294,9 +1305,9 @@ environment? What can the robot learn?}, etc.).
 %}
 \caption{\textbf{Towards a cognitive interpretation of the dynamics of
     anthropomorphism}: This diagram combines the figures~\ref{fig:dynamics}
-    and~\ref{fig:cognitivemodel} to evidence their interplay: we suggest that
-    the cognitive stages 1 and 2 (pre-cognitive anthropomorphism and projection
-    of known existing cognitive models) first play a key role in the early
+    and~\ref{fig:cognitivemodel} to evidence their interplay: 
+    the cognitive layers 1 and 2 (pre-cognitive anthropomorphism and projection
+    of known existing cognitive models) play a key role in the early
     perception of the robot, leading to high levels of anthropomorphic
     behaviors. Then, the user smoothly transitions from projecting already known
     models to building a new, specific cognitive model of the robot: this occurs
@@ -1309,14 +1320,6 @@ environment? What can the robot learn?}, etc.).
 
 \label{fig:mix}
 \end{figure}
-
-
-This mental process depends on the human understanding of the robot's inner
-working, as well as his/her own tendency to anthropomorphize (the
-\emph{personality} in IPA factor). At this stage, the \emph{perception} of the
-robot (its shape for instance) and its original intended \emph{purpose} play
-less of an important role. It is mostly a human-centric process.  The result of
-this third phase is an iteratively adapted cognitive model of the robot.
 
 Another way to think of the three proposed cognitive stages is to relate them to
 the \textbf{user experience} which is characteristic of these three stages. For
@@ -1331,6 +1334,7 @@ appraise its functions, and consider aspects such as usefulness and usability;
 process, and past experiences are taken into account.
 
 \subsection{Relation to the dynamics of anthropomorphism}
+\label{sec:relations}
 
 As mentioned before, the three cognitive stages proposed here do not directly
 match with the three phases in the model of the dynamics of anthropomorphism,
@@ -1402,11 +1406,11 @@ If the unexpected behavior is not planned, and perceived as such by the human
 (case I, Table~\ref{fig:perceptionUnexpectedBehavior}), the human can interpret
 that the robot is able to fail. If the robot explicitly states its failure (for
 instance, by saying ``I'm lost!''), the behavior is then called
-\emph{transparent}~\citep{kim_who_2006}, and suggests that the
-robot has \emph{introspective} capabilities (it can reflect on its own internal
-state), which may lead to higher anthropomorphic projections.  On the contrary,
-if the robot shows no sign of recognizing its own failure, the user may ascribe
-a lower level of anthropomorphism to the robot.
+\emph{transparent}~\citep{kim_who_2006}, and suggests that the robot has
+\emph{introspective} capabilities (it can reflect on its own internal state),
+which may lead to higher anthropomorphic projections.  On the contrary, if the
+robot shows no sign of recognizing its own failure (a ``plain'' bug), the user
+is likely to ascribe a lower level of anthropomorphism to the robot.
 
 In case II, the robot voluntary executes a behavior that is unexpected by the
 human, and the human perceives it rightfully as an \emph{intentional} behavior.
@@ -1433,7 +1437,7 @@ expected to lead to a lower anthropomorphism level.
 \section{Conclusion}
 \label{sec:conclusion}
 
-In this paper, we have provided a broad account of the cognitive and
+This article provides a broad account of the cognitive and
 psychological viewpoints on anthropomorphism, with a novel focus on the
 impact of time. Considering anthropomorphism as a social phenomenon that arises
 in an interaction, we formulated the following three suggestions:
@@ -1443,7 +1447,7 @@ in an interaction, we formulated the following three suggestions:
 \item \textbf{Anthropomorphism is based on multiple factors.} The three main
     factors that constitute anthropomorphism are the characteristics of the
     human, the characteristics of the robot, and the characteristics of the
-    context of use. A temporal dimension is taken into account by the
+    context of use. Besides, a temporal dimension is taken into account by the
     \textit{interaction history} $t$, which reflects the fact that
     anthropomorphism is also a dynamic phenomenon.
 
@@ -1453,7 +1457,7 @@ in an interaction, we formulated the following three suggestions:
     between the observable \textit{anthropomorphic effects} \AntE of the human
     behavior and the \textit{interaction duration} $t$ (the actual time the user
     has spent interacting with the robot for real or imagined). This qualitative
-    relationship starts at $t_{0}$ with the \textit{initial potential to
+    relationship starts at $t_{0}$ with what we propose to call an \textit{initial potential to
     anthropomorphize} (IPA), a function of the three factors previously
     discussed (point 1) that measures a pre-interaction form of
     anthropomorphism. On the other end, at $t_{\infty}$, we suggest that the
@@ -1464,13 +1468,13 @@ in an interaction, we formulated the following three suggestions:
     robot, followed by a decrease of \AntE as the user \textit{familiarizes}
     him/herself with the robot and with using the robot. 
 
-\item \textbf{Anthropomorphism is multi-layered cognitive mechanism.} We have
-    identified three successive and overlapping cognitive layers that underlie
+\item \textbf{Anthropomorphism is a multi-layered cognitive mechanism.} We 
+    identify three successive and overlapping cognitive layers that underlie
     human-robot interaction and shape anthropomorphic behaviors.
     These layers (that are likely continuum rather than discrete levels) depend
-    on one how typically human the robot is perceived, and how much the mental
+    on ``how typically human'' the robot is perceived, and how much the mental
     model that the user builds of the robot overlaps (or is inspired by) the
-    mental model he/she has of another human. Each of the layers
+    mental model he/she has of another human. Each of these layers
     reflect different depths of cognitive engagement between the human and the
     robot.
 
@@ -1617,7 +1621,7 @@ By considering the number of occurrences, the duration, and consequently the
 frequency of these types of interaction, we built a weighting scheme to rate
 the observed level of anthropomorphic behaviors in an interaction (\ie, \AntE).
 
-This approaches remain however fragile: in our experience, the weighting scheme
+This approache remains however fragile: in our experience, the weighting scheme
 of the annotated behaviors mostly relies on a subjective assessment by the
 experimenters, which makes it difficult to transfer to different experimental
 settings. And it remains to be seen how self-reported assessment of
